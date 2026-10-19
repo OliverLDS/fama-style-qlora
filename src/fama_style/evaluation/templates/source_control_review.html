@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; object-src 'none'">
+<title>Three-way paragraph review</title>
+<style>
+body{margin:0;background:#f4f5f7;color:#202933;font:16px/1.6 system-ui,sans-serif}main{max-width:1500px;margin:auto;padding:24px}h1{font-size:26px;margin:0}h2{font-size:19px}h3{margin:0 0 12px}p{white-space:pre-wrap}header,.panel,article{background:white;border:1px solid #d9dfe5;border-radius:10px;padding:20px;margin-bottom:18px}button,select,input,textarea{font:inherit}button,select,input{padding:7px 10px}button{cursor:pointer}button:disabled{cursor:default;opacity:.5}textarea{box-sizing:border-box;width:100%;min-height:85px;padding:10px;border:1px solid #aeb9c4;border-radius:5px}label{display:block;margin-top:12px}label select{float:right}nav,.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}.candidates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}article{margin:0;min-width:0}article p{min-height:120px}.hint{color:#526273;font-size:14px}.warning{color:#7a4b07}.ratings{border-top:1px solid #d9dfe5;padding-top:8px}progress{width:220px;max-width:100%}.status{font-size:14px}.source-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}details{margin:14px 0}summary{cursor:pointer}#message{min-height:26px}#position{font-variant-numeric:tabular-nums}@media(max-width:1000px){.candidates,.source-grid{grid-template-columns:1fr}article p{min-height:0}}
+</style></head><body><main>
+<header><h1>Three-way paragraph review</h1>
+<p class="hint">Judge claims against the input and style against the original reference. Keep assignment_key.json closed until rating is complete. Labels are masked, not independently blinded: copying and prior familiarity may reveal identity. Unchanged wording is not automatically a failure or a style success.</p>
+<details><summary>Scoring rubric</summary><div id="rubric"></div><p class="hint">Identical candidate texts receive identical ratings automatically. Claim and style scores are never combined.</p></details>
+<div class="toolbar"><label>Reviewer <input id="reviewer" autocomplete="off"></label><button id="export">Export scores JSON</button><button id="import">Import scores JSON</button><input type="file" id="file" accept=".json,application/json" hidden></div>
+<div class="toolbar"><progress id="progress" max="63" value="0"></progress><span id="count"></span></div>
+<div id="message" class="status" role="status"></div><p class="hint">Works offline. Browser storage is a convenience; export JSON regularly and before closing. Draft exports are allowed, but analysis requires all 63 ratings.</p></header>
+<nav><button id="previous">Previous</button><select id="paragraph" aria-label="Paragraph"></select><button id="next">Next</button><button id="unrated">Next unrated</button><span id="position"></span></nav>
+<section class="panel"><div class="source-grid"><div><h2>Plain-English input</h2><p id="source"></p></div><div><h2>Original reference</h2><p id="reference"></p></div></div>
+<label>Claim inventory from the input <textarea id="inventory" placeholder="List claims, actors, relationships and qualifications before judging candidates."></textarea></label></section>
+<section id="candidates" class="candidates" aria-label="Candidate paragraphs"></section>
+</main>
+<script type="application/json" id="payload">__REVIEW_PAYLOAD__</script>
+<script>
+'use strict';
+const {bundle,blankScores}=JSON.parse(document.getElementById('payload').textContent);
+const clone=value=>JSON.parse(JSON.stringify(value));
+const norm=text=>text.split(/\s+/u).filter(Boolean).join(' ');
+const criteria=Object.keys(bundle.criteria);
+const titles={claims:'Claims',economic_precision:'Economic precision',analytical_structure:'Analytical structure',concision:'Concision'};
+const storageKey='fama-source-control-'+bundle.review_id;
+const $=id=>document.getElementById(id);
+let scores=clone(blankScores),index=0,storageAvailable=true;
+function message(text,isError=false){$('message').textContent=text;$('message').className=isError?'status warning':'status';}
+function validateDraft(value){
+ if(value.schema!==blankScores.schema||value.review_id!==bundle.review_id||!Array.isArray(value.ratings)||value.ratings.length!==63)throw Error('This file belongs to another review or has the wrong number of candidates.');
+ const expected=new Set(blankScores.ratings.map(row=>row.id+'|'+row.slot));const seen=new Set();
+ for(const row of value.ratings){const key=row.id+'|'+row.slot;if(!expected.has(key)||seen.has(key))throw Error('Missing, duplicate or unknown candidate.');seen.add(key);
+  for(const criterion of criteria)if(row[criterion]!==null&&(!Number.isInteger(row[criterion])||row[criterion]<0||row[criterion]>bundle.criteria[criterion]))throw Error('Invalid score range.');
+  for(const name of ['claim_notes','style_notes'])if(typeof row[name]!=='string')throw Error('Invalid review notes.');
+ }
+ if(typeof value.reviewer!=='string'||!value.claim_inventories||typeof value.claim_inventories!=='object')throw Error('Invalid reviewer or claim inventories.');
+ for(const example of bundle.examples)if(typeof value.claim_inventories[example.id]!=='string')throw Error('Missing claim inventory.');
+ return value;
+}
+try{const saved=localStorage.getItem(storageKey);if(saved)scores=validateDraft(JSON.parse(saved));}catch(error){storageAvailable=false;message('Browser storage is unavailable or invalid. Use Export JSON to retain your work.',true);}
+const rowFor=(id,slot)=>scores.ratings.find(row=>row.id===id&&row.slot===slot);
+function complete(row){return criteria.every(key=>Number.isInteger(row[key]))&&(row.claims===4||row.claim_notes.trim().length>0);}
+function updateProgress(){const count=scores.ratings.filter(complete).length;$('progress').value=count;$('count').textContent=count+' / 63 candidates complete';}
+function persist(){
+ scores.reviewer=$('reviewer').value;
+ try{localStorage.setItem(storageKey,JSON.stringify(scores));storageAvailable=true;message('Saved in this browser. Export JSON for a portable copy.');}
+ catch(error){storageAvailable=false;message('Browser storage is unavailable. Export JSON before leaving.',true);}
+ updateProgress();
+}
+function applyRating(id,slot,key,value){
+ const example=bundle.examples.find(item=>item.id===id),text=example.candidates.find(item=>item.slot===slot).text;
+ for(const candidate of example.candidates)if(norm(candidate.text)===norm(text))rowFor(id,candidate.slot)[key]=value;
+ persist();
+ for(const candidate of example.candidates){const row=rowFor(id,candidate.slot);for(const field of [...criteria,'claim_notes','style_notes']){
+   const control=document.getElementById(candidate.slot+'-'+field);if(control&&control!==document.activeElement)control.value=row[field]===null?'':row[field];
+ }}
+}
+function render(){
+ const example=bundle.examples[index];$('paragraph').value=String(index);$('position').textContent=(index+1)+' / 21 — '+example.id;
+ $('source').textContent=example.source;$('reference').textContent=example.reference;$('inventory').value=scores.claim_inventories[example.id];
+ $('previous').disabled=index===0;$('next').disabled=index===20;$('candidates').replaceChildren();
+ for(const candidate of example.candidates){
+  const row=rowFor(example.id,candidate.slot),card=document.createElement('article'),heading=document.createElement('h3'),paragraph=document.createElement('p'),ratings=document.createElement('div');
+  heading.textContent='Candidate '+candidate.slot;paragraph.textContent=candidate.text;ratings.className='ratings';card.append(heading,paragraph,ratings);
+  for(const criterion of criteria){
+   const label=document.createElement('label'),select=document.createElement('select');label.textContent=titles[criterion]+' (0–'+bundle.criteria[criterion]+')';select.id=candidate.slot+'-'+criterion;select.setAttribute('aria-label','Candidate '+candidate.slot+' '+titles[criterion]);
+   const blank=document.createElement('option');blank.value='';blank.textContent='Unrated';select.append(blank);
+   for(let value=0;value<=bundle.criteria[criterion];value++){const option=document.createElement('option');option.value=String(value);option.textContent=String(value);select.append(option);}
+   select.value=row[criterion]===null?'':String(row[criterion]);select.onchange=()=>applyRating(example.id,candidate.slot,criterion,select.value===''?null:Number(select.value));label.append(select);ratings.append(label);
+  }
+  for(const key of ['claim_notes','style_notes']){const label=document.createElement('label'),area=document.createElement('textarea');label.textContent=key==='claim_notes'?'Claim evidence (required below 4)':'Style evidence';area.id=candidate.slot+'-'+key;area.value=row[key];area.oninput=()=>applyRating(example.id,candidate.slot,key,area.value);label.append(area);ratings.append(label);}
+  $('candidates').append(card);
+ }
+ updateProgress();
+}
+for(const [criterion,text] of Object.entries(bundle.rubric)){const p=document.createElement('p');p.textContent=titles[criterion]+': '+text;$('rubric').append(p);}
+bundle.examples.forEach((example,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=(i+1)+'. '+example.id;$('paragraph').append(option);});
+$('reviewer').value=scores.reviewer;$('reviewer').oninput=persist;
+$('inventory').oninput=()=>{scores.claim_inventories[bundle.examples[index].id]=$('inventory').value;persist();};
+$('previous').onclick=()=>{if(index>0){index--;render();}};$('next').onclick=()=>{if(index<20){index++;render();}};
+$('paragraph').onchange=()=>{index=Number($('paragraph').value);render();};
+$('unrated').onclick=()=>{for(let offset=1;offset<=21;offset++){const next=(index+offset)%21,example=bundle.examples[next];if(example.candidates.some(candidate=>!complete(rowFor(example.id,candidate.slot)))){index=next;render();return;}}message('All candidates are rated. Export your scores JSON.');};
+$('export').onclick=()=>{const blob=new Blob([JSON.stringify(scores,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='source_control_scores_'+bundle.review_id.slice(0,12)+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);message('Scores exported. Keep the downloaded JSON as your portable review record.');};
+$('import').onclick=()=>$('file').click();
+$('file').onchange=async()=>{try{const file=$('file').files[0];if(!file)return;const imported=validateDraft(JSON.parse(await file.text()));if(!confirm('Replace the current browser draft with this imported review?'))return;scores=imported;$('reviewer').value=scores.reviewer;persist();render();}catch(error){message('Import rejected: '+error.message,true);}finally{$('file').value='';}};
+render();if(storageAvailable)message('Ready. Export JSON regularly; local browser storage alone is not a backup.');
+</script></body></html>

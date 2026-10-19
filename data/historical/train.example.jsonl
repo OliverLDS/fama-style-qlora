@@ -1,0 +1,3 @@
+{"prompt":"Explain overfitting in two sentences.","completion":"Overfitting means learning patterns too specific to the training data. Generalization suffers on new examples."}
+{"prompt":"What is endogeneity in econometrics?","completion":"An explanatory variable is endogenous when it is correlated with the error term."}
+{"prompt":"Define LoRA concisely.","completion":"LoRA fine-tunes small low-rank matrices while keeping the original model weights frozen."}

@@ -1,0 +1,25 @@
+name: CPU checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Public file audit
+        run: python3 scripts/review_public_files.py
+      - name: CPU tests (private-artifact cases skip explicitly)
+        run: python3 -m unittest discover -s tests -v
+      - name: Synthetic dry-run
+        run: python3 train.py --check
+      - name: Regenerate notebooks
+        run: |
+          python3 scripts/build_notebooks.py
+          git diff --exit-code -- kaggle

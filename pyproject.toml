@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fama-style"
+version = "0.1.0"
+description = "Meaning-preserving economics prose rewriting with Gemma and QLoRA"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fama_style = ["evaluation/templates/*.html"]
