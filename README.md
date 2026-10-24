@@ -2,7 +2,7 @@
 
 An experimental fine-tuning project: rewrite neutral plain English into the economics prose of Eugene Fama and his coauthors **while preserving the original claims**. This repository contains data-curation tools, training/evaluation code, standalone Kaggle notebooks, CPU tests, and an offline review interface.
 
-**Current finding:** a one-epoch Gemma 3 4B QLoRA pilot substantially reduced validation loss and verbose elaboration, but increased input copying. Distinctive Fama-style improvement is **not established**. Claim preservation and style are evaluated separately.
+**Current finding:** QLoRA reduced validation loss but increased copying. Explicit rhetorical and claim guidance can improve individual controls, but faithful Fama/coauthor-style transformation is **not established**. The project reports these negative and mixed results separately from successful pipeline execution.
 
 ## What was built
 
@@ -37,6 +37,45 @@ The curated corpus has **313 pairs from nine papers**, selected from 13 processe
 | Peak allocated GPU memory | 6.79 GiB |
 
 These are development-validation results from one held-out paper, not a fresh multi-paper benchmark. Lower target loss does not establish generated style or semantic fidelity. Unblinded qualitative review found fewer unsupported additions and a remaining table-reference error. Independent numerical claim/style ratings are not available; real-data three-way scores remain blank. [Results and limitations](docs/RESULTS.md).
+
+## Research extension: rhetorical plans and claim preservation
+
+The extension compares direct adaptation with explicit rhetorical planning while
+keeping semantic evidence separate from style controls. It includes training-signal
+analysis, a three-level schema, LLM annotation/consistency workflows, inference-only
+Kaggle experiments and CPU-only analysis of saved generations. No new fine-tuning
+was performed for this extension.
+
+| Executed investigation | Finding | Scope |
+|---|---|---|
+| Training-signal analysis | Substantial input/reference wording contrast; copying is not explained by identical training pairs | 247 training pairs |
+| Initial rhetorical oracle | Did not pass the predefined generation-improvement gate | 21 development-validation examples |
+| Concise target plan | Better count-match rate concealed a six-to-one sentence collapse | Four inspected training pairs |
+| Count-only versus sentence slots | Slots partly controlled counts; formatting and claim drift remained | Same four training pairs |
+| Claim constraints × paragraph/slots | Paragraph NLI proxy passes rose from 1/4 to 4/4; constrained slots matched counts on 4/4 but passed the joint count/format/NLI proxy on only 2/4 | 16 generations, four training pairs |
+| Saved-output claim audit | Flags bound, qualification and possible-addition risks, including warnings in four NLI-passing outputs | Same 16 saved generations; no new model calls |
+
+These small diagnostics do not establish generalization, author-style quality or
+semantic accuracy. Rule warnings can be valid paraphrases; no warnings is not a
+pass. NLI sanity controls do not establish domain reliability. Source/reference
+alignment remains uncertain, and the 45 reserved test examples remain outside
+development and model selection.
+
+Start with the [rhetorical representation and research precedents](docs/RHETORICAL_STRUCTURE.md),
+[claim-constrained experiment results](docs/CLAIM_CONSTRAINED_REALIZATION_V1_RESULTS.md)
+and [saved-output claim audit](docs/CLAIM_LEVEL_AUDIT_V1.md). Earlier stages:
+[signal analysis](docs/RESEARCH_EXTENSION.md),
+[oracle results](docs/RHETORICAL_ORACLE_V1_RESULTS.md),
+[concise-plan results](docs/CONCISE_PLAN_REALIZATION_V1_RESULTS.md) and
+[sentence-slot results](docs/SENTENCE_SLOT_REALIZATION_V1_RESULTS.md).
+Preparation documents preserve their pre-execution status statements; the linked
+results reports record the completed runs.
+
+The next research priority is independent validation of claim-verification rules,
+followed by semantic-first inference with soft structural guidance. Further QLoRA
+or structural-mapper training is deferred. Public files contain code, schemas,
+synthetic examples and aggregate reports; annotation responses, full paragraphs,
+raw generations and model artifacts remain private.
 
 ## Local checks
 

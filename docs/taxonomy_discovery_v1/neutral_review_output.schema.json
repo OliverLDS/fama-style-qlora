@@ -1,0 +1,904 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fama-style:taxonomy-discovery:neutral-review:v1",
+  "type": "object",
+  "properties": {
+    "pair_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proposal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "retain",
+        "revise",
+        "unresolved"
+      ]
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue_type": {
+            "type": "string",
+            "enum": [
+              "semantic",
+              "presentation",
+              "extraction",
+              "uncertain"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidence"
+            },
+            "minItems": 0
+          },
+          "reference_evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidence"
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "issue_type",
+          "description",
+          "original_evidence",
+          "reference_evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "proposed_neutral_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "proposed_neutral_annotation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/annotation"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "structural_revisions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "status": {
+      "const": "proposed_not_applied"
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "pair_id",
+    "reference_id",
+    "proposal_id",
+    "decision",
+    "issues",
+    "proposed_neutral_text",
+    "proposed_neutral_annotation",
+    "structural_revisions",
+    "status",
+    "review_notes"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "occurrence": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "quote",
+        "occurrence"
+      ],
+      "additionalProperties": false
+    },
+    "label": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "definition"
+      ],
+      "additionalProperties": false
+    },
+    "annotation": {
+      "type": "object",
+      "properties": {
+        "annotation_version": {
+          "const": "rhetorical_discovery_v1"
+        },
+        "paragraph_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "semantic_content": {
+          "type": "object",
+          "properties": {
+            "entities": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "entity_id": {
+                    "type": "string",
+                    "pattern": "^e[1-9][0-9]*$"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "actor",
+                      "institution",
+                      "variable",
+                      "concept",
+                      "other"
+                    ]
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/evidence"
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "entity_id",
+                  "kind",
+                  "description",
+                  "evidence"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "claims": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "pattern": "^c[1-9][0-9]*$"
+                  },
+                  "proposition": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "predicate": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "entity_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^e[1-9][0-9]*$"
+                    },
+                    "minItems": 0
+                  },
+                  "epistemic_status": {
+                    "type": "string",
+                    "enum": [
+                      "hypothesis",
+                      "expectation",
+                      "finding",
+                      "definition",
+                      "assertion",
+                      "unresolved"
+                    ]
+                  },
+                  "quantities": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "expression": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "binding": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "evidence": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/evidence"
+                          },
+                          "minItems": 1
+                        }
+                      },
+                      "required": [
+                        "expression",
+                        "binding",
+                        "evidence"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 0
+                  },
+                  "qualifications": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "enum": [
+                            "condition",
+                            "uncertainty",
+                            "negation",
+                            "quantifier",
+                            "comparison",
+                            "attribution",
+                            "other"
+                          ]
+                        },
+                        "expression": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "scope_claim_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^c[1-9][0-9]*$"
+                          },
+                          "minItems": 1
+                        },
+                        "evidence": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/evidence"
+                          },
+                          "minItems": 1
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "expression",
+                        "scope_claim_refs",
+                        "evidence"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 0
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/evidence"
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "proposition",
+                  "predicate",
+                  "entity_refs",
+                  "epistemic_status",
+                  "quantities",
+                  "qualifications",
+                  "evidence"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "relations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "relation_id": {
+                    "type": "string",
+                    "pattern": "^r[1-9][0-9]*$"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "causal",
+                      "conditional",
+                      "association",
+                      "comparison",
+                      "attribution",
+                      "logical_entailment",
+                      "temporal",
+                      "other"
+                    ]
+                  },
+                  "source_claim_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^c[1-9][0-9]*$"
+                    },
+                    "minItems": 1
+                  },
+                  "target_claim_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^c[1-9][0-9]*$"
+                    },
+                    "minItems": 1
+                  },
+                  "direction": {
+                    "type": "string",
+                    "enum": [
+                      "source_to_target",
+                      "target_to_source",
+                      "symmetric",
+                      "unresolved"
+                    ]
+                  },
+                  "explicitness": {
+                    "type": "string",
+                    "enum": [
+                      "explicit",
+                      "implied",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/evidence"
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "relation_id",
+                  "kind",
+                  "source_claim_refs",
+                  "target_claim_refs",
+                  "direction",
+                  "explicitness",
+                  "evidence"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "unresolved_notes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "entities",
+            "claims",
+            "relations",
+            "unresolved_notes"
+          ],
+          "additionalProperties": false
+        },
+        "rhetorical_taxonomy": {
+          "type": "object",
+          "properties": {
+            "paragraph_structure": {
+              "type": "object",
+              "properties": {
+                "main_claim_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^c[1-9][0-9]*$"
+                  },
+                  "minItems": 0
+                },
+                "main_claim_position": {
+                  "type": "string",
+                  "enum": [
+                    "first",
+                    "later",
+                    "distributed",
+                    "unresolved"
+                  ]
+                },
+                "moves": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "move_id": {
+                        "type": "string",
+                        "pattern": "^m[1-9][0-9]*$"
+                      },
+                      "role": {
+                        "$ref": "#/$defs/label"
+                      },
+                      "claim_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^c[1-9][0-9]*$"
+                        },
+                        "minItems": 0
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/$defs/evidence"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "move_id",
+                      "role",
+                      "claim_refs",
+                      "evidence"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 0
+                },
+                "progression": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "from_move_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^m[1-9][0-9]*$"
+                        },
+                        "minItems": 1
+                      },
+                      "to_move_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^m[1-9][0-9]*$"
+                        },
+                        "minItems": 1
+                      },
+                      "relation": {
+                        "$ref": "#/$defs/label"
+                      },
+                      "semantic_relation_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^r[1-9][0-9]*$"
+                        },
+                        "minItems": 0
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/$defs/evidence"
+                        },
+                        "minItems": 1
+                      },
+                      "interpretation_note": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "from_move_refs",
+                      "to_move_refs",
+                      "relation",
+                      "semantic_relation_refs",
+                      "evidence",
+                      "interpretation_note"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 0
+                },
+                "qualification_placement": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "claim_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^c[1-9][0-9]*$"
+                        },
+                        "minItems": 1
+                      },
+                      "placement": {
+                        "$ref": "#/$defs/label"
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/$defs/evidence"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "claim_refs",
+                      "placement",
+                      "evidence"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 0
+                }
+              },
+              "required": [
+                "main_claim_refs",
+                "main_claim_position",
+                "moves",
+                "progression",
+                "qualification_placement"
+              ],
+              "additionalProperties": false
+            },
+            "sentence_structure": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "sentence_id": {
+                    "type": "string",
+                    "pattern": "^s[1-9][0-9]*$"
+                  },
+                  "sentence_text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "claim_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^c[1-9][0-9]*$"
+                    },
+                    "minItems": 0
+                  },
+                  "clauses": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "clause_id": {
+                          "type": "string",
+                          "pattern": "^u[1-9][0-9]*$"
+                        },
+                        "clause_text": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "$ref": "#/$defs/label"
+                        },
+                        "claim_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^c[1-9][0-9]*$"
+                          },
+                          "minItems": 0
+                        },
+                        "depends_on_clause_ids": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^u[1-9][0-9]*$"
+                          },
+                          "minItems": 0
+                        },
+                        "semantic_relation_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^r[1-9][0-9]*$"
+                          },
+                          "minItems": 0
+                        }
+                      },
+                      "required": [
+                        "clause_id",
+                        "clause_text",
+                        "role",
+                        "claim_refs",
+                        "depends_on_clause_ids",
+                        "semantic_relation_refs"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 0
+                  },
+                  "features": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "dimension": {
+                          "type": "string",
+                          "enum": [
+                            "clause_order",
+                            "dependency",
+                            "coordination",
+                            "voice",
+                            "subject_selection",
+                            "proposition_grouping",
+                            "qualification_placement",
+                            "other"
+                          ]
+                        },
+                        "label": {
+                          "$ref": "#/$defs/label"
+                        },
+                        "claim_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^c[1-9][0-9]*$"
+                          },
+                          "minItems": 0
+                        },
+                        "semantic_relation_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^r[1-9][0-9]*$"
+                          },
+                          "minItems": 0
+                        },
+                        "evidence": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/evidence"
+                          },
+                          "minItems": 1
+                        },
+                        "certainty": {
+                          "type": "string",
+                          "enum": [
+                            "observed",
+                            "interpretive",
+                            "unresolved"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dimension",
+                        "label",
+                        "claim_refs",
+                        "semantic_relation_refs",
+                        "evidence",
+                        "certainty"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "sentence_id",
+                  "sentence_text",
+                  "claim_refs",
+                  "clauses",
+                  "features"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "language_features": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "dimension": {
+                    "type": "string",
+                    "enum": [
+                      "nominalization",
+                      "terminology",
+                      "lexical_register",
+                      "concision_density",
+                      "connectives",
+                      "hedging_form",
+                      "function_words",
+                      "other"
+                    ]
+                  },
+                  "label": {
+                    "$ref": "#/$defs/label"
+                  },
+                  "claim_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^c[1-9][0-9]*$"
+                    },
+                    "minItems": 0
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/evidence"
+                    },
+                    "minItems": 1
+                  },
+                  "certainty": {
+                    "type": "string",
+                    "enum": [
+                      "observed",
+                      "interpretive",
+                      "unresolved"
+                    ]
+                  }
+                },
+                "required": [
+                  "dimension",
+                  "label",
+                  "claim_refs",
+                  "evidence",
+                  "certainty"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "paragraph_structure",
+            "sentence_structure",
+            "language_features"
+          ],
+          "additionalProperties": false
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "const": "llm_interpretation"
+            },
+            "model_version": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "annotation_context": {
+              "type": "string",
+              "enum": [
+                "single_paragraph",
+                "paired_neutral_design"
+              ]
+            },
+            "author_intent_verified": {
+              "const": false
+            },
+            "independently_verified": {
+              "const": false
+            }
+          },
+          "required": [
+            "method",
+            "model_version",
+            "annotation_context",
+            "author_intent_verified",
+            "independently_verified"
+          ],
+          "additionalProperties": false
+        },
+        "needs_review": {
+          "type": "boolean"
+        },
+        "review_notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "annotation_version",
+        "paragraph_id",
+        "semantic_content",
+        "rhetorical_taxonomy",
+        "provenance",
+        "needs_review",
+        "review_notes"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "unresolved"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "proposed_neutral_text": {
+            "type": "null"
+          },
+          "proposed_neutral_annotation": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "proposed_neutral_text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "proposed_neutral_annotation": {
+            "$ref": "#/$defs/annotation"
+          }
+        }
+      }
+    }
+  ]
+}

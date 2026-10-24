@@ -1,0 +1,317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fama-style:semantic-ledger:v1",
+  "type": "object",
+  "properties": {
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "actors",
+          "proposition",
+          "conditions",
+          "evidence",
+          "causal_relations",
+          "actor_parse_status",
+          "quantities",
+          "negation",
+          "modality",
+          "scope",
+          "condition_cues",
+          "causality"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^c[1-9][0-9]*$"
+          },
+          "actors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "proposition": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "parse_status": {
+                      "const": "single_if_rule"
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "parse_status"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "cue": {
+                      "type": "string"
+                    },
+                    "parse_status": {
+                      "const": "unresolved_scope"
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "cue",
+                    "parse_status"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "evidence": {
+            "type": "object",
+            "required": [
+              "text",
+              "start",
+              "end"
+            ],
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "actor_parse_status": {
+            "enum": [
+              "heuristic",
+              "unresolved"
+            ]
+          },
+          "causal_relations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "cue": {
+                  "type": "string"
+                },
+                "left": {
+                  "type": "string"
+                },
+                "right": {
+                  "type": "string"
+                },
+                "direction": {
+                  "enum": [
+                    "right_explains_left",
+                    "left_to_right_hypothesis"
+                  ]
+                },
+                "verified_parse": {
+                  "const": false
+                }
+              },
+              "required": [
+                "cue",
+                "left",
+                "right",
+                "direction",
+                "verified_parse"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "quantities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "negation": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "modality": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "scope": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "condition_cues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "causality": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "coverage": {
+      "type": "string"
+    },
+    "independently_semantically_verified": {
+      "const": false
+    }
+  },
+  "required": [
+    "source_sha256",
+    "claims",
+    "coverage",
+    "independently_semantically_verified"
+  ],
+  "additionalProperties": false
+}

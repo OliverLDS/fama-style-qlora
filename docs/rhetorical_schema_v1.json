@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fama-style:rhetoric:v1",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "enum": [
+        "rhetoric_v1"
+      ]
+    },
+    "paragraph": {
+      "type": "object",
+      "properties": {
+        "organization": {
+          "type": "string",
+          "enum": [
+            "single",
+            "sequence",
+            "conditional",
+            "contrastive",
+            "reporting",
+            "mixed"
+          ]
+        },
+        "sentence_count": {
+          "type": "string",
+          "enum": [
+            "one",
+            "two",
+            "three_plus"
+          ]
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "pattern": "^s[1-9][0-9]*$"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "assertion",
+                  "definition",
+                  "reporting",
+                  "contrast",
+                  "condition",
+                  "conclusion",
+                  "unknown"
+                ]
+              },
+              "claims": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^c[1-9][0-9]*$"
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "unit",
+              "role",
+              "claims"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "organization",
+        "sentence_count",
+        "moves"
+      ],
+      "additionalProperties": false
+    },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit": {
+            "type": "string",
+            "pattern": "^s[1-9][0-9]*$"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^c[1-9][0-9]*$"
+            },
+            "minItems": 1
+          },
+          "syntax": {
+            "type": "string",
+            "enum": [
+              "simple",
+              "coordinated",
+              "subordinated",
+              "mixed"
+            ]
+          },
+          "condition_position": {
+            "type": "string",
+            "enum": [
+              "none",
+              "front",
+              "end",
+              "embedded",
+              "mixed"
+            ]
+          },
+          "voice": {
+            "type": "string",
+            "enum": [
+              "absent",
+              "present"
+            ]
+          },
+          "length": {
+            "type": "string",
+            "enum": [
+              "short",
+              "medium",
+              "long"
+            ]
+          }
+        },
+        "required": [
+          "unit",
+          "claims",
+          "syntax",
+          "condition_position",
+          "voice",
+          "length"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "language": {
+      "type": "object",
+      "properties": {
+        "author_voice": {
+          "type": "string",
+          "enum": [
+            "absent",
+            "present"
+          ]
+        },
+        "semicolon": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "high"
+          ]
+        },
+        "parenthesis": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "high"
+          ]
+        },
+        "hedging": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "high"
+          ]
+        },
+        "citation": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "high"
+          ]
+        },
+        "nominalization": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "high"
+          ]
+        }
+      },
+      "required": [
+        "author_voice",
+        "semicolon",
+        "parenthesis",
+        "hedging",
+        "citation",
+        "nominalization"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "version",
+    "paragraph",
+    "sentences",
+    "language"
+  ],
+  "additionalProperties": false
+}

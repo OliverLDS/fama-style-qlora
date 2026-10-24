@@ -1,0 +1,261 @@
+{
+  "status": "executed_cpu_only_not_training_ready",
+  "phase_a": {
+    "rows": 247,
+    "lexical_overlap": {
+      "n": 247,
+      "min": 0.14814814814814814,
+      "p10": 0.33929411764705886,
+      "p25": 0.3989795918367347,
+      "median": 0.49523809523809526,
+      "p75": 0.5488837493787989,
+      "p90": 0.628996438298764,
+      "max": 0.7972027972027972,
+      "mean": 0.4824260054690714,
+      "histogram": [
+        {
+          "lower": 0,
+          "upper": 0.2,
+          "count": 2
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "count": 60
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6,
+          "count": 144
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.8,
+          "count": 41
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.85,
+          "count": 0
+        },
+        {
+          "lower": 0.85,
+          "upper": 1,
+          "count": 0
+        }
+      ]
+    },
+    "word_length_ratio": {
+      "n": 247,
+      "min": 0.78,
+      "p10": 1.028202115158637,
+      "p25": 1.113924668227947,
+      "median": 1.1967213114754098,
+      "p75": 1.3717523493642898,
+      "p90": 1.5767844268204758,
+      "max": 2.188679245283019,
+      "mean": 1.2612088871496945
+    },
+    "style_vector_magnitude": {
+      "n": 247,
+      "min": 0.0,
+      "p10": 0.059714576453717846,
+      "p25": 0.1537506960739383,
+      "median": 0.2747227826316711,
+      "p75": 0.604136158014791,
+      "p90": 0.84436951720859,
+      "max": 2.660572482146096,
+      "mean": 0.41384848109806516
+    },
+    "feature_delta_distributions": {
+      "words_per_sentence": {
+        "n": 247,
+        "min": -6.5,
+        "p10": 0.33999999999999936,
+        "p25": 2.4000000000000004,
+        "median": 6.0,
+        "p75": 10.0,
+        "p90": 16.02857142857143,
+        "max": 47.0,
+        "mean": 7.290005462373883
+      },
+      "semicolon_rate": {
+        "n": 247,
+        "min": -1.7241379310344827,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "max": 2.247191011235955,
+        "mean": 0.0028535408403644784
+      },
+      "author_voice_rate": {
+        "n": 247,
+        "min": -4.570970328789093,
+        "p10": -0.24922884133410447,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p90": 0.8966861598440549,
+        "max": 3.5714285714285716,
+        "mean": 0.10557073237541938
+      },
+      "initial_if_rate": {
+        "n": 247,
+        "min": -0.5,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "max": 0.3333333333333333,
+        "mean": -0.006651243493348756
+      },
+      "parenthesis_rate": {
+        "n": 247,
+        "min": -1.7415730337078648,
+        "p10": -0.24673799600791696,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.7419834633312252,
+        "p90": 1.479367866549605,
+        "max": 5.05050505050505,
+        "mean": 0.38549661948964103
+      }
+    },
+    "alignment_risk_counts": {
+      "modality_surface_mismatch": 106,
+      "scope_surface_mismatch": 123,
+      "causality_surface_mismatch": 126,
+      "negation_surface_mismatch": 90,
+      "condition_cues_surface_mismatch": 71
+    },
+    "pairs_with_surface_alignment_flags": 218,
+    "exact_normalized_copies": 0,
+    "overlap_at_least_0_85": 0,
+    "per_paper": {
+      "F1965": {
+        "rows": 30,
+        "median_lexical_overlap": 0.3673214439562333,
+        "median_style_magnitude": 0.3524453489671222,
+        "mean_feature_deltas": {
+          "words_per_sentence": 10.164523809523809,
+          "semicolon_rate": 0.0,
+          "author_voice_rate": 0.3675086515568123,
+          "initial_if_rate": -0.013888888888888888,
+          "parenthesis_rate": 0.10849390261154968
+        }
+      },
+      "F1980": {
+        "rows": 6,
+        "median_lexical_overlap": 0.389873417721519,
+        "median_style_magnitude": 0.5435949028330416,
+        "mean_feature_deltas": {
+          "words_per_sentence": 8.305555555555555,
+          "semicolon_rate": -0.273224043715847,
+          "author_voice_rate": 0.8946392928428857,
+          "initial_if_rate": 0.0,
+          "parenthesis_rate": 0.06171498959915933
+        }
+      },
+      "FF2000": {
+        "rows": 40,
+        "median_lexical_overlap": 0.5346300022356361,
+        "median_style_magnitude": 0.26183692555100135,
+        "mean_feature_deltas": {
+          "words_per_sentence": 6.571468253968254,
+          "semicolon_rate": 0.06117235675553849,
+          "author_voice_rate": -0.1336915760598977,
+          "initial_if_rate": -0.0125,
+          "parenthesis_rate": 0.9062272467829434
+        }
+      },
+      "FJ1983": {
+        "rows": 50,
+        "median_lexical_overlap": 0.43430132259919496,
+        "median_style_magnitude": 0.2604219028676029,
+        "mean_feature_deltas": {
+          "words_per_sentence": 11.067833333333333,
+          "semicolon_rate": 0.03805676788312131,
+          "author_voice_rate": -0.17550140007907936,
+          "initial_if_rate": 0.0,
+          "parenthesis_rate": 0.24103623016791229
+        }
+      },
+      "ME1997": {
+        "rows": 60,
+        "median_lexical_overlap": 0.5356591191651283,
+        "median_style_magnitude": 0.22909461492533892,
+        "mean_feature_deltas": {
+          "words_per_sentence": 4.713558201058201,
+          "semicolon_rate": -0.029352696223803057,
+          "author_voice_rate": 0.10855813797925758,
+          "initial_if_rate": -0.007539682539682539,
+          "parenthesis_rate": 0.19026770676497057
+        }
+      },
+      "NL2003": {
+        "rows": 40,
+        "median_lexical_overlap": 0.5185610283990293,
+        "median_style_magnitude": 0.20838286147657303,
+        "mean_feature_deltas": {
+          "words_per_sentence": 5.724801587301587,
+          "semicolon_rate": 0.02821199563428706,
+          "author_voice_rate": 0.03465840146036571,
+          "initial_if_rate": -0.014583333333333334,
+          "parenthesis_rate": 0.3668107011165359
+        }
+      },
+      "VL2018": {
+        "rows": 21,
+        "median_lexical_overlap": 0.5224274406332454,
+        "median_style_magnitude": 0.4779141092498666,
+        "mean_feature_deltas": {
+          "words_per_sentence": 5.609826152683296,
+          "semicolon_rate": -0.06537532697408552,
+          "author_voice_rate": 0.7574183001022237,
+          "initial_if_rate": 0.014739229024943309,
+          "parenthesis_rate": 0.8191983889393746
+        }
+      }
+    },
+    "semantic_alignment_caveat": "Counts/lexical features flag risk; differing surface markers can be equivalent and matching markers can hide drift."
+  },
+  "phase_b": {
+    "validation_rows": 21,
+    "generated_candidates": 56,
+    "surface_accepted_candidates": 56,
+    "selected_rewrites": 0,
+    "abstained_unchanged": 21,
+    "mean_selected_source_overlap": 1.0,
+    "mean_selected_style_gain_proxy": 0.0,
+    "model_generation_executed": false,
+    "human_judgment_used": false,
+    "semantic_success_rate": null,
+    "semantic_success_reason": "No calibrated semantic parser/NLI; bounded surface checks do not establish general entailment",
+    "test_rows_used": 0
+  },
+  "phase_c": {
+    "training_parent_rows": 247,
+    "sft_variants_staged": 397,
+    "parents_with_two_or_more_variants": 126,
+    "parents_with_two_lexically_diverse_variants": 8,
+    "weak_preferences": 14,
+    "quarantined_preferences": 222,
+    "weak_preference_categories": {
+      "semantic_error": 5,
+      "copying": 9
+    },
+    "all_preference_categories": {
+      "semantic_error": 129,
+      "copying": 102,
+      "generic_surface_proxy": 5
+    },
+    "training_ready": false,
+    "reason": "Bounded surface paraphrases are not a rich semantic-invariance generator; reference alignment and style proxies need automated model-based calibration before training.",
+    "generic_negative_caveat": "Third-person/clause-splitting controls proxy generic surface style, not the entire space of fluent generic prose."
+  },
+  "gpu_jobs_submitted": 0,
+  "test_rows_used_by_extension": 0
+}

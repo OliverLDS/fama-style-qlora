@@ -47,6 +47,7 @@
 !/.github/**
 
 # Defense in depth: credentials, local settings, caches and model artifacts.
+/research_runs/
 **/.DS_Store
 **/__pycache__/
 **/*.py[cod]

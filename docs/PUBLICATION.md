@@ -19,6 +19,10 @@ The public repository is a code and experiment-documentation release. Full paper
 - `reviews/`: real-data HTML/Markdown packets, candidate mappings, score exports, source text and raw logs.
 - `experiments/`: local execution outputs and historical documents with private artifact links or excerpts. Public summaries are in `docs/`.
 - Historical Kaggle kernel metadata, machine-specific paths, caches, local settings and credentials.
+- `research_runs/`: real annotation requests/responses, paired schemas, model prompts,
+  generations, detailed claim evidence, downloaded Kaggle logs and local manifests.
+  Public research releases include only implementation, synthetic examples,
+  annotation specifications and aggregate findings.
 
 The root `.gitignore` uses an allowlist. Detailed legacy rewrite decisions have been moved from Python constants into the ignored `data/historical/reviewed_training_decisions.private.json`. The local curation workflow still reads them; their contents are preserved. Public docs make no redistribution claim for papers, Gemma weights or third-party datasets. The MIT license covers project code/original documentation only.
 

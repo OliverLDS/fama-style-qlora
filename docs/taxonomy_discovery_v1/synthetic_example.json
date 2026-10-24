@@ -1,0 +1,241 @@
+{
+  "note": "Original synthetic text, not a training paragraph. Labels illustrate format only; they are not mandatory categories.",
+  "text": "Some firms may reduce investment if borrowing costs rise.",
+  "annotation": {
+    "annotation_version": "rhetorical_discovery_v1",
+    "paragraph_id": "synthetic_example_only",
+    "semantic_content": {
+      "entities": [
+        {
+          "entity_id": "e1",
+          "kind": "actor",
+          "description": "firms",
+          "evidence": [
+            {
+              "quote": "firms",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "entity_id": "e2",
+          "kind": "variable",
+          "description": "investment",
+          "evidence": [
+            {
+              "quote": "investment",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "entity_id": "e3",
+          "kind": "variable",
+          "description": "borrowing costs",
+          "evidence": [
+            {
+              "quote": "borrowing costs",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "c1",
+          "proposition": "Some firms may reduce investment, conditional on borrowing costs rising.",
+          "predicate": "reduce",
+          "entity_refs": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "epistemic_status": "assertion",
+          "quantities": [],
+          "qualifications": [
+            {
+              "kind": "quantifier",
+              "expression": "Some",
+              "scope_claim_refs": [
+                "c1"
+              ],
+              "evidence": [
+                {
+                  "quote": "Some",
+                  "occurrence": 1
+                }
+              ]
+            },
+            {
+              "kind": "uncertainty",
+              "expression": "may",
+              "scope_claim_refs": [
+                "c1"
+              ],
+              "evidence": [
+                {
+                  "quote": "may",
+                  "occurrence": 1
+                }
+              ]
+            },
+            {
+              "kind": "condition",
+              "expression": "if borrowing costs rise",
+              "scope_claim_refs": [
+                "c1"
+              ],
+              "evidence": [
+                {
+                  "quote": "if borrowing costs rise",
+                  "occurrence": 1
+                }
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "quote": "Some firms may reduce investment if borrowing costs rise.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "relations": [],
+      "unresolved_notes": [
+        "The condition is retained within c1; it is not asserted as a separately established event."
+      ]
+    },
+    "rhetorical_taxonomy": {
+      "paragraph_structure": {
+        "main_claim_refs": [
+          "c1"
+        ],
+        "main_claim_position": "first",
+        "moves": [
+          {
+            "move_id": "m1",
+            "role": {
+              "name": "qualified_response_statement",
+              "definition": "A response is presented with an explicit limiting condition and modal qualification."
+            },
+            "claim_refs": [
+              "c1"
+            ],
+            "evidence": [
+              {
+                "quote": "Some firms may reduce investment if borrowing costs rise.",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "progression": [],
+        "qualification_placement": [
+          {
+            "claim_refs": [
+              "c1"
+            ],
+            "placement": {
+              "name": "postposed_condition",
+              "definition": "The limiting condition follows the matrix proposition."
+            },
+            "evidence": [
+              {
+                "quote": "if borrowing costs rise",
+                "occurrence": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sentence_structure": [
+        {
+          "sentence_id": "s1",
+          "sentence_text": "Some firms may reduce investment if borrowing costs rise.",
+          "claim_refs": [
+            "c1"
+          ],
+          "clauses": [
+            {
+              "clause_id": "u1",
+              "clause_text": "Some firms may reduce investment",
+              "role": {
+                "name": "matrix_proposition",
+                "definition": "The main clause expresses the qualified proposition."
+              },
+              "claim_refs": [
+                "c1"
+              ],
+              "depends_on_clause_ids": [],
+              "semantic_relation_refs": []
+            },
+            {
+              "clause_id": "u2",
+              "clause_text": "if borrowing costs rise",
+              "role": {
+                "name": "conditional_subordinate",
+                "definition": "A subordinate clause restricts the circumstance in which the matrix proposition applies."
+              },
+              "claim_refs": [
+                "c1"
+              ],
+              "depends_on_clause_ids": [
+                "u1"
+              ],
+              "semantic_relation_refs": []
+            }
+          ],
+          "features": [
+            {
+              "dimension": "qualification_placement",
+              "label": {
+                "name": "condition_after_main_clause",
+                "definition": "The sentence puts its limiting if-clause after its matrix clause."
+              },
+              "claim_refs": [
+                "c1"
+              ],
+              "semantic_relation_refs": [],
+              "evidence": [
+                {
+                  "quote": "Some firms may reduce investment if borrowing costs rise.",
+                  "occurrence": 1
+                }
+              ],
+              "certainty": "observed"
+            }
+          ]
+        }
+      ],
+      "language_features": [
+        {
+          "dimension": "hedging_form",
+          "label": {
+            "name": "modal_may",
+            "definition": "The modal may expresses possibility; its strength is protected semantic content."
+          },
+          "claim_refs": [
+            "c1"
+          ],
+          "evidence": [
+            {
+              "quote": "may",
+              "occurrence": 1
+            }
+          ],
+          "certainty": "observed"
+        }
+      ]
+    },
+    "provenance": {
+      "method": "llm_interpretation",
+      "model_version": null,
+      "annotation_context": "single_paragraph",
+      "author_intent_verified": false,
+      "independently_verified": false
+    },
+    "needs_review": false,
+    "review_notes": []
+  }
+}

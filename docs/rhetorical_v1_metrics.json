@@ -1,0 +1,326 @@
+{
+  "execution_kind": "executed_cpu_annotation_and_training_only_probes",
+  "oracle_generation_status": "prepared_not_executed",
+  "legacy": {
+    "rows": 247,
+    "formats": {
+      "missing": 51,
+      "level_1,level_2,level_3": 156,
+      "R1,R2,R3": 40
+    },
+    "objective_counts": {
+      "EXPLAIN": 75,
+      "DESCRIBE": 74,
+      "ARGUE": 47
+    },
+    "reused_as_source_labels": false,
+    "migration": "preserved unchanged; discourse objective/moves/relations do not match new three-level axes"
+  },
+  "learnability": {
+    "rows": 247,
+    "papers": 7,
+    "fit_split": "train",
+    "source_signatures": 136,
+    "target_signatures": 163,
+    "protected_features_excluded_from_prediction": [
+      "citation",
+      "hedging"
+    ],
+    "per_field": {
+      "organization": {
+        "source_counts": {
+          "sequence": 172,
+          "conditional": 31,
+          "contrastive": 13,
+          "mixed": 3,
+          "reporting": 25,
+          "single": 3
+        },
+        "target_counts": {
+          "sequence": 164,
+          "conditional": 22,
+          "contrastive": 28,
+          "reporting": 19,
+          "mixed": 6,
+          "single": 8
+        },
+        "source_entropy_bits": 1.4519724157333287,
+        "target_entropy_bits": 1.6343090941565228,
+        "changed_fraction": 0.27530364372469635
+      },
+      "sentence_count": {
+        "source_counts": {
+          "two": 22,
+          "three_plus": 222,
+          "one": 3
+        },
+        "target_counts": {
+          "two": 39,
+          "three_plus": 200,
+          "one": 8
+        },
+        "source_entropy_bits": 0.5264129585405175,
+        "target_entropy_bits": 0.8273068085459221,
+        "changed_fraction": 0.11740890688259109
+      },
+      "syntax": {
+        "source_counts": {
+          "simple": 149,
+          "subordinated": 55,
+          "coordinated": 31,
+          "mixed": 12
+        },
+        "target_counts": {
+          "simple": 117,
+          "subordinated": 83,
+          "mixed": 17,
+          "coordinated": 30
+        },
+        "source_entropy_bits": 1.510186950518421,
+        "target_entropy_bits": 1.6744622471208541,
+        "changed_fraction": 0.43724696356275305
+      },
+      "condition_position": {
+        "source_counts": {
+          "none": 232,
+          "embedded": 12,
+          "front": 3
+        },
+        "target_counts": {
+          "none": 230,
+          "embedded": 8,
+          "front": 7,
+          "end": 2
+        },
+        "source_entropy_bits": 0.37417278470041015,
+        "target_entropy_bits": 0.4580263563959751,
+        "changed_fraction": 0.09716599190283401
+      },
+      "sentence_length": {
+        "source_counts": {
+          "medium": 164,
+          "short": 57,
+          "long": 26
+        },
+        "target_counts": {
+          "long": 88,
+          "medium": 136,
+          "short": 23
+        },
+        "source_entropy_bits": 1.222356331842069,
+        "target_entropy_bits": 1.3234002119918047,
+        "changed_fraction": 0.4291497975708502
+      },
+      "author_voice": {
+        "source_counts": {
+          "absent": 185,
+          "present": 62
+        },
+        "target_counts": {
+          "absent": 163,
+          "present": 84
+        },
+        "source_entropy_bits": 0.8128783998457951,
+        "target_entropy_bits": 0.924896168211878,
+        "changed_fraction": 0.13765182186234817
+      },
+      "semicolon": {
+        "source_counts": {
+          "none": 232,
+          "low": 15
+        },
+        "target_counts": {
+          "none": 231,
+          "low": 16
+        },
+        "source_entropy_bits": 0.3303309975615015,
+        "target_entropy_bits": 0.34612420094860763,
+        "changed_fraction": 0.12550607287449392
+      },
+      "parenthesis": {
+        "source_counts": {
+          "none": 178,
+          "low": 37,
+          "high": 32
+        },
+        "target_counts": {
+          "none": 124,
+          "low": 76,
+          "high": 47
+        },
+        "source_entropy_bits": 1.1328598419478761,
+        "target_entropy_bits": 1.477806464222192,
+        "changed_fraction": 0.26720647773279355
+      },
+      "nominalization": {
+        "source_counts": {
+          "high": 169,
+          "low": 47,
+          "none": 31
+        },
+        "target_counts": {
+          "high": 181,
+          "low": 43,
+          "none": 23
+        },
+        "source_entropy_bits": 1.2058798373234174,
+        "target_entropy_bits": 1.0866530008010271,
+        "changed_fraction": 0.2631578947368421
+      }
+    },
+    "leave_one_training_paper_out": {
+      "source_identity": {
+        "macro_field_accuracy": 0.7611336032388664,
+        "per_field_accuracy": {
+          "organization": 0.7246963562753036,
+          "sentence_count": 0.8825910931174089,
+          "syntax": 0.562753036437247,
+          "condition_position": 0.902834008097166,
+          "sentence_length": 0.5708502024291497,
+          "author_voice": 0.8623481781376519,
+          "semicolon": 0.8744939271255061,
+          "parenthesis": 0.7327935222672065,
+          "nominalization": 0.7368421052631579
+        }
+      },
+      "fixed_prior": {
+        "macro_field_accuracy": 0.6954565901934323,
+        "per_field_accuracy": {
+          "organization": 0.6639676113360324,
+          "sentence_count": 0.8097165991902834,
+          "syntax": 0.47368421052631576,
+          "condition_position": 0.9311740890688259,
+          "sentence_length": 0.5506072874493927,
+          "author_voice": 0.659919028340081,
+          "semicolon": 0.9352226720647774,
+          "parenthesis": 0.5020242914979757,
+          "nominalization": 0.7327935222672065
+        }
+      },
+      "retrieval": {
+        "macro_field_accuracy": 0.6675663517768781,
+        "per_field_accuracy": {
+          "organization": 0.6437246963562753,
+          "sentence_count": 0.7449392712550608,
+          "syntax": 0.4534412955465587,
+          "condition_position": 0.8744939271255061,
+          "sentence_length": 0.44534412955465585,
+          "author_voice": 0.728744939271255,
+          "semicolon": 0.9271255060728745,
+          "parenthesis": 0.5384615384615384,
+          "nominalization": 0.6518218623481782
+        }
+      },
+      "smoothed_conditional": {
+        "macro_field_accuracy": 0.7782276203328835,
+        "per_field_accuracy": {
+          "organization": 0.7004048582995951,
+          "sentence_count": 0.8704453441295547,
+          "syntax": 0.5587044534412956,
+          "condition_position": 0.9311740890688259,
+          "sentence_length": 0.6356275303643725,
+          "author_voice": 0.8623481781376519,
+          "semicolon": 0.9352226720647774,
+          "parenthesis": 0.7327935222672065,
+          "nominalization": 0.7773279352226721
+        }
+      }
+    },
+    "per_paper_macro_accuracy": {
+      "F1965": {
+        "source_identity": 0.7259259259259259,
+        "fixed_prior": 0.7444444444444445,
+        "retrieval": 0.6814814814814815,
+        "smoothed_conditional": 0.7666666666666666
+      },
+      "F1980": {
+        "source_identity": 0.7777777777777778,
+        "fixed_prior": 0.7777777777777778,
+        "retrieval": 0.7407407407407407,
+        "smoothed_conditional": 0.8148148148148148
+      },
+      "FF2000": {
+        "source_identity": 0.736111111111111,
+        "fixed_prior": 0.6305555555555555,
+        "retrieval": 0.6388888888888888,
+        "smoothed_conditional": 0.75
+      },
+      "FJ1983": {
+        "source_identity": 0.7822222222222222,
+        "fixed_prior": 0.7244444444444444,
+        "retrieval": 0.7177777777777777,
+        "smoothed_conditional": 0.8044444444444444
+      },
+      "ME1997": {
+        "source_identity": 0.7648148148148148,
+        "fixed_prior": 0.6722222222222222,
+        "retrieval": 0.6277777777777778,
+        "smoothed_conditional": 0.7722222222222223
+      },
+      "NL2003": {
+        "source_identity": 0.8027777777777778,
+        "fixed_prior": 0.7055555555555555,
+        "retrieval": 0.6888888888888889,
+        "smoothed_conditional": 0.8138888888888889
+      },
+      "VL2018": {
+        "source_identity": 0.7142857142857143,
+        "fixed_prior": 0.7037037037037037,
+        "retrieval": 0.6349206349206349,
+        "smoothed_conditional": 0.7248677248677249
+      }
+    },
+    "protocol": "Exploratory categorical probes; validation and reserved test excluded; no deployable mapping fitted",
+    "recommendation": "Test the oracle first. If supported, start with fixed prior; require paper-grouped gains before adding retrieval or smoothed conditional edits. No neural mapper yet.",
+    "caveat": "Bucket prediction accuracy is not generation quality or semantic preservation; field imbalance and correlated controls inflate accuracy."
+  },
+  "oracle_protocol": {
+    "protocol": "oracle_rhetoric_v1",
+    "status": "prepared_not_executed",
+    "training_pairs": 247,
+    "validation_examples": 21,
+    "generation_jobs": 63,
+    "schema_version": "rhetoric_v1",
+    "model_id": "google/gemma-3-4b-it",
+    "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "decoding": {
+      "do_sample": false,
+      "max_new_tokens": 512,
+      "use_cache": true,
+      "seed": 42
+    },
+    "context_limit": 4096,
+    "truncate": false,
+    "condition_order": "cyclic A/B/C per validation index",
+    "claim_information": "B/C share source evidence units; A is the ordinary frozen prompt",
+    "primary_comparison": "C versus B; A anchors the ordinary rewrite baseline",
+    "oracle_reference_wording_in_generator": false,
+    "test_rows_used": 0,
+    "human_review_required": false,
+    "gpu_training_allowed": false,
+    "inference_executed": false,
+    "semantic_assessment": "Independent bidirectional document and sentence-unit NLI after Gemma is unloaded; synthetic controls must pass; over-context pairs abstain",
+    "factorial_followup": {
+      "status": "blocked_until_oracle_support",
+      "cells": [
+        {
+          "weights": "base",
+          "mapping": "none"
+        },
+        {
+          "weights": "base",
+          "mapping": "learned"
+        },
+        {
+          "weights": "frozen_qlora",
+          "mapping": "none"
+        },
+        {
+          "weights": "frozen_qlora",
+          "mapping": "learned"
+        }
+      ],
+      "controls": "same source examples, model revision, quantization, budgets, prompts within mapping condition; existing adapter was not plan-conditioned"
+    }
+  }
+}

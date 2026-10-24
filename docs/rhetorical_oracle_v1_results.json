@@ -1,0 +1,148 @@
+{
+  "notebook": "oliverlds/rhetorical-oracle",
+  "version": 1,
+  "retrieved_version_explicitly": true,
+  "evaluation": {
+    "protocol": "oracle_rhetoric_v1",
+    "execution_kind": "model_inference",
+    "validation_rows": 21,
+    "conditions": {
+      "A_plain": {
+        "rows": 21,
+        "source_similarity": 0.3353720575395196,
+        "exact_copy": 0,
+        "near_copy": 0,
+        "oracle_structure_match": 0.501234744091887,
+        "style_gain_proxy": -0.050435381579324354,
+        "output_input_token_ratio": 1.8347817878415698,
+        "rows_with_semantic_surface_flags": 21,
+        "semantic_consistency_rate": null,
+        "requested_plan_match": null,
+        "nli_proxy_consistency_rate": 0.6190476190476191,
+        "generation_seconds": 300.0263369190001,
+        "input_tokens": 3979,
+        "output_tokens": 3662
+      },
+      "B_source_structure": {
+        "rows": 21,
+        "source_similarity": 0.46460859409915767,
+        "exact_copy": 0,
+        "near_copy": 0,
+        "oracle_structure_match": 0.5035800178657321,
+        "style_gain_proxy": -0.63393730189043,
+        "output_input_token_ratio": 1.5314247376788355,
+        "rows_with_semantic_surface_flags": 20,
+        "semantic_consistency_rate": null,
+        "requested_plan_match": 0.44020476877619735,
+        "nli_proxy_consistency_rate": 0.6190476190476191,
+        "generation_seconds": 288.9489630170008,
+        "input_tokens": 14354,
+        "output_tokens": 3248
+      },
+      "C_oracle_target_structure": {
+        "rows": 21,
+        "source_similarity": 0.45888654297388504,
+        "exact_copy": 0,
+        "near_copy": 0,
+        "oracle_structure_match": 0.5149820197439245,
+        "style_gain_proxy": -0.6024143740285867,
+        "output_input_token_ratio": 1.5261699628384846,
+        "rows_with_semantic_surface_flags": 20,
+        "semantic_consistency_rate": null,
+        "requested_plan_match": 0.5149820197439245,
+        "nli_proxy_consistency_rate": 0.7142857142857143,
+        "generation_seconds": 288.70813375200044,
+        "input_tokens": 14322,
+        "output_tokens": 3232
+      }
+    },
+    "paired_differences": {
+      "C_minus_A_plain": {
+        "mean_oracle_structure_gain": 0.013747275652037566,
+        "improved": 13,
+        "worsened": 7,
+        "tied": 1
+      },
+      "C_minus_B_source_structure": {
+        "mean_oracle_structure_gain": 0.011402001878192356,
+        "improved": 6,
+        "worsened": 5,
+        "tied": 10
+      }
+    },
+    "oracle_is_deployment_result": false,
+    "test_rows_used": 0,
+    "training_called": false,
+    "oracle_supported_by_automated_proxies": false,
+    "semantic_claims_verified": false,
+    "nli_control_results": {
+      "equivalent_controls": 3,
+      "accepted_equivalents": 3,
+      "semantic_mutations": 7,
+      "rejected_mutations": 7,
+      "passed": true,
+      "thresholds": {
+        "entailment_minimum": 0.8,
+        "contradiction_maximum": 0.1
+      },
+      "meaning": "Small synthetic sanity gate only; not domain calibration or verified economic entailment",
+      "human_review_used": false
+    },
+    "mapping_gate": "not_supported_by_current_proxies",
+    "limitations": "Adherence and style share surface proxies. Token overlap is not entailment. C uses reference-derived side information; B/C share source evidence while A is the ordinary prompt.",
+    "model_id": "google/gemma-3-4b-it",
+    "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "nli_revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+    "nli_seconds": 1969.891578164,
+    "total_seconds": 2934.696677175,
+    "memory": {
+      "peak_allocated_bytes": 5135284736,
+      "peak_reserved_bytes": 5330960384
+    },
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.20.1",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.14.0",
+      "huggingface-hub": "1.33.0"
+    }
+  },
+  "additional_diagnostics": {
+    "exact_reference_sentence_count_matches": {
+      "A_plain": 4,
+      "B_source_structure": 5,
+      "C_oracle_target_structure": 7
+    },
+    "nli_B_to_C": {
+      "proxy_flagged -> proxy_consistent": 4,
+      "proxy_consistent -> proxy_consistent": 11,
+      "proxy_consistent -> proxy_flagged": 2,
+      "proxy_flagged -> proxy_flagged": 4
+    },
+    "mean_output_sentence_counts": {
+      "A_plain": 3.142857142857143,
+      "B_source_structure": 2.857142857142857,
+      "C_oracle_target_structure": 2.9047619047619047
+    },
+    "mean_reference_sentence_count": 4.285714285714286
+  },
+  "integrity": {
+    "notebook": "oliverlds/rhetorical-oracle",
+    "version": 1,
+    "complete": true,
+    "unique_generation_pairs": 63,
+    "expected_generation_pairs": 63,
+    "outputs_valid": true,
+    "manifest_files_verified": {
+      "preparation": 6,
+      "inference": 6
+    },
+    "embedded_source_hashes_verified": true,
+    "prompts_reproduced": true,
+    "metrics_reproduced": true,
+    "test_rows_used": 0,
+    "gpu_training_called": false,
+    "progress_counter_note": "completed_jobs=62 is saved before the last generation; 63 saved outputs and 63 NLI assessments confirm completion"
+  }
+}
