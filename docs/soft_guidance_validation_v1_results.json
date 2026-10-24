@@ -1,0 +1,175 @@
+{
+  "protocol": "soft_guidance_validation_v2",
+  "execution_kind": "model_inference",
+  "conditions": {
+    "A_claims_only": {
+      "rows": 21,
+      "valid_formats": 21,
+      "verifier_status_counts": {
+        "risk_signal": 9,
+        "abstain": 6,
+        "model_consistent": 6
+      },
+      "valid_semantic_proxy_passes": 6,
+      "joint_proxy_successes": 0,
+      "near_copies": 0,
+      "exact_copies": 0,
+      "mean_style_gain_proxy_all_outputs": -0.9661967860918423,
+      "mean_style_gain_proxy_valid_only": -0.9661967860918423,
+      "mean_source_similarity": 0.4506925249457936,
+      "input_tokens": 11221,
+      "output_tokens": 3302,
+      "generation_seconds": 284.0910172280001
+    },
+    "B_claims_soft_plan": {
+      "rows": 21,
+      "valid_formats": 21,
+      "verifier_status_counts": {
+        "model_consistent": 9,
+        "risk_signal": 10,
+        "abstain": 2
+      },
+      "valid_semantic_proxy_passes": 9,
+      "joint_proxy_successes": 2,
+      "near_copies": 0,
+      "exact_copies": 0,
+      "mean_style_gain_proxy_all_outputs": -1.486541825884167,
+      "mean_style_gain_proxy_valid_only": -1.486541825884167,
+      "mean_source_similarity": 0.5384539555183874,
+      "input_tokens": 15254,
+      "output_tokens": 3019,
+      "generation_seconds": 268.74371603199995
+    }
+  },
+  "runtime_canary_passed": true,
+  "training_called": false,
+  "reserved_test_rows_used": 0,
+  "development_validation_rows_used": 21,
+  "model_selection_test_rows_used": 0,
+  "training_ready": false,
+  "semantic_accuracy": null,
+  "author_style_accuracy": null,
+  "oracle": false,
+  "limitations": "Previously used development set from one paper. Fixed source-bound soft prior, not a learned full-taxonomy mapper. Verifier consistency and style distance are fallible proxies; unknowns and bad formats remain in all-example denominators. No hard sentence quotas or automatic repairs.",
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "nli_revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+  "canary_seconds": 23.22418938200002,
+  "verifier_seconds": 70.73434645800012,
+  "total_seconds": 742.681383621,
+  "nli_cache_entries": 3633,
+  "nli_cache_hits": 19,
+  "gemma_memory": {
+    "peak_allocated_bytes": 5146808320,
+    "peak_reserved_bytes": 5209325568
+  },
+  "nli_memory": {
+    "peak_allocated_bytes": 841393664,
+    "peak_reserved_bytes": 878706688
+  },
+  "generation": {
+    "model_id": "google/gemma-3-4b-it",
+    "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "max_new_tokens": 768,
+    "context_limit": 4096,
+    "do_sample": false,
+    "seed": 42,
+    "truncate": false
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.20.1",
+    "accelerate": "1.14.0",
+    "bitsandbytes": "0.50.2",
+    "huggingface-hub": "1.33.0"
+  },
+  "kaggle_run": {
+    "notebook": "oliverlds/soft_guidance_validation",
+    "version": 1
+  },
+  "diagnostics": {
+    "paired_status_transitions": [
+      {
+        "A": "risk_signal",
+        "B": "model_consistent",
+        "rows": 3
+      },
+      {
+        "A": "abstain",
+        "B": "model_consistent",
+        "rows": 2
+      },
+      {
+        "A": "abstain",
+        "B": "risk_signal",
+        "rows": 3
+      },
+      {
+        "A": "risk_signal",
+        "B": "risk_signal",
+        "rows": 5
+      },
+      {
+        "A": "model_consistent",
+        "B": "risk_signal",
+        "rows": 2
+      },
+      {
+        "A": "risk_signal",
+        "B": "abstain",
+        "rows": 1
+      },
+      {
+        "A": "abstain",
+        "B": "abstain",
+        "rows": 1
+      },
+      {
+        "A": "model_consistent",
+        "B": "model_consistent",
+        "rows": 4
+      }
+    ],
+    "B_style_proxy_pair_wins": 11,
+    "B_style_proxy_pair_losses": 10,
+    "source_words_per_sentence_mean": 19.4484126984127,
+    "reference_words_per_sentence_mean": 24.614285714285714,
+    "source_words": 1760,
+    "reference_words": 2131,
+    "source_reference_verifier_status_counts": {
+      "risk_signal": 17,
+      "model_consistent": 4
+    },
+    "conditions": {
+      "A_claims_only": {
+        "v2_verifier_status_counts": {
+          "risk_signal": 9,
+          "model_consistent": 12
+        },
+        "global_nli_status_counts": {
+          "proxy_flagged": 7,
+          "proxy_consistent": 14
+        },
+        "scope_guard_abstentions": 6,
+        "mean_words_per_sentence": 75.10793650793651,
+        "single_sentence_outputs": 8,
+        "style_gain_positive_outputs": 5
+      },
+      "B_claims_soft_plan": {
+        "v2_verifier_status_counts": {
+          "model_consistent": 11,
+          "risk_signal": 10
+        },
+        "global_nli_status_counts": {
+          "proxy_consistent": 12,
+          "proxy_flagged": 9
+        },
+        "scope_guard_abstentions": 2,
+        "mean_words_per_sentence": 81.69444444444444,
+        "single_sentence_outputs": 11,
+        "style_gain_positive_outputs": 4
+      }
+    }
+  }
+}

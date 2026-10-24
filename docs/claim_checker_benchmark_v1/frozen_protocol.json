@@ -1,0 +1,23 @@
+{
+  "protocol": "claim_checker_benchmark_v1",
+  "checker_files": {
+    "src/fama_style/research/claim_audit.py": "15a77b54720d04acae3b6a39f846a3969023883c3081f658481c396f4539e2a9",
+    "src/fama_style/research/claims.py": "46c52280a1930c779493bf690529c08647e29623579167e10ad0c0eb67735229"
+  },
+  "classification": {
+    "events": "risk_signal",
+    "surface_replay_only_without_events": "surface_accept",
+    "otherwise": "abstain"
+  },
+  "readiness_gate": {
+    "minimum_error_detection_rate": 0.8,
+    "maximum_faithful_false_alarm_rate": 0.1,
+    "minimum_faithful_surface_accept_rate": 0.5,
+    "minimum_nontrivial_faithful_surface_accept_rate": 0.5
+  },
+  "provenance": "Author-written synthetic controls; held-out scenarios use different wording/actors/values. Not blind, independently annotated or a domain benchmark. Frozen checker, no rule tuning in this evaluation.",
+  "fixture_files": {
+    "development.json": "26eb293f5af1b6c28fc9851564aa79383eb1b999e0e2d1a6361ed0b61bd9c49c",
+    "held_out.json": "73c5020428e611d9d4539cf56059771f2cf2d1fdd8689bd06b6b6f852a14e9b0"
+  }
+}

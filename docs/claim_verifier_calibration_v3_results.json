@@ -1,0 +1,342 @@
+{
+  "protocol": "claim_verifier_calibration_v3",
+  "execution_kind": "pinned_nli_inference",
+  "training_called": false,
+  "gemma_generation_called": false,
+  "private_dataset_rows_used": 0,
+  "splits": {
+    "development": {
+      "rows": 120,
+      "faithful_rows": 80,
+      "changed_rows": 40,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.025,
+      "nontrivial_faithful_acceptance_rate": 0.95,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 78,
+        "risk_signal": 42
+      }
+    },
+    "held_out": {
+      "rows": 48,
+      "faithful_rows": 32,
+      "changed_rows": 16,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0625,
+      "nontrivial_faithful_acceptance_rate": 0.875,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 30,
+        "risk_signal": 18
+      }
+    }
+  },
+  "held_out_by_category": {
+    "actor_assignment": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "association_reverse_cause": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "association_to_cause": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "attribution": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "bound_scope": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "causal_evidence_scope": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "condition": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "decimal_endpoint": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "exception": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "explicit_causal_evidence": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "modality": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "negation": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "negative_endpoint": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "quantifier": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.5,
+      "nontrivial_faithful_acceptance_rate": 0.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 1,
+        "risk_signal": 2
+      }
+    },
+    "quantity_assignment": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "nontrivial_faithful_acceptance_rate": 1.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 2,
+        "risk_signal": 1
+      }
+    },
+    "upper_endpoint": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.5,
+      "nontrivial_faithful_acceptance_rate": 0.0,
+      "changed_false_acceptance_rate": 0.0,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 1,
+        "risk_signal": 2
+      }
+    }
+  },
+  "elapsed_seconds": 12.929286764999915,
+  "semantic_proof": false,
+  "limitations": "Authored synthetic controls, not blinded or independently annotated domain accuracy. All previously exposed v1/v2 examples are development-only; only fresh v3 cases are held out.",
+  "readiness_gate": {
+    "passed": true,
+    "checks": {
+      "error_detection": true,
+      "faithful_false_alarms": true,
+      "paraphrase_acceptance": true,
+      "changed_false_acceptance": true
+    }
+  },
+  "baseline_global_sentence_nli": {
+    "development": {
+      "rows": 120,
+      "faithful_rows": 80,
+      "changed_rows": 40,
+      "error_detection_rate": 0.95,
+      "faithful_false_alarm_rate": 0.025,
+      "nontrivial_faithful_acceptance_rate": 0.95,
+      "changed_false_acceptance_rate": 0.05,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 80,
+        "risk_signal": 40
+      }
+    },
+    "held_out": {
+      "rows": 48,
+      "faithful_rows": 32,
+      "changed_rows": 16,
+      "error_detection_rate": 0.8125,
+      "faithful_false_alarm_rate": 0.0625,
+      "nontrivial_faithful_acceptance_rate": 0.875,
+      "changed_false_acceptance_rate": 0.1875,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 33,
+        "risk_signal": 15
+      }
+    }
+  },
+  "held_out_baseline_passes_overridden": 3,
+  "baseline_v2_claim_verifier": {
+    "development": {
+      "rows": 120,
+      "faithful_rows": 80,
+      "changed_rows": 40,
+      "error_detection_rate": 0.95,
+      "faithful_false_alarm_rate": 0.025,
+      "nontrivial_faithful_acceptance_rate": 0.95,
+      "changed_false_acceptance_rate": 0.05,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 80,
+        "risk_signal": 40
+      }
+    },
+    "held_out": {
+      "rows": 48,
+      "faithful_rows": 32,
+      "changed_rows": 16,
+      "error_detection_rate": 0.8125,
+      "faithful_false_alarm_rate": 0.0625,
+      "nontrivial_faithful_acceptance_rate": 0.875,
+      "changed_false_acceptance_rate": 0.1875,
+      "abstention_rate": 0.0,
+      "status_counts": {
+        "model_consistent": 33,
+        "risk_signal": 15
+      }
+    }
+  },
+  "held_out_v2_passes_overridden": 3,
+  "held_out_v2_passes_abstained": 0,
+  "kaggle_run": {
+    "notebook": "oliverlds/verifier_calibration_v3",
+    "version": 1
+  }
+}

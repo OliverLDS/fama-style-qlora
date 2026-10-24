@@ -1,0 +1,35 @@
+{
+  "protocol": "claim_verifier_calibration_v2",
+  "code_files": {
+    "src/fama_style/research/claim_verifier.py": "723f046b4b3424f828d5db52ea4a778d5b81617053c1be480fa38603f87d8717",
+    "src/fama_style/research/claim_audit.py": "15a77b54720d04acae3b6a39f846a3969023883c3081f658481c396f4539e2a9",
+    "src/fama_style/research/claims.py": "46c52280a1930c779493bf690529c08647e29623579167e10ad0c0eb67735229",
+    "src/fama_style/rhetoric/semantics.py": "256913e4f33978d2c4dbaa9d2a9bebfbe430a17ce0fa61f719e54772a1a94578"
+  },
+  "fixture_files": {
+    "development.json": "df2c252fc2ce86cf293e9dc9bf5263d9d770e8e58c459800763d15596b1097a4",
+    "held_out.json": "553ba7feb26187fd68c1f5d2082cb282b3fe521ca9ba5248146395a1e493fb9a"
+  },
+  "expected_counts": {
+    "development": 72,
+    "held_out": 48
+  },
+  "readiness_gate": {
+    "minimum_error_detection_rate": 0.8,
+    "maximum_faithful_false_alarm_rate": 0.1,
+    "minimum_nontrivial_faithful_acceptance_rate": 0.5,
+    "maximum_changed_false_acceptance_rate": 0.0
+  },
+  "provenance": "All v1 fixtures are now development-only. Fresh authored v2 held-out scenarios created after freezing verifier code; no tuning on their results. Not blinded, externally annotated or economic-domain accuracy. No reserved paper test data.",
+  "nli": {
+    "model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+    "entailment_minimum": 0.8,
+    "contradiction_maximum": 0.1,
+    "dtype": "float32",
+    "truncation": false,
+    "max_input_tokens": 512,
+    "max_claim_units": 12,
+    "max_prediction_pairs_per_case": 256
+  }
+}

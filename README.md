@@ -54,6 +54,10 @@ was performed for this extension.
 | Count-only versus sentence slots | Slots partly controlled counts; formatting and claim drift remained | Same four training pairs |
 | Claim constraints × paragraph/slots | Paragraph NLI proxy passes rose from 1/4 to 4/4; constrained slots matched counts on 4/4 but passed the joint count/format/NLI proxy on only 2/4 | 16 generations, four training pairs |
 | Saved-output claim audit | Flags bound, qualification and possible-addition risks, including warnings in four NLI-passing outputs | Same 16 saved generations; no new model calls |
+| Frozen claim-checker benchmark | Detected 5/12 held-out mutations; accepted 0/12 nontrivial faithful paraphrases; readiness gate failed | 72 synthetic controls, 36 per split; CPU only |
+| Scoped v3 verifier calibration | Detected 16/16 changed outputs; accepted 14/16 faithful paraphrases; falsely flagged 2/32 faithful outputs; synthetic gate passed | 48 fresh targeted synthetic cases; not domain accuracy |
+| Soft rhetorical guidance | No clear overall gain: fewer scope abstentions, worse mean style proxy and more sentence inflation | 42 generations on 21 previously used development examples |
+| Ledger/grouping ablation | Exact control replication; sentence-only/no-grouping gave the cleanest style proxy, but semantic screening remained unresolved | Eight generations on two exposed failures |
 
 These small diagnostics do not establish generalization, author-style quality or
 semantic accuracy. Rule warnings can be valid paraphrases; no warnings is not a
@@ -71,8 +75,16 @@ and [saved-output claim audit](docs/CLAIM_LEVEL_AUDIT_V1.md). Earlier stages:
 Preparation documents preserve their pre-execution status statements; the linked
 results reports record the completed runs.
 
-The next research priority is independent validation of claim-verification rules,
-followed by semantic-first inference with soft structural guidance. Further QLoRA
+The [frozen rule-checker benchmark](docs/claim_checker_benchmark_v1/RESULTS.md)
+failed, while the revised [scoped NLI verifier](docs/CLAIM_VERIFIER_CALIBRATION_V3_RESULTS.md)
+passed its targeted synthetic gate. The completed
+[soft-guidance comparison](docs/SOFT_GUIDANCE_VALIDATION_V1_RESULTS.md) did not
+establish an overall gain. The completed [ledger/grouping ablation](docs/LEDGER_GROUPING_ABLATION_V1_RESULTS.md)
+supports a simpler baseline. The completed [source-sentence-preserving edit test](docs/SENTENCE_PRESERVING_EDIT_V1_RESULTS.md)
+improved sentence-length control but did not establish faithful style improvement.
+The [graded style/drift reassessment](docs/STYLE_DRIFT_TRADEOFF_V1_RESULTS.md)
+now permits minor drift and retains verifier warnings for comparison rather than
+automatically excluding outputs. Further QLoRA
 or structural-mapper training is deferred. Public files contain code, schemas,
 synthetic examples and aggregate reports; annotation responses, full paragraphs,
 raw generations and model artifacts remain private.

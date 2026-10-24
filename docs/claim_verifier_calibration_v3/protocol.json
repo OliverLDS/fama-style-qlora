@@ -1,0 +1,35 @@
+{
+  "protocol": "claim_verifier_calibration_v3",
+  "code_files": {
+    "src/fama_style/research/claim_verifier_v3.py": "66345673dc1bc92b7c98773eee4900576ea76877f0e6576cbdd0e7e426949ae4",
+    "src/fama_style/research/relation_guards.py": "d693a12ae4d306116a3f229354cac9f87a282c908af2a8693cdcaa948c1e8691",
+    "src/fama_style/research/claim_verifier.py": "723f046b4b3424f828d5db52ea4a778d5b81617053c1be480fa38603f87d8717",
+    "src/fama_style/research/claim_audit.py": "15a77b54720d04acae3b6a39f846a3969023883c3081f658481c396f4539e2a9",
+    "src/fama_style/research/claims.py": "46c52280a1930c779493bf690529c08647e29623579167e10ad0c0eb67735229",
+    "src/fama_style/rhetoric/semantics.py": "256913e4f33978d2c4dbaa9d2a9bebfbe430a17ce0fa61f719e54772a1a94578"
+  },
+  "fixture_files": {
+    "development.json": "7d51ec62eee725b1cd20914fcc34caf6418d8b115e43cc3c95b4828cbf5688a4",
+    "held_out.json": "9efd80277d5f2061597ebfc58ce5f33cdfefecafe483fa226573bdaad9979c35"
+  },
+  "expected_counts": {
+    "development": 120,
+    "held_out": 48
+  },
+  "readiness_gate": {
+    "minimum_error_detection_rate": 0.8,
+    "maximum_faithful_false_alarm_rate": 0.1,
+    "minimum_nontrivial_faithful_acceptance_rate": 0.5,
+    "maximum_changed_false_acceptance_rate": 0.0
+  },
+  "provenance": "All previously exposed v2 examples are development-only. Final v3 controls authored after the final code freeze; earlier unexecuted candidate fixtures archived locally. Known grammar, no model-result tuning. Targeted authored synthetic challenge, not blinded, independent annotation or economic-domain accuracy.",
+  "nli": {
+    "model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+    "entailment_minimum": 0.8,
+    "contradiction_maximum": 0.1,
+    "dtype": "float32",
+    "max_input_tokens": 512,
+    "truncation": false
+  }
+}

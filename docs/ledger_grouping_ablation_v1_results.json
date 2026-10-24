@@ -1,0 +1,128 @@
+{
+  "protocol": "ledger_grouping_ablation_v1",
+  "execution_kind": "model_inference",
+  "conditions": {
+    "A_sentence_only": {
+      "rows": 2,
+      "artifact_warning_outputs": 0,
+      "single_sentence_outputs": 1,
+      "mean_words_per_sentence": 64.33333333333333,
+      "mean_style_gain_proxy": -0.3090204545826121,
+      "mean_source_similarity": 0.4050599700149925,
+      "near_copies": 0,
+      "valid_formats": 2,
+      "verifier_status_counts": {
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "rich_control_hash_matches": null,
+      "input_tokens": 1026,
+      "output_tokens": 392,
+      "generation_seconds": 32.607823316000065
+    },
+    "B_sentence_grouping": {
+      "rows": 2,
+      "artifact_warning_outputs": 0,
+      "single_sentence_outputs": 2,
+      "mean_words_per_sentence": 143.0,
+      "mean_style_gain_proxy": -3.9633882496088715,
+      "mean_source_similarity": 0.5484137475214805,
+      "near_copies": 0,
+      "valid_formats": 2,
+      "verifier_status_counts": {
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "rich_control_hash_matches": null,
+      "input_tokens": 1414,
+      "output_tokens": 366,
+      "generation_seconds": 30.669040077999966
+    },
+    "C_cue_rich": {
+      "rows": 2,
+      "artifact_warning_outputs": 0,
+      "single_sentence_outputs": 2,
+      "mean_words_per_sentence": 156.5,
+      "mean_style_gain_proxy": -3.146282367180433,
+      "mean_source_similarity": 0.47130795382373813,
+      "near_copies": 0,
+      "valid_formats": 2,
+      "verifier_status_counts": {
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "rich_control_hash_matches": 2,
+      "input_tokens": 1277,
+      "output_tokens": 390,
+      "generation_seconds": 32.672700334999945
+    },
+    "D_cue_rich_grouping": {
+      "rows": 2,
+      "artifact_warning_outputs": 1,
+      "single_sentence_outputs": 2,
+      "mean_words_per_sentence": 150.0,
+      "mean_style_gain_proxy": -4.457148150314207,
+      "mean_source_similarity": 0.5071648403348166,
+      "near_copies": 0,
+      "valid_formats": 2,
+      "verifier_status_counts": {
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "rich_control_hash_matches": 2,
+      "input_tokens": 1665,
+      "output_tokens": 397,
+      "generation_seconds": 34.00709917400002
+    }
+  },
+  "runtime_canary_passed": true,
+  "training_called": false,
+  "reserved_test_rows_used": 0,
+  "development_validation_rows_used": 2,
+  "training_ready": false,
+  "selection_post_hoc": true,
+  "semantic_accuracy": null,
+  "author_style_accuracy": null,
+  "limitations": "Two already-observed failures, eight first attempts; causal prompt-factor diagnostic, not held-out performance. Artifact markers, NLI and style metrics are imperfect proxies. No repairs or sentence quotas.",
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "nli_revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+  "canary_seconds": 19.18804553800004,
+  "verifier_seconds": 13.951994953999929,
+  "total_seconds": 253.85261722299998,
+  "nli_cache_entries": 1002,
+  "nli_cache_hits": 19,
+  "gemma_memory": {
+    "peak_allocated_bytes": 5147235840,
+    "peak_reserved_bytes": 5230297088
+  },
+  "nli_memory": {
+    "peak_allocated_bytes": 841393664,
+    "peak_reserved_bytes": 878706688
+  },
+  "generation": {
+    "model_id": "google/gemma-3-4b-it",
+    "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "max_new_tokens": 768,
+    "context_limit": 4096,
+    "do_sample": false,
+    "seed": 42,
+    "truncate": false
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.20.1",
+    "accelerate": "1.14.0",
+    "bitsandbytes": "0.50.2",
+    "huggingface-hub": "1.33.0"
+  },
+  "kaggle_run": {
+    "notebook": "oliverlds/ledger_grouping_ablation",
+    "version": 1
+  }
+}

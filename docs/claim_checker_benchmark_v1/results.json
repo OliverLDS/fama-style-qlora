@@ -1,0 +1,342 @@
+{
+  "protocol": "claim_checker_benchmark_v1",
+  "execution_kind": "synthetic_checker_evaluation",
+  "model_calls": 0,
+  "gpu_jobs_submitted": 0,
+  "reserved_paper_test_rows_used": 0,
+  "rules_tuned_on_benchmark": false,
+  "checker_files": {
+    "src/fama_style/research/claim_audit.py": "15a77b54720d04acae3b6a39f846a3969023883c3081f658481c396f4539e2a9",
+    "src/fama_style/research/claims.py": "46c52280a1930c779493bf690529c08647e29623579167e10ad0c0eb67735229"
+  },
+  "splits": {
+    "development": {
+      "rows": 36,
+      "faithful_rows": 24,
+      "changed_rows": 12,
+      "prediction_counts": {
+        "surface_accept": 12,
+        "abstain": 17,
+        "risk_signal": 7
+      },
+      "error_detection_rate": 0.4166666666666667,
+      "faithful_false_alarm_rate": 0.08333333333333333,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.4722222222222222,
+      "changed_abstention_rate": 0.5833333333333334,
+      "faithful_abstention_rate": 0.4166666666666667,
+      "nontrivial_faithful_false_alarm_rate": 0.16666666666666666
+    },
+    "held_out": {
+      "rows": 36,
+      "faithful_rows": 24,
+      "changed_rows": 12,
+      "prediction_counts": {
+        "surface_accept": 12,
+        "abstain": 17,
+        "risk_signal": 7
+      },
+      "error_detection_rate": 0.4166666666666667,
+      "faithful_false_alarm_rate": 0.08333333333333333,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.4722222222222222,
+      "changed_abstention_rate": 0.5833333333333334,
+      "faithful_abstention_rate": 0.4166666666666667,
+      "nontrivial_faithful_false_alarm_rate": 0.16666666666666666
+    }
+  },
+  "held_out_by_category": {
+    "actor_assignment": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "added_assertion": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "bound_direction": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.3333333333333333,
+      "changed_abstention_rate": 0.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "causal_direction": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "condition": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "exception": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "frequency_qualification": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "risk_signal": 2
+      },
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.5,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.0,
+      "changed_abstention_rate": 0.0,
+      "faithful_abstention_rate": 0.0,
+      "nontrivial_faithful_false_alarm_rate": 1.0
+    },
+    "modality": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.3333333333333333,
+      "changed_abstention_rate": 0.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "negation": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "numeric_value": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.3333333333333333,
+      "changed_abstention_rate": 0.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    },
+    "quantifier": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "risk_signal": 2
+      },
+      "error_detection_rate": 1.0,
+      "faithful_false_alarm_rate": 0.5,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.0,
+      "changed_abstention_rate": 0.0,
+      "faithful_abstention_rate": 0.0,
+      "nontrivial_faithful_false_alarm_rate": 1.0
+    },
+    "quantity_assignment": {
+      "rows": 3,
+      "faithful_rows": 2,
+      "changed_rows": 1,
+      "prediction_counts": {
+        "surface_accept": 1,
+        "abstain": 2
+      },
+      "error_detection_rate": 0.0,
+      "faithful_false_alarm_rate": 0.0,
+      "faithful_surface_accept_rate": 0.5,
+      "nontrivial_faithful_surface_accept_rate": 0.0,
+      "changed_surface_accept_rate": 0.0,
+      "abstention_rate": 0.6666666666666666,
+      "changed_abstention_rate": 1.0,
+      "faithful_abstention_rate": 0.5,
+      "nontrivial_faithful_false_alarm_rate": 0.0
+    }
+  },
+  "provenance": "Author-written synthetic controls; held-out scenarios use different wording/actors/values. Not blind, independently annotated or a domain benchmark. Frozen checker, no rule tuning in this evaluation.",
+  "limitations": "Small authored synthetic controls; not blinded, independent annotator labels or economics-domain accuracy. Surface acceptance is not semantic proof. Held-out scenarios have different wording but shared categories.",
+  "readiness_gate": {
+    "passed": false,
+    "checks": {
+      "error_detection": false,
+      "faithful_false_alarms": true,
+      "faithful_acceptance": true,
+      "nontrivial_acceptance": false
+    }
+  },
+  "degenerate_controls": {
+    "reject_everything": {
+      "metrics": {
+        "rows": 36,
+        "faithful_rows": 24,
+        "changed_rows": 12,
+        "prediction_counts": {
+          "risk_signal": 36
+        },
+        "error_detection_rate": 1.0,
+        "faithful_false_alarm_rate": 1.0,
+        "faithful_surface_accept_rate": 0.0,
+        "nontrivial_faithful_surface_accept_rate": 0.0,
+        "changed_surface_accept_rate": 0.0,
+        "abstention_rate": 0.0,
+        "changed_abstention_rate": 0.0,
+        "faithful_abstention_rate": 0.0,
+        "nontrivial_faithful_false_alarm_rate": 1.0
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "error_detection": true,
+          "faithful_false_alarms": false,
+          "faithful_acceptance": false,
+          "nontrivial_acceptance": false
+        }
+      }
+    },
+    "abstain_everything": {
+      "metrics": {
+        "rows": 36,
+        "faithful_rows": 24,
+        "changed_rows": 12,
+        "prediction_counts": {
+          "abstain": 36
+        },
+        "error_detection_rate": 0.0,
+        "faithful_false_alarm_rate": 0.0,
+        "faithful_surface_accept_rate": 0.0,
+        "nontrivial_faithful_surface_accept_rate": 0.0,
+        "changed_surface_accept_rate": 0.0,
+        "abstention_rate": 1.0,
+        "changed_abstention_rate": 1.0,
+        "faithful_abstention_rate": 1.0,
+        "nontrivial_faithful_false_alarm_rate": 0.0
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "error_detection": false,
+          "faithful_false_alarms": true,
+          "faithful_acceptance": false,
+          "nontrivial_acceptance": false
+        }
+      }
+    }
+  }
+}

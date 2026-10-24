@@ -1,0 +1,140 @@
+{
+  "protocol": "sentence_preserving_edit_v1",
+  "execution_kind": "model_inference",
+  "variants": {
+    "A_baseline": {
+      "rows": 2,
+      "available_paragraphs": 2,
+      "valid_formats": 2,
+      "verifier_status_counts": {
+        "abstain": 1,
+        "risk_signal": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "joint_proxy_successes": 0,
+      "near_copies_available_only": 0,
+      "exact_copies_available_only": 0,
+      "token_normalized_copies_available_only": 0,
+      "mean_style_gain_proxy_available_only": -0.3090204545826121,
+      "mean_words_per_sentence_available_only": 64.33333333333333,
+      "source_sentence_count_matches": 0,
+      "baseline_hash_matches": 2
+    },
+    "B_proposed": {
+      "rows": 2,
+      "available_paragraphs": 1,
+      "valid_formats": 1,
+      "verifier_status_counts": {
+        "risk_signal": 1,
+        "invalid_script": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "joint_proxy_successes": 0,
+      "near_copies_available_only": 0,
+      "exact_copies_available_only": 0,
+      "token_normalized_copies_available_only": 0,
+      "mean_style_gain_proxy_available_only": 0.23114231797569107,
+      "mean_words_per_sentence_available_only": 26.142857142857142,
+      "source_sentence_count_matches": 1,
+      "baseline_hash_matches": null
+    },
+    "B_guarded": {
+      "rows": 2,
+      "available_paragraphs": 1,
+      "valid_formats": 1,
+      "verifier_status_counts": {
+        "risk_signal": 1,
+        "invalid_script": 1
+      },
+      "valid_semantic_proxy_passes": 0,
+      "joint_proxy_successes": 0,
+      "near_copies_available_only": 0,
+      "exact_copies_available_only": 0,
+      "token_normalized_copies_available_only": 0,
+      "mean_style_gain_proxy_available_only": 0.22396064298684426,
+      "mean_words_per_sentence_available_only": 26.0,
+      "source_sentence_count_matches": 1,
+      "baseline_hash_matches": null
+    }
+  },
+  "generated_jobs": 4,
+  "evaluated_variants": 3,
+  "generation_cost": {
+    "A_baseline": {
+      "jobs": 2,
+      "input_tokens": 1026,
+      "output_tokens": 392,
+      "generation_seconds": 32.57678786199995
+    },
+    "B_edit_script": {
+      "jobs": 2,
+      "input_tokens": 1444,
+      "output_tokens": 597,
+      "generation_seconds": 47.784242815000084
+    }
+  },
+  "runtime_canary_passed": true,
+  "training_called": false,
+  "reserved_test_rows_used": 0,
+  "development_validation_rows_used": 2,
+  "training_ready": false,
+  "semantic_accuracy": null,
+  "selection_post_hoc": true,
+  "limitations": "Two exposed cases; four generations. Proposed and guarded text share one script per case and are not independent generations. Rejected/unknown edits retain source text; copying is a material tradeoff. Sentence structure is constrained by application, not evidence of learned style. Unit consistency does not certify paragraph meaning.",
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "nli_revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+  "canary_seconds": 20.078956118999997,
+  "verifier_seconds": 16.154059584000038,
+  "total_seconds": 211.15976514699992,
+  "nli_cache_entries": 1147,
+  "nli_cache_hits": 194,
+  "gemma_memory": {
+    "peak_allocated_bytes": 5081561088,
+    "peak_reserved_bytes": 5230297088
+  },
+  "nli_memory": {
+    "peak_allocated_bytes": 840850432,
+    "peak_reserved_bytes": 878706688
+  },
+  "generation": {
+    "model_id": "google/gemma-3-4b-it",
+    "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "max_new_tokens": 768,
+    "context_limit": 4096,
+    "do_sample": false,
+    "seed": 42,
+    "truncate": false
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.20.1",
+    "accelerate": "1.14.0",
+    "bitsandbytes": "0.50.2",
+    "huggingface-hub": "1.33.0"
+  },
+  "script_contract_aggregate": {
+    "raw_scripts": 2,
+    "structurally_valid_after_allowed_fence_removal": 1,
+    "invalid_scripts": 1,
+    "valid_script_edits": {
+      "proposed_nontrivial_edits": 7,
+      "accepted_nontrivial_edits": 6,
+      "rejected_risk_edits": 0,
+      "abstained_edits": 1,
+      "noop_edits": 0
+    }
+  },
+  "kaggle_run": {
+    "notebook": "oliverlds/sentence_preserving_edit",
+    "version": 1
+  },
+  "posthoc_format_diagnostic": {
+    "primary_invalid_status_unchanged": true,
+    "structural_quote_delimiters_corrected": 4,
+    "replacement_prose_unchanged": true,
+    "recovered_script_structurally_valid": true,
+    "recovered_script_semantics_evaluated": false
+  }
+}

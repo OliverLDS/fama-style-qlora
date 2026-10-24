@@ -1,0 +1,25 @@
+{
+  "protocol": "style_drift_tradeoff_v1",
+  "objective": "Prefer substantial reference-style improvement while permitting explicitly described minor semantic drift; retain warnings instead of a binary NLI veto.",
+  "drift_rubric": {
+    "none_detected": "No substantive change identified by the assessor; not proof of equivalence.",
+    "minor": "Limited loss of detail, emphasis or nuance with the main propositions, actors, quantities and direction intact.",
+    "moderate": "A supporting proposition, qualification or scope changes materially, while the central conclusion remains recognizable.",
+    "high": "A central proposition, actor/role, quantity, causal direction, essential condition or conclusion changes.",
+    "unknown": "Evidence is insufficient to assign severity. Never relabel low entailment or abstention as minor drift."
+  },
+  "style_rubric": {
+    "none": "No identifiable movement toward the paired author's reference style.",
+    "slight": "Small movement toward reference rhetoric/expression, or mostly generic formalization.",
+    "moderate": "Several concrete reference-style features improve without being explained solely by a longer sentence.",
+    "large": "Clear, sustained reference-grounded transformation across paragraph, sentence and language features.",
+    "unknown": "No qualitative style assessment available."
+  },
+  "qualitative_style_values": {"none": 0.0, "slight": 0.2, "moderate": 0.6, "large": 1.0},
+  "qualitative_drift_values": {"none_detected": 0.0, "minor": 0.15, "moderate": 0.5, "high": 1.0},
+  "cost_weights": {"style_only_sensitivity": 0.0, "style_first": 0.1, "bounded_drift_default": 0.25, "preservation_weighted": 0.5},
+  "minimum_style_for_substantial_candidate": "moderate",
+  "proxy_pressure_weights": {"omission": 0.4, "addition": 0.4, "contradiction": 0.2},
+  "typed_high_cost_risk_floor": 0.85,
+  "limitations": "Weights and qualitative rubrics are exploratory policy choices, not validated severity probabilities or an authorship classifier. Original frozen experiment scores are unchanged."
+}
