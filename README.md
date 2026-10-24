@@ -84,7 +84,9 @@ supports a simpler baseline. The completed [source-sentence-preserving edit test
 improved sentence-length control but did not establish faithful style improvement.
 The [graded style/drift reassessment](docs/STYLE_DRIFT_TRADEOFF_V1_RESULTS.md)
 now permits minor drift and retains verifier warnings for comparison rather than
-automatically excluding outputs. Further QLoRA
+automatically excluding outputs. A [24-candidate inference comparison](docs/STYLE_TRADEOFF_CANDIDATES.md)
+is prepared under the relaxed objective; GPU execution and qualitative assessment
+have not run. Further QLoRA
 or structural-mapper training is deferred. Public files contain code, schemas,
 synthetic examples and aggregate reports; annotation responses, full paragraphs,
 raw generations and model artifacts remain private.
