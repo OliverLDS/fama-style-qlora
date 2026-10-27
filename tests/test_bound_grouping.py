@@ -117,7 +117,8 @@ class BoundGroupingTests(unittest.TestCase):
             packpath=e.ROOT/'research_runs/bound_grouping_realization_v1/input_pack/bound_grouping_pack.json'
             if packpath.exists():
                 commands+=''.join(book['cells'][4]['source']).replace('list(Path("/kaggle/input").rglob("bound_grouping_pack.json"))',repr([str(packpath)])).replace('/kaggle/working/bound_grouping_preflight',folder+'/preflight')
-            result=subprocess.run([sys.executable,'-c',commands],capture_output=True,text=True)
+            # Embedded runtimes can exceed Linux's per-argument size limit.
+            result=subprocess.run([sys.executable,'-'],input=commands,capture_output=True,text=True)
             self.assertEqual(result.returncode,0,result.stderr)
             self.assertTrue((Path(folder)/'dry/synthetic_evaluation.json').exists())
 

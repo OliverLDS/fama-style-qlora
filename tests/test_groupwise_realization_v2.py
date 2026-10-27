@@ -165,7 +165,8 @@ class GroupwiseV2Tests(unittest.TestCase):
             packpath=e.ROOT/'research_runs/groupwise_realization_v2/input_pack/groupwise_pack.json'
             if packpath.exists():
                 code+=''.join(book['cells'][4]['source']).replace('list(Path("/kaggle/input").rglob("groupwise_pack.json"))',repr([str(packpath)])).replace('/kaggle/working/groupwise_v2_preflight',folder+'/preflight')
-            run=subprocess.run([sys.executable,'-c',code],capture_output=True,text=True)
+            # Stream the unchanged program; do not put the runtime in argv.
+            run=subprocess.run([sys.executable,'-'],input=code,capture_output=True,text=True)
             self.assertEqual(run.returncode,0,run.stderr)
             self.assertTrue((Path(folder)/'dry/synthetic_evaluation.json').exists())
 
