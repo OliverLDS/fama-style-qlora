@@ -1,0 +1,192 @@
+{
+  "protocol": "name_free_style_ablation_v1",
+  "notebook": "oliverlds/name-free-style",
+  "owner_reported_version": 1,
+  "assessment_status": "all_24_read_and_assessed",
+  "historical_exact_control_matches": 12,
+  "new_distinct_control_evidence": false,
+  "conditions": {
+    "A_author_name": {
+      "candidates": 12,
+      "style_grades": {
+        "slight": 12
+      },
+      "drift_grades": {
+        "high": 8,
+        "minor": 2,
+        "moderate": 2
+      },
+      "substantial_style_candidates": 0,
+      "positive_style_proxy": 12,
+      "mean_style_benefit_proxy": 0.11995295914114602,
+      "mean_words": 123.75,
+      "mean_words_per_sentence": 32.81527777777778,
+      "mean_source_similarity": 0.31668707091603304,
+      "mean_reference_similarity_diagnostic_only": 0.21853574859230604,
+      "exact_copies": 0,
+      "near_copies": 0,
+      "valid_formats": 12,
+      "verifier_status_counts": {
+        "risk_signal": 11,
+        "model_consistent": 1
+      },
+      "mean_semantic_warning_pressure": 0.6477113375129799,
+      "mean_qualitative_utility_by_weight": {
+        "style_only_sensitivity": 0.2,
+        "style_first": 0.12250000000000001,
+        "bounded_drift_default": 0.00625000000000001,
+        "preservation_weighted": -0.1875
+      }
+    },
+    "B_concrete_style": {
+      "candidates": 12,
+      "style_grades": {
+        "slight": 12
+      },
+      "drift_grades": {
+        "high": 6,
+        "moderate": 6
+      },
+      "substantial_style_candidates": 0,
+      "positive_style_proxy": 12,
+      "mean_style_benefit_proxy": 0.11794777874819008,
+      "mean_words": 102.66666666666667,
+      "mean_words_per_sentence": 23.719444444444445,
+      "mean_source_similarity": 0.33732209401390273,
+      "mean_reference_similarity_diagnostic_only": 0.21428380286373508,
+      "exact_copies": 0,
+      "near_copies": 0,
+      "valid_formats": 12,
+      "verifier_status_counts": {
+        "risk_signal": 12
+      },
+      "mean_semantic_warning_pressure": 0.7795736834950124,
+      "mean_qualitative_utility_by_weight": {
+        "style_only_sensitivity": 0.2,
+        "style_first": 0.125,
+        "bounded_drift_default": 0.012500000000000011,
+        "preservation_weighted": -0.175
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": 1,
+      "source_words_per_sentence": 17.333333333333332,
+      "reference_words_per_sentence": 23.0,
+      "source_reference_similarity_diagnostic_only": 0.4462809917355372,
+      "by_condition": {
+        "A_author_name": {
+          "mean_words": 95,
+          "mean_style_benefit_proxy": 0.15656821646414676,
+          "drift_grades": {
+            "high": 3
+          }
+        },
+        "B_concrete_style": {
+          "mean_words": 72.66666666666667,
+          "mean_style_benefit_proxy": 0.15060841415299284,
+          "drift_grades": {
+            "high": 3
+          }
+        }
+      }
+    },
+    {
+      "case": 2,
+      "source_words_per_sentence": 15.75,
+      "reference_words_per_sentence": 18.4,
+      "source_reference_similarity_diagnostic_only": 0.45161290322580644,
+      "by_condition": {
+        "A_author_name": {
+          "mean_words": 91.33333333333333,
+          "mean_style_benefit_proxy": 0.16445093357664697,
+          "drift_grades": {
+            "high": 1,
+            "minor": 2
+          }
+        },
+        "B_concrete_style": {
+          "mean_words": 90,
+          "mean_style_benefit_proxy": 0.15135472487400692,
+          "drift_grades": {
+            "moderate": 2,
+            "high": 1
+          }
+        }
+      }
+    },
+    {
+      "case": 3,
+      "source_words_per_sentence": 17.2,
+      "reference_words_per_sentence": 25.5,
+      "source_reference_similarity_diagnostic_only": 0.574468085106383,
+      "by_condition": {
+        "A_author_name": {
+          "mean_words": 137,
+          "mean_style_benefit_proxy": 0.08081376734552437,
+          "drift_grades": {
+            "high": 2,
+            "moderate": 1
+          }
+        },
+        "B_concrete_style": {
+          "mean_words": 107.66666666666667,
+          "mean_style_benefit_proxy": 0.08328441303629115,
+          "drift_grades": {
+            "high": 1,
+            "moderate": 2
+          }
+        }
+      }
+    },
+    {
+      "case": 4,
+      "source_words_per_sentence": 20.5,
+      "reference_words_per_sentence": 25.166666666666668,
+      "source_reference_similarity_diagnostic_only": 0.4744525547445255,
+      "by_condition": {
+        "A_author_name": {
+          "mean_words": 171.66666666666666,
+          "mean_style_benefit_proxy": 0.07797891917826598,
+          "drift_grades": {
+            "high": 2,
+            "moderate": 1
+          }
+        },
+        "B_concrete_style": {
+          "mean_words": 140.33333333333334,
+          "mean_style_benefit_proxy": 0.08654356292946945,
+          "drift_grades": {
+            "moderate": 2,
+            "high": 1
+          }
+        }
+      }
+    }
+  ],
+  "source_mean_words": 81,
+  "reference_mean_words": 103.5,
+  "source_mean_words_per_sentence": 17.695833333333333,
+  "reference_mean_words_per_sentence": 23.016666666666666,
+  "elapsed_seconds": 431.611430385,
+  "generation_peak_allocated_bytes": 4862754304,
+  "assessment_provenance": {
+    "assessor": "Codex assistant in this development session",
+    "date": "2026-10-24",
+    "selection": "All 24 outputs read; 12 exact-text historical assessments retained with verified source/reference/output hashes, 12 new outputs assessed.",
+    "method": "Read source, reference and hash-ordered labels; condition/seed labels were not displayed with text, but earlier outputs were recognizable and aggregate results were already visible. Not independently blinded.",
+    "limitations": "Same assistant designed the experiment and assesses outputs; ordinal judgments are exploratory. Repeated controls are not new independent evidence."
+  },
+  "new_model_calls_during_review": 0,
+  "new_gpu_jobs_submitted": 0,
+  "training_called": false,
+  "reserved_test_rows_read": 0,
+  "limitations": [
+    "Four reused development examples with post-hoc instruction design; not a fresh validation study.",
+    "Style and drift grades are exploratory assistant judgments; unchanged control judgments are reused, not independent replication.",
+    "Style-instruction specificity and author naming change together; no pure naming causal claim.",
+    "Metric replay reuses saved verifier verdicts; no independent NLI re-execution.",
+    "Copying and surface-style proxies are not author-style accuracy; reference similarity is diagnostic only."
+  ]
+}

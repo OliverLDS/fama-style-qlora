@@ -1,0 +1,78 @@
+{
+  "version": "grounded_rhetorical_operations_v1",
+  "status": "reference_grounded_hypotheses_not_author_specificity_validation",
+  "operations": {
+    "separate_premise_inference_qualification": {
+      "paragraph_action": "Present an existing premise, its already-supported inference, and the qualified scope of practical applicability as distinct moves.",
+      "sentence_action": "Separate the premise from its inference; keep each condition attached to the applicability claim it qualifies.",
+      "language_actions": [
+        "retain_modal_strength",
+        "mark_existing_scope_contrast"
+      ],
+      "roles": [
+        "premise",
+        "supported_inference",
+        "conditional_applicability"
+      ]
+    },
+    "separate_criterion_from_definition": {
+      "paragraph_action": "Contrast advance identification with a retrospective criterion, define the criterion, then justify its persistence requirement using the supplied counterexample.",
+      "sentence_action": "Introduce the criterion separately from its definition; group the criterion emphasis with its existing rationale.",
+      "language_actions": [
+        "mark_existing_contrast",
+        "echo_source_criterion_qualifier"
+      ],
+      "roles": [
+        "advance_identification",
+        "criterion_introduction",
+        "criterion_definition",
+        "criterion_rationale"
+      ]
+    },
+    "stage_existing_decisions": {
+      "paragraph_action": "Retain the scope and recommendation, introduce only the source-stated component count, then develop the existing decisions in order.",
+      "sentence_action": "Separate the count announcement from the decisions; distinguish the first decision and coordinate the remaining decisions without adding steps.",
+      "language_actions": [
+        "mark_existing_sequence",
+        "retain_deontic_scope"
+      ],
+      "roles": [
+        "scope",
+        "recommendation",
+        "component_count",
+        "first_decision",
+        "remaining_decisions"
+      ]
+    },
+    "bind_comparison_to_supported_inference": {
+      "paragraph_action": "Distinguish composition from propensity, present the characteristic component, attach the controlled inference to its comparison, and retain period and single-year evidence.",
+      "sentence_action": "Integrate an existing expected/actual comparison with its existing inference, without changing which quantities are expected, actual or differences.",
+      "language_actions": [
+        "mark_existing_comparison",
+        "retain_evidence_strength"
+      ],
+      "roles": [
+        "cohort_and_components",
+        "characteristic_component",
+        "controlled_inference",
+        "period_evidence",
+        "single_year_evidence_and_inference"
+      ]
+    },
+    "retain_parallel_alternatives": {
+      "paragraph_action": "Retain parallel finding/alternative-explanation blocks; do not choose among the alternatives.",
+      "sentence_action": "Keep alternatives paired with their corresponding finding and preserve their hypothetical status.",
+      "language_actions": [
+        "retain_hypothetical_status",
+        "retain_attribution_scope"
+      ],
+      "roles": [
+        "classification_ambiguity",
+        "first_finding",
+        "first_alternatives",
+        "second_finding",
+        "second_alternatives"
+      ]
+    }
+  }
+}

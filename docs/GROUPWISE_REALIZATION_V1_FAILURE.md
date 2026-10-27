@@ -1,0 +1,11 @@
+# Groupwise realization v1: failure diagnosis
+
+The owner-reported [Kaggle version 1](https://www.kaggle.com/code/oliverlds/groupwise-realization) stopped at **generation call 16 of 42**. The response reached its **129-token cap** without an end token. Fifteen preceding calls were nonempty and untruncated. The old status counter shows 15 because it was written before the failed call; the raw file preserves all 16 attempts.
+
+The deeper prompt problem is visible in the preceding outputs: **all 12 completed group calls for the first example generated multiple sentences covering the whole argument**. The group prompt retained the original whole-paragraph rewrite instruction and full passage, then appended a request for one group. The model did not follow that appended scope request. The 16th response similarly attempted the broader dividend argument and was cut off.
+
+The runtime then raised its intentional empty/cutoff guard. It never reached paragraph assembly or NLI evaluation. No `evaluation.json` exists, and no style or semantic quality result is claimed. This is not evidence of an authentication or package-resolution failure: generation had already proceeded. The failed run did not save its final runtime/package report, so no independent completed-runtime identity claim is made.
+
+The 16 recorded prompt hashes, sampling seeds, group indices and token budgets match the prepared prefix exactly. The input pack still passes its frozen-code checks. Original outputs, logs, v1 implementation and notebook are preserved; private verification and artifact hashes are under `research_runs/groupwise_realization_v1/version_1_review/`. [Aggregate failure record](groupwise_realization_v1_failure.json).
+
+[Version 2](GROUPWISE_REALIZATION_V2.md) is prepared separately. It gives group calls only their assigned text, removes the paragraph-output instruction, and continues after recording an empty/cutoff response as a failed sample. Any paragraph depending on such a sample remains unavailable; no partial output is treated as a completed paragraph. Whole-paragraph controls, data, budgets, sampling seeds and the graded semantic tolerance remain unchanged. No rerun was submitted automatically.

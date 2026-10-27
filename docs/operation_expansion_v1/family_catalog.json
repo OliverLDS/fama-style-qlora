@@ -1,0 +1,112 @@
+{
+  "version": "operation_families_v2_candidate_extensions",
+  "families": {
+    "premise_inference_scope": {
+      "seed_operation": "separate_premise_inference_qualification",
+      "description": "Separate an existing premise, an already-supported inference, and its applicability condition or qualification. Do not turn an association into a cause.",
+      "roles": [
+        "premise",
+        "inference",
+        "scope",
+        "qualification",
+        "supporting_detail"
+      ],
+      "required_roles": [
+        "premise",
+        "inference"
+      ],
+      "language_controls": [
+        "retain_modal_strength",
+        "mark_existing_inference",
+        "mark_existing_scope_contrast"
+      ],
+      "cue_patterns": [
+        "\\bif\\b|\\bunless\\b|\\bwhen\\b|\\bprovided\\b",
+        "\\bthus\\b|\\btherefore\\b|\\bhence\\b|\\bsince\\b|\\bbecause\\b|\\bimplies?\\b",
+        "\\bhowever\\b|\\bbut\\b|\\balthough\\b"
+      ],
+      "seed_role_sequences": [
+        [
+          "premise",
+          "inference",
+          "scope"
+        ],
+        [
+          "premise",
+          "inference",
+          "qualification"
+        ]
+      ]
+    },
+    "criterion_definition_rationale": {
+      "seed_operation": "separate_criterion_from_definition",
+      "description": "Expose the introduction of an existing criterion or definition separately from its substantive content, then attach only a source-supported rationale if present. The validated seed contrasts advance identification with retrospective assessment. Other definitions are related variants, not exact replications.",
+      "roles": [
+        "context",
+        "introduction",
+        "definition",
+        "rationale",
+        "qualification",
+        "example"
+      ],
+      "required_roles": [
+        "introduction",
+        "definition"
+      ],
+      "language_controls": [
+        "mark_existing_contrast",
+        "echo_source_criterion_qualifier",
+        "retain_attribution"
+      ],
+      "cue_patterns": [
+        "\\bcriteria?\\b",
+        "\\bdefin\\w*\\b|\\bmeans\\b|\\bcall(?:ed)?\\b",
+        "\\bclassif\\w*\\b|\\bdistinguish\\w*\\b"
+      ],
+      "seed_role_sequences": [
+        [
+          "context",
+          "introduction",
+          "definition",
+          "rationale"
+        ]
+      ]
+    },
+    "staged_existing_components": {
+      "seed_operation": "stage_existing_decisions",
+      "description": "Introduce an existing task/component set, then distinguish its already-supplied decisions or components in order. A decision-policy seed is not equivalent to any numerical list. Other processes/components are related variants. Do not invent a count, component or recommendation.",
+      "roles": [
+        "scope",
+        "recommendation",
+        "component_introduction",
+        "component",
+        "qualification",
+        "conclusion"
+      ],
+      "required_roles": [
+        "component_introduction",
+        "component"
+      ],
+      "language_controls": [
+        "mark_existing_sequence",
+        "retain_deontic_scope",
+        "retain_component_count"
+      ],
+      "cue_patterns": [
+        "\\bfirst\\b|\\bsecond\\b|\\bthird\\b|\\bfinally\\b",
+        "\\bcomponents?\\b|\\bstages?\\b|\\bsteps?\\b|\\bfunctions?\\b|\\bdecisions?\\b|\\bproblems?\\b",
+        "\\b(?:two|three|four)\\s+(?:decisions|problems|functions|components|stages|steps)\\b"
+      ],
+      "seed_role_sequences": [
+        [
+          "scope",
+          "recommendation",
+          "component_introduction",
+          "component",
+          "component"
+        ]
+      ]
+    }
+  },
+  "scope": "Candidate family generalizations, not empirical validation of related variants."
+}

@@ -1,0 +1,396 @@
+{
+  "protocol": "grounded_operation_realization_v1",
+  "notebook": "oliverlds/operation-realization",
+  "owner_reported_version": null,
+  "retrieval": "latest session outputs; no version number supplied or inferred",
+  "status": "30_calls_complete_and_assessed",
+  "runtime_seconds": 567.169542394,
+  "generation_calls": 30,
+  "adapter_identity_verified": true,
+  "training_called": false,
+  "gpu_jobs_submitted_during_review": 0,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "groups": {
+    "contrast_hypothesis": {
+      "base__A_ordinary_shared_evidence": {
+        "attempts": 4,
+        "available": 4,
+        "style_grades": {
+          "slight": 4
+        },
+        "drift_grades": {
+          "high": 2,
+          "moderate": 2
+        },
+        "operation_assessments": {
+          "not_demonstrated": 3,
+          "partial_decision_separation_wrong_announcement_order": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.33874078619295833,
+        "shallow_count_matches": 4,
+        "verifier_statuses": {
+          "risk_signal": 3,
+          "model_consistent": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.2,
+          "style_first": 0.125,
+          "bounded_drift_default": 0.012500000000000011,
+          "preservation_weighted": -0.175
+        },
+        "input_tokens": 5108,
+        "output_tokens": 494,
+        "generation_seconds": 52.345209315999966
+      },
+      "base__B_shallow_shared_evidence": {
+        "attempts": 4,
+        "available": 4,
+        "style_grades": {
+          "slight": 4
+        },
+        "drift_grades": {
+          "moderate": 2,
+          "high": 2
+        },
+        "operation_assessments": {
+          "not_demonstrated": 3,
+          "partial_decision_separation_wrong_announcement_order": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.4006763360613544,
+        "shallow_count_matches": 4,
+        "verifier_statuses": {
+          "model_consistent": 2,
+          "risk_signal": 2
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.2,
+          "style_first": 0.125,
+          "bounded_drift_default": 0.012500000000000011,
+          "preservation_weighted": -0.175
+        },
+        "input_tokens": 5656,
+        "output_tokens": 449,
+        "generation_seconds": 48.72889252699997
+      },
+      "base__C_operations_shared_evidence": {
+        "attempts": 4,
+        "available": 4,
+        "style_grades": {
+          "slight": 4
+        },
+        "drift_grades": {
+          "moderate": 2,
+          "minor": 2
+        },
+        "operation_assessments": {
+          "not_demonstrated": 4
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.504418471302706,
+        "shallow_count_matches": 1,
+        "verifier_statuses": {
+          "risk_signal": 3,
+          "model_consistent": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.2,
+          "style_first": 0.1675,
+          "bounded_drift_default": 0.11875000000000001,
+          "preservation_weighted": 0.037500000000000006
+        },
+        "input_tokens": 6062,
+        "output_tokens": 445,
+        "generation_seconds": 49.0360273980001
+      },
+      "planned_adapter__A_ordinary_shared_evidence": {
+        "attempts": 4,
+        "available": 4,
+        "style_grades": {
+          "none": 4
+        },
+        "drift_grades": {
+          "minor": 2,
+          "none_detected": 1,
+          "moderate": 1
+        },
+        "operation_assessments": {
+          "not_demonstrated": 4
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 1,
+        "exact_copies": 1,
+        "mean_source_similarity": 0.8060253297719053,
+        "shallow_count_matches": 0,
+        "verifier_statuses": {
+          "model_consistent": 2,
+          "risk_signal": 2
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": -0.02,
+          "bounded_drift_default": -0.05,
+          "preservation_weighted": -0.1
+        },
+        "input_tokens": 5108,
+        "output_tokens": 384,
+        "generation_seconds": 47.91908451000006
+      },
+      "planned_adapter__B_shallow_shared_evidence": {
+        "attempts": 4,
+        "available": 4,
+        "style_grades": {
+          "none": 4
+        },
+        "drift_grades": {
+          "moderate": 2,
+          "minor": 2
+        },
+        "operation_assessments": {
+          "not_demonstrated": 4
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.7552409325075534,
+        "shallow_count_matches": 2,
+        "verifier_statuses": {
+          "risk_signal": 4
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": -0.0325,
+          "bounded_drift_default": -0.08125,
+          "preservation_weighted": -0.1625
+        },
+        "input_tokens": 5656,
+        "output_tokens": 463,
+        "generation_seconds": 56.30228035899995
+      },
+      "planned_adapter__C_operations_shared_evidence": {
+        "attempts": 4,
+        "available": 4,
+        "style_grades": {
+          "none": 4
+        },
+        "drift_grades": {
+          "none_detected": 2,
+          "minor": 2
+        },
+        "operation_assessments": {
+          "not_demonstrated": 4
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 3,
+        "exact_copies": 1,
+        "mean_source_similarity": 0.9300870227184523,
+        "shallow_count_matches": 0,
+        "verifier_statuses": {
+          "model_consistent": 3,
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": -0.0075,
+          "bounded_drift_default": -0.01875,
+          "preservation_weighted": -0.0375
+        },
+        "input_tokens": 6062,
+        "output_tokens": 343,
+        "generation_seconds": 47.08474930500006
+      }
+    },
+    "preservation_control": {
+      "base__A_ordinary_shared_evidence": {
+        "attempts": 1,
+        "available": 1,
+        "style_grades": {
+          "slight": 1
+        },
+        "drift_grades": {
+          "moderate": 1
+        },
+        "operation_assessments": {
+          "control_partially_retained": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.5742574257425742,
+        "shallow_count_matches": 0,
+        "verifier_statuses": {
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.2,
+          "style_first": 0.15000000000000002,
+          "bounded_drift_default": 0.07500000000000001,
+          "preservation_weighted": -0.04999999999999999
+        },
+        "input_tokens": 1842,
+        "output_tokens": 147,
+        "generation_seconds": 16.656808092000006
+      },
+      "base__B_shallow_shared_evidence": {
+        "attempts": 1,
+        "available": 1,
+        "style_grades": {
+          "slight": 1
+        },
+        "drift_grades": {
+          "high": 1
+        },
+        "operation_assessments": {
+          "control_failed_attribution_binding": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.2555066079295154,
+        "shallow_count_matches": 1,
+        "verifier_statuses": {
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.2,
+          "style_first": 0.1,
+          "bounded_drift_default": -0.04999999999999999,
+          "preservation_weighted": -0.3
+        },
+        "input_tokens": 1985,
+        "output_tokens": 172,
+        "generation_seconds": 18.172931037000012
+      },
+      "base__C_operations_shared_evidence": {
+        "attempts": 1,
+        "available": 1,
+        "style_grades": {
+          "slight": 1
+        },
+        "drift_grades": {
+          "moderate": 1
+        },
+        "operation_assessments": {
+          "control_partially_retained": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.6666666666666666,
+        "shallow_count_matches": 0,
+        "verifier_statuses": {
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.2,
+          "style_first": 0.15000000000000002,
+          "bounded_drift_default": 0.07500000000000001,
+          "preservation_weighted": -0.04999999999999999
+        },
+        "input_tokens": 2092,
+        "output_tokens": 164,
+        "generation_seconds": 18.777033044000063
+      },
+      "planned_adapter__A_ordinary_shared_evidence": {
+        "attempts": 1,
+        "available": 1,
+        "style_grades": {
+          "none": 1
+        },
+        "drift_grades": {
+          "high": 1
+        },
+        "operation_assessments": {
+          "control_failed_attribution_binding": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.6307053941908713,
+        "shallow_count_matches": 1,
+        "verifier_statuses": {
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": -0.1,
+          "bounded_drift_default": -0.25,
+          "preservation_weighted": -0.5
+        },
+        "input_tokens": 1842,
+        "output_tokens": 187,
+        "generation_seconds": 21.972184287999994
+      },
+      "planned_adapter__B_shallow_shared_evidence": {
+        "attempts": 1,
+        "available": 1,
+        "style_grades": {
+          "none": 1
+        },
+        "drift_grades": {
+          "high": 1
+        },
+        "operation_assessments": {
+          "control_failed_attribution_binding": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.5198237885462555,
+        "shallow_count_matches": 1,
+        "verifier_statuses": {
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": -0.1,
+          "bounded_drift_default": -0.25,
+          "preservation_weighted": -0.5
+        },
+        "input_tokens": 1985,
+        "output_tokens": 168,
+        "generation_seconds": 20.032797639000023
+      },
+      "planned_adapter__C_operations_shared_evidence": {
+        "attempts": 1,
+        "available": 1,
+        "style_grades": {
+          "none": 1
+        },
+        "drift_grades": {
+          "high": 1
+        },
+        "operation_assessments": {
+          "control_failed_attribution_binding": 1
+        },
+        "substantial_style_candidates": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.6098654708520179,
+        "shallow_count_matches": 1,
+        "verifier_statuses": {
+          "risk_signal": 1
+        },
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": -0.1,
+          "bounded_drift_default": -0.25,
+          "preservation_weighted": -0.5
+        },
+        "input_tokens": 2092,
+        "output_tokens": 165,
+        "generation_seconds": 20.81523169700006
+      }
+    }
+  },
+  "followup_trigger_met": false,
+  "assessment_limitations": "Four previously inspected training transformations, one preservation control; all seen by adapter. Source scaffold shared across arms, reference-informed oracle plans, adapter not trained on operations. Unblinded exploratory assistant judgments; no calibrated accuracy, generalization or learned-mapper result."
+}

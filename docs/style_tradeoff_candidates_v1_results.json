@@ -1,0 +1,149 @@
+{
+  "protocol": "style_tradeoff_candidates_v1",
+  "notebook": "oliverlds/style-tradeoff",
+  "user_reported_version": 1,
+  "assessment_status": "all_24_exploratory_assessments_complete",
+  "conditions": {
+    "A_direct": {
+      "candidates": 12,
+      "style_grades": {
+        "slight": 12
+      },
+      "drift_grades": {
+        "high": 8,
+        "minor": 2,
+        "moderate": 2
+      },
+      "substantial_style_candidates": 0,
+      "positive_style_proxy": 12,
+      "mean_style_benefit_proxy": 0.11995295914114602,
+      "mean_semantic_warning_cost_proxy": 0.6477113375129799,
+      "mean_source_similarity": 0.31668707091603304,
+      "near_copies": 0,
+      "exact_copies": 0,
+      "valid_formats": 12,
+      "mean_words_per_sentence": 32.81527777777778,
+      "mean_qualitative_utility_by_weight": {
+        "style_only_sensitivity": 0.2,
+        "style_first": 0.12250000000000001,
+        "bounded_drift_default": 0.00625000000000001,
+        "preservation_weighted": -0.1875
+      }
+    },
+    "B_reference_operations": {
+      "candidates": 12,
+      "style_grades": {
+        "slight": 12
+      },
+      "drift_grades": {
+        "high": 6,
+        "moderate": 6
+      },
+      "substantial_style_candidates": 0,
+      "positive_style_proxy": 11,
+      "mean_style_benefit_proxy": 0.0916373657803393,
+      "mean_semantic_warning_cost_proxy": 0.7703362723657241,
+      "mean_source_similarity": 0.30504196254440463,
+      "near_copies": 0,
+      "exact_copies": 0,
+      "valid_formats": 12,
+      "mean_words_per_sentence": 33.90972222222222,
+      "mean_qualitative_utility_by_weight": {
+        "style_only_sensitivity": 0.2,
+        "style_first": 0.125,
+        "bounded_drift_default": 0.012500000000000011,
+        "preservation_weighted": -0.175
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": 1,
+      "source_words_per_sentence": 17.333333333333332,
+      "reference_words_per_sentence": 23.0,
+      "mean_style_proxy_A": 0.15656821646414676,
+      "mean_style_proxy_B": 0.11045152073161053,
+      "drift_by_condition": {
+        "A_direct": {
+          "high": 3
+        },
+        "B_reference_operations": {
+          "high": 3
+        }
+      }
+    },
+    {
+      "case": 2,
+      "source_words_per_sentence": 15.75,
+      "reference_words_per_sentence": 18.4,
+      "mean_style_proxy_A": 0.16445093357664697,
+      "mean_style_proxy_B": 0.17875299977786704,
+      "drift_by_condition": {
+        "A_direct": {
+          "high": 1,
+          "minor": 2
+        },
+        "B_reference_operations": {
+          "moderate": 3
+        }
+      }
+    },
+    {
+      "case": 3,
+      "source_words_per_sentence": 17.2,
+      "reference_words_per_sentence": 25.5,
+      "mean_style_proxy_A": 0.08081376734552437,
+      "mean_style_proxy_B": 0.012478604176683228,
+      "drift_by_condition": {
+        "A_direct": {
+          "high": 2,
+          "moderate": 1
+        },
+        "B_reference_operations": {
+          "moderate": 3
+        }
+      }
+    },
+    {
+      "case": 4,
+      "source_words_per_sentence": 20.5,
+      "reference_words_per_sentence": 25.166666666666668,
+      "mean_style_proxy_A": 0.07797891917826598,
+      "mean_style_proxy_B": 0.0648663384351964,
+      "drift_by_condition": {
+        "A_direct": {
+          "high": 2,
+          "moderate": 1
+        },
+        "B_reference_operations": {
+          "high": 3
+        }
+      }
+    }
+  ],
+  "source_mean_words_per_sentence": 17.695833333333333,
+  "reference_mean_words_per_sentence": 23.016666666666666,
+  "total_drift_grades": {
+    "high": 14,
+    "moderate": 8,
+    "minor": 2
+  },
+  "assessment_provenance": {
+    "assessor": "Codex assistant in this development session",
+    "date": "2026-10-24",
+    "selection": "All 24 completed candidate outputs; no proxy-based subset or best-of-three selection.",
+    "method": "Read source, reference and six hash-ordered anonymous labels per case. Condition/seed labels were not displayed during reading; run-level aggregates were already visible. Not an independently blinded evaluation.",
+    "limitations": "Same assistant designed the comparison and assessed it. No independent evaluator, author-style classifier or severity calibration. Fixed hashes make reuse deterministic, not the original subjective judgment."
+  },
+  "elapsed_seconds": 409.148725365,
+  "new_model_calls": 0,
+  "new_gpu_jobs_submitted": 0,
+  "training_called": false,
+  "reserved_test_rows_read": 0,
+  "limitations": [
+    "Four previously exposed development cases; no statistical superiority claim.",
+    "Grades are exploratory assistant judgments, not independent calibrated semantic/style accuracy.",
+    "NLI warning summaries are saved but full verifier verdicts were not persisted, so model-based diagnostics cannot be independently replayed from artifacts alone.",
+    "Zero substantial-style candidates among these 24 does not show that style transfer is impossible or that a learned three-level mapper failed; the guidance here consists of two shallow operations."
+  ]
+}

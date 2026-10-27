@@ -1,0 +1,50 @@
+{
+  "protocol": "operation_expansion_v1",
+  "status": "responses_audited_pilot_gate_not_met",
+  "response_files": 6,
+  "records_received": 30,
+  "missing_records": 0,
+  "original_whole_paragraph_contract_passed": 28,
+  "original_whole_paragraph_contract_rejected": 2,
+  "reported_status_counts": {
+    "already_structured": 24,
+    "supported": 6
+  },
+  "raw_seed_exact_supported": 4,
+  "raw_related_supported": 2,
+  "strict_original_primary_paragraph_pairs": 3,
+  "strict_original_related_paragraph_candidates": 1,
+  "scoped_recovery": {
+    "active_folder": "scoped_recovery_v2",
+    "verbatim_excerpt_pairs": 2,
+    "new_seed_exact_excerpt": 1,
+    "new_related_excerpt": 1,
+    "unsupported_negation_tags_removed_in_derived_copy": 1,
+    "original_paragraphs_and_annotations_changed": false
+  },
+  "expanded_unit_inventory": {
+    "provisional_seed_programs": 4,
+    "related_candidates": 2,
+    "seed_papers": {
+      "F1965": 3,
+      "VL2018": 1
+    },
+    "includes_excerpts": true,
+    "does_not_override_original_pilot_gate": true
+  },
+  "already_structured_annotations": 24,
+  "already_structured_with_packing_or_order_change": 16,
+  "already_structured_with_new_colocations": 10,
+  "already_structured_with_more_units_for_same_claim": 6,
+  "changed_without_new_repeated_claim_units": 10,
+  "ready_to_train": false,
+  "original_pilot_gate_passed": false,
+  "expanded_scope_inventory_gate_passed": false,
+  "model_calls": 0,
+  "gpu_jobs_submitted": 0,
+  "training_called": false,
+  "validation_rows_used": 0,
+  "reserved_test_rows_used": 0,
+  "cpu_tests_passed": 292,
+  "limitations": "Labels are interpreted family judgments. Already structured does not mean identical source/target rhetoric: 16 such rows show mechanical packing/order differences. Scope recovery changes example granularity and needs a separate protocol. No semantic proof, new realization result or representative corpus-wide prevalence estimate."
+}

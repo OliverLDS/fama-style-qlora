@@ -1,0 +1,87 @@
+{
+  "assessment_limits": "Same in-session assistant, conditions/reference visible, unblinded, uncalibrated, not independent verification. NLI is diagnostic; surface style distance is not author-style accuracy.",
+  "author_style_accuracy": null,
+  "calls": 12,
+  "conditions": {
+    "A_ordinary_shared_evidence": {
+      "drift_severities_exploratory": {
+        "high": 3,
+        "moderate": 2
+      },
+      "mean_source_overlap": 0.3689489217577268,
+      "mean_style_distance_gain_proxy": 0.27905074079825737,
+      "near_copies": 0,
+      "new_candidate_attempts": 5,
+      "target_sentence_count_matches": 0
+    },
+    "B_elementary_edits_shared_evidence": {
+      "drift_severities_exploratory": {
+        "high": 3,
+        "moderate": 2
+      },
+      "mean_source_overlap": 0.42752393611169665,
+      "mean_style_distance_gain_proxy": 0.22905992570929712,
+      "near_copies": 0,
+      "new_candidate_attempts": 5,
+      "target_sentence_count_matches": 0
+    }
+  },
+  "elapsed_seconds": 324.78886683799993,
+  "failed_calls": 0,
+  "format_confound": "Source sentence and claim bindings were largely represented by character offsets, not readable labeled source excerpts. Representation usability and model capacity are not isolated.",
+  "input_token_range": [
+    794,
+    2223
+  ],
+  "meaningful_incremental_target_style_gains_exploratory": 0,
+  "new_candidate_sentence_counts": [
+    {
+      "desired": 2,
+      "edits": 4,
+      "ordinary": 4,
+      "paper_key": "NL2003"
+    },
+    {
+      "desired": 2,
+      "edits": 5,
+      "ordinary": 4,
+      "paper_key": "VL2018"
+    },
+    {
+      "desired": 3,
+      "edits": 4,
+      "ordinary": 6,
+      "paper_key": "FJ1983"
+    },
+    {
+      "desired": 8,
+      "edits": 6,
+      "ordinary": 6,
+      "paper_key": "ME1997"
+    },
+    {
+      "desired": 4,
+      "edits": 5,
+      "ordinary": 6,
+      "paper_key": "F1980"
+    }
+  ],
+  "new_candidates": 5,
+  "new_jobs_started_during_review": 0,
+  "next_recommendation": "A two-case prompt-format ablation: explicit labeled source sentences/claim excerpts versus the frozen offsets on the same hierarchy merge and market-efficiency split, with unchanged facts, plan and model. No more training yet.",
+  "notebook": "oliverlds/elementary-realization",
+  "notebook_source_retrieval": "403",
+  "papers": 6,
+  "partial_organization_signal": "The hierarchy case has more concise, closer first-three-sentence grouping in B, but A already expresses the first merge and B adds an unsupported conclusion.",
+  "predeclared_positive_signal_met": false,
+  "protocol": "elementary_packing_realization_v1",
+  "reserved_probe": 1,
+  "reserved_test_rows_read": 0,
+  "semantic_accuracy": null,
+  "standalone_log": "Not supplied by session-output API; completion verified from hashed run_status and artifacts.",
+  "status": "reviewed_completed_run",
+  "training_called": false,
+  "user_reported_version": 1,
+  "validation_rows_read": 0,
+  "version_provenance": "Output CLI parses but does not pass the version suffix to the session-output request; independently pinned source request returned 403. Artifacts match the prepared pack/runtime exactly."
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "pattern": "^J[0-9a-f]{16}$"
+    },
+    "prompt_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "output": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "job_id",
+    "prompt_sha256",
+    "output"
+  ],
+  "additionalProperties": false
+}

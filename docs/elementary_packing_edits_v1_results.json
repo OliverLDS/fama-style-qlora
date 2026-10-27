@@ -1,0 +1,38 @@
+{
+  "already_structured_rows": 24,
+  "blocked": {
+    "repeated_claim_requires_subclaim_binding": 6
+  },
+  "candidate_papers": {
+    "F1980": 1,
+    "FF2000": 3,
+    "FJ1983": 1,
+    "ME1997": 2,
+    "NL2003": 2,
+    "VL2018": 1
+  },
+  "compiled_oracle_candidates": 10,
+  "diagnostic_probes": 1,
+  "gpu_jobs_started": 0,
+  "limitations": [
+    "Oracle reference-derived grouping is not deployment performance.",
+    "Exact evidence and coverage checks are not independent semantic verification.",
+    "Sentence packing alone does not establish distinctive author style.",
+    "Six repeated-claim rows need finer subclaim boundaries before compilation."
+  ],
+  "nonprobe_candidates": 9,
+  "operation_instances": {
+    "KEEP": 31,
+    "MERGE": 11,
+    "SPLIT": 1
+  },
+  "original_family_gates_unchanged": true,
+  "prerequisite_isolation_programs": 0,
+  "prerequisite_note": "No independently bound prerequisite isolation established by these maps; no condition is manufactured from composite claims.",
+  "protocol": "elementary_packing_edits_v1",
+  "reserved_test_rows_read": 0,
+  "semantic_equivalence_verified": false,
+  "training_eligible": 0,
+  "unchanged": 8,
+  "validation_rows_read": 0
+}

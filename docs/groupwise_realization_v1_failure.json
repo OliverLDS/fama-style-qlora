@@ -1,0 +1,21 @@
+{
+  "notebook": "oliverlds/groupwise-realization",
+  "owner_reported_version": 1,
+  "execution_status": "failed_before_assembly_and_evaluation",
+  "planned_calls": 42,
+  "recorded_attempts": 16,
+  "uncut_nonempty_calls": 15,
+  "completed_managerial_group_calls": 12,
+  "all_12_completed_group_calls_multisentence": true,
+  "cutoff_call_number": 16,
+  "cutoff_condition": "B_groupwise",
+  "cutoff_token_cap": 129,
+  "output_tokens_at_cutoff": 129,
+  "paragraph_evaluation_generated": false,
+  "training_called": false,
+  "review_model_calls": 0,
+  "new_gpu_jobs_submitted": 0,
+  "diagnosis": "Group prompts retained the full paragraph task; generated whole-argument responses exceeded the intended scope. The cutoff then triggered an abort.",
+  "fix_prepared_not_executed": "groupwise_realization_v2",
+  "limitations": "Incomplete run; no style-transfer or semantic evaluation result is claimed."
+}

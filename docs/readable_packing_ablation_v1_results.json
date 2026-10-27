@@ -1,0 +1,133 @@
+{
+  "complete_plan_realizations_B": 0,
+  "count_matches_B": 2,
+  "elapsed_seconds": 178.01505604600004,
+  "exploratory_drift": {
+    "hierarchy": {
+      "offsets": "moderate",
+      "readable": "minor_or_uncertain"
+    },
+    "market_efficiency": {
+      "offsets": "high",
+      "readable": "high"
+    }
+  },
+  "failed_calls": 0,
+  "finding": "Readable display changes count/layout compliance on these two examples but does not realize the prescribed claim packing. Hierarchy largely preserves claims with modest concision; market-efficiency split and attribution remain incorrect.",
+  "generation_calls": 4,
+  "groups": {
+    "A_frozen_offsets_json": {
+      "attempts": 2,
+      "available": 2,
+      "mean_style_distance_gain_available_only": 0.4965137292947525,
+      "near_copies": 0,
+      "sentence_count_matches_all_attempts": 0,
+      "verifier_statuses": {
+        "risk_signal": 2
+      }
+    },
+    "B_readable_bindings_and_plan": {
+      "attempts": 2,
+      "available": 2,
+      "mean_style_distance_gain_available_only": 0.6850527264673593,
+      "near_copies": 0,
+      "sentence_count_matches_all_attempts": 2,
+      "verifier_statuses": {
+        "risk_signal": 2
+      }
+    }
+  },
+  "historical_controls": [
+    {
+      "id": "Xc33a4080a76e0609",
+      "output_identical": true,
+      "prompt_identical": true
+    },
+    {
+      "id": "Xee3c1c3763b95849",
+      "output_identical": true,
+      "prompt_identical": true
+    }
+  ],
+  "input_tokens_by_condition": [
+    {
+      "condition": "A_frozen_offsets_json",
+      "id": "Xc33a4080a76e0609",
+      "input_tokens": 1015
+    },
+    {
+      "condition": "B_readable_bindings_and_plan",
+      "id": "Xc33a4080a76e0609",
+      "input_tokens": 987
+    },
+    {
+      "condition": "B_readable_bindings_and_plan",
+      "id": "Xee3c1c3763b95849",
+      "input_tokens": 2583
+    },
+    {
+      "condition": "A_frozen_offsets_json",
+      "id": "Xee3c1c3763b95849",
+      "input_tokens": 2223
+    }
+  ],
+  "limits": [
+    "Two retrospectively selected training examples; oracle reference grouping, no generalization claim.",
+    "Source bindings and plan display change together, so their separate effects are not identified.",
+    "Same in-session assistant, reference/conditions visible; unblinded, uncalibrated judgments, not independent verification.",
+    "Count/localization/style proxies do not establish faithful organization or author style."
+  ],
+  "modest_concision_signal_B": 1,
+  "new_model_calls_during_review": 0,
+  "next_recommendation": "Run the exact same four frozen prompts with a stronger instruction-following realizer, using no reference wording; compare operation realization and drift before more prompt tweaking or training.",
+  "notebook": "oliverlds/readable-packing",
+  "paired": [
+    {
+      "acceptable_claim_drift": null,
+      "both_available": true,
+      "count_matches_A_B": [
+        false,
+        true
+      ],
+      "id": "Xc33a4080a76e0609",
+      "sentence_counts_A_B": [
+        4,
+        3
+      ],
+      "source_overlap_B_minus_A": 0.08460355809356468,
+      "style_proxy_B_minus_A": 0.06911658746093924,
+      "verifier_A_B": [
+        "risk_signal",
+        "risk_signal"
+      ]
+    },
+    {
+      "acceptable_claim_drift": null,
+      "both_available": true,
+      "count_matches_A_B": [
+        false,
+        true
+      ],
+      "id": "Xee3c1c3763b95849",
+      "sentence_counts_A_B": [
+        6,
+        8
+      ],
+      "source_overlap_B_minus_A": 0.04092282340016479,
+      "style_proxy_B_minus_A": 0.3079614068842743,
+      "verifier_A_B": [
+        "risk_signal",
+        "risk_signal"
+      ]
+    }
+  ],
+  "protocol": "readable_packing_ablation_v1",
+  "reserved_test_rows_read": 0,
+  "standalone_log_verified": true,
+  "status": "reviewed_completed_run",
+  "substantial_incremental_author_style_gain_demonstrated": false,
+  "training_called": false,
+  "user_reported_version": 1,
+  "validation_rows_read": 0,
+  "version_provenance": "Downloaded session artifacts; installed CLI output request ignores the version suffix. Pack/runtime identities and completion log verified; immutable version not independently pinned."
+}

@@ -1,0 +1,166 @@
+{
+  "protocol": "groupwise_realization_v2",
+  "notebook": "oliverlds/groupwise-realization-v2",
+  "owner_reported_version": 1,
+  "status": "all_42_calls_and_18_paragraphs_complete_and_assessed",
+  "historical_control_output_matches": 9,
+  "generation_calls": 42,
+  "paragraph_views": 18,
+  "unavailable_paragraphs": 0,
+  "conditions": {
+    "A_whole_paragraph": {
+      "paragraph_attempts": 9,
+      "available_paragraphs": 9,
+      "failed_generation_calls": 0,
+      "style_grades": {
+        "slight": 9
+      },
+      "drift_grades": {
+        "moderate": 6,
+        "minor": 3
+      },
+      "substantial_style_candidates": 0,
+      "count_matches": 2,
+      "valid_assemblies": null,
+      "mean_words": 92.22222222222223,
+      "mean_words_per_sentence": 19.005555555555556,
+      "mean_style_benefit_proxy": 0.022526333727759324,
+      "mean_source_similarity": 0.4661428783888564,
+      "exact_copies": 0,
+      "near_copies": 0,
+      "paragraph_verifier_statuses": {
+        "risk_signal": 6,
+        "model_consistent": 3
+      },
+      "mean_qualitative_utility_by_weight": {
+        "style_only_sensitivity": 0.2,
+        "style_first": 0.16166666666666668,
+        "bounded_drift_default": 0.10416666666666667,
+        "preservation_weighted": 0.00833333333333334
+      },
+      "generation_calls": 9,
+      "input_tokens": 5175,
+      "output_tokens": 1087,
+      "generation_seconds": 99.56570475199999
+    },
+    "B_groupwise": {
+      "paragraph_attempts": 9,
+      "available_paragraphs": 9,
+      "failed_generation_calls": 0,
+      "style_grades": {
+        "slight": 6,
+        "none": 3
+      },
+      "drift_grades": {
+        "high": 8,
+        "moderate": 1
+      },
+      "substantial_style_candidates": 0,
+      "count_matches": 9,
+      "valid_assemblies": 9,
+      "mean_words": 96.88888888888889,
+      "mean_words_per_sentence": 26.4,
+      "mean_style_benefit_proxy": 0.07792424841488224,
+      "mean_source_similarity": 0.2118726192054853,
+      "exact_copies": 0,
+      "near_copies": 0,
+      "paragraph_verifier_statuses": {
+        "risk_signal": 9
+      },
+      "mean_qualitative_utility_by_weight": {
+        "style_only_sensitivity": 0.13333333333333333,
+        "style_first": 0.03888888888888889,
+        "bounded_drift_default": -0.10277777777777777,
+        "preservation_weighted": -0.3388888888888889
+      },
+      "generation_calls": 33,
+      "input_tokens": 8073,
+      "output_tokens": 1175,
+      "generation_seconds": 112.02911950499998
+    }
+  },
+  "cases": [
+    {
+      "case": 1,
+      "paper_key": "F1980",
+      "requested_group_count": 4,
+      "drift_by_condition": {
+        "A_whole_paragraph": {
+          "moderate": 3
+        },
+        "B_groupwise": {
+          "high": 3
+        }
+      },
+      "mean_words_per_sentence_by_condition": {
+        "A_whole_paragraph": 15.183333333333334,
+        "B_groupwise": 21.833333333333332
+      }
+    },
+    {
+      "case": 2,
+      "paper_key": "FF2000",
+      "requested_group_count": 5,
+      "drift_by_condition": {
+        "A_whole_paragraph": {
+          "minor": 3
+        },
+        "B_groupwise": {
+          "high": 3
+        }
+      },
+      "mean_words_per_sentence_by_condition": {
+        "A_whole_paragraph": 23.666666666666668,
+        "B_groupwise": 29.533333333333335
+      }
+    },
+    {
+      "case": 3,
+      "paper_key": "VL2018",
+      "requested_group_count": 2,
+      "drift_by_condition": {
+        "A_whole_paragraph": {
+          "moderate": 3
+        },
+        "B_groupwise": {
+          "high": 2,
+          "moderate": 1
+        }
+      },
+      "mean_words_per_sentence_by_condition": {
+        "A_whole_paragraph": 18.166666666666668,
+        "B_groupwise": 27.833333333333332
+      }
+    }
+  ],
+  "groupwise_raw_piece_count": 33,
+  "groupwise_single_sentence_valid_pieces": 33,
+  "cost_ratios_B_over_A": {
+    "input_tokens": 1.56,
+    "output_tokens": 1.0809567617295308,
+    "generation_seconds": 1.1251777887179535
+  },
+  "reference_mean_words_per_sentence": 33.95,
+  "elapsed_seconds": 394.710873721,
+  "generation_peak_allocated_bytes": 4998353920,
+  "assessment_provenance": {
+    "assessor": "Codex assistant in this development session",
+    "date": "2026-10-24",
+    "selection": "All 18 available paragraphs read; nine hash-identical control assessments retained, nine new assembled outputs assessed. No failures excluded because none occurred.",
+    "method": "Read source, reference and hash-ordered text labels. Conditions/seeds were not displayed alongside text, but earlier controls and assembled syntax were recognizable and aggregate results visible. Not independently blinded.",
+    "limitations": "Same assistant designed the experiment and assessed it. Ordinal judgments are exploratory; repeated controls are not independent quality evidence."
+  },
+  "new_model_calls_during_review": 0,
+  "new_gpu_jobs_submitted": 0,
+  "training_called": false,
+  "reserved_test_rows_read": 0,
+  "validation_rows_read": 0,
+  "limitations": [
+    "Three selected training examples and oracle plans; no held-out or deployable mapper performance claim.",
+    "V2 changes both group-call instructions and available context; the causal contribution of context alone is not isolated.",
+    "Qualitative style/drift judgments are exploratory assistant assessments; the nine exact controls reuse prior judgments.",
+    "Surface-style gain and valid assembly do not establish semantic fidelity or distinctive author style.",
+    "Group diagnostic availability differs across strategies; paragraph judgments and all-attempt denominators remain primary.",
+    "CPU replay uses saved NLI verdicts without independent model re-execution."
+  ]
+}

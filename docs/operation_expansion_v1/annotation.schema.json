@@ -1,0 +1,446 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "pair_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "supported",
+        "already_structured",
+        "unsupported",
+        "uncertain"
+      ]
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "premise_inference_scope",
+        "criterion_definition_rationale",
+        "staged_existing_components",
+        "none"
+      ]
+    },
+    "variant": {
+      "type": "string",
+      "enum": [
+        "seed_exact",
+        "related_variant",
+        "none"
+      ]
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^c[1-9][0-9]*$"
+          },
+          "epistemic_status": {
+            "type": "string",
+            "enum": [
+              "finding",
+              "hypothesis",
+              "definition",
+              "recommendation",
+              "assertion",
+              "expectation",
+              "unresolved"
+            ]
+          },
+          "composite": {
+            "type": "boolean"
+          },
+          "source_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "target_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "protected": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "actor",
+                    "quantity",
+                    "condition",
+                    "uncertainty",
+                    "negation",
+                    "scope",
+                    "comparison",
+                    "attribution",
+                    "causal_direction"
+                  ]
+                },
+                "source_evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "quote": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "occurrence": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "quote",
+                      "occurrence"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1
+                },
+                "target_evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "quote": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "occurrence": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "quote",
+                      "occurrence"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "kind",
+                "source_evidence",
+                "target_evidence"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "claim_id",
+          "epistemic_status",
+          "composite",
+          "source_evidence",
+          "target_evidence",
+          "protected"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "source_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit_id": {
+            "type": "string"
+          },
+          "claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^c[1-9][0-9]*$"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "unit_id",
+          "claim_refs"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "target_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit_id": {
+            "type": "string"
+          },
+          "claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^c[1-9][0-9]*$"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "unit_id",
+          "claim_refs"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation_id": {
+            "type": "string",
+            "pattern": "^r[1-9][0-9]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "inference",
+              "conditional",
+              "causal",
+              "contrast",
+              "alternative",
+              "presentational"
+            ]
+          },
+          "from_claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^c[1-9][0-9]*$"
+            },
+            "minItems": 1
+          },
+          "to_claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^c[1-9][0-9]*$"
+            },
+            "minItems": 1
+          },
+          "source_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "certainty": {
+            "type": "string",
+            "enum": [
+              "explicit",
+              "interpretive"
+            ]
+          }
+        },
+        "required": [
+          "relation_id",
+          "kind",
+          "from_claim_refs",
+          "to_claim_refs",
+          "source_evidence",
+          "certainty"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "program": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "stages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "component",
+                      "component_introduction",
+                      "conclusion",
+                      "context",
+                      "definition",
+                      "example",
+                      "inference",
+                      "introduction",
+                      "premise",
+                      "qualification",
+                      "rationale",
+                      "recommendation",
+                      "scope",
+                      "supporting_detail"
+                    ]
+                  },
+                  "claim_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^c[1-9][0-9]*$"
+                    },
+                    "minItems": 1
+                  },
+                  "target_evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "role",
+                  "claim_refs",
+                  "target_evidence"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 2
+            },
+            "preserve_relation_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^r[1-9][0-9]*$"
+              },
+              "minItems": 0
+            },
+            "language_controls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "echo_source_criterion_qualifier",
+                  "mark_existing_contrast",
+                  "mark_existing_inference",
+                  "mark_existing_scope_contrast",
+                  "mark_existing_sequence",
+                  "retain_attribution",
+                  "retain_component_count",
+                  "retain_deontic_scope",
+                  "retain_modal_strength"
+                ]
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "stages",
+            "preserve_relation_refs",
+            "language_controls"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id",
+    "pair_sha256",
+    "status",
+    "family",
+    "variant",
+    "claims",
+    "source_units",
+    "target_units",
+    "relations",
+    "program",
+    "notes"
+  ],
+  "additionalProperties": false
+}

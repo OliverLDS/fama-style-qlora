@@ -1,0 +1,447 @@
+{
+  "protocol": "taxonomy_training_signal_v1",
+  "execution_kind": "cpu_saved_annotation_audit",
+  "training_pairs": 247,
+  "paired_llm_taxonomy_training_pairs": 35,
+  "legacy_target_taxonomy_records": 196,
+  "training_pairs_without_these_paired_llm_annotations": 212,
+  "catalogue_categories": 132,
+  "positive_labels_are_not_exhaustive_binary_features": true,
+  "unallocated_discovery_occurrences": 720,
+  "proposed_source_decisions": {
+    "retain": 13,
+    "revise": 15
+  },
+  "proposed_source_texts_matching_current_corpus": 13,
+  "proposed_revisions_applied": 0,
+  "cohorts": {
+    "existing_discovery_28": {
+      "pairs": 28,
+      "papers": 7,
+      "sentence_count_directions": {
+        "more": 7,
+        "same": 10,
+        "fewer": 11
+      },
+      "lexical_similarity": {
+        "n": 28,
+        "min": 0.22058823529411764,
+        "p10": 0.3735150925024343,
+        "p25": 0.39765625000000004,
+        "median": 0.4555220215867819,
+        "p75": 0.5346938775510204,
+        "p90": 0.6147200340642964,
+        "max": 0.6697674418604651,
+        "mean": 0.4739279243515774
+      },
+      "per_level_observed_set_jaccard": {
+        "paragraph": {
+          "n": 28,
+          "min": 0.2222222222222222,
+          "p10": 0.25,
+          "p25": 0.3333333333333333,
+          "median": 0.4,
+          "p75": 0.5,
+          "p90": 0.5166666666666667,
+          "max": 1.0,
+          "mean": 0.4165249433106576
+        },
+        "sentence": {
+          "n": 28,
+          "min": 0.09090909090909091,
+          "p10": 0.1111111111111111,
+          "p25": 0.1111111111111111,
+          "median": 0.14285714285714285,
+          "p75": 0.2,
+          "p90": 0.23055555555555557,
+          "max": 0.3333333333333333,
+          "mean": 0.1649479488765203
+        },
+        "language": {
+          "n": 28,
+          "min": 0.0,
+          "p10": 0.0,
+          "p25": 0.2,
+          "median": 0.25,
+          "p75": 0.4,
+          "p90": 0.53,
+          "max": 0.75,
+          "mean": 0.28941326530612244
+        }
+      },
+      "annotation_sentence_count_disagreements": 1,
+      "annotation_partition_count_directions": {
+        "more": 7,
+        "same": 11,
+        "fewer": 10
+      },
+      "main_claim_position_observation_changes": 12,
+      "semantic_faithfulness_verified": false,
+      "observed_set_differences_are_verified_transformations": false
+    },
+    "fresh_7": {
+      "pairs": 7,
+      "papers": 7,
+      "sentence_count_directions": {
+        "same": 5,
+        "more": 2
+      },
+      "lexical_similarity": {
+        "n": 7,
+        "min": 0.14814814814814814,
+        "p10": 0.30461241911056036,
+        "p25": 0.46395463742882687,
+        "median": 0.5858585858585859,
+        "p75": 0.6208280966345483,
+        "p90": 0.6262782262782263,
+        "max": 0.6306306306306306,
+        "mean": 0.5048861189663021
+      },
+      "per_level_observed_set_jaccard": {
+        "paragraph": {
+          "n": 7,
+          "min": 0.14285714285714285,
+          "p10": 0.2285714285714286,
+          "p25": 0.33035714285714285,
+          "median": 0.4375,
+          "p75": 0.5050505050505051,
+          "p90": 0.6000000000000001,
+          "max": 0.6666666666666666,
+          "mean": 0.4168341579055865
+        },
+        "sentence": {
+          "n": 7,
+          "min": 0.4444444444444444,
+          "p10": 0.47777777777777775,
+          "p25": 0.5192307692307692,
+          "median": 0.5714285714285714,
+          "p75": 0.5916666666666667,
+          "p90": 0.702857142857143,
+          "max": 0.8571428571428571,
+          "mean": 0.5849729635443921
+        },
+        "language": {
+          "n": 7,
+          "min": 0.3333333333333333,
+          "p10": 0.35833333333333334,
+          "p25": 0.4567307692307692,
+          "median": 0.625,
+          "p75": 0.6904761904761905,
+          "p90": 0.7142857142857143,
+          "max": 0.7142857142857143,
+          "mean": 0.5667189952904239
+        }
+      },
+      "annotation_sentence_count_disagreements": 0,
+      "annotation_partition_count_directions": {
+        "same": 5,
+        "more": 2
+      },
+      "main_claim_position_observation_changes": 2,
+      "semantic_faithfulness_verified": false,
+      "observed_set_differences_are_verified_transformations": false
+    },
+    "proposed_sources_28_not_applied": {
+      "pairs": 28,
+      "papers": 7,
+      "sentence_count_directions": {
+        "more": 11,
+        "same": 8,
+        "fewer": 9
+      },
+      "lexical_similarity": {
+        "n": 28,
+        "min": 0.22058823529411764,
+        "p10": 0.44491728124377117,
+        "p25": 0.5164315726290516,
+        "median": 0.576239213325306,
+        "p75": 0.634807433945365,
+        "p90": 0.6732816537467701,
+        "max": 0.7225806451612903,
+        "mean": 0.5658354623673072
+      },
+      "per_level_observed_set_jaccard": {
+        "paragraph": {
+          "n": 28,
+          "min": 0.0,
+          "p10": 0.05000000000000001,
+          "p25": 0.08333333333333333,
+          "median": 0.1111111111111111,
+          "p75": 0.16666666666666666,
+          "p90": 0.2400000000000001,
+          "max": 0.42857142857142855,
+          "mean": 0.1355415417915418
+        },
+        "sentence": {
+          "n": 28,
+          "min": 0.0,
+          "p10": 0.08863636363636364,
+          "p25": 0.125,
+          "median": 0.16666666666666666,
+          "p75": 0.18636363636363637,
+          "p90": 0.25,
+          "max": 0.3333333333333333,
+          "mean": 0.15639558853844568
+        },
+        "language": {
+          "n": 28,
+          "min": 0.0,
+          "p10": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.25,
+          "p90": 0.3333333333333333,
+          "max": 0.5,
+          "mean": 0.11428571428571428
+        }
+      },
+      "annotation_sentence_count_disagreements": 1,
+      "annotation_partition_count_directions": {
+        "more": 12,
+        "same": 8,
+        "fewer": 8
+      },
+      "main_claim_position_observation_changes": 14,
+      "semantic_faithfulness_verified": false,
+      "observed_set_differences_are_verified_transformations": false
+    },
+    "identical_text_controls_13": {
+      "pairs": 13,
+      "papers": 6,
+      "sentence_count_directions": {
+        "same": 13
+      },
+      "lexical_similarity": {
+        "n": 13,
+        "min": 1.0,
+        "p10": 1.0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "per_level_observed_set_jaccard": {
+        "paragraph": {
+          "n": 13,
+          "min": 0.0,
+          "p10": 0.020000000000000018,
+          "p25": 0.1111111111111111,
+          "median": 0.125,
+          "p75": 0.125,
+          "p90": 0.17402597402597406,
+          "max": 0.2857142857142857,
+          "mean": 0.11981629481629481
+        },
+        "sentence": {
+          "n": 13,
+          "min": 0.0,
+          "p10": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.125,
+          "p90": 0.14285714285714285,
+          "max": 0.25,
+          "mean": 0.06791819291819291
+        },
+        "language": {
+          "n": 13,
+          "min": 0.0,
+          "p10": 0.18333333333333335,
+          "p25": 0.25,
+          "median": 0.3333333333333333,
+          "p75": 0.3333333333333333,
+          "p90": 0.3333333333333333,
+          "max": 0.3333333333333333,
+          "mean": 0.2756410256410256
+        }
+      },
+      "annotation_sentence_count_disagreements": 0,
+      "annotation_partition_count_directions": {
+        "same": 13
+      },
+      "main_claim_position_observation_changes": 6,
+      "semantic_faithfulness_verified": false,
+      "observed_set_differences_are_verified_transformations": false
+    },
+    "fresh_masked_repeat_controls_2": {
+      "pairs": 2,
+      "papers": 2,
+      "sentence_count_directions": {
+        "same": 2
+      },
+      "lexical_similarity": {
+        "n": 2,
+        "min": 1.0,
+        "p10": 1.0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "per_level_observed_set_jaccard": {
+        "paragraph": {
+          "n": 2,
+          "min": 0.3,
+          "p10": 0.32,
+          "p25": 0.35,
+          "median": 0.4,
+          "p75": 0.45,
+          "p90": 0.48,
+          "max": 0.5,
+          "mean": 0.4
+        },
+        "sentence": {
+          "n": 2,
+          "min": 0.6363636363636364,
+          "p10": 0.6477272727272727,
+          "p25": 0.6647727272727273,
+          "median": 0.6931818181818181,
+          "p75": 0.7215909090909091,
+          "p90": 0.7386363636363636,
+          "max": 0.75,
+          "mean": 0.6931818181818181
+        },
+        "language": {
+          "n": 2,
+          "min": 0.5,
+          "p10": 0.5333333333333333,
+          "p25": 0.5833333333333334,
+          "median": 0.6666666666666667,
+          "p75": 0.75,
+          "p90": 0.8,
+          "max": 0.8333333333333334,
+          "mean": 0.6666666666666667
+        }
+      },
+      "annotation_sentence_count_disagreements": 0,
+      "annotation_partition_count_directions": {
+        "same": 2
+      },
+      "main_claim_position_observation_changes": 0,
+      "semantic_faithfulness_verified": false,
+      "observed_set_differences_are_verified_transformations": false
+    }
+  },
+  "corpus_sentence_count_directions": {
+    "same": 133,
+    "more": 40,
+    "fewer": 74
+  },
+  "sentence_count_probe": {
+    "rows": 247,
+    "papers": 7,
+    "methods": {
+      "identity": {
+        "exact_count_accuracy": 0.5384615384615384,
+        "macro_paper_exact_count_accuracy": 0.5200340136054422,
+        "per_paper_exact_count_accuracy": {
+          "F1965": 0.5333333333333333,
+          "F1980": 0.5,
+          "FF2000": 0.375,
+          "FJ1983": 0.62,
+          "ME1997": 0.5833333333333334,
+          "NL2003": 0.6,
+          "VL2018": 0.42857142857142855
+        },
+        "change_direction_accuracy": 0.5384615384615384
+      },
+      "fixed_prior": {
+        "exact_count_accuracy": 0.27530364372469635,
+        "macro_paper_exact_count_accuracy": 0.3192517006802721,
+        "per_paper_exact_count_accuracy": {
+          "F1965": 0.23333333333333334,
+          "F1980": 0.6666666666666666,
+          "FF2000": 0.225,
+          "FJ1983": 0.18,
+          "ME1997": 0.31666666666666665,
+          "NL2003": 0.375,
+          "VL2018": 0.23809523809523808
+        },
+        "change_direction_accuracy": 0.3805668016194332
+      },
+      "conditional": {
+        "exact_count_accuracy": 0.5060728744939271,
+        "macro_paper_exact_count_accuracy": 0.49418367346938774,
+        "per_paper_exact_count_accuracy": {
+          "F1965": 0.5333333333333333,
+          "F1980": 0.5,
+          "FF2000": 0.325,
+          "FJ1983": 0.52,
+          "ME1997": 0.55,
+          "NL2003": 0.65,
+          "VL2018": 0.38095238095238093
+        },
+        "change_direction_accuracy": 0.5465587044534413
+      }
+    },
+    "deployment_mapper_saved": false,
+    "scope": "Exploratory prediction of mechanical sentence counts; no validation/test use, semantic or author-style accuracy."
+  },
+  "fixed_unit_check": {
+    "texts": 2,
+    "aggregate": {
+      "cells": 55,
+      "matching_states": 51,
+      "state_agreement": 0.9272727272727272,
+      "both_informative_cells": 53,
+      "matching_informative_states": 51,
+      "informative_agreement": 0.9622641509433962,
+      "both_usable_informative_cells": 35,
+      "matching_usable_informative_states": 33,
+      "usable_informative_agreement": 0.9428571428571428,
+      "state_transitions": {
+        "present -> unresolved": 2,
+        "absent -> absent": 33,
+        "present -> present": 18,
+        "absent -> present": 2
+      },
+      "semantic_accuracy": null,
+      "general_reliability_established": false,
+      "style_transfer_improvement_established": false
+    },
+    "disagreements": [
+      "F03",
+      "F04",
+      "F12"
+    ],
+    "limitation": "Two same-input consistency cases do not validate all 132 categories or source-to-target claim mapping."
+  },
+  "ranked_grouping_hypotheses": 4,
+  "ready_for_full_taxonomy_mapper": false,
+  "semantic_accuracy": null,
+  "author_style_accuracy": null,
+  "new_llm_calls": 0,
+  "gpu_jobs_submitted": 0,
+  "reserved_test_rows_read": 0,
+  "development_validation_rows_read": 0,
+  "source_data_modified": false,
+  "limitations": [
+    "Discovery subset was deliberately diversified, not a population sample.",
+    "Source/proposed/target annotations have different contexts; category-set differences include annotation variability.",
+    "Positive-label omissions are not verified absence. Unallocated split mappings are preserved.",
+    "Corpus-wide counts use the legacy heuristic splitter, which can miss parenthesized sentence boundaries. Exact-text annotation partitions are reported separately for the annotated subset.",
+    "Sentence counts and lexical overlap are mechanical proxies, not semantic equivalence or distinctive style.",
+    "No new independent annotation, NLI inference or deployable mapper was produced."
+  ],
+  "assistant_bound_grouping_hypotheses": {
+    "pairs": 3,
+    "source_sentence_counts": [
+      6,
+      7,
+      4
+    ],
+    "target_sentence_counts": [
+      4,
+      5,
+      2
+    ],
+    "source_coverage_checked": true,
+    "atomic_semantic_equivalence_verified": false,
+    "groupings_executed": false,
+    "reference_wording_in_source_only_plan": false
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "protocol": "minimal_antecedent_v1",
+  "notebook": "oliverlds/minimal-antecedent",
+  "owner_reported_version": 1,
+  "status": "27_calls_complete_and_reviewed",
+  "generation_calls": 27,
+  "runtime_seconds": 219.507908895,
+  "historical_control_output_matches": 18,
+  "conditions": {
+    "A_local_only": {
+      "attempts": 9,
+      "available": 9,
+      "single_sentence_complete": 9,
+      "historical_control_output_matches": 9,
+      "input_tokens": 2193,
+      "output_tokens": 420,
+      "generation_seconds": 39.12399661000006,
+      "style_grades": {
+        "slight": 6,
+        "none": 3
+      },
+      "drift_grades": {
+        "moderate": 3,
+        "high": 6
+      },
+      "substantial_style_candidates": 0,
+      "local_verifier_statuses": {
+        "risk_signal": 7,
+        "model_consistent": 2
+      },
+      "expanded_group_verifier_statuses": {
+        "risk_signal": 8,
+        "abstain": 1
+      },
+      "full_context_entailment_above_0_9": 8,
+      "mean_original_group_similarity": 0.19467696943542095
+    },
+    "B_read_only_context": {
+      "attempts": 9,
+      "available": 9,
+      "single_sentence_complete": 9,
+      "historical_control_output_matches": 9,
+      "input_tokens": 4299,
+      "output_tokens": 370,
+      "generation_seconds": 39.28387881300006,
+      "style_grades": {
+        "slight": 9
+      },
+      "drift_grades": {
+        "minor": 1,
+        "high": 6,
+        "moderate": 2
+      },
+      "substantial_style_candidates": 0,
+      "local_verifier_statuses": {
+        "model_consistent": 1,
+        "risk_signal": 8
+      },
+      "expanded_group_verifier_statuses": {
+        "model_consistent": 1,
+        "risk_signal": 8
+      },
+      "full_context_entailment_above_0_9": 7,
+      "mean_original_group_similarity": 0.3095532795632914
+    },
+    "C_explicit_actors": {
+      "attempts": 9,
+      "available": 9,
+      "single_sentence_complete": 9,
+      "historical_control_output_matches": null,
+      "input_tokens": 2268,
+      "output_tokens": 388,
+      "generation_seconds": 36.23847154099991,
+      "style_grades": {
+        "slight": 6,
+        "none": 3
+      },
+      "drift_grades": {
+        "moderate": 5,
+        "high": 4
+      },
+      "substantial_style_candidates": 0,
+      "local_verifier_statuses": {
+        "risk_signal": 8,
+        "model_consistent": 1
+      },
+      "expanded_group_verifier_statuses": {
+        "model_consistent": 3,
+        "risk_signal": 6
+      },
+      "full_context_entailment_above_0_9": 7,
+      "mean_original_group_similarity": 0.14313546776766736
+    }
+  },
+  "training_called": false,
+  "gpu_jobs_submitted_during_review": 0,
+  "reserved_test_rows_read": 0,
+  "assessment_limitations": "Three selected training groups, not held-out generalization. Unblinded assistant grades, not calibrated accuracy. A/B are reproduced controls and reused judgments, not independent quality samples. No paragraph assembly."
+}

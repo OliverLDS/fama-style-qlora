@@ -1,0 +1,61 @@
+{
+  "accepted_outputs": 12,
+  "anchor_incremental_structure_gains": 1,
+  "anchors": 2,
+  "conditions": {
+    "A_ordinary_shared_readable_evidence": {
+      "anchor_program_matches": 1,
+      "count_matches": 3,
+      "extension_program_matches": 2,
+      "mean_source_overlap": 0.7197838344546829,
+      "near_copies": 0,
+      "outputs": 6,
+      "reference_program_realizations_exploratory": 3,
+      "substantive_drift_cases_identified": 0
+    },
+    "B_readable_edits_shared_readable_evidence": {
+      "anchor_program_matches": 2,
+      "count_matches": 6,
+      "extension_program_matches": 4,
+      "mean_source_overlap": 0.7678447040419507,
+      "near_copies": 0,
+      "outputs": 6,
+      "reference_program_realizations_exploratory": 6,
+      "substantive_drift_cases_identified": 0
+    }
+  },
+  "distinctive_author_style_gain_demonstrated": false,
+  "extensions": 4,
+  "guidance_adds_reference_grouping_cases": 3,
+  "limits": [
+    "Six selected training paragraphs, including two retrospective anchors; oracle paired claim evidence and reference grouping.",
+    "User confirms GPT-6 High but warns about prior-chat context; hidden context/decoding are uncontrolled and independence is not assumed.",
+    "Same assistant, conditions and references visible; unblinded and uncalibrated judgments, not independent verification.",
+    "Only one selected split case; four extension cases are merges. No held-out generalization or author-identification measurement."
+  ],
+  "main_finding": "Readable guidance reliably controls the requested grouping, but ordinary shared-evidence rewriting already achieves it on half the cases. Incremental style/organization benefit is selective, not an across-paper superiority result.",
+  "model_calls_during_review": 0,
+  "model_metadata": {
+    "context_independence_assumed": false,
+    "first_attempt_policy": "not_separately_reconfirmed",
+    "hidden_context_and_decoding": "uncontrolled",
+    "independently_verified": false,
+    "provenance": "User reply on 2026-10-27 confirms GPT-6 High and raises prior-chat context concerns.",
+    "separate_batch_chat_arrangement": "not_explicitly_reconfirmed",
+    "thinking_effort_user_reported": "High",
+    "visible_model_label_user_reported": "GPT-6"
+  },
+  "next_recommendation": "Retain ordinary shared-evidence rewriting as the baseline and use plans for explicit structural control. Do not begin mapper or operation-conditioned training based on these six cases; freeze the mixed result rather than treating count compliance as author-style success.",
+  "paired_extension_gains_exploratory": {
+    "borderline_with_density_cost": 1,
+    "clear": 1,
+    "little_or_none": 2
+  },
+  "papers": 6,
+  "primary_two_of_four_extension_trigger": "not_unambiguously_met; reaches two only if the borderline volatility integration is counted as worthwhile",
+  "protocol": "paper_plan_comparison_v1",
+  "reserved_test_rows_read": 0,
+  "status": "reviewed_twelve_imported_outputs",
+  "training_called": false,
+  "validation_rows_read": 0
+}

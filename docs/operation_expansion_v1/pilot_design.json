@@ -1,0 +1,29 @@
+{
+  "status": "design_only_annotation_gate_closed",
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "arms": [
+    "direct_shared_evidence",
+    "operation_shared_evidence"
+  ],
+  "epochs": 4,
+  "minimum_pairs": 20,
+  "maximum_pairs": 30,
+  "minimum_papers": 3,
+  "minimum_papers_per_family": 2,
+  "minimum_pairs_per_family": 4,
+  "maximum_paper_fraction": 0.4,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "learning_rate": 5e-05,
+  "accumulation": 2,
+  "seed": 42,
+  "training_max_length_ceiling": 2048,
+  "generation_context_ceiling": 4096,
+  "no_truncation": true,
+  "training_called": false,
+  "requires_richer_format_at_training_and_evaluation": true,
+  "related_variants_require_separate_realization_check": true,
+  "reserved_test_rows_used": 0
+}

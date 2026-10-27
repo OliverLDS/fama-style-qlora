@@ -1,0 +1,75 @@
+{
+  "protocol": "group_context_restoration_v1",
+  "notebook": "oliverlds/group-context-restoration",
+  "owner_reported_version": 1,
+  "status": "18_calls_complete_and_reviewed",
+  "generation_calls": 18,
+  "runtime_seconds": 189.588450124,
+  "historical_control_output_matches": 9,
+  "conditions": {
+    "A_local_only": {
+      "attempts": 9,
+      "available": 9,
+      "single_sentence_complete": 9,
+      "historical_control_output_matches": 9,
+      "input_tokens": 2193,
+      "output_tokens": 420,
+      "generation_seconds": 38.757784869000034,
+      "style_grades": {
+        "slight": 6,
+        "none": 3
+      },
+      "drift_grades": {
+        "moderate": 3,
+        "high": 6
+      },
+      "substantial_style_candidates": 0,
+      "local_verifier_statuses": {
+        "risk_signal": 7,
+        "model_consistent": 2
+      },
+      "full_context_entailment_above_0_9": 8,
+      "mean_source_similarity": 0.19467696943542095
+    },
+    "B_read_only_context": {
+      "attempts": 9,
+      "available": 9,
+      "single_sentence_complete": 9,
+      "historical_control_output_matches": null,
+      "input_tokens": 4299,
+      "output_tokens": 370,
+      "generation_seconds": 38.88726873799982,
+      "style_grades": {
+        "slight": 9
+      },
+      "drift_grades": {
+        "minor": 1,
+        "high": 6,
+        "moderate": 2
+      },
+      "substantial_style_candidates": 0,
+      "local_verifier_statuses": {
+        "model_consistent": 1,
+        "risk_signal": 8
+      },
+      "full_context_entailment_above_0_9": 7,
+      "mean_source_similarity": 0.3095532795632914
+    }
+  },
+  "diagnostic_observations": {
+    "context_actor_resolution_selected_ambiguous_groups": {
+      "correct_subjects": 6,
+      "attempts": 6
+    },
+    "context_condition_wrong_predicted_decline_framing_numeric_group": {
+      "cases": 3,
+      "attempts": 3
+    },
+    "context_condition_invented_1998_gap": 1,
+    "local_condition_invented_92_percent_shortfall": 1
+  },
+  "assessment_limitations": "Exploratory unblinded assistant grades, not calibrated accuracy. Three selected training groups; repeated seeds are not independent examples. Context arm adds context-use and no-derived-quantity instructions. No paragraph assembly or author-style validation.",
+  "training_called": false,
+  "gpu_jobs_submitted_during_review": 0,
+  "reserved_test_rows_read": 0
+}

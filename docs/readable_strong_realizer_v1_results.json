@@ -1,0 +1,71 @@
+{
+  "accepted_outputs": 4,
+  "comparison_limits": [
+    "Two reused training paragraphs; paired annotation and target grouping are oracle information.",
+    "External wrapper/system context/decoding/termination and possible source familiarity differ from Kaggle.",
+    "User reports one shared chat for all four jobs; cross-job/condition influence is possible. GPT-6 High thinking effort is user-reported, not independently verified; hidden decoding remains uncontrolled. No independent prompt-format or causal model-size claim.",
+    "Both arms contain edit plans; successful edits do not show whether guidance is needed over ordinary rewriting."
+  ],
+  "conditions": {
+    "A_frozen_offsets_json": {
+      "drift_minor_or_uncertain": 1,
+      "drift_moderate_or_high": 0,
+      "drift_none_detected": 1,
+      "near_copies": 0,
+      "outputs": 2,
+      "program_realizations_exploratory": 2,
+      "source_overlaps": [
+        0.8,
+        0.7986111111111112
+      ]
+    },
+    "B_readable_bindings_and_plan": {
+      "drift_minor_or_uncertain": 1,
+      "drift_moderate_or_high": 0,
+      "drift_none_detected": 1,
+      "near_copies": 0,
+      "outputs": 2,
+      "program_realizations_exploratory": 2,
+      "source_overlaps": [
+        0.7154471544715447,
+        0.8501742160278746
+      ]
+    }
+  },
+  "core_program_realizations_exploratory": 4,
+  "declared_model_metadata": {
+    "applies_to_job_ids": [
+      "J41f0542133014d89",
+      "Jacfc3ce92797a53a",
+      "Jbdf1368146b83720",
+      "J6d1f15d1a4d88755"
+    ],
+    "conversation_arrangement": "One chat for all four jobs",
+    "independently_verified": false,
+    "original_response_files_and_import_notes_unchanged": true,
+    "provenance": "User clarifications on 2026-10-26: GPT-6 for all four; High thinking effort; one chat for all four jobs.",
+    "same_label_for_all_four": true,
+    "separate_new_chats": false,
+    "shared_context_limitation": "Jobs and answers may influence later responses; four outputs are not independent single-job-chat replications.",
+    "underlying_model_version": "unknown",
+    "visible_model_label_user_reported": "GPT-6",
+    "visible_settings": {
+      "thinking_effort": "High"
+    }
+  },
+  "finding": "Both offset/JSON and readable formats support the requested whole-claim merge/split in these returned responses, with no moderate/high drift identified. Realization is feasible in the reported GPT-6 High shared-chat setup; standalone success of either format, distinctive style learning and mapping are not established.",
+  "judgment_limits": "Same in-session assistant; conditions/reference visible; unblinded, uncalibrated and not independent verification. Exact span anchoring does not prove semantic equivalence.",
+  "model_calls_during_review": 0,
+  "model_identity": "user_reported_not_independently_verified",
+  "next_recommendation": "Use six paper-diverse nonprobe candidates from the existing maps, including these two anchors, to compare ordinary shared-evidence rewriting against readable edit guidance in the same external model/settings. Twelve outputs; no new annotation or training yet.",
+  "ordinary_no_plan_baseline_present": false,
+  "protocol": "readable_strong_realizer_v1",
+  "readable_format_superiority_demonstrated": false,
+  "reported_model_details": "User reports GPT-6 with High thinking effort, one chat for all four jobs; underlying version and hidden decoding remain unverified.",
+  "requested_outputs": 4,
+  "reserved_test_rows_read": 0,
+  "status": "reviewed_four_complete_responses",
+  "substantial_author_style_gain_demonstrated": false,
+  "training_called": false,
+  "validation_rows_read": 0
+}

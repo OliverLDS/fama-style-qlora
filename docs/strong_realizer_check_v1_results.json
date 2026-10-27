@@ -1,0 +1,138 @@
+{
+  "protocol": "strong_realizer_check_v1",
+  "status": "10_imported_and_assessed",
+  "model_metadata": {
+    "reported_model_label": "GPT-6",
+    "reported_same_model_both_batches": true,
+    "provenance": "User stated in this conversation: both are using GPT-6.",
+    "underlying_model_version_independently_verified": false,
+    "decoding_settings": null,
+    "separate_new_conversations_confirmed": null,
+    "batch_and_wrapper_match_kaggle": false
+  },
+  "expected_outputs": 10,
+  "accepted_outputs": 10,
+  "import_errors": 0,
+  "groups": {
+    "contrast_hypothesis": {
+      "A_ordinary_shared_evidence": {
+        "rows": 4,
+        "style_grades": {
+          "slight": 3,
+          "moderate": 1
+        },
+        "drift_grades": {
+          "none_detected": 4
+        },
+        "substantial_reference_style_cases": 1,
+        "core_operation_cases": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.7957460776899403,
+        "shallow_count_matches": 0,
+        "citation_context_alerts": 0,
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.3,
+          "style_first": 0.3,
+          "bounded_drift_default": 0.3,
+          "preservation_weighted": 0.3
+        }
+      },
+      "C_operations_shared_evidence": {
+        "rows": 4,
+        "style_grades": {
+          "moderate": 4
+        },
+        "drift_grades": {
+          "minor": 1,
+          "none_detected": 3
+        },
+        "substantial_reference_style_cases": 4,
+        "core_operation_cases": 3,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.7288202072860424,
+        "shallow_count_matches": 1,
+        "citation_context_alerts": 0,
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.6,
+          "style_first": 0.59625,
+          "bounded_drift_default": 0.590625,
+          "preservation_weighted": 0.58125
+        }
+      }
+    },
+    "preservation_control": {
+      "A_ordinary_shared_evidence": {
+        "rows": 1,
+        "style_grades": {
+          "none": 1
+        },
+        "drift_grades": {
+          "none_detected": 1
+        },
+        "substantial_reference_style_cases": 0,
+        "core_operation_cases": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.8121827411167513,
+        "shallow_count_matches": 1,
+        "citation_context_alerts": 0,
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": 0.0,
+          "bounded_drift_default": 0.0,
+          "preservation_weighted": 0.0
+        }
+      },
+      "C_operations_shared_evidence": {
+        "rows": 1,
+        "style_grades": {
+          "none": 1
+        },
+        "drift_grades": {
+          "none_detected": 1
+        },
+        "substantial_reference_style_cases": 0,
+        "core_operation_cases": 0,
+        "near_copies": 0,
+        "exact_copies": 0,
+        "mean_source_similarity": 0.7309644670050761,
+        "shallow_count_matches": 1,
+        "citation_context_alerts": 0,
+        "mean_assessed_utilities": {
+          "style_only_sensitivity": 0.0,
+          "style_first": 0.0,
+          "bounded_drift_default": 0.0,
+          "preservation_weighted": 0.0
+        }
+      }
+    }
+  },
+  "positive_core_operation_cases": 3,
+  "total_transformation_cases": 4,
+  "control_conditions_passed_exploratory": 2,
+  "provisional_followup_trigger_met": true,
+  "trigger_basis": "Operation guidance produced moderate reference-grounded structural/style gains over ordinary on three of four transformations, no high drift in either arm, and preserved control citation bindings. These are unblinded judgments on reused oracle cases.",
+  "author_specificity_proved": false,
+  "generalization_proved": false,
+  "matched_model_size_comparison": false,
+  "model_calls_by_review": 0,
+  "gpu_jobs_submitted": 0,
+  "training_called": false,
+  "reserved_test_rows_used": 0,
+  "gemma_contextual_comparison_not_causal": {
+    "base": {
+      "near_copies": 0,
+      "substantial_style_candidates": 0,
+      "core_operation_cases_assessed_in_original_review": 0,
+      "cases": 4
+    },
+    "planned_adapter": {
+      "near_copies": 3,
+      "substantial_style_candidates": 0,
+      "core_operation_cases_assessed_in_original_review": 0,
+      "cases": 4
+    }
+  }
+}
