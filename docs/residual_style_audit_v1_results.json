@@ -1,0 +1,214 @@
+{
+  "alignment_flags": [
+    {
+      "flag_id": "level_versus_temporal_change",
+      "paper_key": "NL2003"
+    },
+    {
+      "flag_id": "technical_terms_not_proven_aliases",
+      "paper_key": "FJ1983"
+    },
+    {
+      "flag_id": "epistemic_strength",
+      "paper_key": "ME1997"
+    },
+    {
+      "flag_id": "economic_rental_representation",
+      "paper_key": "F1980"
+    }
+  ],
+  "author_specificity_validated": false,
+  "candidate_controls": 3,
+  "candidate_controls_tested": 0,
+  "cases": 6,
+  "existing_outputs": 12,
+  "feature_observations": [
+    {
+      "feature_id": "concept_or_function_as_theme",
+      "paper_count": 3,
+      "selected_support_papers": [
+        "F1980",
+        "FJ1983",
+        "NL2003"
+      ]
+    },
+    {
+      "feature_id": "finite_supported_consequence",
+      "paper_count": 2,
+      "selected_support_papers": [
+        "F1980",
+        "FF2000"
+      ]
+    },
+    {
+      "feature_id": "stable_source_defined_labels",
+      "paper_count": 2,
+      "selected_support_papers": [
+        "FF2000",
+        "NL2003"
+      ]
+    },
+    {
+      "feature_id": "mixed_technical_and_plain_register",
+      "paper_count": 3,
+      "selected_support_papers": [
+        "F1980",
+        "ME1997",
+        "VL2018"
+      ]
+    }
+  ],
+  "finding": "Residual differences include theme/predication, consequence-clause form and source-label continuity; many salient technical/epistemic differences may reflect information missing from neutral inputs. Mixed plain/technical register contradicts a universal more-formal rule.",
+  "levels": [
+    "paragraph_structure",
+    "sentence_structure",
+    "language_features"
+  ],
+  "limitations": [
+    "Six purpose-selected training references and outputs, two reused positive anchors; no population prevalence or generalization.",
+    "Same assistant with all conditions/reference visible; exploratory unblinded observations and semantic flags, not independent OCR/source verification.",
+    "Candidate rules have two/three-paper support and conditional applicability; generic economics prose can exhibit them.",
+    "No non-Fama comparison authors, so author specificity cannot be measured; no new generations test these candidates."
+  ],
+  "model_calls": 0,
+  "next_recommendation": "Resolve the four flagged source-reference meaning alignments in a separately versioned repair audit before testing richer style controls or training. Keep all originals and current prototype policy unchanged.",
+  "papers": 6,
+  "potential_alignment_flag_cases": 4,
+  "protocol": "residual_style_audit_v1",
+  "prototype_changed": false,
+  "references_longer_than_both_outputs": 6,
+  "reserved_test_rows_read": 0,
+  "semantic_equivalence_verified": false,
+  "status": "completed_existing_text_audit",
+  "taxonomy_replaced": false,
+  "training_called": false,
+  "validation_rows_read": 0,
+  "word_sentence_counts": [
+    {
+      "counts": {
+        "ordinary": {
+          "sentences": 2,
+          "words_regex": 66
+        },
+        "planned": {
+          "sentences": 2,
+          "words_regex": 63
+        },
+        "reference": {
+          "sentences": 2,
+          "words_regex": 88
+        },
+        "source": {
+          "sentences": 3,
+          "words_regex": 63
+        }
+      },
+      "paper_key": "NL2003"
+    },
+    {
+      "counts": {
+        "ordinary": {
+          "sentences": 4,
+          "words_regex": 90
+        },
+        "planned": {
+          "sentences": 4,
+          "words_regex": 94
+        },
+        "reference": {
+          "sentences": 4,
+          "words_regex": 101
+        },
+        "source": {
+          "sentences": 5,
+          "words_regex": 92
+        }
+      },
+      "paper_key": "FF2000"
+    },
+    {
+      "counts": {
+        "ordinary": {
+          "sentences": 3,
+          "words_regex": 55
+        },
+        "planned": {
+          "sentences": 3,
+          "words_regex": 57
+        },
+        "reference": {
+          "sentences": 3,
+          "words_regex": 89
+        },
+        "source": {
+          "sentences": 4,
+          "words_regex": 57
+        }
+      },
+      "paper_key": "FJ1983"
+    },
+    {
+      "counts": {
+        "ordinary": {
+          "sentences": 5,
+          "words_regex": 128
+        },
+        "planned": {
+          "sentences": 8,
+          "words_regex": 142
+        },
+        "reference": {
+          "sentences": 8,
+          "words_regex": 176
+        },
+        "source": {
+          "sentences": 7,
+          "words_regex": 135
+        }
+      },
+      "paper_key": "ME1997"
+    },
+    {
+      "counts": {
+        "ordinary": {
+          "sentences": 5,
+          "words_regex": 86
+        },
+        "planned": {
+          "sentences": 4,
+          "words_regex": 92
+        },
+        "reference": {
+          "sentences": 4,
+          "words_regex": 143
+        },
+        "source": {
+          "sentences": 6,
+          "words_regex": 94
+        }
+      },
+      "paper_key": "F1980"
+    },
+    {
+      "counts": {
+        "ordinary": {
+          "sentences": 3,
+          "words_regex": 68
+        },
+        "planned": {
+          "sentences": 2,
+          "words_regex": 62
+        },
+        "reference": {
+          "sentences": 2,
+          "words_regex": 71
+        },
+        "source": {
+          "sentences": 4,
+          "words_regex": 64
+        }
+      },
+      "paper_key": "VL2018"
+    }
+  ]
+}

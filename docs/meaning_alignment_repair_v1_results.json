@@ -1,0 +1,47 @@
+{
+  "automatic_generation_ready_rows": 0,
+  "clarified": 3,
+  "clarified_context_bound": 1,
+  "frozen_train_rows_changed": 0,
+  "full_visual_transcription_verified": false,
+  "methods": [
+    "Archived training-paper paragraphs/context",
+    "Native macOS PDFKit text extraction; no new OCR or model",
+    "Targeted visual review of F1980 PDF pages 5-6 recorded separately"
+  ],
+  "model_calls": 0,
+  "next_step": "Fresh source claim/evidence bindings for the revised inputs; retain the NL2003 context flag. No reuse of earlier oracle programs without revalidation.",
+  "overlay_replacement_policy": "Replace by original ID only after explicit acceptance; never append as extra examples.",
+  "papers": [
+    {
+      "decision": "clarified_context_bound",
+      "paper_key": "NL2003",
+      "patches": 1
+    },
+    {
+      "decision": "clarified",
+      "paper_key": "FJ1983",
+      "patches": 4
+    },
+    {
+      "decision": "clarified",
+      "paper_key": "ME1997",
+      "patches": 2
+    },
+    {
+      "decision": "clarified",
+      "paper_key": "F1980",
+      "patches": 2
+    }
+  ],
+  "protocol": "meaning_alignment_repair_v1",
+  "reserved_test_rows_read": 0,
+  "rows": 4,
+  "semantic_equivalence_independently_verified": false,
+  "source_annotations_reusable": false,
+  "source_patch_count": 9,
+  "targets_changed": 0,
+  "training_called": false,
+  "training_ready_rows": 0,
+  "validation_rows_read": 0
+}

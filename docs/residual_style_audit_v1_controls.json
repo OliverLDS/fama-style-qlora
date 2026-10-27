@@ -1,0 +1,74 @@
+{
+  "protocol": "residual_style_audit_v1",
+  "status": "three_untested_candidates_not_taxonomy_replacement",
+  "existing_annotation_schema_sha256": "da8d77965d9cead3fbcec74f8d869b292c49f5bf228620fcc8cde6d20b3e71f8",
+  "controls": [
+    {
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION",
+      "level": "paragraph_and_sentence",
+      "taxonomy_fields": [
+        "paragraph_structure.moves",
+        "sentence_structure.clauses"
+      ],
+      "feature_id": "concept_or_function_as_theme",
+      "instruction": "When the source claim concerns a pattern, economic relation or institutional function, make that already-supported concept the grammatical theme; keep evidence sources and actor roles explicit.",
+      "guard": "No added importance ranking, centrality, universality, agent reassignment or economic relation. Reframing must not become a new definition.",
+      "selected_support_papers": [
+        "NL2003",
+        "FJ1983",
+        "F1980"
+      ],
+      "status": "candidate_untested",
+      "changes_sentence_count_required": false,
+      "new_semantic_relations_allowed": false,
+      "mechanical_executor_implemented": false,
+      "generator_test_executed": false,
+      "added_to_prototype": false
+    },
+    {
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE",
+      "level": "sentence",
+      "taxonomy_fields": [
+        "paragraph_structure.progression",
+        "sentence_structure.clauses"
+      ],
+      "feature_id": "finite_supported_consequence",
+      "instruction": "Where the source explicitly supports an inference or causal consequence, consider a finite consequence clause with a clear existing subject rather than only a participial tail, while retaining the same claim grouping.",
+      "guard": "Require the existing explicit source relation and unchanged endpoints/direction/certainty. Keep conditions and modality attached; do not infer causality from co-location.",
+      "selected_support_papers": [
+        "FF2000",
+        "F1980"
+      ],
+      "counterexample_papers": [
+        "NL2003"
+      ],
+      "status": "candidate_untested_case_selective",
+      "changes_sentence_count_required": false,
+      "new_semantic_relations_allowed": false,
+      "mechanical_executor_implemented": false,
+      "generator_test_executed": false,
+      "added_to_prototype": false
+    },
+    {
+      "control_id": "REUSE_SOURCE_DEFINED_LABEL",
+      "level": "language",
+      "taxonomy_fields": [
+        "language_features"
+      ],
+      "feature_id": "stable_source_defined_labels",
+      "instruction": "Prefer a compact referent/cohort/quantity label already present and defined in the source over gratuitous synonymous renaming, when it improves continuity.",
+      "guard": "Only source-defined labels; no target-derived glossary, new technical alias, unit/value conversion or changed population/scope. Pronouns can remain when clearer.",
+      "selected_support_papers": [
+        "NL2003",
+        "FF2000"
+      ],
+      "status": "candidate_untested_modest_preference",
+      "changes_sentence_count_required": false,
+      "new_semantic_relations_allowed": false,
+      "mechanical_executor_implemented": false,
+      "generator_test_executed": false,
+      "added_to_prototype": false
+    }
+  ],
+  "global_note": "No universal nominalization/formality/finite-clause rule and no author specificity demonstrated."
+}
