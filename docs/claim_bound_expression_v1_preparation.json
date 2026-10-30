@@ -1,0 +1,31 @@
+{
+  "protocol": "claim_bound_expression_v1",
+  "status": "prepared_not_executed",
+  "requested_outputs": 6,
+  "papers": 2,
+  "batches": 3,
+  "conditions": [
+    "ordinary",
+    "grouping_control",
+    "selective_expression"
+  ],
+  "grouping_fixed_in_primary_contrast": true,
+  "operations": [
+    {
+      "paper_key": "F1980",
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE"
+    },
+    {
+      "paper_key": "FJ1983",
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION"
+    }
+  ],
+  "label_reuse_tested": false,
+  "model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "semantic_accuracy": null,
+  "author_style_accuracy": null
+}

@@ -1,0 +1,32 @@
+{
+  "protocol": "fixed_length_replication_v1",
+  "cutoff": 30,
+  "word_counter": "[A-Za-z]+(?:'[A-Za-z]+)?",
+  "source_pool": "earlier_human_prose_training_only",
+  "papers": 4,
+  "pairs_per_stratum_per_paper": 4,
+  "strata": [
+    "at_most_30",
+    "over_30"
+  ],
+  "paper_selection": "capacity_then_seeded_hash_then_distinct_authors",
+  "pair_selection": "four_word_length_quantiles_within_each_paper_stratum_hash_ties",
+  "seed": "fixed_length_replication_v1",
+  "generation_before_verification": true,
+  "threshold_refitting": false,
+  "candidate_or_judge_outcomes_used_for_sampling": false,
+  "primary": "faithful_decisive_readability",
+  "side_cohorts": [
+    "faithful_comparable",
+    "claim_shift",
+    "unresolved",
+    "generation_abstention"
+  ],
+  "methods": [
+    "keep",
+    "merge_all_available",
+    "fixed_30_available"
+  ],
+  "availability_policy": "an_abstained_generation_is_unavailable_and_forces_keep; report_coverage_separately",
+  "reporting": "counts_and_macro_paper_scores_separate_side_cohorts; sampling_balanced_not_population_estimate"
+}

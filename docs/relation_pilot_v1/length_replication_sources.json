@@ -1,0 +1,59 @@
+{
+  "papers": [
+    {
+      "paper_id": "C_H1979",
+      "title": "Moral Hazard and Observability",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "publication_year": 1979,
+      "version_year": 1979,
+      "publication_evidence_url": "https://www.jstor.org/stable/3003320",
+      "download_url": "https://personal.utdallas.edu/~nina.baranchuk/Fin7310/papers/Holmstrom1979.pdf",
+      "pdf_sha256": "8a38a0b4087c2af299bc912f0060391f1829193859563850228b6fa8bc20e99c",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_PS2011",
+      "title": "Are Stocks Really Less Volatile in the Long Run?",
+      "authors": [
+        "Lubos Pastor",
+        "Robert F. Stambaugh"
+      ],
+      "publication_year": 2012,
+      "version_year": 2011,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2012.01722.x",
+      "download_url": "https://rodneywhitecenter.wharton.upenn.edu/wp-content/uploads/2014/04/1101..pdf",
+      "pdf_sha256": "c3bae3379cb55b03e076c5f8459f486159053bbc61dd7927f7c05f6ed5890915",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_S1998",
+      "title": "Human Behavior and the Efficiency of the Financial System",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "publication_year": 1999,
+      "version_year": 1998,
+      "publication_evidence_url": "https://www.nber.org/papers/w6375",
+      "download_url": "https://www.nber.org/system/files/working_papers/w6375/w6375.pdf",
+      "pdf_sha256": "a1ff838870a4ce25b7c907ff7f89252b41a2e93ad1406b05dcc391de5500a7da",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_BIR2019",
+      "title": "Long-Horizon Predictability: A Cautionary Tale",
+      "authors": [
+        "Jacob Boudoukh",
+        "Ronen Israel",
+        "Matthew Richardson"
+      ],
+      "publication_year": 2019,
+      "version_year": 2019,
+      "publication_evidence_url": "https://doi.org/10.1080/0015198X.2018.1547056",
+      "download_url": "https://www.mobt3ath.com/uplode/book/book-120052.pdf",
+      "pdf_sha256": "a3d0751ac6ec06d7dd9342a28026a765a169e316f0bc24136b08a6adb0ce4b7b",
+      "split": "training"
+    }
+  ]
+}

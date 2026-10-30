@@ -1,0 +1,49 @@
+{
+  "protocol": "repaired_source_bindings_v1",
+  "rows": 4,
+  "claims": 21,
+  "plans_revalidated": 4,
+  "clean_bounded_diagnostic_cases": 2,
+  "qualified_diagnostic_cases": 2,
+  "facets": 27,
+  "intra_claim_constraints": 4,
+  "training_ready_rows": 0,
+  "automatic_generation_ready_rows": 0,
+  "model_calls": 0,
+  "gpu_jobs_started": 0,
+  "targets_changed": 0,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "semantic_equivalence_verified": false,
+  "author_style_improvement_measured": false,
+  "cases": [
+    {
+      "paper_key": "NL2003",
+      "claims": 3,
+      "output_slots": 2,
+      "context_flag_retained": true,
+      "alignment_caveat_retained": false
+    },
+    {
+      "paper_key": "FJ1983",
+      "claims": 4,
+      "output_slots": 3,
+      "context_flag_retained": false,
+      "alignment_caveat_retained": false
+    },
+    {
+      "paper_key": "ME1997",
+      "claims": 8,
+      "output_slots": 8,
+      "context_flag_retained": false,
+      "alignment_caveat_retained": true
+    },
+    {
+      "paper_key": "F1980",
+      "claims": 6,
+      "output_slots": 4,
+      "context_flag_retained": false,
+      "alignment_caveat_retained": false
+    }
+  ]
+}

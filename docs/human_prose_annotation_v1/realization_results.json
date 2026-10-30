@@ -1,0 +1,65 @@
+{
+  "protocol": "human_prose_realization_review_v1",
+  "status": "exploratory_assistant_evidence_assessed",
+  "accepted_outputs": 16,
+  "examples": 8,
+  "papers": 4,
+  "user_reported_model": "GPT-6",
+  "user_reported_thinking_effort": "High",
+  "current_chat_arrangement": "not_reported",
+  "cross_chat_independence_established": false,
+  "hidden_model_snapshot_known": false,
+  "hidden_decoding_controlled": false,
+  "assessment_method": "In-session coding-assistant reading of all 16 outputs against neutral sources and original references. Evidence-bound but unblinded, not an independent model verifier; sentence groups are assistant judgments.",
+  "assessment_blinded": false,
+  "semantic_equivalence_certified": false,
+  "source_only_mapper_tested": false,
+  "distinctive_author_style_established": false,
+  "detector_performance_tested": false,
+  "generation_performed_by_user": true,
+  "review_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "reserved_rows_used": 0,
+  "conditions": {
+    "ordinary": {
+      "outputs": 8,
+      "median_source_overlap": 0.7709821750739698,
+      "median_reference_overlap_evaluation_only": 0.664287543208296,
+      "normalized_source_copies": 0,
+      "sentence_count_matches_target": 5,
+      "claim_grouping_matches_target": 5,
+      "reviewed_claim_instances": 55,
+      "claim_assessment_statuses": {
+        "no_clear_change_identified": 49,
+        "minor_shift": 5,
+        "scope_risk": 1
+      }
+    },
+    "oracle_presentation": {
+      "outputs": 8,
+      "median_source_overlap": 0.7230933713471133,
+      "median_reference_overlap_evaluation_only": 0.666480996068152,
+      "normalized_source_copies": 0,
+      "sentence_count_matches_target": 5,
+      "claim_grouping_matches_target": 5,
+      "reviewed_claim_instances": 55,
+      "claim_assessment_statuses": {
+        "no_clear_change_identified": 49,
+        "minor_shift": 4,
+        "scope_risk": 1,
+        "scope_shift": 1
+      }
+    }
+  },
+  "paired": {
+    "source_target_grouping_differs_examples": 2,
+    "same_output_sentence_count": 8,
+    "same_claim_grouping": 7,
+    "median_paired_output_overlap": 0.8144881434355118,
+    "guided_lower_source_overlap": 4,
+    "guided_higher_reference_overlap_evaluation_only": 3
+  },
+  "known_input_epistemic_shift_examples": 1,
+  "raw_responses_modified": false
+}

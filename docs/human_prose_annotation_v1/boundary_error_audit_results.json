@@ -1,0 +1,95 @@
+{
+  "protocol": "boundary_error_audit_v1",
+  "status": "discovery_audit_complete_no_rescoring",
+  "cases": 42,
+  "paragraphs": 34,
+  "papers": 12,
+  "by_kind": {
+    "extra": {
+      "cases": 20,
+      "categories": {
+        "plausible_alternative": 14,
+        "keep_preferred_risk": 6
+      }
+    },
+    "missed": {
+      "cases": 22,
+      "categories": {
+        "supported_merge_missed": 15,
+        "optional_reference_merge": 6,
+        "composite_claim_granularity": 1
+      }
+    }
+  },
+  "by_paper": {
+    "C_AD1972": {
+      "supported_merge_missed": 2,
+      "plausible_alternative": 1
+    },
+    "C_BW2003": {
+      "plausible_alternative": 2,
+      "keep_preferred_risk": 1,
+      "supported_merge_missed": 1
+    },
+    "C_H1979": {
+      "supported_merge_missed": 2,
+      "optional_reference_merge": 1
+    },
+    "C_M1963": {
+      "optional_reference_merge": 2,
+      "supported_merge_missed": 2
+    },
+    "C_M2003": {
+      "keep_preferred_risk": 1,
+      "supported_merge_missed": 1,
+      "plausible_alternative": 4
+    },
+    "C_PS2011": {
+      "plausible_alternative": 2,
+      "supported_merge_missed": 1,
+      "keep_preferred_risk": 3
+    },
+    "C_RW2002": {
+      "supported_merge_missed": 1,
+      "plausible_alternative": 1
+    },
+    "R_BIR2019": {
+      "optional_reference_merge": 1,
+      "supported_merge_missed": 1,
+      "composite_claim_granularity": 1
+    },
+    "R_DDS2002": {
+      "supported_merge_missed": 2,
+      "keep_preferred_risk": 1,
+      "optional_reference_merge": 1
+    },
+    "R_GM1962": {
+      "plausible_alternative": 1,
+      "optional_reference_merge": 1
+    },
+    "R_S1998": {
+      "plausible_alternative": 2
+    },
+    "R_SH1979": {
+      "plausible_alternative": 1,
+      "supported_merge_missed": 2
+    }
+  },
+  "keep_preferred_unique_predicted_groups": 5,
+  "confirmed_label_errors": 0,
+  "assessment_method": "In-session coding-assistant reading of all 42 mismatched boundaries in full source/reference and predicted-group context. Unblinded, exploratory and not independently calibrated; no generated rewrite or new semantic verifier.",
+  "assessment_blinded": false,
+  "independent_verifier": false,
+  "generated_prose_reviewed": false,
+  "judgments_certified": false,
+  "labels_changed": false,
+  "classifier_predictions_changed": false,
+  "classifier_rescored": false,
+  "discovery_only_not_new_heldout_score": true,
+  "development_rows_used": 0,
+  "reserved_rows_used": 0,
+  "new_model_fits": 0,
+  "external_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "llm_training_called": false
+}

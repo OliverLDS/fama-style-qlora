@@ -1,6 +1,8 @@
 """Core contracts using synthetic prose only; no private artifacts or ML imports."""
 import tests
 import copy
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -9,7 +11,7 @@ from fama_style.evaluation import source_control_review as review
 from fama_style.training import corpus_pilot as pilot
 from fama_style.training import corpus_smoke as smoke
 from tests.test_corpus_baseline import FakeProcessor
-from scripts.review_public_files import allowed, audit_file
+from scripts.review_public_files import allowed, audit_file, private_paragraphs
 
 
 class PublicContracts(unittest.TestCase):
@@ -54,10 +56,20 @@ class PublicContracts(unittest.TestCase):
         self.assertFalse(allowed("archive/paper.pdf"))
         self.assertFalse(allowed("reviews/source_control_v1/review.html"))
         self.assertTrue(allowed("src/fama_style/training/corpus_pilot.py"))
+        self.assertTrue(allowed("scripts/data/extract_comparison_ocr.swift"))
+        self.assertFalse(allowed("scripts/data/other.swift"))
         # Construct fake markers rather than storing a token-shaped literal.
         marker = ("hf_"+"x"*30).encode()
         self.assertIn("Hugging Face token pattern", audit_file("README.md",marker))
         self.assertTrue(audit_file("kaggle/test.ipynb",b'{"cells":[{"outputs":[{}],"execution_count":1}]}'))
+
+    def test_private_scan_covers_research_sources_and_candidates(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);folder=root/'research_runs'/'synthetic';folder.mkdir(parents=True)
+            source='Synthetic source content for publication scanner testing. '*4
+            candidate='Synthetic candidate content for publication scanner testing. '*4
+            (folder/'rows.jsonl').write_text(json.dumps({'source_paragraph':source,'candidate':candidate})+'\n')
+            self.assertEqual(private_paragraphs(root),{' '.join(source.split()),' '.join(candidate.split())})
 
 
 if __name__ == "__main__":

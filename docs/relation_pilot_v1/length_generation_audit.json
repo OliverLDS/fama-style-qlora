@@ -1,0 +1,35 @@
+{
+  "protocol": "fixed_length_generation_review_v1",
+  "records": 32,
+  "response_files": 8,
+  "mechanically_valid_records": 32,
+  "invalid_records": 0,
+  "generation_status": {
+    "generated": 32
+  },
+  "by_stratum": {
+    "at_most_30": {
+      "generated": 16
+    },
+    "over_30": {
+      "generated": 16
+    }
+  },
+  "surface_risk_flags": {
+    "over_60_words": 1,
+    "number_inventory_changed": 1,
+    "guard_inventory_changed": 1
+  },
+  "semantic_status": "all_candidates_unverified",
+  "candidate_texts_repaired": 0,
+  "raw_provenance_both_null": 32,
+  "reported_model": "GPT-6",
+  "requested_effort": "High",
+  "effective_effort": "not confirmed; user reports requesting High",
+  "cutoff_refitted": false,
+  "verification_outcomes_available": false,
+  "new_model_calls": 0,
+  "training_called": false,
+  "gpu_jobs_started": 0,
+  "reserved_content_used": false
+}

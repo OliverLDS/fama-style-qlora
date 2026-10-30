@@ -1,0 +1,361 @@
+{
+  "type": "object",
+  "properties": {
+    "annotation_version": {
+      "const": "relation_pilot_verification_v1"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "source_paragraph": {
+      "type": "string",
+      "minLength": 1
+    },
+    "left_sentence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "right_sentence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "pattern": "^V[1-9][0-9]*$"
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actors_and_roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "quantities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "negation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "modality": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attribution": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "candidate_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "alignment": {
+            "type": "string",
+            "enum": [
+              "preserved",
+              "omitted",
+              "changed",
+              "uncertain"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "unit_id",
+          "proposition",
+          "actors_and_roles",
+          "conditions",
+          "quantities",
+          "negation",
+          "modality",
+          "attribution",
+          "source_evidence",
+          "candidate_evidence",
+          "alignment",
+          "notes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "added_content": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "candidate_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "source_support": {
+            "type": "string",
+            "enum": [
+              "absent",
+              "uncertain"
+            ]
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "candidate_evidence",
+          "source_support",
+          "explanation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "context_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "occurrence": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "quote",
+          "occurrence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "fidelity_verdict": {
+      "type": "string",
+      "enum": [
+        "faithful",
+        "local_shift",
+        "material_shift",
+        "unresolved"
+      ]
+    },
+    "fidelity_rationale": {
+      "type": "string"
+    },
+    "issue_categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "added_relation",
+          "added_claim",
+          "omitted_claim",
+          "changed_actor",
+          "changed_quantity_or_quantifier",
+          "changed_negation",
+          "changed_modality",
+          "changed_condition",
+          "changed_attribution",
+          "changed_speech_act",
+          "unclear_reference",
+          "other"
+        ]
+      }
+    },
+    "readability_in_context": {
+      "type": "string",
+      "enum": [
+        "merged_better",
+        "separated_better",
+        "comparable",
+        "unresolved"
+      ]
+    },
+    "readability_rationale": {
+      "type": "string"
+    },
+    "readability_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text_origin": {
+            "type": "string",
+            "enum": [
+              "source",
+              "candidate"
+            ]
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "occurrence": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "text_origin",
+          "quote",
+          "occurrence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "candidate_single_sentence": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "uncertain"
+      ]
+    },
+    "needs_external_context": {
+      "type": "boolean"
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "visible_model_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thinking_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "earlier_judgments_supplied": {
+          "const": false
+        },
+        "independently_verified": {
+          "const": false
+        }
+      },
+      "required": [
+        "visible_model_label",
+        "thinking_setting",
+        "earlier_judgments_supplied",
+        "independently_verified"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "annotation_version",
+    "item_id",
+    "source_paragraph",
+    "left_sentence",
+    "right_sentence",
+    "candidate",
+    "source_units",
+    "added_content",
+    "context_evidence",
+    "fidelity_verdict",
+    "fidelity_rationale",
+    "issue_categories",
+    "readability_in_context",
+    "readability_rationale",
+    "readability_evidence",
+    "candidate_single_sentence",
+    "needs_external_context",
+    "review_notes",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

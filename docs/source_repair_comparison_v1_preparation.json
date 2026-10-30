@@ -1,0 +1,41 @@
+{
+  "protocol": "source_repair_comparison_v1",
+  "status": "prepared_not_executed",
+  "papers": 4,
+  "requested_outputs": 16,
+  "conditions": [
+    "original_ordinary",
+    "original_planned",
+    "repaired_ordinary",
+    "repaired_planned"
+  ],
+  "batches": 4,
+  "jobs_per_batch": 4,
+  "binding_policy_matched": true,
+  "grouping_plan_fixed_across_input_arms": true,
+  "decoding_settings_identical_verified": false,
+  "model_calls": 0,
+  "training_called": false,
+  "gpu_jobs_started": 0,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "semantic_accuracy": null,
+  "author_style_accuracy": null,
+  "qualified_cases": [
+    "NL2003: unspecified comparison/context",
+    "ME1997: recognition versus correction"
+  ],
+  "evaluation_axes": [
+    "supplied-input fidelity",
+    "reference-claim recovery",
+    "copying relative to both inputs",
+    "organization and nonpacking style"
+  ],
+  "limits": [
+    "Four inspected training cases; exploratory mechanism diagnostic.",
+    "Reference alignment is not source fidelity; input repairs can legitimately change claims.",
+    "Compare all four new conditions; historical outputs are not concurrent controls.",
+    "Oracle evidence/grouping, hidden settings, memory and batch context limit causal interpretation.",
+    "No distinctive author-style or source-only deployment claim."
+  ]
+}

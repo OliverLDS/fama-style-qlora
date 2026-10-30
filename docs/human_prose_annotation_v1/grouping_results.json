@@ -1,0 +1,106 @@
+{
+  "protocol": "human_prose_grouping_review_v1",
+  "status": "exploratory_assistant_evidence_assessed",
+  "accepted_outputs": 15,
+  "examples": 5,
+  "papers": 3,
+  "user_reported_model": "GPT-6",
+  "user_reported_thinking_effort": "High",
+  "current_chat_arrangement": "not_reported",
+  "cross_chat_independence_established": false,
+  "hidden_decoding_controlled": false,
+  "model_identity_independently_verified": false,
+  "assessment_method": "In-session coding-assistant reading of all 15 outputs against neutral sources and original references, with exact output evidence and assistant claim-group assignments. Unblinded; not an independent or calibrated semantic verifier.",
+  "assessment_blinded": false,
+  "semantic_equivalence_certified": false,
+  "distinctive_author_style_established": false,
+  "source_only_mapper_tested": false,
+  "detector_performance_tested": false,
+  "raw_responses_modified": false,
+  "reserved_rows_used": 0,
+  "review_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "conditions": {
+    "ordinary": {
+      "outputs": 5,
+      "median_source_overlap": 0.6425339366515838,
+      "median_reference_overlap_evaluation_only": 0.501628664495114,
+      "normalized_source_copies": 0,
+      "target_sentence_count_matches": 4,
+      "source_sentence_count_matches": 0,
+      "target_grouping_statuses": {
+        "matched": 1,
+        "not_matched": 4
+      },
+      "source_grouping_statuses": {
+        "not_matched": 5
+      },
+      "requested_grouping_statuses": null,
+      "claim_instances": 37,
+      "claim_assessment_statuses": {
+        "no_clear_change_identified": 30,
+        "minor_shift": 6,
+        "scope_risk": 1
+      }
+    },
+    "source_group_plan": {
+      "outputs": 5,
+      "median_source_overlap": 0.7678571428571429,
+      "median_reference_overlap_evaluation_only": 0.5405405405405406,
+      "normalized_source_copies": 0,
+      "target_sentence_count_matches": 0,
+      "source_sentence_count_matches": 5,
+      "target_grouping_statuses": {
+        "not_matched": 5
+      },
+      "source_grouping_statuses": {
+        "ambiguous_composite_claim": 1,
+        "matched": 4
+      },
+      "requested_grouping_statuses": {
+        "ambiguous_composite_claim": 1,
+        "matched": 4
+      },
+      "claim_instances": 37,
+      "claim_assessment_statuses": {
+        "no_clear_change_identified": 33,
+        "minor_shift": 4
+      }
+    },
+    "oracle_target_group_plan": {
+      "outputs": 5,
+      "median_source_overlap": 0.7353951890034365,
+      "median_reference_overlap_evaluation_only": 0.5555555555555556,
+      "normalized_source_copies": 0,
+      "target_sentence_count_matches": 5,
+      "source_sentence_count_matches": 0,
+      "target_grouping_statuses": {
+        "matched": 5
+      },
+      "source_grouping_statuses": {
+        "not_matched": 5
+      },
+      "requested_grouping_statuses": {
+        "matched": 5
+      },
+      "claim_instances": 37,
+      "claim_assessment_statuses": {
+        "no_clear_change_identified": 34,
+        "minor_shift": 3
+      }
+    }
+  },
+  "self_reported_plan_statuses": {
+    "not_requested": 5,
+    "followed": 10
+  },
+  "all_grouping_changed_cases": true,
+  "source_ambiguity_examples": 1,
+  "paired": {
+    "target_plan_higher_source_overlap_than_ordinary": 5,
+    "source_plan_higher_source_overlap_than_ordinary": 5
+  },
+  "prospective_mechanistic_screen_passed": true,
+  "screen_interpretation": "Limited grouping controllability only; no automatic training or style-quality approval."
+}

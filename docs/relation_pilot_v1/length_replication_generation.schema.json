@@ -1,0 +1,103 @@
+{
+  "type": "object",
+  "properties": {
+    "annotation_version": {
+      "const": "fixed_length_replication_v1_generation"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "source_paragraph": {
+      "type": "string",
+      "minLength": 1
+    },
+    "left_sentence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "right_sentence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generation_status": {
+      "type": "string",
+      "enum": [
+        "generated",
+        "abstained"
+      ]
+    },
+    "abstention_reason": {
+      "type": "string"
+    },
+    "source_context_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "occurrence": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "quote",
+          "occurrence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "visible_model_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thinking_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "earlier_judgments_supplied": {
+          "const": false
+        },
+        "independently_verified": {
+          "const": false
+        }
+      },
+      "required": [
+        "visible_model_label",
+        "thinking_setting",
+        "earlier_judgments_supplied",
+        "independently_verified"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "annotation_version",
+    "item_id",
+    "source_paragraph",
+    "left_sentence",
+    "right_sentence",
+    "candidate",
+    "generation_status",
+    "abstention_reason",
+    "source_context_evidence",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,54 @@
+{
+  "protocol": "expression_replication_v1",
+  "status": "prepared_not_executed",
+  "papers": 4,
+  "requested_outputs": 12,
+  "batches": 3,
+  "jobs_per_batch": 4,
+  "conditions": [
+    "ordinary",
+    "grouping_control",
+    "selective_expression"
+  ],
+  "operation_cases": {
+    "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION": 2,
+    "FINITE_SUPPORTED_CONSEQUENCE": 2
+  },
+  "initial_papers_excluded": [
+    "F1980",
+    "FJ1983"
+  ],
+  "cases": [
+    {
+      "paper_key": "F1965",
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION",
+      "grouping_origin": "source_identity_checked_against_reference",
+      "operation_targets_subset_of_slot": false
+    },
+    {
+      "paper_key": "FF2000",
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE",
+      "grouping_origin": "reference_informed_oracle",
+      "operation_targets_subset_of_slot": false
+    },
+    {
+      "paper_key": "ME1997",
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION",
+      "grouping_origin": "reference_informed_oracle",
+      "operation_targets_subset_of_slot": false
+    },
+    {
+      "paper_key": "VL2018",
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE",
+      "grouping_origin": "reference_informed_oracle",
+      "operation_targets_subset_of_slot": true
+    }
+  ],
+  "semantic_accuracy": null,
+  "author_style_accuracy": null,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0
+}

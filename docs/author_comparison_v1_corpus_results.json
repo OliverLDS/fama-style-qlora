@@ -1,0 +1,301 @@
+{
+  "protocol": "author_comparison_v1",
+  "status": "matched_corpus_built_not_training_data",
+  "papers": 14,
+  "topics": 7,
+  "ocr_pages": 224,
+  "matched_pairs": 73,
+  "paragraphs": 146,
+  "target_paragraphs": 73,
+  "control_paragraphs": 73,
+  "eligible_candidates": 305,
+  "exact_duplicate_candidates_excluded": 0,
+  "per_paper": [
+    {
+      "paper_id": "F1965",
+      "label": 1,
+      "candidate_blocks": 176,
+      "eligible": 21,
+      "rejections": {
+        "incomplete_boundary": 45,
+        "word_budget": 86,
+        "low_line_confidence": 19,
+        "ambiguous_line_break_hyphen": 5
+      },
+      "dropped_lines": {
+        "repeated_header": 47,
+        "heading_or_math_boundary": 115,
+        "small_bottom_footnote": 7,
+        "number_or_symbol_line": 503
+      },
+      "selected": 7
+    },
+    {
+      "paper_id": "C_M1963",
+      "label": 0,
+      "candidate_blocks": 200,
+      "eligible": 7,
+      "rejections": {
+        "incomplete_boundary": 64,
+        "word_budget": 107,
+        "figure_or_table_caption": 1,
+        "low_line_confidence": 15,
+        "ambiguous_line_break_hyphen": 6
+      },
+      "dropped_lines": {
+        "repeated_header": 39,
+        "number_or_symbol_line": 58,
+        "small_bottom_footnote": 11,
+        "page_margin": 64,
+        "heading_or_math_boundary": 238
+      },
+      "selected": 7
+    },
+    {
+      "paper_id": "F1980",
+      "label": 1,
+      "candidate_blocks": 68,
+      "eligible": 20,
+      "rejections": {
+        "incomplete_boundary": 26,
+        "ambiguous_line_break_hyphen": 3,
+        "low_line_confidence": 11,
+        "word_budget": 8
+      },
+      "dropped_lines": {
+        "repeated_header": 32,
+        "number_or_symbol_line": 13,
+        "small_bottom_footnote": 3,
+        "heading_or_math_boundary": 30
+      },
+      "selected": 9
+    },
+    {
+      "paper_id": "C_H1979",
+      "label": 0,
+      "candidate_blocks": 156,
+      "eligible": 16,
+      "rejections": {
+        "incomplete_boundary": 56,
+        "word_budget": 64,
+        "ambiguous_line_break_hyphen": 9,
+        "low_line_confidence": 10,
+        "non_prose_or_table": 1
+      },
+      "dropped_lines": {
+        "repeated_header": 33,
+        "page_margin": 11,
+        "heading_or_math_boundary": 132,
+        "number_or_symbol_line": 39
+      },
+      "selected": 9
+    },
+    {
+      "paper_id": "FJ1983",
+      "label": 1,
+      "candidate_blocks": 88,
+      "eligible": 26,
+      "rejections": {
+        "incomplete_boundary": 32,
+        "low_line_confidence": 5,
+        "word_budget": 23,
+        "ambiguous_line_break_hyphen": 2
+      },
+      "dropped_lines": {
+        "repeated_header": 32,
+        "number_or_symbol_line": 11,
+        "heading_or_math_boundary": 37
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "C_AD1972",
+      "label": 0,
+      "candidate_blocks": 92,
+      "eligible": 17,
+      "rejections": {
+        "incomplete_boundary": 38,
+        "low_line_confidence": 14,
+        "word_budget": 10,
+        "ambiguous_line_break_hyphen": 13
+      },
+      "dropped_lines": {
+        "repeated_header": 42,
+        "small_bottom_footnote": 9,
+        "heading_or_math_boundary": 40,
+        "number_or_symbol_line": 1
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "ME1997",
+      "label": 1,
+      "candidate_blocks": 70,
+      "eligible": 41,
+      "rejections": {
+        "ambiguous_line_break_hyphen": 10,
+        "low_line_confidence": 6,
+        "incomplete_boundary": 8,
+        "possible_inline_heading": 3,
+        "word_budget": 2
+      },
+      "dropped_lines": {
+        "repeated_header": 16,
+        "heading_or_math_boundary": 9,
+        "number_or_symbol_line": 4
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "C_M2003",
+      "label": 0,
+      "candidate_blocks": 35,
+      "eligible": 18,
+      "rejections": {
+        "ambiguous_line_break_hyphen": 4,
+        "incomplete_boundary": 5,
+        "word_budget": 3,
+        "low_line_confidence": 5
+      },
+      "dropped_lines": {
+        "page_margin": 16,
+        "heading_or_math_boundary": 9
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "FF2000",
+      "label": 1,
+      "candidate_blocks": 52,
+      "eligible": 34,
+      "rejections": {
+        "numeric_density": 4,
+        "low_line_confidence": 7,
+        "non_prose_or_table": 4,
+        "word_budget": 2,
+        "ambiguous_line_break_hyphen": 1
+      },
+      "dropped_lines": {
+        "page_margin": 15,
+        "heading_or_math_boundary": 5
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "C_BW2003",
+      "label": 0,
+      "candidate_blocks": 54,
+      "eligible": 24,
+      "rejections": {
+        "low_line_confidence": 9,
+        "ambiguous_line_break_hyphen": 3,
+        "incomplete_boundary": 10,
+        "word_budget": 4,
+        "non_prose_or_table": 3,
+        "metadata_or_abstract": 1
+      },
+      "dropped_lines": {
+        "number_or_symbol_line": 15,
+        "heading_or_math_boundary": 12,
+        "small_bottom_footnote": 2
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "NL2003",
+      "label": 1,
+      "candidate_blocks": 55,
+      "eligible": 29,
+      "rejections": {
+        "numeric_density": 2,
+        "word_budget": 3,
+        "metadata_or_abstract": 1,
+        "low_line_confidence": 6,
+        "incomplete_boundary": 6,
+        "non_prose_or_table": 3,
+        "ambiguous_line_break_hyphen": 5
+      },
+      "dropped_lines": {
+        "page_margin": 15,
+        "heading_or_math_boundary": 9
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "C_RW2002",
+      "label": 0,
+      "candidate_blocks": 89,
+      "eligible": 22,
+      "rejections": {
+        "word_budget": 28,
+        "non_prose_or_table": 2,
+        "incomplete_boundary": 24,
+        "low_line_confidence": 5,
+        "ambiguous_line_break_hyphen": 8
+      },
+      "dropped_lines": {
+        "repeated_header": 34,
+        "heading_or_math_boundary": 51,
+        "number_or_symbol_line": 309,
+        "small_bottom_footnote": 1
+      },
+      "selected": 12
+    },
+    {
+      "paper_id": "VL2018",
+      "label": 1,
+      "candidate_blocks": 33,
+      "eligible": 15,
+      "rejections": {
+        "incomplete_boundary": 9,
+        "non_prose_or_table": 1,
+        "word_budget": 4,
+        "low_line_confidence": 4
+      },
+      "dropped_lines": {
+        "repeated_header": 11,
+        "page_margin": 11,
+        "heading_or_math_boundary": 7,
+        "number_or_symbol_line": 1
+      },
+      "selected": 9
+    },
+    {
+      "paper_id": "C_PS2011",
+      "label": 0,
+      "candidate_blocks": 95,
+      "eligible": 15,
+      "rejections": {
+        "low_line_confidence": 15,
+        "ambiguous_line_break_hyphen": 6,
+        "incomplete_boundary": 30,
+        "word_budget": 29
+      },
+      "dropped_lines": {
+        "repeated_header": 19,
+        "heading_or_math_boundary": 50,
+        "number_or_symbol_line": 32,
+        "small_bottom_footnote": 2
+      },
+      "selected": 9
+    }
+  ],
+  "matching_features": [
+    "word_count",
+    "relative_position_within_opening_window"
+  ],
+  "rhetorical_scores_used_for_selection": false,
+  "max_matched_word_ratio": 1.1923076923076923,
+  "mean_word_difference": 2.9726027397260273,
+  "mean_ocr_confidence_by_label": {
+    "0": 1.0,
+    "1": 1.0
+  },
+  "segmentation_independently_verified": false,
+  "training_ready_rows": 0,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false
+}

@@ -1,0 +1,184 @@
+{
+  "protocol": "relation_pilot_stage2_review_v1",
+  "records": 39,
+  "response_files": 8,
+  "mechanically_valid_records": 39,
+  "invalid_records": 0,
+  "source_text_matches": 39,
+  "sentences": 191,
+  "boundaries": 152,
+  "source_claims": 325,
+  "permissible": {
+    "BOTH": 130,
+    "KEEP": 22
+  },
+  "presentation_preference": {
+    "KEEP": 100,
+    "MERGE": 52
+  },
+  "relation": {
+    "restatement": 4,
+    "qualification": 16,
+    "argument_transition": 25,
+    "example_result": 8,
+    "definition_explication": 26,
+    "premise_consequence": 24,
+    "contrast": 18,
+    "temporal": 5,
+    "attribution_change": 2,
+    "conditional": 7,
+    "parallel_actions": 10,
+    "none": 1,
+    "association": 4,
+    "causal": 2
+  },
+  "confidence": {
+    "medium": 73,
+    "high": 79
+  },
+  "needs_review": 32,
+  "needs_external_context": 30,
+  "all_keep_permitted_under_raw_judgments": true,
+  "candidate_count_from_valid_rows": 130,
+  "candidate_semantic_status": "all_unverified",
+  "candidate_risk_flag_counts": {
+    "guard_inventory_changed": 14,
+    "new_explicit_causal_cue": 10,
+    "over_60_words": 5,
+    "number_inventory_changed": 1
+  },
+  "candidates_with_surface_risk_flags": 26,
+  "preferred_merge_candidates_with_surface_risk_flags": 9,
+  "candidate_words": {
+    "n": 130,
+    "min": 10,
+    "p10": 22.9,
+    "p25": 29.25,
+    "median": 39.5,
+    "p75": 47.75,
+    "p90": 54.0,
+    "max": 81,
+    "mean": 39.146153846153844
+  },
+  "candidate_sequence_overlap": {
+    "n": 130,
+    "min": 0.28,
+    "p10": 0.6657534246575342,
+    "p25": 0.7782485875706215,
+    "median": 0.8938673341677097,
+    "p75": 0.9583333333333334,
+    "p90": 0.9866666666666667,
+    "max": 1.0,
+    "mean": 0.8559755792940626
+  },
+  "candidate_semicolons": 13,
+  "raw_thinking_setting_null_records": 39,
+  "reported_model": "GPT-6",
+  "requested_effort": "High",
+  "effective_effort": "uncertain: High or Medium; not attributable to individual batches",
+  "batch_summaries": [
+    {
+      "batch": 1,
+      "records": 5,
+      "permissible": {
+        "BOTH": 8,
+        "KEEP": 4
+      },
+      "preference": {
+        "KEEP": 9,
+        "MERGE": 3
+      }
+    },
+    {
+      "batch": 2,
+      "records": 5,
+      "permissible": {
+        "KEEP": 4,
+        "BOTH": 14
+      },
+      "preference": {
+        "KEEP": 13,
+        "MERGE": 5
+      }
+    },
+    {
+      "batch": 3,
+      "records": 5,
+      "permissible": {
+        "BOTH": 11,
+        "KEEP": 3
+      },
+      "preference": {
+        "MERGE": 3,
+        "KEEP": 11
+      }
+    },
+    {
+      "batch": 4,
+      "records": 5,
+      "permissible": {
+        "BOTH": 17,
+        "KEEP": 1
+      },
+      "preference": {
+        "KEEP": 11,
+        "MERGE": 7
+      }
+    },
+    {
+      "batch": 5,
+      "records": 5,
+      "permissible": {
+        "BOTH": 25,
+        "KEEP": 2
+      },
+      "preference": {
+        "KEEP": 14,
+        "MERGE": 13
+      }
+    },
+    {
+      "batch": 6,
+      "records": 5,
+      "permissible": {
+        "BOTH": 17,
+        "KEEP": 4
+      },
+      "preference": {
+        "KEEP": 17,
+        "MERGE": 4
+      }
+    },
+    {
+      "batch": 7,
+      "records": 5,
+      "permissible": {
+        "BOTH": 22,
+        "KEEP": 4
+      },
+      "preference": {
+        "KEEP": 15,
+        "MERGE": 11
+      }
+    },
+    {
+      "batch": 8,
+      "records": 4,
+      "permissible": {
+        "BOTH": 16
+      },
+      "preference": {
+        "KEEP": 10,
+        "MERGE": 6
+      }
+    }
+  ],
+  "labels_repaired": 0,
+  "approved_training_rows": 0,
+  "semantic_fidelity_certified": false,
+  "reference_layouts_scored": false,
+  "reserved_content_used": false,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false
+}

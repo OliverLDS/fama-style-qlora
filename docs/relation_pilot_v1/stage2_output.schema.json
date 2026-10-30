@@ -1,0 +1,310 @@
+{
+  "type": "object",
+  "properties": {
+    "annotation_version": {
+      "const": "relation_pilot_v1_stage2"
+    },
+    "paragraph_id": {
+      "type": "string"
+    },
+    "source_paragraph": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sentence_id": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "exact_text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^D[1-9][0-9]*$"
+            }
+          },
+          "reference_only_claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^D[1-9][0-9]*$"
+            }
+          }
+        },
+        "required": [
+          "sentence_id",
+          "exact_text",
+          "claim_ids",
+          "reference_only_claim_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "source_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^D[1-9][0-9]*$"
+          },
+          "proposition": {
+            "type": "string"
+          },
+          "actors_and_roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "quantities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "negation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "modality": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attribution": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "claim_id",
+          "proposition",
+          "actors_and_roles",
+          "conditions",
+          "quantities",
+          "negation",
+          "modality",
+          "attribution",
+          "source_evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "boundary_id": {
+            "type": "string",
+            "pattern": "^B[1-9][0-9]*$"
+          },
+          "left_sentence_id": {
+            "type": "string"
+          },
+          "right_sentence_id": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "premise_consequence",
+              "contrast",
+              "qualification",
+              "restatement",
+              "definition_explication",
+              "parallel_actions",
+              "comparison",
+              "causal",
+              "conditional",
+              "association",
+              "temporal",
+              "attribution_change",
+              "example_result",
+              "argument_transition",
+              "none",
+              "unresolved"
+            ]
+          },
+          "source_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "restrictions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "permissible": {
+            "type": "string",
+            "enum": [
+              "KEEP",
+              "MERGE",
+              "BOTH",
+              "UNRESOLVED"
+            ]
+          },
+          "presentation_preference": {
+            "type": "string",
+            "enum": [
+              "KEEP",
+              "MERGE",
+              "NONE",
+              "UNRESOLVED"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "merge_candidate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "candidate_quality": {
+            "const": "unverified"
+          }
+        },
+        "required": [
+          "boundary_id",
+          "left_sentence_id",
+          "right_sentence_id",
+          "relation",
+          "source_evidence",
+          "restrictions",
+          "permissible",
+          "presentation_preference",
+          "rationale",
+          "confidence",
+          "merge_candidate",
+          "candidate_quality"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "needs_external_context": {
+      "type": "boolean"
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "visible_model_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thinking_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reference_supplied": {
+          "const": false
+        },
+        "independently_verified": {
+          "const": false
+        }
+      },
+      "required": [
+        "visible_model_label",
+        "thinking_setting",
+        "reference_supplied",
+        "independently_verified"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "annotation_version",
+    "paragraph_id",
+    "source_paragraph",
+    "source_sentences",
+    "source_claims",
+    "boundaries",
+    "needs_external_context",
+    "needs_review",
+    "review_notes",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,280 @@
+{
+  "type": "object",
+  "properties": {
+    "annotation_version": {
+      "const": "relation_pilot_v1_stage1"
+    },
+    "paragraph_id": {
+      "type": "string"
+    },
+    "original_paragraph": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plain_english": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rewrite_status": {
+      "type": "string",
+      "enum": [
+        "simplified",
+        "already_clear",
+        "pending_review"
+      ]
+    },
+    "rewrite_notes": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^C[1-9][0-9]*$"
+          },
+          "proposition": {
+            "type": "string"
+          },
+          "actors_and_roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "quantities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "negation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "modality": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attribution": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "original_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "neutral_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "alignment": {
+            "type": "string",
+            "enum": [
+              "preserved",
+              "omitted",
+              "changed",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "claim_id",
+          "proposition",
+          "actors_and_roles",
+          "conditions",
+          "quantities",
+          "negation",
+          "modality",
+          "attribution",
+          "original_evidence",
+          "neutral_evidence",
+          "alignment"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "original_sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sentence_id": {
+            "type": "string",
+            "pattern": "^O[1-9][0-9]*$"
+          },
+          "exact_text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^C[1-9][0-9]*$"
+            }
+          },
+          "reference_only_claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^C[1-9][0-9]*$"
+            }
+          }
+        },
+        "required": [
+          "sentence_id",
+          "exact_text",
+          "claim_ids",
+          "reference_only_claim_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "neutral_sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sentence_id": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "exact_text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^C[1-9][0-9]*$"
+            }
+          },
+          "reference_only_claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^C[1-9][0-9]*$"
+            }
+          }
+        },
+        "required": [
+          "sentence_id",
+          "exact_text",
+          "claim_ids",
+          "reference_only_claim_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "needs_external_context": {
+      "type": "boolean"
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "visible_model_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thinking_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "paired_context": {
+          "const": true
+        },
+        "independently_verified": {
+          "const": false
+        }
+      },
+      "required": [
+        "visible_model_label",
+        "thinking_setting",
+        "paired_context",
+        "independently_verified"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "annotation_version",
+    "paragraph_id",
+    "original_paragraph",
+    "plain_english",
+    "rewrite_status",
+    "rewrite_notes",
+    "claims",
+    "original_sentences",
+    "neutral_sentences",
+    "needs_external_context",
+    "needs_review",
+    "review_notes",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

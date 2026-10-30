@@ -1,0 +1,49 @@
+{
+  "protocol": "relation_pilot_stage1_review_v1",
+  "records": 40,
+  "response_files": 8,
+  "exact_original_matches": 40,
+  "mechanically_valid_records": 40,
+  "rewrite_status": {
+    "simplified": 38,
+    "already_clear": 1,
+    "pending_review": 1
+  },
+  "claim_alignment_self_annotations": {
+    "preserved": 354
+  },
+  "needs_review": 24,
+  "needs_external_context": 34,
+  "stage2_status": {
+    "eligible_for_source_only_annotation_not_training": 39,
+    "pending_rewrite": 1
+  },
+  "original_sentences": 177,
+  "neutral_sentences": 193,
+  "eligible_source_boundaries": 152,
+  "sentence_count_change": {
+    "more": 14,
+    "same": 26
+  },
+  "unchanged_neutral_texts": 2,
+  "lexical_sequence_overlap": {
+    "n": 40,
+    "min": 0.4857142857142857,
+    "p10": 0.5757913043478261,
+    "p25": 0.6490198313198086,
+    "median": 0.7138515590689504,
+    "p75": 0.7952380952380952,
+    "p90": 0.848494983277592,
+    "max": 1.0,
+    "mean": 0.7198783422803744
+  },
+  "exact_evidence_anchors_checked": 725,
+  "raw_provenance_null_records": 40,
+  "reported_model": "GPT-6",
+  "reported_effort": "High thinking effort",
+  "mechanical_check_is_semantic_certificate": false,
+  "annotations_repaired": 0,
+  "reserved_content_used": false,
+  "gpu_jobs_started": 0,
+  "training_called": false
+}

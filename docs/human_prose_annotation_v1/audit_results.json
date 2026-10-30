@@ -1,0 +1,158 @@
+{
+  "status": "mechanical_audit_complete_semantic_quality_unverified",
+  "expected_rows": 100,
+  "received_rows": 100,
+  "batches": 20,
+  "transport_complete": true,
+  "all_originals_preserved": true,
+  "all_schema_valid_rows": 100,
+  "training": {
+    "rows": 60,
+    "schema_valid_rows": 60,
+    "mechanically_consistent_rows": 60,
+    "rows_with_program_errors": 0,
+    "rows_flagged_by_annotator": 44,
+    "rewrite_statuses_annotator": {
+      "simplified": 60
+    },
+    "source_quality_annotator": {
+      "uncertain": 38,
+      "usable": 22
+    },
+    "alignment_statuses_annotator": {
+      "preserved": 398,
+      "uncertain": 2
+    },
+    "mechanical_error_codes": {},
+    "program_error_codes": {},
+    "warning_codes": {
+      "annotator_source_quality_uncertain": 38,
+      "annotator_needs_external_context": 40,
+      "annotator_needs_review": 44,
+      "observation_claim_outside_bound_sentences": 93,
+      "annotator_claim_alignment_uncertain": 2,
+      "annotator_relation_alignment_uncertain": 2,
+      "uncertain_transformation": 3,
+      "taxonomy_unresolved": 4
+    },
+    "mechanical_counts": {
+      "evidence_anchors_checked": 4522,
+      "operations_checked": 175,
+      "claims": 400,
+      "relations": 122,
+      "taxonomy_observations": 3083
+    },
+    "lexical_overlap": {
+      "median": 0.7770242404802273,
+      "minimum": 0.4367816091954023,
+      "maximum": 0.9482758620689655,
+      "rows_at_least_0_9": 4,
+      "normalized_copies": 0
+    },
+    "sentence_count_changed": 29,
+    "claim_coexpression_changed": 27,
+    "semantic_equivalence_verified_rows": 0,
+    "training_ready_rows": 0
+  },
+  "development": {
+    "rows": 20,
+    "schema_valid_rows": 20,
+    "mechanically_consistent_rows": 20,
+    "rows_with_program_errors": 0,
+    "rows_flagged_by_annotator": 17,
+    "rewrite_statuses_annotator": {
+      "simplified": 19,
+      "already_clear": 1
+    },
+    "source_quality_annotator": {
+      "uncertain": 16,
+      "usable": 4
+    },
+    "alignment_statuses_annotator": {
+      "preserved": 139
+    },
+    "mechanical_error_codes": {},
+    "program_error_codes": {},
+    "warning_codes": {
+      "annotator_source_quality_uncertain": 16,
+      "annotator_needs_external_context": 16,
+      "annotator_needs_review": 17,
+      "observation_claim_outside_bound_sentences": 36,
+      "duplicate_reference": 1,
+      "uncertain_transformation": 2
+    },
+    "mechanical_counts": {
+      "evidence_anchors_checked": 1571,
+      "operations_checked": 60,
+      "claims": 139,
+      "relations": 50,
+      "taxonomy_observations": 1037
+    },
+    "lexical_overlap": {
+      "median": 0.7559523809523809,
+      "minimum": 0.5915492957746479,
+      "maximum": 1.0,
+      "rows_at_least_0_9": 1,
+      "normalized_copies": 1
+    },
+    "sentence_count_changed": 7,
+    "claim_coexpression_changed": 7,
+    "semantic_equivalence_verified_rows": 0,
+    "training_ready_rows": 0
+  },
+  "reserved": {
+    "rows": 20,
+    "scope": "transport/schema/original integrity only; no content metrics or model-selection analysis",
+    "content_rows_audited": 0
+  },
+  "session": {
+    "confirmation_source": "User message after the 20 batches were received",
+    "scope": "all 20 annotation batches",
+    "user_reported_model": "GPT-6",
+    "user_reported_thinking_effort": "High",
+    "chat_arrangement": "Separate chats, with user-reported possible automatic retrieval of relevant earlier chat context",
+    "cross_chat_independence_established": false,
+    "hidden_model_snapshot_known": false,
+    "hidden_decoding_settings_controlled": false,
+    "raw_response_provenance_modified": false
+  },
+  "independent_semantic_verification": false,
+  "program_repairs": 7,
+  "raw_responses_modified": false,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "existing_fama_test_rows_used": 0,
+  "lexical_overlap_bins": {
+    "training": {
+      "below_0_6": 6,
+      "0_6_to_below_0_8": 32,
+      "0_8_to_below_0_9": 18,
+      "at_least_0_9": 4
+    },
+    "development": {
+      "below_0_6": 1,
+      "0_6_to_below_0_8": 15,
+      "0_8_to_below_0_9": 3,
+      "at_least_0_9": 1
+    }
+  },
+  "limited_meaning_spotcheck": {
+    "development_pairs_read": 8,
+    "pairs_with_visible_epistemic_strength_change": 1,
+    "exhaustive": false,
+    "independent_model_calls": 0
+  },
+  "inference_preparation": {
+    "status": "prepared_not_executed",
+    "examples": 8,
+    "papers": 4,
+    "requested_outputs": 16,
+    "conditions": [
+      "ordinary",
+      "reference_informed_oracle_presentation"
+    ],
+    "known_source_strength_change_cases": 1,
+    "reserved_rows_used": 0
+  }
+}

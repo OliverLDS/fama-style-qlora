@@ -1,0 +1,33 @@
+{
+  "protocol": "human_prose_annotation_v1",
+  "status": "manual_annotation_batches_prepared_no_responses",
+  "selected_paragraphs": 100,
+  "papers": 20,
+  "authors": 33,
+  "publication_year_range": [
+    1937,
+    2019
+  ],
+  "publication_cutoff_exclusive_year": 2020,
+  "paragraphs_per_paper": 5,
+  "split_paragraph_counts": {
+    "training": 60,
+    "development": 20,
+    "reserved_test": 20
+  },
+  "word_count_range": [
+    40,
+    265
+  ],
+  "selection": "Within-paper length-strata preview, followed by recorded text-quality selection; no detector or author-feature score.",
+  "representative_of_all_human_writing": false,
+  "original_author_wording_deliberately_rewritten": false,
+  "extraction_repairs": 20,
+  "prior_exposure_note": "Fourteen papers appeared in earlier authorship diagnostics. Six are added here; four added author groups form the reserved set. Manual annotations are joint, not independent.",
+  "frozen_fama_training_rows_read": 0,
+  "existing_development_rows_read": 0,
+  "existing_reserved_test_rows_read": 0,
+  "language_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false
+}

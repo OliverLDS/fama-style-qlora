@@ -1,0 +1,32 @@
+{
+  "protocol": "fixed_length_verification_package_v1",
+  "status": "verification_ready_not_executed",
+  "items": 32,
+  "batches": 8,
+  "batch_sizes": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "unavailable_generation_abstentions": 0,
+  "strata": {
+    "at_most_30": 16,
+    "over_30": 16
+  },
+  "selection": "every_valid_generated_candidate_from_both_source_length_strata",
+  "selected_preferred_subset": false,
+  "cutoff_decisions_exported": false,
+  "generation_context_notes_or_provenance_exported": false,
+  "source_reference_or_claims_exported": false,
+  "fidelity_and_readability_separate": true,
+  "semantic_certification_claimed": false,
+  "new_model_calls": 0,
+  "training_called": false,
+  "gpu_jobs_started": 0,
+  "reserved_content_used": false
+}

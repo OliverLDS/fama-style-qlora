@@ -1,0 +1,15 @@
+SOURCE-ONLY BOUNDARY JUDGMENT (template; run only with the later prepared source inputs).
+
+Use only source_paragraph and source sentence text in the supplied input. Do not retrieve original author paragraphs, previous pairs, reference layouts, paper titles, other chat answers or remembered versions. Do not infer the author. Assess clear, compact academic economics prose; do not imitate a named author or optimize a detector. Shared model family, pretraining and automatic chat retrieval mean this is not certified independent evaluation.
+
+First extract fresh source-only atomic claims D1, D2, ... with exact source evidence and substantive restrictions. Reconstruct each source sentence exactly and distinguish full claim expression from reference_only_claim_ids. Do not use claim IDs or free-text propositions from the paired stage. Claim granularity must preserve distinct quantities, actors, conditions and uncertainty.
+
+For EVERY adjacent source-sentence boundary B1, B2, ... , record left_sentence_id and right_sentence_id; its source-supported relation from the finite schema labels; exact evidence from both sides; and restrictions needed to preserve actors, attribution, modality, negation, conditions, quantities, comparison and causal direction. Do not infer a causal edge just because two sentences are adjacent.
+
+Record permissible as KEEP, MERGE, BOTH or UNRESOLVED. KEEP means only separation is reasonably supported; MERGE means only merging is reasonably supported; BOTH means both are reasonable; UNRESOLVED means the supplied text or available realization evidence is insufficient. Judge reasonable organization AND meaning, not merely whether a semicolon makes a grammatical sentence. Do not force class balance or choose a merge to match any presumed reference. A valid alternative need not reconstruct one author's layout.
+
+Record presentation_preference separately as KEEP, MERGE, NONE or UNRESOLVED, with a rationale and confidence low/medium/high. If MERGE or BOTH is judged permissible, supply one concrete single-sentence merge_candidate covering the two sentences. Retain every claim and qualification. If no safe candidate is available, abstain instead of certifying a merge. For KEEP or UNRESOLVED, merge_candidate may be null. Mark candidate_quality as unverified: it must later be checked against source claims; your own candidate is not independent evidence of fidelity.
+
+Decisions are local to the pair. Several individually acceptable merges do not automatically make a long chained group acceptable. Flag nested scopes, multiple actors/attributions and component-spanning claims. Report external-context needs and uncertainty. Do not change the source.
+
+Use stage2_output.schema.json exactly; return one JSON object per paragraph with complete sentence and boundary coverage, no Markdown fences, and a separate coverage/limitations report. The original author's layout will be retained separately offline. Your verdicts are interpretations, not verified author intent or semantic certificates.

@@ -1,0 +1,50 @@
+{
+  "protocol": "fixed_length_replication_v1",
+  "status": "generation_ready_verification_specification_only",
+  "items": 32,
+  "papers": [
+    "C_H1979",
+    "C_PS2011",
+    "R_S1998",
+    "R_BIR2019"
+  ],
+  "paragraphs": 17,
+  "strata": {
+    "at_most_30": 16,
+    "over_30": 16
+  },
+  "generation_batches": 8,
+  "batch_sizes": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "pair_word_range": [
+    16,
+    59
+  ],
+  "source_quality_status": {
+    "usable": 10,
+    "uncertain": 22
+  },
+  "upstream_needs_review_pairs": 23,
+  "upstream_context_dependent_pairs": 17,
+  "prior_project_exposure": true,
+  "papers_disjoint_from_cutoff_development": true,
+  "fresh_candidates_not_fresh_paragraphs": true,
+  "sampling_balanced_not_natural_prevalence": true,
+  "cutoff_refitted": false,
+  "cutoff_decisions_exported": false,
+  "earlier_claims_or_judgments_exported": false,
+  "reserved_content_used": false,
+  "generation_responses_received": 0,
+  "verification_inputs_created": false,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false
+}

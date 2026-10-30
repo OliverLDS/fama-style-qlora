@@ -1,0 +1,371 @@
+{
+  "protocol": "author_control_replication_v1",
+  "scope": "Bibliographic metadata, source links, version years, and limitations only; private PDFs/OCR/paragraphs/features are excluded.",
+  "new_control_selection": "New author and source selected before feature-score calculation; all old comparison authors excluded.",
+  "reused_target_papers": [
+    {
+      "paper_id": "F1965",
+      "title": "The Behavior of Stock-Market Prices",
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "version_year": 1965
+    },
+    {
+      "paper_id": "F1980",
+      "title": "Agency Problems and the Theory of the Firm",
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "version_year": 1980
+    },
+    {
+      "paper_id": "FJ1983",
+      "title": "Separation of Ownership and Control",
+      "authors": [
+        "Eugene F. Fama",
+        "Michael C. Jensen"
+      ],
+      "version_year": 1983
+    },
+    {
+      "paper_id": "ME1997",
+      "title": "Market Efficiency, Long-Term Returns, and Behavioral Finance",
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "version_year": 1997
+    },
+    {
+      "paper_id": "FF2000",
+      "title": "Disappearing Dividends: Changing Firm Characteristics or Lower Propensity to Pay?",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 2000
+    },
+    {
+      "paper_id": "NL2003",
+      "title": "New Lists: Fundamentals and Survival Rates",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 2003
+    },
+    {
+      "paper_id": "VL2018",
+      "title": "Volatility Lessons",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 2018
+    }
+  ],
+  "controls": [
+    {
+      "topic": "price_distributions",
+      "target_paper_id": "F1965",
+      "earlier_control": {
+        "title": "The Variation of Certain Speculative Prices",
+        "authors": [
+          "Benoit Mandelbrot"
+        ],
+        "version_year": 1963
+      },
+      "new_control": {
+        "paper_id": "R_GM1962",
+        "title": "Spectral Analysis of New York Stock Market Prices",
+        "authors": [
+          "Clive W. J. Granger",
+          "Oskar Morgenstern"
+        ],
+        "version_year": 1962,
+        "publication_year": 1963,
+        "source_venue": "Princeton Econometric Research Program Research Memorandum 45, 28 September 1962; later Kyklos",
+        "source_url": "https://rybn.org/ANTI/ARTICLES/1962-SpectralAnalysisofOfNYStockMarketsPrices.pdf",
+        "ocr_pdf_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "columns": 1,
+        "source_limitations": "Three-year gap; stock-price spectral/random-walk evidence rather than return-tail estimation. Single-column working paper, original target two-column journal. Draft date visually checked on cover; first summary page excluded."
+      }
+    },
+    {
+      "topic": "agency_incentives",
+      "target_paper_id": "F1980",
+      "earlier_control": {
+        "title": "Moral Hazard and Observability",
+        "authors": [
+          "Bengt Holmstrom"
+        ],
+        "version_year": 1979
+      },
+      "new_control": {
+        "paper_id": "R_SH1979",
+        "title": "Risk Sharing and Incentives in the Principal and Agent Relationship",
+        "authors": [
+          "Steven Shavell"
+        ],
+        "version_year": 1979,
+        "publication_year": 1979,
+        "source_venue": "Bell Journal of Economics 10(1):55–73; university-hosted retypeset copy",
+        "source_url": "https://user.eng.umd.edu/~hyongla/TMP/PAPERS/RiskSharingAndIncentives.pdf",
+        "ocr_pdf_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "columns": 1,
+        "source_limitations": "One-year gap, same formal agency/incentive topic as old control. More mathematical than target; university copy is retypeset rather than a scan of original typesetting. Abstract/first intro page excluded. No independent transcription verification."
+      }
+    },
+    {
+      "topic": "organization_control",
+      "target_paper_id": "FJ1983",
+      "earlier_control": {
+        "title": "Production, Information Costs, and Economic Organization",
+        "authors": [
+          "Armen A. Alchian",
+          "Harold Demsetz"
+        ],
+        "version_year": 1972
+      },
+      "new_control": {
+        "paper_id": "R_H1988",
+        "title": "Ownership of the Firm",
+        "authors": [
+          "Henry Hansmann"
+        ],
+        "version_year": 1988,
+        "publication_year": 1988,
+        "source_venue": "Journal of Law Economics and Organization",
+        "source_url": "https://openyls.law.yale.edu/server/api/core/bitstreams/534a1c7c-7529-413b-a201-0a0702f2b1ba/content",
+        "ocr_pdf_pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "columns": 1,
+        "source_limitations": "Five-year gap, ownership/institutional narrative genre. Original journal article used; later book excerpt with another author excluded."
+      }
+    },
+    {
+      "topic": "market_efficiency",
+      "target_paper_id": "ME1997",
+      "earlier_control": {
+        "title": "The Efficient Market Hypothesis and Its Critics",
+        "authors": [
+          "Burton G. Malkiel"
+        ],
+        "version_year": 2003
+      },
+      "new_control": {
+        "paper_id": "R_S1998",
+        "title": "Human Behavior and the Efficiency of the Financial System",
+        "authors": [
+          "Robert J. Shiller"
+        ],
+        "version_year": 1998,
+        "publication_year": 1999,
+        "source_venue": "NBER Working Paper 6375; later handbook chapter",
+        "source_url": "https://www.nber.org/system/files/working_papers/w6375/w6375.pdf",
+        "ocr_pdf_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "columns": 1,
+        "source_limitations": "Close-period review/survey on behavioral finance; thesis and publishing venue still differ."
+      }
+    },
+    {
+      "topic": "dividend_propensity",
+      "target_paper_id": "FF2000",
+      "earlier_control": {
+        "title": "Appearing and disappearing dividends: the link to catering incentives",
+        "authors": [
+          "Malcolm Baker",
+          "Jeffrey Wurgler"
+        ],
+        "version_year": 2003
+      },
+      "new_control": {
+        "paper_id": "R_DDS2002",
+        "title": "Are Dividends Disappearing? Dividend Concentration and the Consolidation of Earnings",
+        "authors": [
+          "Harry DeAngelo",
+          "Linda DeAngelo",
+          "Douglas J. Skinner"
+        ],
+        "version_year": 2002,
+        "publication_year": 2004,
+        "source_venue": "USC working paper, July 2002; later Journal of Financial Economics",
+        "source_url": "https://gould.usc.edu/centers/class/class-workshops/cleo-working-papers/documents/C02_17_paper.pdf",
+        "ocr_pdf_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "columns": 1,
+        "source_limitations": "Direct empirical dividend-disappearance topic, close draft period; concentration versus propensity emphasis differs."
+      }
+    },
+    {
+      "topic": "new_listing_firms",
+      "target_paper_id": "NL2003",
+      "earlier_control": {
+        "title": "A Review of IPO Activity, Pricing, and Allocations",
+        "authors": [
+          "Jay R. Ritter",
+          "Ivo Welch"
+        ],
+        "version_year": 2002
+      },
+      "new_control": {
+        "paper_id": "R_PPZ1998",
+        "title": "Why Do Companies Go Public? An Empirical Analysis",
+        "authors": [
+          "Marco Pagano",
+          "Fabio Panetta",
+          "Luigi Zingales"
+        ],
+        "version_year": 1997,
+        "publication_year": 1998,
+        "source_venue": "April 1997 draft; later Journal of Finance",
+        "source_url": "https://www.ipo-underpricing.com/en/files/Pagano_Why-Companiesc.pdf",
+        "ocr_pdf_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "columns": 1,
+        "source_limitations": "Empirical firm-characteristic genre closer than the old IPO review. Six-year gap and Italy versus US are limitations; draft date visually verified on page 1."
+      }
+    },
+    {
+      "topic": "long_horizon_risk",
+      "target_paper_id": "VL2018",
+      "earlier_control": {
+        "title": "Are Stocks Really Less Volatile in the Long Run?",
+        "authors": [
+          "Lubos Pastor",
+          "Robert F. Stambaugh"
+        ],
+        "version_year": 2011
+      },
+      "new_control": {
+        "paper_id": "R_BIR2019",
+        "title": "Long-Horizon Predictability: A Cautionary Tale",
+        "authors": [
+          "Jacob Boudoukh",
+          "Ronen Israel",
+          "Matthew Richardson"
+        ],
+        "version_year": 2019,
+        "publication_year": 2019,
+        "source_venue": "Financial Analysts Journal",
+        "source_url": "https://www.mobt3ath.com/uplode/book/book-120052.pdf",
+        "ocr_pdf_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "columns": 2,
+        "source_limitations": "Same journal and adjacent publication year. Return-regression inference is not identical to premium-distribution risk. Published copy used."
+      }
+    }
+  ]
+}

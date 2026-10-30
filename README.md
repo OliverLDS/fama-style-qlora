@@ -4,7 +4,74 @@ An experimental fine-tuning project: rewrite neutral plain English into the econ
 
 **Current finding:** QLoRA reduced validation loss but increased copying. Explicit rhetorical and claim guidance can improve individual controls, but faithful Fama/coauthor-style transformation is **not established**. The project reports these negative and mixed results separately from successful pipeline execution.
 
-**Research checkpoint — 27 October 2026:** In a six-paper external-model comparison,
+**Latest research checkpoint — 30 October 2026:** A fixed 30-word source-pair
+rule scores 19/24 correct decisions versus 17/24 for KEEP on four additional
+papers. Its 16 selected merges include six judged readability improvements,
+five losses (one with a local claim shift), and five ties. An earlier learned
+selector generalizes poorly (8/35 correct). These are provisional GPT-6 judgments
+on private, project-exposed data; distinctive Fama/coauthor-style improvement
+remains unproven. [Fixed-rule results and limits](docs/relation_pilot_v1/LENGTH_RULE_RESULTS.md).
+No new Gemma training or GPU jobs were started for these diagnostics.
+
+**Earlier comparison-corpus checkpoint — 28 October 2026:** A private topic-matched corpus
+contains 192 private prose candidates from seven Fama target papers, seven first
+comparison papers, and seven new comparison papers. CPU diagnostics on the first
+set hold out entire topic/paper pairs: rhetorical cues classify
+9/14 papers correctly, the same as the lexical baseline. Two descriptive feature
+patterns need independent validation; no author-distinctive signature or rewriting
+benefit is established. [Corpus, diagnostics and limitations](docs/AUTHOR_COMPARISON_V1.md).
+The [expression replication](docs/EXPRESSION_REPLICATION_V1_RESULTS.md) reproduced
+local instruction following without a clear incremental style benefit.
+A second comparison-author set did not fully replicate the two proposed prose
+proxies: the `which/that/whose/whom` count was lower in six of seven topics, but
+only five using matched anchors; the passive `-ed` proxy was lower in five. Two
+topics missed the fixed six-match minimum, so neither result passes the replication
+gate. [Methods and limits](docs/AUTHOR_CONTROL_REPLICATION_V1.md).
+The [manual prose-annotation pilot](docs/HUMAN_PROSE_ANNOTATION_V1.md) now has all
+100 responses from 20 non-Fama papers published in 1937–2019. All originals and
+schemas pass checks; 80 nonreserved annotations pass mechanical checks after
+seven recorded program repairs. Semantic quality remains unverified, with a
+visible qualification shift found in a limited spot check. The 16-output GPT-6 oracle
+realization diagnostic is complete: ordinary and guided rewriting each match
+reference claim grouping in 5/8 cases; guidance shows no consistent incremental
+benefit, and six inputs already share their reference grouping. This is not a
+Gemma result or evidence of distinctive author style. No new training has run.
+[Annotation audit](docs/human_prose_annotation_v1/AUDIT_RESULTS.md) ·
+[Realization findings and limits](docs/human_prose_annotation_v1/REALIZATION_RESULTS.md).
+The [targeted grouping diagnostic](docs/human_prose_annotation_v1/GROUPING_RESULTS.md)
+is complete: target plans match claim grouping in 5/5 examples versus 1/5 ordinary
+rewrites; source plans match in 4/5 with one ambiguous composite claim. This
+supports grouping control on these cases, with more source wording retained.
+Distinctive style remains unproven. The subsequent
+[CPU source-only retrieval baseline](docs/human_prose_annotation_v1/SOURCE_ONLY_GROUPING.md)
+does not beat KEEP at reconstructing reference layouts: 22/57 versus 29/57,
+using whole-paper-held-out scoring. The
+[nested CPU boundary classifier](docs/human_prose_annotation_v1/BOUNDARY_CLASSIFIER.md)
+improves MERGE F1 from 0.261 to 0.447, but matches only 23/57 layouts and five
+of 28 merge-needed paragraphs. A subsequent
+[42-boundary audit](docs/human_prose_annotation_v1/BOUNDARY_ERROR_AUDIT.md) separates
+plausible alternative layouts from missed relations and scope risks; the original
+labels and scores are unchanged. It recommends targeted relation-aware annotation.
+A [40-paragraph relation-aware pilot](docs/relation_pilot_v1/README.md) uses four
+new papers. Its [candidate verification](docs/relation_pilot_v1/VERIFICATION_RESULTS.md)
+reassesses 52 earlier merge-preferred candidates: 18 are judged faithful and
+better merged, 24 better separated and ten comparable. These provisional
+same-model judgments expose preference instability; they establish neither
+distinctive author style nor approved training data. Originals, earlier labels
+and effort uncertainty are preserved. No LLM training ran.
+
+A [whole-paper CPU selector comparison](docs/relation_pilot_v1/SELECTOR_RESULTS.md)
+finds that a length-only baseline makes 24/35 correct decisions, versus 17/35
+for KEEP and 8/35 for the learned selector. This is an exploratory result on
+previously proposed merges, not evidence of improved author-style generation.
+A [fixed-rule replication](docs/relation_pilot_v1/LENGTH_RULE_REPLICATION.md)
+tested 32 pairs from four additional training-pool papers without fitting a
+classifier. Its [completed results](docs/relation_pilot_v1/LENGTH_RULE_RESULTS.md)
+score 19/24 correct decisions for the unchanged cutoff versus 17/24 for KEEP.
+Among all 16 selected merges, six improve readability, five worsen it (one with
+a local shift) and five are comparable under provisional GPT-6 judgments.
+
+**Earlier six-paper checkpoint:** In an external-model comparison,
 oracle guidance matched the requested claim grouping in 6/6 cases versus 3/6 for
 ordinary rewriting with shared evidence. Incremental expression benefits were
 selective; distinctive author-style quality and generalization remain unproven.

@@ -1,0 +1,281 @@
+{
+  "protocol": "human_prose_annotation_v1",
+  "publication_cutoff_exclusive_year": 2020,
+  "basis": "Original published work, not repository upload/scan/indexing date. Publication before 2020 does not prove absence from pretraining.",
+  "scope": "English academic economics/finance prose only; metadata only, no source passages.",
+  "papers": [
+    {
+      "paper_id": "C_M1963",
+      "title": "The Variation of Certain Speculative Prices",
+      "authors": [
+        "Benoit Mandelbrot"
+      ],
+      "publication_year": 1963,
+      "version_year": 1963,
+      "publication_evidence_url": "https://www.jstor.org/stable/i340406",
+      "download_url": "https://moldham74.github.io/AussieCAS/papers/Mand1963.pdf",
+      "pdf_sha256": "878c0e379764c0850d560fb12ac07957bd1763c30ba7085722199043867bfb53",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_H1979",
+      "title": "Moral Hazard and Observability",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "publication_year": 1979,
+      "version_year": 1979,
+      "publication_evidence_url": "https://www.jstor.org/stable/3003320",
+      "download_url": "https://personal.utdallas.edu/~nina.baranchuk/Fin7310/papers/Holmstrom1979.pdf",
+      "pdf_sha256": "8a38a0b4087c2af299bc912f0060391f1829193859563850228b6fa8bc20e99c",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_AD1972",
+      "title": "Production, Information Costs, and Economic Organization",
+      "authors": [
+        "Armen A. Alchian",
+        "Harold Demsetz"
+      ],
+      "publication_year": 1972,
+      "version_year": 1972,
+      "publication_evidence_url": "https://www.jstor.org/stable/1815199",
+      "download_url": "https://competitionandappropriation.econ.ucla.edu/wp-content/uploads/sites/95/2017/08/AlchianDemsetz.pdf",
+      "pdf_sha256": "381d7af24a32ff4cf607678c4659b7b8fde6b2c6166aabf1c98e5697e3830030",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_M2003",
+      "title": "The Efficient Market Hypothesis and Its Critics",
+      "authors": [
+        "Burton G. Malkiel"
+      ],
+      "publication_year": 2003,
+      "version_year": 2003,
+      "publication_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/089533003321164958",
+      "download_url": "https://gceps.princeton.edu/wp-content/uploads/2017/01/91malkiel.pdf",
+      "pdf_sha256": "0c0684a85ea0d7f14a08606d2228c4b3fd06b28c40d81bfeda5c637193ec0516",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_BW2003",
+      "title": "Appearing and disappearing dividends: the link to catering incentives",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "publication_year": 2004,
+      "version_year": 2003,
+      "publication_evidence_url": "https://www.nber.org/papers/w9995",
+      "download_url": "https://www.hbs.edu/ris/Publication%20Files/disdiv_53ec8668-4ce2-4441-9362-3943c147233b.pdf",
+      "pdf_sha256": "28881a892dea94f16fc4d5f05e81e8a892edf2b5906bc8c66edd6a2cc5fdead9",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_RW2002",
+      "title": "A Review of IPO Activity, Pricing, and Allocations",
+      "authors": [
+        "Jay R. Ritter",
+        "Ivo Welch"
+      ],
+      "publication_year": 2002,
+      "version_year": 2002,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/1540-6261.00478",
+      "download_url": "https://site.warrington.ufl.edu/ritter/files/2016/01/A-Review-of-IPO-Activity-Pricing-and-Allocations-2002-08.pdf",
+      "pdf_sha256": "a8bb4a95a1321f612d8c9f3003cd4ea0e1e99dac077c417103f9a2cac5e18dc2",
+      "split": "training"
+    },
+    {
+      "paper_id": "C_PS2011",
+      "title": "Are Stocks Really Less Volatile in the Long Run?",
+      "authors": [
+        "Lubos Pastor",
+        "Robert F. Stambaugh"
+      ],
+      "publication_year": 2012,
+      "version_year": 2011,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2012.01722.x",
+      "download_url": "https://rodneywhitecenter.wharton.upenn.edu/wp-content/uploads/2014/04/1101..pdf",
+      "pdf_sha256": "c3bae3379cb55b03e076c5f8459f486159053bbc61dd7927f7c05f6ed5890915",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_GM1962",
+      "title": "Spectral Analysis of New York Stock Market Prices",
+      "authors": [
+        "Clive W. J. Granger",
+        "Oskar Morgenstern"
+      ],
+      "publication_year": 1963,
+      "version_year": 1962,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6435.1963.tb00270.x",
+      "download_url": "https://rybn.org/ANTI/ARTICLES/1962-SpectralAnalysisofOfNYStockMarketsPrices.pdf",
+      "pdf_sha256": "51475afe61ce99760da850ab8165b83704b001967b0774f705753c8e464a938b",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_SH1979",
+      "title": "Risk Sharing and Incentives in the Principal and Agent Relationship",
+      "authors": [
+        "Steven Shavell"
+      ],
+      "publication_year": 1979,
+      "version_year": 1979,
+      "publication_evidence_url": "https://www.jstor.org/stable/3003319",
+      "download_url": "https://user.eng.umd.edu/~hyongla/TMP/PAPERS/RiskSharingAndIncentives.pdf",
+      "pdf_sha256": "f896f2f353e07f1a9c08f5cb899e388885b2498e3230d344e008e50c0f3e1245",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_H1988",
+      "title": "Ownership of the Firm",
+      "authors": [
+        "Henry Hansmann"
+      ],
+      "publication_year": 1988,
+      "version_year": 1988,
+      "publication_evidence_url": "https://openyls.law.yale.edu/server/api/core/bitstreams/534a1c7c-7529-413b-a201-0a0702f2b1ba/content",
+      "download_url": "https://openyls.law.yale.edu/server/api/core/bitstreams/534a1c7c-7529-413b-a201-0a0702f2b1ba/content",
+      "pdf_sha256": "056d710090a57fcca728785c7e1d659e2f2c87bb4c5da6ac8463b35033234151",
+      "split": "development"
+    },
+    {
+      "paper_id": "R_S1998",
+      "title": "Human Behavior and the Efficiency of the Financial System",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "publication_year": 1999,
+      "version_year": 1998,
+      "publication_evidence_url": "https://www.nber.org/papers/w6375",
+      "download_url": "https://www.nber.org/system/files/working_papers/w6375/w6375.pdf",
+      "pdf_sha256": "a1ff838870a4ce25b7c907ff7f89252b41a2e93ad1406b05dcc391de5500a7da",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_DDS2002",
+      "title": "Are Dividends Disappearing? Dividend Concentration and the Consolidation of Earnings",
+      "authors": [
+        "Harry DeAngelo",
+        "Linda DeAngelo",
+        "Douglas J. Skinner"
+      ],
+      "publication_year": 2004,
+      "version_year": 2002,
+      "publication_evidence_url": "https://doi.org/10.1016/S0304-405X(03)00186-7",
+      "download_url": "https://gould.usc.edu/centers/class/class-workshops/cleo-working-papers/documents/C02_17_paper.pdf",
+      "pdf_sha256": "17a031ddaa45552820fd5f9c0f8512362882ca5de46e5304060a813bc30f5d14",
+      "split": "training"
+    },
+    {
+      "paper_id": "R_PPZ1998",
+      "title": "Why Do Companies Go Public? An Empirical Analysis",
+      "authors": [
+        "Marco Pagano",
+        "Fabio Panetta",
+        "Luigi Zingales"
+      ],
+      "publication_year": 1998,
+      "version_year": 1997,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/0022-1082.25448",
+      "download_url": "https://www.ipo-underpricing.com/en/files/Pagano_Why-Companiesc.pdf",
+      "pdf_sha256": "29693c4863d75eccb59b8f41084ab4cc20411603e7b8a11a3a16d65bfa1ba3e6",
+      "split": "development"
+    },
+    {
+      "paper_id": "R_BIR2019",
+      "title": "Long-Horizon Predictability: A Cautionary Tale",
+      "authors": [
+        "Jacob Boudoukh",
+        "Ronen Israel",
+        "Matthew Richardson"
+      ],
+      "publication_year": 2019,
+      "version_year": 2019,
+      "publication_evidence_url": "https://doi.org/10.1080/0015198X.2018.1547056",
+      "download_url": "https://www.mobt3ath.com/uplode/book/book-120052.pdf",
+      "pdf_sha256": "a3d0751ac6ec06d7dd9342a28026a765a169e316f0bc24136b08a6adb0ce4b7b",
+      "split": "training"
+    },
+    {
+      "paper_id": "H_A1970",
+      "title": "The Market for \"Lemons\": Quality Uncertainty and the Market Mechanism",
+      "authors": [
+        "George A. Akerlof"
+      ],
+      "publication_year": 1970,
+      "version_year": 1970,
+      "publication_evidence_url": "https://doi.org/10.2307/1879431",
+      "download_url": "https://web.pdx.edu/~nwallace/EHP/AkerlofLemons.pdf",
+      "pdf_sha256": "770b53e35e8043fcaa4dd170bce420d4902dee280facaa5363bb48817a179f58",
+      "split": "reserved_test"
+    },
+    {
+      "paper_id": "H_C1937",
+      "title": "The Nature of the Firm",
+      "authors": [
+        "Ronald H. Coase"
+      ],
+      "publication_year": 1937,
+      "version_year": 1937,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/toc/14680335/1937/4/16",
+      "download_url": "https://msuweb.montclair.edu/~lebelp/coasenatfirmec1937.pdf",
+      "pdf_sha256": "643ef9bd0c253cf91735610abddc5232abcaee1b085e0325df09553a957e845a",
+      "split": "reserved_test"
+    },
+    {
+      "paper_id": "H_DD1983",
+      "title": "Bank Runs, Deposit Insurance, and Liquidity",
+      "authors": [
+        "Douglas W. Diamond",
+        "Philip H. Dybvig"
+      ],
+      "publication_year": 1983,
+      "version_year": 1983,
+      "publication_evidence_url": "https://knowledge.uchicago.edu/records/3sa4m-hvw53",
+      "download_url": "https://knowledge.uchicago.edu/records/3sa4m-hvw53/files/Bank-Runs-Deposit-Insurance-and-Liquidity.pdf?download=1",
+      "pdf_sha256": "a6ce2119760b7b94f6fc7ea768c61b5e5fd4f8b52b905efbb730b883b0c374b0",
+      "split": "reserved_test"
+    },
+    {
+      "paper_id": "H_H1945",
+      "title": "The Use of Knowledge in Society",
+      "authors": [
+        "Friedrich A. Hayek"
+      ],
+      "publication_year": 1945,
+      "version_year": 1945,
+      "publication_evidence_url": "https://www.mercatus.org/sites/default/files/d7/the_use_of_knowledge_in_society_-_hayek.pdf",
+      "download_url": "https://www.mercatus.org/sites/default/files/d7/the_use_of_knowledge_in_society_-_hayek.pdf",
+      "pdf_sha256": "73c21ec66254a192c8a1835de802b567fd8839a81de97b70248a9db65a0c5845",
+      "split": "development"
+    },
+    {
+      "paper_id": "H_KT1979",
+      "title": "Prospect Theory: An Analysis of Decision under Risk",
+      "authors": [
+        "Daniel Kahneman",
+        "Amos Tversky"
+      ],
+      "publication_year": 1979,
+      "version_year": 1979,
+      "publication_evidence_url": "https://kahneman.scholar.princeton.edu/publications",
+      "download_url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+      "pdf_sha256": "a067b12208421a545448d08ec93064af19f7e5702dfa2ed41791bf1093c13ab5",
+      "split": "development"
+    },
+    {
+      "paper_id": "H_S1955",
+      "title": "A Behavioral Model of Rational Choice",
+      "authors": [
+        "Herbert A. Simon"
+      ],
+      "publication_year": 1955,
+      "version_year": 1955,
+      "publication_evidence_url": "https://doi.org/10.2307/1884852",
+      "download_url": "https://cooperative-individualism.org/simon-herbert_a-behavioral-model-of-rational-choice-1955-feb.pdf",
+      "pdf_sha256": "25bf76dd1b4370d6d66d53aecb311ea6d6f486141a3dd4b8d629d0ebe3c6dfcf",
+      "split": "reserved_test"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "config": {
+    "protocol": "verified_merge_selector_v1",
+    "features": [
+      "sentence_count",
+      "boundary_position",
+      "left_length",
+      "right_length",
+      "word_overlap",
+      "right_reference",
+      "right_reason",
+      "right_example",
+      "right_contrast",
+      "right_addition",
+      "right_condition",
+      "left_semicolon"
+    ],
+    "primary": "faithful_and_decisive_readability_only",
+    "excluded_from_fit": [
+      "faithful_comparable",
+      "claim_shift",
+      "unresolved"
+    ],
+    "outer_folds": "leave_one_whole_paper_out",
+    "inner_folds": "leave_one_other_paper_out",
+    "penalty": 1.0,
+    "class_weight": "none",
+    "probability_thresholds": [
+      0.35,
+      0.5,
+      0.65,
+      0.8,
+      1.0
+    ],
+    "length_thresholds": [
+      0,
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      160
+    ],
+    "length_rule": "merge_if_source_pair_regex_word_count_at_most_threshold",
+    "selection": "macro_paper_accuracy_then_fewer_merges_then_more_conservative_threshold",
+    "methods": [
+      "keep",
+      "merge_all",
+      "length_only",
+      "source_logistic"
+    ],
+    "fitted_scaler": false,
+    "candidate_or_judge_text_in_features": false,
+    "configuration_locked_before_predictions_not_prospective_preregistration": true
+  },
+  "code_sha256": "5ea1bf30c9daa05dbbd647975aebb9e9165fef4675639bae8c999bd20452b47f",
+  "solver_sha256": "5e57762ab1378acfe3daaad460fe93d967efc54362079c38184f3aa7a393ae17",
+  "feature_code_sha256": "ed27d85ba1f4f9570e069d8fd1677b6ec30174e0457616daab4ae847ad572f35",
+  "verification_manifest_sha256": "bfbe2154b978a42f5c0e34850c44c6965cef2024acfb2bec1a11cfebebc2b448",
+  "source_manifest_sha256": "9489d5aab234e95cf656dda363aaffebe83cf09061b2c6750b8b34a2587f1f10"
+}

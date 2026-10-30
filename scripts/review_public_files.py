@@ -29,7 +29,7 @@ def allowed(path):
     if parts[0] == "src":
         return path.endswith((".py", ".md")) or path == "src/fama_style/evaluation/templates/source_control_review.html"
     if parts[0] in ("scripts", "tests"):
-        return path.endswith(".py")
+        return path.endswith(".py") or path == "scripts/data/extract_comparison_ocr.swift"
     if parts[0] == "kaggle":
         return len(parts) == 2 and (path.endswith(".ipynb") or parts[-1] == "README.md")
     if parts[0] == "docs":
@@ -63,7 +63,7 @@ def audit_file(path, content):
 
 def private_paragraphs(root):
     values = set()
-    keys = {"original_paragraph", "plain_english", "completion", "original_target", "reviewed_target", "reviewed_source"}
+    keys = {"original_paragraph", "plain_english", "completion", "original_target", "reviewed_target", "reviewed_source", "text", "raw_ocr", "source_paragraph", "candidate"}
     def visit(value):
         if isinstance(value, dict):
             for key, text in value.items():
@@ -74,7 +74,7 @@ def private_paragraphs(root):
         elif isinstance(value, list):
             for item in value:
                 visit(item)
-    for folder in (root / "data", root / "archive"):
+    for folder in (root / "data", root / "archive", root / "research_runs"):
         for path in folder.rglob("*.jsonl"):
             if path.name == "train.example.jsonl":
                 continue

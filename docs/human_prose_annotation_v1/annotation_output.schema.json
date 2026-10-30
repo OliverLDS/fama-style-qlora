@@ -1,0 +1,1262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fama-style:human-prose-annotation:v1",
+  "type": "object",
+  "properties": {
+    "annotation_version": {
+      "const": "human_prose_annotation_v1"
+    },
+    "batch_id": {
+      "type": "string"
+    },
+    "paragraph_id": {
+      "type": "string"
+    },
+    "original_paragraph": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plain_english": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rewrite_status": {
+      "type": "string",
+      "enum": [
+        "simplified",
+        "already_clear",
+        "pending_review"
+      ]
+    },
+    "rewrite_notes": {
+      "type": "string"
+    },
+    "source_quality": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "usable",
+            "uncertain",
+            "unusable"
+          ]
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "needs_external_context": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "status",
+        "issues",
+        "needs_external_context"
+      ],
+      "additionalProperties": false
+    },
+    "semantic_ledger": {
+      "type": "object",
+      "properties": {
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "entity_id": {
+                "type": "string",
+                "pattern": "^E[1-9][0-9]*$"
+              },
+              "label": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "actor",
+                  "institution",
+                  "variable",
+                  "concept",
+                  "other"
+                ]
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "original_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "quote",
+                    "occurrence"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "entity_id",
+              "label",
+              "kind",
+              "roles",
+              "original_evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claim_id": {
+                "type": "string",
+                "pattern": "^C[1-9][0-9]*$"
+              },
+              "proposition": {
+                "type": "string"
+              },
+              "actor_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^E[1-9][0-9]*$"
+                }
+              },
+              "other_entity_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^E[1-9][0-9]*$"
+                }
+              },
+              "epistemic_status": {
+                "type": "string",
+                "enum": [
+                  "finding",
+                  "hypothesis",
+                  "expectation",
+                  "definition",
+                  "assertion",
+                  "unresolved"
+                ]
+              },
+              "conditions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "quantities": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "expression": {
+                      "type": "string"
+                    },
+                    "scope": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "expression",
+                    "scope"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "negation": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "modality": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "quantifiers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "comparisons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "attributions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "original_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "quote",
+                    "occurrence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "rewrite_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "quote",
+                    "occurrence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "alignment_status": {
+                "type": "string",
+                "enum": [
+                  "preserved",
+                  "omitted",
+                  "changed",
+                  "uncertain"
+                ]
+              }
+            },
+            "required": [
+              "claim_id",
+              "proposition",
+              "actor_ids",
+              "other_entity_ids",
+              "epistemic_status",
+              "conditions",
+              "quantities",
+              "negation",
+              "modality",
+              "quantifiers",
+              "comparisons",
+              "attributions",
+              "original_evidence",
+              "rewrite_evidence",
+              "alignment_status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "relation_id": {
+                "type": "string",
+                "pattern": "^R[1-9][0-9]*$"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "causal",
+                  "conditional",
+                  "comparison",
+                  "association",
+                  "explanatory",
+                  "logical_implication",
+                  "temporal",
+                  "other",
+                  "uncertain"
+                ]
+              },
+              "from_claim_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^C[1-9][0-9]*$"
+                }
+              },
+              "to_claim_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^C[1-9][0-9]*$"
+                }
+              },
+              "direction_and_scope": {
+                "type": "string"
+              },
+              "original_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "quote",
+                    "occurrence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "rewrite_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "quote",
+                    "occurrence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "alignment_status": {
+                "type": "string",
+                "enum": [
+                  "preserved",
+                  "omitted",
+                  "changed",
+                  "uncertain"
+                ]
+              }
+            },
+            "required": [
+              "relation_id",
+              "kind",
+              "from_claim_ids",
+              "to_claim_ids",
+              "direction_and_scope",
+              "original_evidence",
+              "rewrite_evidence",
+              "alignment_status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unmatched_source_claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "proposition": {
+                "type": "string"
+              },
+              "rewrite_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "quote",
+                    "occurrence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "proposition",
+              "rewrite_evidence",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "entities",
+        "claims",
+        "relations",
+        "unmatched_source_claims"
+      ],
+      "additionalProperties": false
+    },
+    "source_schema": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "sentences": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "sentence_id": {
+                    "type": "string",
+                    "pattern": "^S[1-9][0-9]*$"
+                  },
+                  "exact_text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  }
+                },
+                "required": [
+                  "sentence_id",
+                  "exact_text",
+                  "claim_ids"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "paragraph_structure": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "canonical_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assignment_status": {
+                    "type": "string",
+                    "enum": [
+                      "assigned",
+                      "unresolved",
+                      "not_covered"
+                    ]
+                  },
+                  "candidate_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "dimension": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "present",
+                      "absent",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  },
+                  "sentence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^S[1-9][0-9]*$"
+                    }
+                  },
+                  "relation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^R[1-9][0-9]*$"
+                    }
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "assignment_status",
+                  "candidate_ids",
+                  "dimension",
+                  "value",
+                  "evidence",
+                  "claim_ids",
+                  "sentence_ids",
+                  "relation_ids",
+                  "note"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "sentence_structure": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "canonical_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assignment_status": {
+                    "type": "string",
+                    "enum": [
+                      "assigned",
+                      "unresolved",
+                      "not_covered"
+                    ]
+                  },
+                  "candidate_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "dimension": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "present",
+                      "absent",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  },
+                  "sentence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^S[1-9][0-9]*$"
+                    }
+                  },
+                  "relation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^R[1-9][0-9]*$"
+                    }
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "assignment_status",
+                  "candidate_ids",
+                  "dimension",
+                  "value",
+                  "evidence",
+                  "claim_ids",
+                  "sentence_ids",
+                  "relation_ids",
+                  "note"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "language_features": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "canonical_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assignment_status": {
+                    "type": "string",
+                    "enum": [
+                      "assigned",
+                      "unresolved",
+                      "not_covered"
+                    ]
+                  },
+                  "candidate_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "dimension": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "present",
+                      "absent",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  },
+                  "sentence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^S[1-9][0-9]*$"
+                    }
+                  },
+                  "relation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^R[1-9][0-9]*$"
+                    }
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "assignment_status",
+                  "candidate_ids",
+                  "dimension",
+                  "value",
+                  "evidence",
+                  "claim_ids",
+                  "sentence_ids",
+                  "relation_ids",
+                  "note"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "sentences",
+            "paragraph_structure",
+            "sentence_structure",
+            "language_features"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "target_schema": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "sentences": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "sentence_id": {
+                    "type": "string",
+                    "pattern": "^S[1-9][0-9]*$"
+                  },
+                  "exact_text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  }
+                },
+                "required": [
+                  "sentence_id",
+                  "exact_text",
+                  "claim_ids"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "paragraph_structure": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "canonical_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assignment_status": {
+                    "type": "string",
+                    "enum": [
+                      "assigned",
+                      "unresolved",
+                      "not_covered"
+                    ]
+                  },
+                  "candidate_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "dimension": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "present",
+                      "absent",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  },
+                  "sentence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^S[1-9][0-9]*$"
+                    }
+                  },
+                  "relation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^R[1-9][0-9]*$"
+                    }
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "assignment_status",
+                  "candidate_ids",
+                  "dimension",
+                  "value",
+                  "evidence",
+                  "claim_ids",
+                  "sentence_ids",
+                  "relation_ids",
+                  "note"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "sentence_structure": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "canonical_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assignment_status": {
+                    "type": "string",
+                    "enum": [
+                      "assigned",
+                      "unresolved",
+                      "not_covered"
+                    ]
+                  },
+                  "candidate_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "dimension": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "present",
+                      "absent",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  },
+                  "sentence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^S[1-9][0-9]*$"
+                    }
+                  },
+                  "relation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^R[1-9][0-9]*$"
+                    }
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "assignment_status",
+                  "candidate_ids",
+                  "dimension",
+                  "value",
+                  "evidence",
+                  "claim_ids",
+                  "sentence_ids",
+                  "relation_ids",
+                  "note"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "language_features": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "canonical_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assignment_status": {
+                    "type": "string",
+                    "enum": [
+                      "assigned",
+                      "unresolved",
+                      "not_covered"
+                    ]
+                  },
+                  "candidate_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "dimension": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "present",
+                      "absent",
+                      "unresolved"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "occurrence": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      },
+                      "required": [
+                        "quote",
+                        "occurrence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^C[1-9][0-9]*$"
+                    }
+                  },
+                  "sentence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^S[1-9][0-9]*$"
+                    }
+                  },
+                  "relation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^R[1-9][0-9]*$"
+                    }
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "assignment_status",
+                  "candidate_ids",
+                  "dimension",
+                  "value",
+                  "evidence",
+                  "claim_ids",
+                  "sentence_ids",
+                  "relation_ids",
+                  "note"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "sentences",
+            "paragraph_structure",
+            "sentence_structure",
+            "language_features"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "transformations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "KEEP",
+              "MERGE",
+              "SPLIT",
+              "REORDER",
+              "MOVE_QUALIFICATION",
+              "CHANGE_SUBJECT",
+              "REPACK_CLAUSES",
+              "ADJUST_LEXIS"
+            ]
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^C[1-9][0-9]*$"
+            }
+          },
+          "source_sentence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            }
+          },
+          "target_sentence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            }
+          },
+          "relation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^R[1-9][0-9]*$"
+            }
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "uncertain": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "operation",
+          "claim_ids",
+          "source_sentence_ids",
+          "target_sentence_ids",
+          "relation_ids",
+          "explanation",
+          "uncertain"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "taxonomy_version": {
+      "const": "rhetorical_discovery_v0.1_proposal"
+    },
+    "taxonomy_sha256": {
+      "const": "73304baf8c13fc4780c19383ccb49f04ce3d86370f098f85d6e1ff83e6a89603"
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "visible_model_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thinking_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "annotation_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "paired_context": {
+          "const": true
+        },
+        "independently_verified": {
+          "const": false
+        }
+      },
+      "required": [
+        "visible_model_label",
+        "thinking_setting",
+        "annotation_date",
+        "paired_context",
+        "independently_verified"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "annotation_version",
+    "batch_id",
+    "paragraph_id",
+    "original_paragraph",
+    "plain_english",
+    "rewrite_status",
+    "rewrite_notes",
+    "source_quality",
+    "semantic_ledger",
+    "source_schema",
+    "target_schema",
+    "transformations",
+    "taxonomy_version",
+    "taxonomy_sha256",
+    "needs_review",
+    "review_notes",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

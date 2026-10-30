@@ -1,0 +1,189 @@
+{
+  "protocol": "relation_pilot_verification_review_v1",
+  "response_files": 13,
+  "records": 52,
+  "mechanically_valid_records": 52,
+  "invalid_records": 0,
+  "valid_model_judgments": {
+    "items": 52,
+    "fidelity": {
+      "faithful": 44,
+      "local_shift": 8
+    },
+    "readability": {
+      "merged_better": 18,
+      "separated_better": 24,
+      "comparable": 10
+    },
+    "joint": {
+      "faithful/merged_better": 18,
+      "faithful/separated_better": 17,
+      "faithful/comparable": 9,
+      "local_shift/separated_better": 7,
+      "local_shift/comparable": 1
+    },
+    "units": {
+      "preserved": 175,
+      "omitted": 2,
+      "changed": 3
+    }
+  },
+  "per_paper": {
+    "N_GS1980": {
+      "items": 11,
+      "fidelity": {
+        "faithful": 11
+      },
+      "readability": {
+        "merged_better": 8,
+        "separated_better": 2,
+        "comparable": 1
+      },
+      "joint": {
+        "faithful/merged_better": 8,
+        "faithful/separated_better": 2,
+        "faithful/comparable": 1
+      },
+      "units": {
+        "preserved": 31
+      }
+    },
+    "N_HM1990": {
+      "items": 12,
+      "fidelity": {
+        "faithful": 11,
+        "local_shift": 1
+      },
+      "readability": {
+        "merged_better": 3,
+        "separated_better": 9
+      },
+      "joint": {
+        "faithful/merged_better": 3,
+        "faithful/separated_better": 8,
+        "local_shift/separated_better": 1
+      },
+      "units": {
+        "preserved": 48,
+        "omitted": 1,
+        "changed": 1
+      }
+    },
+    "N_MM1958": {
+      "items": 13,
+      "fidelity": {
+        "local_shift": 5,
+        "faithful": 8
+      },
+      "readability": {
+        "separated_better": 9,
+        "comparable": 3,
+        "merged_better": 1
+      },
+      "joint": {
+        "local_shift/separated_better": 4,
+        "local_shift/comparable": 1,
+        "faithful/comparable": 2,
+        "faithful/separated_better": 5,
+        "faithful/merged_better": 1
+      },
+      "units": {
+        "preserved": 46,
+        "omitted": 1,
+        "changed": 1
+      }
+    },
+    "N_S1973": {
+      "items": 16,
+      "fidelity": {
+        "faithful": 14,
+        "local_shift": 2
+      },
+      "readability": {
+        "separated_better": 4,
+        "comparable": 6,
+        "merged_better": 6
+      },
+      "joint": {
+        "faithful/separated_better": 2,
+        "faithful/comparable": 6,
+        "faithful/merged_better": 6,
+        "local_shift/separated_better": 2
+      },
+      "units": {
+        "preserved": 50,
+        "changed": 1
+      }
+    }
+  },
+  "surface_flag_sensitivity": {
+    "surface_flagged": {
+      "items": 9,
+      "fidelity": {
+        "faithful": 6,
+        "local_shift": 3
+      },
+      "readability": {
+        "merged_better": 4,
+        "comparable": 1,
+        "separated_better": 4
+      },
+      "joint": {
+        "faithful/merged_better": 4,
+        "local_shift/comparable": 1,
+        "faithful/separated_better": 2,
+        "local_shift/separated_better": 2
+      },
+      "units": {
+        "preserved": 33
+      }
+    },
+    "surface_unflagged": {
+      "items": 43,
+      "fidelity": {
+        "faithful": 38,
+        "local_shift": 5
+      },
+      "readability": {
+        "merged_better": 14,
+        "separated_better": 20,
+        "comparable": 9
+      },
+      "joint": {
+        "faithful/merged_better": 14,
+        "faithful/separated_better": 15,
+        "faithful/comparable": 9,
+        "local_shift/separated_better": 5
+      },
+      "units": {
+        "preserved": 142,
+        "omitted": 2,
+        "changed": 3
+      }
+    }
+  },
+  "candidate_single_sentence": {
+    "yes": 52
+  },
+  "issue_categories": {
+    "omitted_claim": 2,
+    "added_relation": 5,
+    "added_claim": 1,
+    "other": 2
+  },
+  "needs_external_context": 0,
+  "faithful_merged_better": 18,
+  "local_shift_merged_better": 0,
+  "reported_model": "GPT-6",
+  "reported_effort": "High",
+  "raw_provenance_both_null": 52,
+  "judgments_independently_verified": false,
+  "selected_positive_sample": true,
+  "automatic_training_acceptance": false,
+  "approved_training_rows": 0,
+  "labels_repaired": 0,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "reserved_content_used": false
+}

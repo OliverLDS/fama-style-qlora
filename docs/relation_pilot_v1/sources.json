@@ -1,0 +1,65 @@
+{
+  "protocol": "relation_pilot_v1",
+  "publication_cutoff_exclusive_year": 2020,
+  "sources": [
+    {
+      "paper_id": "N_GS1980",
+      "title": "On the Impossibility of Informationally Efficient Markets",
+      "authors": [
+        "Sanford J. Grossman",
+        "Joseph E. Stiglitz"
+      ],
+      "publication_year": 1980,
+      "version_year": 1980,
+      "publication_year_checked": true,
+      "publication_evidence_url": "https://www.jstor.org/stable/i331305",
+      "download_url": "https://terpconnect.umd.edu/~wermers/ftpsite/FAME/grossman_stiglitz_%281980%29.pdf",
+      "pdf_sha256": "938ff15939abe2d41ca3e15d60f8a59b0dc1948af0901badc47230d4aa32224a",
+      "role": "fresh_discovery_annotation_pilot_not_reserved"
+    },
+    {
+      "paper_id": "N_HM1990",
+      "title": "Property Rights and the Nature of the Firm",
+      "authors": [
+        "Oliver Hart",
+        "John Moore"
+      ],
+      "publication_year": 1990,
+      "version_year": 1990,
+      "publication_year_checked": true,
+      "publication_evidence_url": "https://www.journals.uchicago.edu/doi/10.1086/261729",
+      "download_url": "https://www.edegan.com/pdfs/Hart%20Moore%20%281990%29%20-%20Property%20Rights%20and%20the%20Nature%20of%20the%20Firm.pdf",
+      "pdf_sha256": "e15238f7932b3daebd3e89da27c1df6f885e8422861746220397fbd470dae4de",
+      "role": "fresh_discovery_annotation_pilot_not_reserved"
+    },
+    {
+      "paper_id": "N_MM1958",
+      "title": "The Cost of Capital, Corporation Finance and the Theory of Investment",
+      "authors": [
+        "Franco Modigliani",
+        "Merton H. Miller"
+      ],
+      "publication_year": 1958,
+      "version_year": 1958,
+      "publication_year_checked": true,
+      "publication_evidence_url": "https://www.aeaweb.org/aer/top20/48.3.261-297.pdf",
+      "download_url": "https://www.aeaweb.org/aer/top20/48.3.261-297.pdf",
+      "pdf_sha256": "fdfba98d1711b09abdb10842b13767facef400d3c420c2b053d2431d0cb4760f",
+      "role": "fresh_discovery_annotation_pilot_not_reserved"
+    },
+    {
+      "paper_id": "N_S1973",
+      "title": "Job Market Signaling",
+      "authors": [
+        "Michael Spence"
+      ],
+      "publication_year": 1973,
+      "version_year": 1973,
+      "publication_year_checked": true,
+      "publication_evidence_url": "https://academic.oup.com/qje/article-abstract/87/3/355/1909092",
+      "download_url": "https://faculty.econ.ucsb.edu/~tedb/Courses/GameTheory/spencesignaling.pdf",
+      "pdf_sha256": "52e432d24c8b0d1b9205cccab6ea7df01fb1703b1f74b9eb85208674790f6a39",
+      "role": "fresh_discovery_annotation_pilot_not_reserved"
+    }
+  ]
+}

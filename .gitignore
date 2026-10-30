@@ -20,6 +20,7 @@
 /scripts/**
 !/scripts/**/
 !/scripts/**/*.py
+!/scripts/data/extract_comparison_ocr.swift
 
 !/tests/
 /tests/**

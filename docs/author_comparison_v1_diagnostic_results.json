@@ -1,0 +1,1410 @@
+{
+  "protocol": "author_comparison_diagnostics_v1",
+  "status": "executed_exploratory_cpu_diagnostic",
+  "paragraphs": 146,
+  "papers": 14,
+  "topic_pairs": 7,
+  "evaluation": "Leave one entire matched topic/paper pair out; train-only scaling and vocabulary; paper-weighted fixed L2 logistic, lexical NB baseline.",
+  "hyperparameters": {
+    "logistic_steps": 350,
+    "L2_penalty": 0.2,
+    "step_size": 0.25,
+    "label_threshold": 0.5,
+    "lexical_alpha": 1
+  },
+  "primary_unit": "paper; paragraphs are not independent author samples",
+  "panels": {
+    "rhetorical_cues": {
+      "paper_accuracy": 0.6428571428571429,
+      "papers_correct": 9,
+      "papers": 14,
+      "topic_pair_rank_wins": 2,
+      "topic_pairs": 7,
+      "paragraph_accuracy_descriptive_only": 0.5,
+      "per_paper": [
+        {
+          "paper_id": "C_AD1972",
+          "topic": "organization_control",
+          "label": 0,
+          "mean_probability": 0.4924739956586433,
+          "correct": true
+        },
+        {
+          "paper_id": "C_BW2003",
+          "topic": "dividend_propensity",
+          "label": 0,
+          "mean_probability": 0.5362011546963927,
+          "correct": false
+        },
+        {
+          "paper_id": "C_H1979",
+          "topic": "agency_incentives",
+          "label": 0,
+          "mean_probability": 0.44223397426910566,
+          "correct": true
+        },
+        {
+          "paper_id": "C_M1963",
+          "topic": "price_distributions",
+          "label": 0,
+          "mean_probability": 0.4124027656773362,
+          "correct": true
+        },
+        {
+          "paper_id": "C_M2003",
+          "topic": "market_efficiency",
+          "label": 0,
+          "mean_probability": 0.4548739731576315,
+          "correct": true
+        },
+        {
+          "paper_id": "C_PS2011",
+          "topic": "long_horizon_risk",
+          "label": 0,
+          "mean_probability": 0.5487215644134704,
+          "correct": false
+        },
+        {
+          "paper_id": "C_RW2002",
+          "topic": "new_listing_firms",
+          "label": 0,
+          "mean_probability": 0.5217751795174537,
+          "correct": false
+        },
+        {
+          "paper_id": "F1965",
+          "topic": "price_distributions",
+          "label": 1,
+          "mean_probability": 0.5778489396770803,
+          "correct": true
+        },
+        {
+          "paper_id": "F1980",
+          "topic": "agency_incentives",
+          "label": 1,
+          "mean_probability": 0.5333121641185495,
+          "correct": true
+        },
+        {
+          "paper_id": "FF2000",
+          "topic": "dividend_propensity",
+          "label": 1,
+          "mean_probability": 0.5230193371949172,
+          "correct": true
+        },
+        {
+          "paper_id": "FJ1983",
+          "topic": "organization_control",
+          "label": 1,
+          "mean_probability": 0.4595116869183634,
+          "correct": false
+        },
+        {
+          "paper_id": "ME1997",
+          "topic": "market_efficiency",
+          "label": 1,
+          "mean_probability": 0.45198609583833005,
+          "correct": false
+        },
+        {
+          "paper_id": "NL2003",
+          "topic": "new_listing_firms",
+          "label": 1,
+          "mean_probability": 0.5093600084419652,
+          "correct": true
+        },
+        {
+          "paper_id": "VL2018",
+          "topic": "long_horizon_risk",
+          "label": 1,
+          "mean_probability": 0.5199775103733972,
+          "correct": true
+        }
+      ]
+    },
+    "structure_without_length": {
+      "paper_accuracy": 0.5,
+      "papers_correct": 7,
+      "papers": 14,
+      "topic_pair_rank_wins": 3,
+      "topic_pairs": 7,
+      "paragraph_accuracy_descriptive_only": 0.5136986301369864,
+      "per_paper": [
+        {
+          "paper_id": "C_AD1972",
+          "topic": "organization_control",
+          "label": 0,
+          "mean_probability": 0.48548894364514344,
+          "correct": true
+        },
+        {
+          "paper_id": "C_BW2003",
+          "topic": "dividend_propensity",
+          "label": 0,
+          "mean_probability": 0.5097421440045499,
+          "correct": false
+        },
+        {
+          "paper_id": "C_H1979",
+          "topic": "agency_incentives",
+          "label": 0,
+          "mean_probability": 0.52957898089034,
+          "correct": false
+        },
+        {
+          "paper_id": "C_M1963",
+          "topic": "price_distributions",
+          "label": 0,
+          "mean_probability": 0.5465014338074574,
+          "correct": false
+        },
+        {
+          "paper_id": "C_M2003",
+          "topic": "market_efficiency",
+          "label": 0,
+          "mean_probability": 0.47252532155814064,
+          "correct": true
+        },
+        {
+          "paper_id": "C_PS2011",
+          "topic": "long_horizon_risk",
+          "label": 0,
+          "mean_probability": 0.5132087056661381,
+          "correct": false
+        },
+        {
+          "paper_id": "C_RW2002",
+          "topic": "new_listing_firms",
+          "label": 0,
+          "mean_probability": 0.49316515195619964,
+          "correct": true
+        },
+        {
+          "paper_id": "F1965",
+          "topic": "price_distributions",
+          "label": 1,
+          "mean_probability": 0.5019384188143989,
+          "correct": true
+        },
+        {
+          "paper_id": "F1980",
+          "topic": "agency_incentives",
+          "label": 1,
+          "mean_probability": 0.49641495207318087,
+          "correct": false
+        },
+        {
+          "paper_id": "FF2000",
+          "topic": "dividend_propensity",
+          "label": 1,
+          "mean_probability": 0.513423371615778,
+          "correct": true
+        },
+        {
+          "paper_id": "FJ1983",
+          "topic": "organization_control",
+          "label": 1,
+          "mean_probability": 0.39566638048466957,
+          "correct": false
+        },
+        {
+          "paper_id": "ME1997",
+          "topic": "market_efficiency",
+          "label": 1,
+          "mean_probability": 0.490641290307809,
+          "correct": false
+        },
+        {
+          "paper_id": "NL2003",
+          "topic": "new_listing_firms",
+          "label": 1,
+          "mean_probability": 0.5053067525368047,
+          "correct": true
+        },
+        {
+          "paper_id": "VL2018",
+          "topic": "long_horizon_risk",
+          "label": 1,
+          "mean_probability": 0.5089910032012991,
+          "correct": true
+        }
+      ]
+    },
+    "rhetorical_plus_structure": {
+      "paper_accuracy": 0.6428571428571429,
+      "papers_correct": 9,
+      "papers": 14,
+      "topic_pair_rank_wins": 4,
+      "topic_pairs": 7,
+      "paragraph_accuracy_descriptive_only": 0.5068493150684932,
+      "per_paper": [
+        {
+          "paper_id": "C_AD1972",
+          "topic": "organization_control",
+          "label": 0,
+          "mean_probability": 0.4846571409601492,
+          "correct": true
+        },
+        {
+          "paper_id": "C_BW2003",
+          "topic": "dividend_propensity",
+          "label": 0,
+          "mean_probability": 0.5425361921306036,
+          "correct": false
+        },
+        {
+          "paper_id": "C_H1979",
+          "topic": "agency_incentives",
+          "label": 0,
+          "mean_probability": 0.48035142633887934,
+          "correct": true
+        },
+        {
+          "paper_id": "C_M1963",
+          "topic": "price_distributions",
+          "label": 0,
+          "mean_probability": 0.4323265608745312,
+          "correct": true
+        },
+        {
+          "paper_id": "C_M2003",
+          "topic": "market_efficiency",
+          "label": 0,
+          "mean_probability": 0.4282005292904129,
+          "correct": true
+        },
+        {
+          "paper_id": "C_PS2011",
+          "topic": "long_horizon_risk",
+          "label": 0,
+          "mean_probability": 0.5460498100763655,
+          "correct": false
+        },
+        {
+          "paper_id": "C_RW2002",
+          "topic": "new_listing_firms",
+          "label": 0,
+          "mean_probability": 0.5130927653978914,
+          "correct": false
+        },
+        {
+          "paper_id": "F1965",
+          "topic": "price_distributions",
+          "label": 1,
+          "mean_probability": 0.5557910374442727,
+          "correct": true
+        },
+        {
+          "paper_id": "F1980",
+          "topic": "agency_incentives",
+          "label": 1,
+          "mean_probability": 0.5323733277524139,
+          "correct": true
+        },
+        {
+          "paper_id": "FF2000",
+          "topic": "dividend_propensity",
+          "label": 1,
+          "mean_probability": 0.5269712373235111,
+          "correct": true
+        },
+        {
+          "paper_id": "FJ1983",
+          "topic": "organization_control",
+          "label": 1,
+          "mean_probability": 0.3535014839313685,
+          "correct": false
+        },
+        {
+          "paper_id": "ME1997",
+          "topic": "market_efficiency",
+          "label": 1,
+          "mean_probability": 0.4499588216280829,
+          "correct": false
+        },
+        {
+          "paper_id": "NL2003",
+          "topic": "new_listing_firms",
+          "label": 1,
+          "mean_probability": 0.5246454746149298,
+          "correct": true
+        },
+        {
+          "paper_id": "VL2018",
+          "topic": "long_horizon_risk",
+          "label": 1,
+          "mean_probability": 0.5151988691639311,
+          "correct": true
+        }
+      ]
+    },
+    "length_acquisition_metadata": {
+      "paper_accuracy": 0.5,
+      "papers_correct": 7,
+      "papers": 14,
+      "topic_pair_rank_wins": 4,
+      "topic_pairs": 7,
+      "paragraph_accuracy_descriptive_only": 0.4931506849315068,
+      "per_paper": [
+        {
+          "paper_id": "C_AD1972",
+          "topic": "organization_control",
+          "label": 0,
+          "mean_probability": 0.45693595430004286,
+          "correct": true
+        },
+        {
+          "paper_id": "C_BW2003",
+          "topic": "dividend_propensity",
+          "label": 0,
+          "mean_probability": 0.5546911168148803,
+          "correct": false
+        },
+        {
+          "paper_id": "C_H1979",
+          "topic": "agency_incentives",
+          "label": 0,
+          "mean_probability": 0.5708384003543133,
+          "correct": false
+        },
+        {
+          "paper_id": "C_M1963",
+          "topic": "price_distributions",
+          "label": 0,
+          "mean_probability": 0.20328398697258412,
+          "correct": true
+        },
+        {
+          "paper_id": "C_M2003",
+          "topic": "market_efficiency",
+          "label": 0,
+          "mean_probability": 0.5751385809858818,
+          "correct": false
+        },
+        {
+          "paper_id": "C_PS2011",
+          "topic": "long_horizon_risk",
+          "label": 0,
+          "mean_probability": 0.4991669043867387,
+          "correct": true
+        },
+        {
+          "paper_id": "C_RW2002",
+          "topic": "new_listing_firms",
+          "label": 0,
+          "mean_probability": 0.5119305608589914,
+          "correct": false
+        },
+        {
+          "paper_id": "F1965",
+          "topic": "price_distributions",
+          "label": 1,
+          "mean_probability": 0.2157672169186403,
+          "correct": false
+        },
+        {
+          "paper_id": "F1980",
+          "topic": "agency_incentives",
+          "label": 1,
+          "mean_probability": 0.5523200231057517,
+          "correct": true
+        },
+        {
+          "paper_id": "FF2000",
+          "topic": "dividend_propensity",
+          "label": 1,
+          "mean_probability": 0.5693803559460531,
+          "correct": true
+        },
+        {
+          "paper_id": "FJ1983",
+          "topic": "organization_control",
+          "label": 1,
+          "mean_probability": 0.44168545316064217,
+          "correct": false
+        },
+        {
+          "paper_id": "ME1997",
+          "topic": "market_efficiency",
+          "label": 1,
+          "mean_probability": 0.5812508837784034,
+          "correct": true
+        },
+        {
+          "paper_id": "NL2003",
+          "topic": "new_listing_firms",
+          "label": 1,
+          "mean_probability": 0.5195288688027192,
+          "correct": true
+        },
+        {
+          "paper_id": "VL2018",
+          "topic": "long_horizon_risk",
+          "label": 1,
+          "mean_probability": 0.4756020654487848,
+          "correct": false
+        }
+      ]
+    },
+    "content_lexical": {
+      "paper_accuracy": 0.6428571428571429,
+      "papers_correct": 9,
+      "papers": 14,
+      "topic_pair_rank_wins": 5,
+      "topic_pairs": 7,
+      "paragraph_accuracy_descriptive_only": 0.5684931506849316,
+      "per_paper": [
+        {
+          "paper_id": "C_AD1972",
+          "topic": "organization_control",
+          "label": 0,
+          "mean_probability": 0.44915619649584965,
+          "correct": true
+        },
+        {
+          "paper_id": "C_BW2003",
+          "topic": "dividend_propensity",
+          "label": 0,
+          "mean_probability": 0.7143087708009889,
+          "correct": false
+        },
+        {
+          "paper_id": "C_H1979",
+          "topic": "agency_incentives",
+          "label": 0,
+          "mean_probability": 0.3226463360333244,
+          "correct": true
+        },
+        {
+          "paper_id": "C_M1963",
+          "topic": "price_distributions",
+          "label": 0,
+          "mean_probability": 0.6029133425412094,
+          "correct": false
+        },
+        {
+          "paper_id": "C_M2003",
+          "topic": "market_efficiency",
+          "label": 0,
+          "mean_probability": 0.7923580531109021,
+          "correct": false
+        },
+        {
+          "paper_id": "C_PS2011",
+          "topic": "long_horizon_risk",
+          "label": 0,
+          "mean_probability": 0.44678063577506966,
+          "correct": true
+        },
+        {
+          "paper_id": "C_RW2002",
+          "topic": "new_listing_firms",
+          "label": 0,
+          "mean_probability": 0.7847510111525838,
+          "correct": false
+        },
+        {
+          "paper_id": "F1965",
+          "topic": "price_distributions",
+          "label": 1,
+          "mean_probability": 0.3712557556692121,
+          "correct": false
+        },
+        {
+          "paper_id": "F1980",
+          "topic": "agency_incentives",
+          "label": 1,
+          "mean_probability": 0.5895806926678591,
+          "correct": true
+        },
+        {
+          "paper_id": "FF2000",
+          "topic": "dividend_propensity",
+          "label": 1,
+          "mean_probability": 0.927570105723221,
+          "correct": true
+        },
+        {
+          "paper_id": "FJ1983",
+          "topic": "organization_control",
+          "label": 1,
+          "mean_probability": 0.5499574960555724,
+          "correct": true
+        },
+        {
+          "paper_id": "ME1997",
+          "topic": "market_efficiency",
+          "label": 1,
+          "mean_probability": 0.7215574210396868,
+          "correct": true
+        },
+        {
+          "paper_id": "NL2003",
+          "topic": "new_listing_firms",
+          "label": 1,
+          "mean_probability": 0.9987139444732528,
+          "correct": true
+        },
+        {
+          "paper_id": "VL2018",
+          "topic": "long_horizon_risk",
+          "label": 1,
+          "mean_probability": 0.7483229536979719,
+          "correct": true
+        }
+      ]
+    }
+  },
+  "feature_associations": [
+    {
+      "feature": "causal_connectives",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 4,
+      "ties": 0,
+      "median_pair_difference": -0.14597406630949605,
+      "positive_fold_coefficients": 0,
+      "negative_fold_coefficients": 7,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.14597406630949605
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.2105845872861297
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.2329749103942652
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.34055067836422476
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.759547328625966
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.05182354409449674
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -0.1706372784804157
+        }
+      ]
+    },
+    {
+      "feature": "contrast_connectives",
+      "positive_topic_pairs": 4,
+      "negative_topic_pairs": 3,
+      "ties": 0,
+      "median_pair_difference": 0.20457822220613797,
+      "positive_fold_coefficients": 7,
+      "negative_fold_coefficients": 0,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.018059258096171815
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.28284340606685854
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.6416821615865412
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.20457822220613797
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.023430176595056973
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.4298012747872876
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 1.2629045528546792
+        }
+      ]
+    },
+    {
+      "feature": "conditional_markers",
+      "positive_topic_pairs": 2,
+      "negative_topic_pairs": 4,
+      "ties": 1,
+      "median_pair_difference": -0.042820741350153124,
+      "positive_fold_coefficients": 0,
+      "negative_fold_coefficients": 7,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -1.0026385887635592
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.08169934640522876
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.007903607394845358
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": -0.042820741350153124
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.19498173461588097
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.8605981061231155
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.0
+        }
+      ]
+    },
+    {
+      "feature": "uncertainty_markers",
+      "positive_topic_pairs": 5,
+      "negative_topic_pairs": 2,
+      "ties": 0,
+      "median_pair_difference": 0.3476009574510954,
+      "positive_fold_coefficients": 7,
+      "negative_fold_coefficients": 0,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": 0.5737575182019626
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.3476009574510954
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.5235240802537799
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.21621317669855744
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.24669118338961893
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.6296058352098353
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 1.5504517565341895
+        }
+      ]
+    },
+    {
+      "feature": "necessity_markers",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 3,
+      "ties": 1,
+      "median_pair_difference": 0.0,
+      "positive_fold_coefficients": 3,
+      "negative_fold_coefficients": 4,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": 0.11086921464279959
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.09107468123861567
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.14375194522253346
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.20325877746067567
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.23675544405229315
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.2915451895043732
+        }
+      ]
+    },
+    {
+      "feature": "definition_markers",
+      "positive_topic_pairs": 2,
+      "negative_topic_pairs": 5,
+      "ties": 0,
+      "median_pair_difference": -0.049900199600798396,
+      "positive_fold_coefficients": 2,
+      "negative_fold_coefficients": 5,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.08840895456411227
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.049900199600798396
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.4921217054984442
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": -0.17238562091503268
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.08241937589763677
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.029207127637079305
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -0.3527336860670194
+        }
+      ]
+    },
+    {
+      "feature": "first_person_plural",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 4,
+      "ties": 0,
+      "median_pair_difference": -0.16210963025157565,
+      "positive_fold_coefficients": 1,
+      "negative_fold_coefficients": 6,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.333904747071718
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.16210963025157565
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -1.6953450496374542
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.01545171999717454
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.8345094700929941
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.2562399290959836
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.6997084548104956
+        }
+      ]
+    },
+    {
+      "feature": "first_person_singular",
+      "positive_topic_pairs": 1,
+      "negative_topic_pairs": 5,
+      "ties": 1,
+      "median_pair_difference": -0.12077294685990338,
+      "positive_fold_coefficients": 0,
+      "negative_fold_coefficients": 7,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.13313967562333576
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.37037037037037035
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": -0.1574448942869996
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.12077294685990338
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.05144032921810699
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -1.9620811287477955
+        }
+      ]
+    },
+    {
+      "feature": "evidence_references",
+      "positive_topic_pairs": 4,
+      "negative_topic_pairs": 2,
+      "ties": 1,
+      "median_pair_difference": 0.054660753190164946,
+      "positive_fold_coefficients": 1,
+      "negative_fold_coefficients": 6,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.43010752688172044
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.6208967945092991
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.8878236818173901
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.054660753190164946
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.18097233468094853
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.33613445378151263
+        }
+      ]
+    },
+    {
+      "feature": "enumeration_markers",
+      "positive_topic_pairs": 5,
+      "negative_topic_pairs": 2,
+      "ties": 0,
+      "median_pair_difference": 0.06086311025267743,
+      "positive_fold_coefficients": 7,
+      "negative_fold_coefficients": 0,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.15600888745542832
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.07400559332590112
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.11894923997696139
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.10651310915280807
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.941090259076004
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.02431724653946877
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.06086311025267743
+        }
+      ]
+    },
+    {
+      "feature": "attribution_markers",
+      "positive_topic_pairs": 2,
+      "negative_topic_pairs": 5,
+      "ties": 0,
+      "median_pair_difference": -0.07246376811594203,
+      "positive_fold_coefficients": 1,
+      "negative_fold_coefficients": 6,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.2304147465437788
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.527657195090114
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.49972214589440206
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.5546711837457243
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.043437904303471164
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.07246376811594203
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.2915451895043732
+        }
+      ]
+    },
+    {
+      "feature": "relative_clause_markers",
+      "positive_topic_pairs": 0,
+      "negative_topic_pairs": 7,
+      "ties": 0,
+      "median_pair_difference": -0.4705651439541414,
+      "positive_fold_coefficients": 0,
+      "negative_fold_coefficients": 7,
+      "consistent_descriptive_candidate": true,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.4705651439541414
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.12511531644222074
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.7871305749481522
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": -0.5124715970259861
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.3391413590657979
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.14103302438916865
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -3.2490938272910226
+        }
+      ]
+    },
+    {
+      "feature": "initial_conditional_fraction",
+      "positive_topic_pairs": 4,
+      "negative_topic_pairs": 2,
+      "ties": 1,
+      "median_pair_difference": 0.020833333333333332,
+      "positive_fold_coefficients": 5,
+      "negative_fold_coefficients": 2,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": 0.027777777777777776
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.020833333333333332
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.037037037037037035
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.023809523809523808
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.020833333333333336
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.08333333333333333
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.0
+        }
+      ]
+    },
+    {
+      "feature": "initial_connector_fraction",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 3,
+      "ties": 1,
+      "median_pair_difference": 0.0,
+      "positive_fold_coefficients": 6,
+      "negative_fold_coefficients": 1,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": 0.037037037037037035
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.013194444444444446
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.011904761904761904
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.012731481481481479
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.05059523809523809
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.17857142857142858
+        }
+      ]
+    },
+    {
+      "feature": "initial_evidence_fraction",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 2,
+      "ties": 2,
+      "median_pair_difference": 0.0,
+      "positive_fold_coefficients": 4,
+      "negative_fold_coefficients": 3,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.031746031746031744
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.056018518518518516
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.1
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.013888888888888888
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.041666666666666664
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.0
+        }
+      ]
+    },
+    {
+      "feature": "semicolon_rate",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 4,
+      "ties": 0,
+      "median_pair_difference": -0.07214170692431561,
+      "positive_fold_coefficients": 5,
+      "negative_fold_coefficients": 2,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.07214170692431561
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.2644937599688731
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.09254362771020626
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.06887052341597796
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.09057971014492754
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.5319148936170213
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -0.3527336860670194
+        }
+      ]
+    },
+    {
+      "feature": "colon_rate",
+      "positive_topic_pairs": 2,
+      "negative_topic_pairs": 3,
+      "ties": 2,
+      "median_pair_difference": 0.0,
+      "positive_fold_coefficients": 6,
+      "negative_fold_coefficients": 1,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.1610305958132045
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.09157509157509158
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.20202020202020202
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.0
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.10484119642306507
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.46082949308755755
+        }
+      ]
+    },
+    {
+      "feature": "parenthesis_rate",
+      "positive_topic_pairs": 5,
+      "negative_topic_pairs": 2,
+      "ties": 0,
+      "median_pair_difference": 0.258913114637343,
+      "positive_fold_coefficients": 1,
+      "negative_fold_coefficients": 6,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -2.879015481510963
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": 0.40737824388112964
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": 0.2805913441967631
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.31590413943355117
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.258913114637343
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.09328660295712587
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -0.34779584383966616
+        }
+      ]
+    },
+    {
+      "feature": "mean_word_length",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 4,
+      "ties": 0,
+      "median_pair_difference": -0.14432337153453112,
+      "positive_fold_coefficients": 3,
+      "negative_fold_coefficients": 4,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": 0.3296099435949369
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.14432337153453112
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.44878242804126867
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": -0.1646891187936319
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -0.5737733394226909
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.7246730904413576
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": 0.29118317897155865
+        }
+      ]
+    },
+    {
+      "feature": "nominalization_suffix_fraction",
+      "positive_topic_pairs": 3,
+      "negative_topic_pairs": 4,
+      "ties": 0,
+      "median_pair_difference": -0.006935925207542753,
+      "positive_fold_coefficients": 6,
+      "negative_fold_coefficients": 1,
+      "consistent_descriptive_candidate": false,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.012699322078673546
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.006935925207542753
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.01185866513436186
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": 0.006871309318673833
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": 0.01702073170370345
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": 0.04022811683128219
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -0.015428054983950973
+        }
+      ]
+    },
+    {
+      "feature": "passive_ed_proxy",
+      "positive_topic_pairs": 0,
+      "negative_topic_pairs": 7,
+      "ties": 0,
+      "median_pair_difference": -0.46690731950149206,
+      "positive_fold_coefficients": 0,
+      "negative_fold_coefficients": 7,
+      "consistent_descriptive_candidate": true,
+      "per_topic_differences": [
+        {
+          "topic": "agency_incentives",
+          "target_minus_control": -0.7164025099668784
+        },
+        {
+          "topic": "dividend_propensity",
+          "target_minus_control": -0.46690731950149206
+        },
+        {
+          "topic": "long_horizon_risk",
+          "target_minus_control": -0.7611144500578626
+        },
+        {
+          "topic": "market_efficiency",
+          "target_minus_control": -0.39190454789663975
+        },
+        {
+          "topic": "new_listing_firms",
+          "target_minus_control": -1.0154573430890184
+        },
+        {
+          "topic": "organization_control",
+          "target_minus_control": -0.15113503386391436
+        },
+        {
+          "topic": "price_distributions",
+          "target_minus_control": -0.4191631557730158
+        }
+      ]
+    }
+  ],
+  "independent_taxonomy_extraction": false,
+  "features_are_rhetorical_surface_proxies": true,
+  "author_specificity_established": false,
+  "causal_rewriting_benefit_established": false,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "language_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "adapter_training_called": false,
+  "cpu_classifier_fits": 35
+}

@@ -1,0 +1,47 @@
+{
+  "protocol": "human_prose_grouping_v1",
+  "status": "prepared_not_executed",
+  "examples": 5,
+  "papers": 3,
+  "requested_outputs": 15,
+  "batches": 3,
+  "outputs_per_batch": 5,
+  "conditions": [
+    "ordinary",
+    "source_group_plan",
+    "oracle_target_group_plan"
+  ],
+  "all_source_target_groupings_differ": true,
+  "previous_realization_examples_reused": 0,
+  "source_target_sentence_counts": [
+    {
+      "source": 3,
+      "target": 2
+    },
+    {
+      "source": 5,
+      "target": 4
+    },
+    {
+      "source": 6,
+      "target": 4
+    },
+    {
+      "source": 6,
+      "target": 4
+    },
+    {
+      "source": 6,
+      "target": 5
+    }
+  ],
+  "examples_with_claims_spanning_source_sentences": 2,
+  "semantic_tolerance_changed": false,
+  "target_lexical_controls_supplied": false,
+  "reference_wording_supplied": false,
+  "oracle_not_deployment": true,
+  "reserved_rows_used": 0,
+  "model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false
+}

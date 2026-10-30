@@ -1,0 +1,154 @@
+{
+  "protocol": "source_repair_review_v1",
+  "status": "evidence_assessed",
+  "complete": true,
+  "expected_outputs": 16,
+  "accepted_outputs": 16,
+  "user_reported_model": "GPT-6",
+  "user_reported_thinking_effort": "High",
+  "model_identity_independently_verified": false,
+  "conversation_arrangement": "not_reported",
+  "hidden_decoding_controlled": false,
+  "conditions": {
+    "original_ordinary": {
+      "accepted_outputs": 4,
+      "mean_source_overlap": 0.8723335019699182,
+      "mean_reference_overlap": 0.42312765467708696,
+      "mean_input_reference_overlap": 0.45914798263252915,
+      "mean_reference_overlap_gain_over_input": -0.03602032795544219,
+      "normalized_copies": 0,
+      "overlap_at_least_0_9": 1,
+      "sentence_count_matches": 0,
+      "reviewed_grouping_matches": 0,
+      "claim_review_statuses": {
+        "retained": 21
+      }
+    },
+    "original_planned": {
+      "accepted_outputs": 4,
+      "mean_source_overlap": 0.8631366163296867,
+      "mean_reference_overlap": 0.42776645113305733,
+      "mean_input_reference_overlap": 0.45914798263252915,
+      "mean_reference_overlap_gain_over_input": -0.03138153149947186,
+      "normalized_copies": 0,
+      "overlap_at_least_0_9": 0,
+      "sentence_count_matches": 4,
+      "reviewed_grouping_matches": 4,
+      "claim_review_statuses": {
+        "retained": 20,
+        "minor_relation_weakening": 1
+      }
+    },
+    "repaired_ordinary": {
+      "accepted_outputs": 4,
+      "mean_source_overlap": 0.8539331177712722,
+      "mean_reference_overlap": 0.4490947899611486,
+      "mean_input_reference_overlap": 0.5115946075684625,
+      "mean_reference_overlap_gain_over_input": -0.06249981760731392,
+      "normalized_copies": 0,
+      "overlap_at_least_0_9": 1,
+      "sentence_count_matches": 0,
+      "reviewed_grouping_matches": 0,
+      "claim_review_statuses": {
+        "retained": 21
+      }
+    },
+    "repaired_planned": {
+      "accepted_outputs": 4,
+      "mean_source_overlap": 0.8308759897185518,
+      "mean_reference_overlap": 0.4588820539723369,
+      "mean_input_reference_overlap": 0.5115946075684625,
+      "mean_reference_overlap_gain_over_input": -0.05271255359612563,
+      "normalized_copies": 0,
+      "overlap_at_least_0_9": 0,
+      "sentence_count_matches": 4,
+      "reviewed_grouping_matches": 4,
+      "claim_review_statuses": {
+        "retained": 19,
+        "possible_force_shift": 1,
+        "minor_relation_weakening": 1
+      }
+    }
+  },
+  "assessment_method": "In-session assistant evidence review; not independent model verification.",
+  "model_calls_by_importer": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0,
+  "distinctive_author_style_verified": false,
+  "per_paper": [
+    {
+      "paper_key": "F1980",
+      "repair_contrasts": {
+        "ordinary": {
+          "reference_overlap_delta": 0.09565217391304348,
+          "input_reference_overlap_delta": 0.08366779870330349,
+          "reference_gain_above_input_delta": 0.011984375209739995,
+          "own_source_overlap_delta": 0.06127071823204422
+        },
+        "planned": {
+          "reference_overlap_delta": 0.0431761967117707,
+          "input_reference_overlap_delta": 0.08366779870330349,
+          "reference_gain_above_input_delta": -0.04049160199153279,
+          "own_source_overlap_delta": -0.02230173920279599
+        }
+      },
+      "qualification": "bounded_diagnostic"
+    },
+    {
+      "paper_key": "FJ1983",
+      "repair_contrasts": {
+        "ordinary": {
+          "reference_overlap_delta": 0.022404496088706594,
+          "input_reference_overlap_delta": 0.06432748538011696,
+          "reference_gain_above_input_delta": -0.04192298929141036,
+          "own_source_overlap_delta": 0.06653225806451613
+        },
+        "planned": {
+          "reference_overlap_delta": 0.08065015479876159,
+          "input_reference_overlap_delta": 0.06432748538011696,
+          "reference_gain_above_input_delta": 0.01632266941864463,
+          "own_source_overlap_delta": -0.027219300958861714
+        }
+      },
+      "qualification": "bounded_diagnostic"
+    },
+    {
+      "paper_key": "ME1997",
+      "repair_contrasts": {
+        "ordinary": {
+          "reference_overlap_delta": -0.0014492753623188137,
+          "input_reference_overlap_delta": 0.02952433023510115,
+          "reference_gain_above_input_delta": -0.030973605597419962,
+          "own_source_overlap_delta": -0.12813449952262324
+        },
+        "planned": {
+          "reference_overlap_delta": 0.013623072833599092,
+          "input_reference_overlap_delta": 0.02952433023510115,
+          "reference_gain_above_input_delta": -0.015901257401502056,
+          "own_source_overlap_delta": -0.020701417759300678
+        }
+      },
+      "qualification": "recognition_correction_gap"
+    },
+    {
+      "paper_key": "NL2003",
+      "repair_contrasts": {
+        "ordinary": {
+          "reference_overlap_delta": -0.01273885350318471,
+          "input_reference_overlap_delta": 0.03226688542521189,
+          "reference_gain_above_input_delta": -0.0450057389283966,
+          "own_source_overlap_delta": -0.07327001356852103
+        },
+        "planned": {
+          "reference_overlap_delta": -0.012987012987012991,
+          "input_reference_overlap_delta": 0.03226688542521189,
+          "reference_gain_above_input_delta": -0.04525389841222488,
+          "own_source_overlap_delta": -0.05882004852358125
+        }
+      },
+      "qualification": "context_bound"
+    }
+  ]
+}

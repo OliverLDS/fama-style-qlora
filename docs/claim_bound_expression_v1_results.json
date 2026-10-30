@@ -1,0 +1,110 @@
+{
+  "protocol": "claim_bound_expression_review_v1",
+  "status": "evidence_assessed",
+  "expected_outputs": 6,
+  "accepted_outputs": 6,
+  "complete": true,
+  "user_reported_model": "GPT-6",
+  "user_reported_thinking_effort": "High",
+  "model_identity_independently_verified": false,
+  "chat_arrangement": "not_reported",
+  "hidden_decoding_controlled": false,
+  "assessment_method": "In-session assistant evidence review, not independent verification.",
+  "claim_instances_reviewed": 30,
+  "claim_review_statuses": {
+    "retained": 30
+  },
+  "normalized_copies": 0,
+  "per_paper": [
+    {
+      "paper_key": "F1980",
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE",
+      "conditions": {
+        "ordinary": {
+          "source_overlap": 0.8241206030150754,
+          "reference_overlap_evaluation_only": 0.34309623430962344,
+          "token_edit_distance_from_source": 27,
+          "output_sentence_count": 6,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": false
+          }
+        },
+        "grouping_control": {
+          "source_overlap": 0.8247422680412371,
+          "reference_overlap_evaluation_only": 0.39316239316239315,
+          "token_edit_distance_from_source": 24,
+          "output_sentence_count": 4,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          }
+        },
+        "selective_expression": {
+          "source_overlap": 0.8669950738916257,
+          "reference_overlap_evaluation_only": 0.37037037037037035,
+          "token_edit_distance_from_source": 22,
+          "output_sentence_count": 4,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          }
+        }
+      },
+      "primary_contrast": {
+        "source_overlap_delta": 0.0422528058503886,
+        "control_guided_overlap": 0.8167539267015707,
+        "control_guided_token_edit_distance": 24,
+        "reference_overlap_delta_evaluation_only": -0.022792022792022804
+      }
+    },
+    {
+      "paper_key": "FJ1983",
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION",
+      "conditions": {
+        "grouping_control": {
+          "source_overlap": 0.825,
+          "reference_overlap_evaluation_only": 0.5380116959064327,
+          "token_edit_distance_from_source": 19,
+          "output_sentence_count": 3,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          }
+        },
+        "selective_expression": {
+          "source_overlap": 0.85,
+          "reference_overlap_evaluation_only": 0.5263157894736842,
+          "token_edit_distance_from_source": 17,
+          "output_sentence_count": 3,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          }
+        },
+        "ordinary": {
+          "source_overlap": 0.825,
+          "reference_overlap_evaluation_only": 0.5380116959064327,
+          "token_edit_distance_from_source": 19,
+          "output_sentence_count": 4,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": false
+          }
+        }
+      },
+      "primary_contrast": {
+        "source_overlap_delta": 0.025000000000000022,
+        "control_guided_overlap": 0.9,
+        "control_guided_token_edit_distance": 15,
+        "reference_overlap_delta_evaluation_only": -0.011695906432748537
+      }
+    }
+  ],
+  "distinctive_author_style_verified": false,
+  "model_calls_by_review": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0
+}

@@ -1,0 +1,279 @@
+{
+  "protocol": "expression_replication_review_v1",
+  "status": "evidence_assessed",
+  "expected_outputs": 12,
+  "accepted_outputs": 12,
+  "complete": true,
+  "user_reported_model": "GPT-6",
+  "user_reported_thinking_effort": "High",
+  "model_identity_independently_verified": false,
+  "chat_arrangement": "not_reported",
+  "hidden_decoding_controlled": false,
+  "assessment_method": "In-session assistant evidence review; not independent or blinded verification.",
+  "claim_instances_reviewed": 57,
+  "claim_review_statuses": {
+    "retained": 56,
+    "possible_force_shift": 1
+  },
+  "normalized_copies": 0,
+  "per_paper": [
+    {
+      "paper_key": "F1965",
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION",
+      "grouping_origin": "source_identity_checked_against_reference",
+      "conditions": {
+        "ordinary": {
+          "source_overlap": 0.9523809523809523,
+          "source_token_edits": 4,
+          "reference_overlap_evaluation_only": 0.46601941747572817,
+          "output_sentences": 2,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "focus_as_subject": true,
+            "focus_initial": false
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        },
+        "grouping_control": {
+          "source_overlap": 0.7654320987654321,
+          "source_token_edits": 15,
+          "reference_overlap_evaluation_only": 0.4,
+          "output_sentences": 2,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "focus_as_subject": true,
+            "focus_initial": false
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        },
+        "selective_expression": {
+          "source_overlap": 0.7160493827160493,
+          "source_token_edits": 19,
+          "reference_overlap_evaluation_only": 0.36,
+          "output_sentences": 2,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "focus_as_subject": true,
+            "focus_initial": true
+          },
+          "incremental_style_benefit": "none_clear"
+        }
+      },
+      "primary_contrast": {
+        "source_overlap_delta": -0.04938271604938271,
+        "control_guided_overlap": 0.868421052631579,
+        "control_guided_token_edits": 9,
+        "reference_overlap_delta_evaluation_only": -0.040000000000000036
+      }
+    },
+    {
+      "paper_key": "FF2000",
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE",
+      "grouping_origin": "reference_informed_oracle",
+      "conditions": {
+        "ordinary": {
+          "source_overlap": 0.7979274611398963,
+          "source_token_edits": 25,
+          "reference_overlap_evaluation_only": 0.09900990099009901,
+          "output_sentences": 5,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": false
+          },
+          "form_observations": {
+            "finite_predicate": true,
+            "specified_actor_as_subject": true
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        },
+        "grouping_control": {
+          "source_overlap": 0.8342245989304813,
+          "source_token_edits": 23,
+          "reference_overlap_evaluation_only": 0.30612244897959184,
+          "output_sentences": 4,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "finite_predicate": true,
+            "specified_actor_as_subject": false
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        },
+        "selective_expression": {
+          "source_overlap": 0.7916666666666666,
+          "source_token_edits": 27,
+          "reference_overlap_evaluation_only": 0.3781094527363184,
+          "output_sentences": 4,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "finite_predicate": true,
+            "specified_actor_as_subject": true
+          },
+          "incremental_style_benefit": "none_clear"
+        }
+      },
+      "primary_contrast": {
+        "source_overlap_delta": -0.04255793226381466,
+        "control_guided_overlap": 0.8342245989304813,
+        "control_guided_token_edits": 23,
+        "reference_overlap_delta_evaluation_only": 0.07198700375672656
+      }
+    },
+    {
+      "paper_key": "ME1997",
+      "control_id": "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION",
+      "grouping_origin": "reference_informed_oracle",
+      "conditions": {
+        "selective_expression": {
+          "source_overlap": 0.8264462809917356,
+          "source_token_edits": 30,
+          "reference_overlap_evaluation_only": 0.3957597173144876,
+          "output_sentences": 7,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "focus_as_subject": true,
+            "focus_initial": true
+          },
+          "incremental_style_benefit": "none_clear"
+        },
+        "ordinary": {
+          "source_overlap": 0.8083333333333333,
+          "source_token_edits": 33,
+          "reference_overlap_evaluation_only": 0.3487544483985765,
+          "output_sentences": 7,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "focus_as_subject": false,
+            "focus_initial": false
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        },
+        "grouping_control": {
+          "source_overlap": 0.8739495798319328,
+          "source_token_edits": 21,
+          "reference_overlap_evaluation_only": 0.33691756272401435,
+          "output_sentences": 7,
+          "operation_assessment": {
+            "form_present": false,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "focus_as_subject": false,
+            "focus_initial": false
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        }
+      },
+      "primary_contrast": {
+        "source_overlap_delta": -0.04750329884019722,
+        "control_guided_overlap": 0.864406779661017,
+        "control_guided_token_edits": 22,
+        "reference_overlap_delta_evaluation_only": 0.05884215459047326
+      }
+    },
+    {
+      "paper_key": "VL2018",
+      "control_id": "FINITE_SUPPORTED_CONSEQUENCE",
+      "grouping_origin": "reference_informed_oracle",
+      "conditions": {
+        "grouping_control": {
+          "source_overlap": 0.8091603053435115,
+          "source_token_edits": 23,
+          "reference_overlap_evaluation_only": 0.43356643356643354,
+          "output_sentences": 2,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "finite_predicate": true,
+            "specified_actor_as_subject": true
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        },
+        "selective_expression": {
+          "source_overlap": 0.7969924812030075,
+          "source_token_edits": 22,
+          "reference_overlap_evaluation_only": 0.42758620689655175,
+          "output_sentences": 2,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": true
+          },
+          "form_observations": {
+            "finite_predicate": true,
+            "specified_actor_as_subject": true
+          },
+          "incremental_style_benefit": "none_clear"
+        },
+        "ordinary": {
+          "source_overlap": 0.7647058823529411,
+          "source_token_edits": 22,
+          "reference_overlap_evaluation_only": 0.44594594594594594,
+          "output_sentences": 3,
+          "operation_assessment": {
+            "form_present": true,
+            "within_fixed_grouping": false
+          },
+          "form_observations": {
+            "finite_predicate": true,
+            "specified_actor_as_subject": true
+          },
+          "incremental_style_benefit": "not_primary_contrast"
+        }
+      },
+      "primary_contrast": {
+        "source_overlap_delta": -0.012167824140503991,
+        "control_guided_overlap": 0.8923076923076924,
+        "control_guided_token_edits": 9,
+        "reference_overlap_delta_evaluation_only": -0.005980226669881794
+      }
+    }
+  ],
+  "per_operation": {
+    "FOREGROUND_SUPPORTED_RELATION_OR_FUNCTION": {
+      "papers": 2,
+      "grouping_control_strict_form": 0,
+      "guided_strict_form": 2,
+      "guided_grouping_matches": 2,
+      "guided_incremental_style_benefits": {
+        "none_clear": 2
+      }
+    },
+    "FINITE_SUPPORTED_CONSEQUENCE": {
+      "papers": 2,
+      "grouping_control_strict_form": 1,
+      "guided_strict_form": 2,
+      "guided_grouping_matches": 2,
+      "guided_incremental_style_benefits": {
+        "none_clear": 2
+      }
+    }
+  },
+  "distinctive_author_style_verified": false,
+  "model_calls_by_review": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "validation_rows_read": 0,
+  "reserved_test_rows_read": 0
+}

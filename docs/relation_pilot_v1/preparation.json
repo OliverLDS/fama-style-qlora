@@ -1,0 +1,30 @@
+{
+  "protocol": "relation_pilot_v1",
+  "status": "stage1_ready_stage2_specification_only",
+  "papers": 4,
+  "paragraphs": 40,
+  "stage1_batches": 8,
+  "paragraphs_per_batch": 5,
+  "strata": {
+    "continuation": 20,
+    "scope_transition": 20
+  },
+  "years": [
+    1958,
+    1990
+  ],
+  "word_range": [
+    53,
+    236
+  ],
+  "paragraphs_with_transcription_or_boundary_repairs": 28,
+  "new_papers_not_new_pretraining_holdout": true,
+  "sampling_strata_not_forced_operation_labels": true,
+  "stage2_inputs_created": false,
+  "full_three_level_taxonomy_requested": false,
+  "responses_received": 0,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "training_called": false,
+  "reserved_content_used": false
+}
