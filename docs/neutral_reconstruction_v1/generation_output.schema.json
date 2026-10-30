@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 2 generation response row",
+  "type": "object",
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "method": {
+      "enum": [
+        "direct_rewrite",
+        "neutral_reconstruction"
+      ]
+    },
+    "status": {
+      "enum": [
+        "generated",
+        "blocked"
+      ]
+    },
+    "text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "record_id",
+    "method",
+    "status",
+    "text",
+    "reason"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "generated"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "const": ""
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "text": {
+            "type": "null"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

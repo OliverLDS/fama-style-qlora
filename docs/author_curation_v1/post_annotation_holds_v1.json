@@ -1,0 +1,36 @@
+{
+  "base_release": "author_curation_v1",
+  "holds": [
+    {
+      "paper_id": "B_BW2007",
+      "reason_code": "ambiguous_historical_episode_reference",
+      "record_id": "NR_372f9d824be7979b",
+      "source_paragraph_id": "AC_748ed7402810395bfdaf",
+      "status": "hold_for_isolated_paragraph_task"
+    },
+    {
+      "paper_id": "B_S2007b",
+      "reason_code": "missing_comparative_endpoint",
+      "record_id": "NR_193bbcab60f441b0",
+      "source_paragraph_id": "AC_f9c68073a027c6b79d39",
+      "status": "hold_for_isolated_paragraph_task"
+    },
+    {
+      "paper_id": "B_H2001",
+      "reason_code": "unbound_effect_reference",
+      "record_id": "NR_27b086356237bab4",
+      "source_paragraph_id": "AC_45d472db505fb27a1dfa",
+      "status": "hold_for_isolated_paragraph_task"
+    },
+    {
+      "paper_id": "B_S2007a",
+      "reason_code": "two_PDF_paragraphs_merged",
+      "record_id": "NR_078b18ca4d4f18ab",
+      "source_paragraph_id": "AC_ee12d97487949db6e50a",
+      "status": "hold_for_isolated_paragraph_task"
+    }
+  ],
+  "protocol": "author_curation_post_annotation_holds_v1",
+  "scope": "Future isolated-paragraph annotation selections; frozen release and earlier pilot inputs remain unchanged. Additional source context or a versioned boundary repair is needed before these cases are reconsidered.",
+  "source": "neutral_reconstruction_v1 Stage 1 review release v2"
+}

@@ -1,0 +1,34 @@
+{
+  "GPU_jobs": 0,
+  "approved_by_group": {
+    "Baker_Wurgler": 3,
+    "Holmstrom": 3,
+    "Shiller": 2
+  },
+  "approved_papers": 6,
+  "brief_fields_changed": 55,
+  "briefs_needing_review_as_received": 11,
+  "cases_replaced": 0,
+  "derived_references_with_marker_repairs": 3,
+  "detector_calls": 0,
+  "generation_jobs_prepared": 16,
+  "generation_outputs_observed": 0,
+  "held_cases": 4,
+  "independent_or_blinded_verification": false,
+  "mechanically_clear_as_received": 1,
+  "mechanically_valid": 12,
+  "model_calls_by_agent": 0,
+  "original_12_case_denominator_retained": true,
+  "protocol": "neutral_reconstruction_stage1_review_v1",
+  "provisional_generation_approvals": 8,
+  "raw_responses_modified": false,
+  "reserved_content_used": false,
+  "responses_received": 12,
+  "source_status_as_received": {
+    "uncertain": 3,
+    "usable": 9
+  },
+  "superscript_markers_removed": 4,
+  "training_pairs_created": 0,
+  "training_ready": false
+}

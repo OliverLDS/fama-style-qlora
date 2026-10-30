@@ -4,7 +4,39 @@ An experimental fine-tuning project: rewrite neutral plain English into the econ
 
 **Current finding:** QLoRA reduced validation loss but increased copying. Explicit rhetorical and claim guidance can improve individual controls, but faithful Fama/coauthor-style transformation is **not established**. The project reports these negative and mixed results separately from successful pipeline execution.
 
-**Latest research checkpoint — 30 October 2026:** A fixed 30-word source-pair
+**Agreed development direction:** Fama/coauthor rewriting remains the main
+target. The first operational milestone is multi-author academic rewriting,
+measuring reduced detectability, meaning, readability and copying separately.
+Author provenance is retained for future author-conditioned comparisons.
+[Development plan](docs/DEVELOPMENT_PLAN.md) ·
+[Prepared milestone protocol](docs/multi_author_v1/PROTOCOL.md).
+
+[Author inventory and nine new paper acquisitions](docs/author_inventory_v1/README.md)
+· [Direct rewriting versus neutral reconstruction design](docs/author_inventory_v1/NEUTRAL_RECONSTRUCTION.md).
+
+The [v2 inventory](docs/author_inventory_v2/README.md) expands the selected roster
+to 13 papers each for Fama/coauthors, Shiller, Holmström/coauthors and
+Baker–Wurgler/coauthors. [Source curation](docs/author_curation_v1/README.md) now
+provides 1,042 paragraph candidates from the 39 non-Fama papers; paired annotation
+and semantic verification are pending.
+
+The [source-generation pilot](docs/neutral_reconstruction_v1/STAGE2_RESULTS.md)
+now has 16 reviewed outputs: neutral reconstruction copies less and changes
+organization more. A [three-case instruction repair](docs/neutral_reconstruction_v1/INSTRUCTION_CHECK_RESULTS.md)
+removed the observed added commentary; a subsequent [versioned binding audit](docs/neutral_reconstruction_v1/SEMANTIC_BINDING_REPAIR.md)
+corrected two remaining scope issues in one brief. The corrected brief has not
+been tested in generation. These are GPT-6 data-construction findings, not Gemma
+4B performance results; transfer to the intended model remains untested.
+Four original sources remain held; no training-ready pairs are claimed.
+The new package has 58 provisional training pairs, 18 development examples,
+12 detector controls and 36 prompted-base jobs; no model run or training has
+started for this milestone. A first [user-supplied GPTZero report and sparse
+evaluation budget](docs/multi_author_v1/SPARSE_DETECTOR_V2.md) are recorded:
+the GPT-6-rewrite control was labeled Human Generated with 3% document AI
+probability before training. This is a control observation, not a style-transfer
+result. Detector use is reserved for sparse checkpoints within a free budget.
+
+**Earlier local-edit checkpoint — 30 October 2026:** A fixed 30-word source-pair
 rule scores 19/24 correct decisions versus 17/24 for KEEP on four additional
 papers. Its 16 selected merges include six judged readability improvements,
 five losses (one with a local claim shift), and five ties. An earlier learned

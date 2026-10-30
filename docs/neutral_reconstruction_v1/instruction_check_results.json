@@ -1,0 +1,25 @@
+{
+  "added_numeric_values": 0,
+  "blocked": 0,
+  "cases_with_increased_overlap": 3,
+  "expected": 3,
+  "generated": 3,
+  "gpu_jobs_submitted": 0,
+  "limitations": [
+    "Three failure-selected development cases, not a new held-out sample.",
+    "Qualitative automated review is unblinded and not independent semantic verification.",
+    "GPT-6 High effort is user-reported; UI decoding and memory/retrieval uncontrolled.",
+    "No detector, human-authorship or Fama-style evaluation; no training-ready certification."
+  ],
+  "material_errors_identified": 0,
+  "missing_numeric_values": 0,
+  "new_added_commentary": 0,
+  "new_median_overlap": 0.4367816091954023,
+  "outputs_with_local_review_flags": 1,
+  "previous_added_commentary": 3,
+  "previous_median_overlap": 0.36666666666666664,
+  "protocol": "neutral_reconstruction_instruction_results_v1",
+  "readable": 3,
+  "status": "executed_responses_reviewed",
+  "training_ready": false
+}

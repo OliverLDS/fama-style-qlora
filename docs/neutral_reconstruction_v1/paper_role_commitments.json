@@ -1,0 +1,44 @@
+[
+  {
+    "committed_role": "training_side_method_development_only",
+    "fresh_heldout_eligible": false,
+    "paper_id": "B_S2007b",
+    "previous_role": "unassigned_new_acquisition",
+    "style_group": "Shiller"
+  },
+  {
+    "committed_role": "training_side_method_development_only",
+    "fresh_heldout_eligible": false,
+    "paper_id": "B_S2007a",
+    "previous_role": "unassigned_new_acquisition",
+    "style_group": "Shiller"
+  },
+  {
+    "committed_role": "training_side_method_development_only",
+    "fresh_heldout_eligible": false,
+    "paper_id": "B_H2001",
+    "previous_role": "unassigned_new_acquisition",
+    "style_group": "Holmstrom"
+  },
+  {
+    "committed_role": "training_side_method_development_only",
+    "fresh_heldout_eligible": false,
+    "paper_id": "A_H2015",
+    "previous_role": "unassigned_new_acquisition",
+    "style_group": "Holmstrom"
+  },
+  {
+    "committed_role": "training_side_method_development_only",
+    "fresh_heldout_eligible": false,
+    "paper_id": "B_BW2003b",
+    "previous_role": "unassigned_new_acquisition",
+    "style_group": "Baker_Wurgler"
+  },
+  {
+    "committed_role": "training_side_method_development_only",
+    "fresh_heldout_eligible": false,
+    "paper_id": "B_BW2007",
+    "previous_role": "unassigned_new_acquisition",
+    "style_group": "Baker_Wurgler"
+  }
+]

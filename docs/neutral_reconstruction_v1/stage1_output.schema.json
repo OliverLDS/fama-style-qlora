@@ -1,0 +1,551 @@
+{
+  "type": "object",
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "original_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_audit": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "usable",
+            "uncertain",
+            "unusable"
+          ]
+        },
+        "transcription_verification": {
+          "const": "not_performed"
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": [
+                  "transcription",
+                  "boundary",
+                  "missing_context",
+                  "technical_meaning",
+                  "other"
+                ]
+              },
+              "evidence": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "evidence",
+              "note"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "transcription_verification",
+        "issues"
+      ],
+      "additionalProperties": false
+    },
+    "brief": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "brief_version": {
+              "const": "economic_content_brief_v1"
+            },
+            "record_id": {
+              "type": "string"
+            },
+            "actors": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "actor_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "actor_id",
+                  "name"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "claims": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "actor_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "quantities": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "quantifiers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "comparisons": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "negation": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "modality": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "conditions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "exceptions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "attribution": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "temporal_scope": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "causal_direction": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "claim_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "predicate": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposition": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "actor_ids",
+                  "quantities",
+                  "quantifiers",
+                  "comparisons",
+                  "negation",
+                  "modality",
+                  "conditions",
+                  "exceptions",
+                  "attribution",
+                  "temporal_scope",
+                  "causal_direction",
+                  "claim_id",
+                  "predicate",
+                  "proposition"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "supported_relationships": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_claim": {
+                    "type": "string"
+                  },
+                  "to_claim": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "enum": [
+                      "associated_with",
+                      "causes",
+                      "compares",
+                      "conditions",
+                      "contrasts_with",
+                      "defines",
+                      "enables",
+                      "explains",
+                      "prevents",
+                      "supports"
+                    ]
+                  },
+                  "condition": {
+                    "type": "string"
+                  },
+                  "qualification": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "from_claim",
+                  "to_claim",
+                  "type",
+                  "condition",
+                  "qualification"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "essential_terms": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "citations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "context_gaps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "needs_review": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "brief_version",
+            "record_id",
+            "actors",
+            "claims",
+            "supported_relationships",
+            "essential_terms",
+            "citations",
+            "context_gaps",
+            "needs_review"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "self_check": {
+      "type": "object",
+      "properties": {
+        "all_claims_included": {
+          "type": "boolean"
+        },
+        "no_added_claims_or_relations": {
+          "type": "boolean"
+        },
+        "logical_force_preserved": {
+          "type": "boolean"
+        },
+        "uncertainty_reported": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "all_claims_included",
+        "no_added_claims_or_relations",
+        "logical_force_preserved",
+        "uncertainty_reported"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "record_id",
+    "original_sha256",
+    "source_audit",
+    "brief",
+    "self_check"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 1 response row (one object per JSONL line)",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source_audit": {
+            "properties": {
+              "status": {
+                "const": "unusable"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "brief": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "brief": {
+            "type": "object",
+            "properties": {
+              "brief_version": {
+                "const": "economic_content_brief_v1"
+              },
+              "record_id": {
+                "type": "string"
+              },
+              "actors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "actor_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "actor_id",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "claims": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "actor_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "quantities": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "quantifiers": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "comparisons": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "negation": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "modality": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "conditions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "exceptions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "attribution": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "temporal_scope": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "causal_direction": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "claim_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "predicate": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "proposition": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "actor_ids",
+                    "quantities",
+                    "quantifiers",
+                    "comparisons",
+                    "negation",
+                    "modality",
+                    "conditions",
+                    "exceptions",
+                    "attribution",
+                    "temporal_scope",
+                    "causal_direction",
+                    "claim_id",
+                    "predicate",
+                    "proposition"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "supported_relationships": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "from_claim": {
+                      "type": "string"
+                    },
+                    "to_claim": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "enum": [
+                        "associated_with",
+                        "causes",
+                        "compares",
+                        "conditions",
+                        "contrasts_with",
+                        "defines",
+                        "enables",
+                        "explains",
+                        "prevents",
+                        "supports"
+                      ]
+                    },
+                    "condition": {
+                      "type": "string"
+                    },
+                    "qualification": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "from_claim",
+                    "to_claim",
+                    "type",
+                    "condition",
+                    "qualification"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "essential_terms": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "citations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "context_gaps": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "needs_review": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "brief_version",
+              "record_id",
+              "actors",
+              "claims",
+              "supported_relationships",
+              "essential_terms",
+              "citations",
+              "context_gaps",
+              "needs_review"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}

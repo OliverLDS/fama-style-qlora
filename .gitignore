@@ -21,6 +21,7 @@
 !/scripts/**/
 !/scripts/**/*.py
 !/scripts/data/extract_comparison_ocr.swift
+!/scripts/data/extract_author_pages.swift
 
 !/tests/
 /tests/**

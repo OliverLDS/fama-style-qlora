@@ -1,0 +1,103 @@
+{
+  "GPU_jobs": 0,
+  "assessment_provenance": {
+    "independence_or_complete_blinding_established": false,
+    "method_could_be_inferred_from_output": true,
+    "method_labels_masked_during_first_text_pass": true,
+    "prior_study_setup_and_method_word_counts_seen": true,
+    "reviewer": "Codex automated qualitative review",
+    "source_of_assessments": "All 16 outputs read against their reviewed human references; local flags and order/readability observations recorded before unmasking key."
+  },
+  "author_style_alignment_established": false,
+  "detector_calls_by_agent": 0,
+  "detector_performance_measured": false,
+  "expected_output_slots": 16,
+  "generated_output_rows": 16,
+  "generation_time_blocks": 0,
+  "generation_user_provenance": {
+    "conversation_arrangement": "Not restated for actual generations. A user-shared Stage 2A preflight listed both direct batch files together; uniform batch isolation is not established.",
+    "cross_chat_retrieval": "uncontrolled",
+    "independence_established": false,
+    "scope": "all four Stage 2 response files",
+    "user_reported_model": "GPT-6",
+    "user_reported_thinking_effort": "High"
+  },
+  "hidden_token_counts_or_runtime_known": false,
+  "limitations": [
+    "Eight purposively selected paired cases; four original cases held before generation.",
+    "User-reported GPT-6/High UI execution; model snapshot, decoding and cross-chat retrieval uncontrolled.",
+    "Label-masked first text pass is not independent or fully blinded; reviewer knows study setup.",
+    "No identified material errors in this automated review is not proof of semantic equivalence.",
+    "Surface descriptors and lexical contrast do not establish author style, humanity or detector behavior."
+  ],
+  "methods": {
+    "direct_rewrite": {
+      "blocked": 0,
+      "exact_word_token_copies": 0,
+      "expected_output_slots": 8,
+      "generated": 8,
+      "major_claim_order_changes_in_automated_review": 0,
+      "material_errors_identified_in_automated_review": 0,
+      "median_length_ratio": 0.9306547619047619,
+      "median_longest_shared_word_run": 13.5,
+      "median_sentence_count_proxy": 4.0,
+      "median_word_sequence_overlap": 0.7039050146826293,
+      "median_word_set_jaccard": 0.630439082278481,
+      "median_words_per_sentence_proxy": 22.85,
+      "outputs_with_added_epistemic_metacommentary": 0,
+      "outputs_with_added_numeric_value": 0,
+      "outputs_with_first_person": 6,
+      "outputs_with_missing_numeric_value": 0,
+      "outputs_with_nonmaterial_review_flags": 3,
+      "outputs_with_readability_flags": 0,
+      "readable_in_automated_review": 8,
+      "sentence_count_changed": 3
+    },
+    "neutral_reconstruction": {
+      "blocked": 0,
+      "exact_word_token_copies": 0,
+      "expected_output_slots": 8,
+      "generated": 8,
+      "major_claim_order_changes_in_automated_review": 5,
+      "material_errors_identified_in_automated_review": 0,
+      "median_length_ratio": 1.038095238095238,
+      "median_longest_shared_word_run": 7.5,
+      "median_sentence_count_proxy": 4.0,
+      "median_word_sequence_overlap": 0.41401468788249696,
+      "median_word_set_jaccard": 0.45225563909774436,
+      "median_words_per_sentence_proxy": 25.041666666666664,
+      "outputs_with_added_epistemic_metacommentary": 3,
+      "outputs_with_added_numeric_value": 0,
+      "outputs_with_first_person": 0,
+      "outputs_with_missing_numeric_value": 0,
+      "outputs_with_nonmaterial_review_flags": 6,
+      "outputs_with_readability_flags": 5,
+      "readable_in_automated_review": 8,
+      "sentence_count_changed": 3
+    }
+  },
+  "model_calls_by_agent": 0,
+  "original_case_coverage_generated_per_method": {
+    "direct_rewrite": 0.6666666666666666,
+    "neutral_reconstruction": 0.6666666666666666
+  },
+  "original_selected_cases": 12,
+  "outputs_rewritten_or_regenerated": false,
+  "paired_complete_cases": 8,
+  "paired_generation_cases": 8,
+  "payload_bytes_by_method": {
+    "direct_rewrite": 5721,
+    "neutral_reconstruction": 41644
+  },
+  "protocol": "neutral_reconstruction_stage2_results_v1",
+  "received_output_rows": 16,
+  "reconstruction_lower_overlap_pairs": 8,
+  "reserved_content_used": false,
+  "response_files": 4,
+  "semantic_gold_verified": false,
+  "source_reference_first_person_cases": 6,
+  "stage1_held_cases": 4,
+  "status": "completed_descriptive_pilot_review",
+  "training_pairs_created": 0,
+  "training_ready": false
+}

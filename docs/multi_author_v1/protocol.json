@@ -1,0 +1,54 @@
+{
+  "protocol": "multi_author_milestone_v1",
+  "model_id": "google/gemma-3-1b-it",
+  "prompt_format": "multi_author_rewrite_v1",
+  "conditions": [
+    "ordinary",
+    "source_structural_prior"
+  ],
+  "model_revision_policy": "resolve_one_commit_at_first_run_record_and_reuse_for_adapter_comparison",
+  "quantization": "NF4 double quantization; FP32 compute",
+  "seed": 42,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 512,
+    "context_limit": 4096
+  },
+  "structural_prior": "source_only_optional_one_short_pair_plus_training_reference_numeric_profile",
+  "profile_fit_split": "training",
+  "primary_detector": "gptzero_manual_external",
+  "primary_detectability_endpoint": "AI_flag_rate_at_fixed_provider_threshold; baseline_to_adapter_paired_change",
+  "detector_label_policy": "AI/Mixed/AI Paraphrased count as flagged; Human unflagged; unknown labels remain unmapped",
+  "detector_feasibility_screen": {
+    "complete_matched_pairs": 6,
+    "max_human_flags": 1,
+    "min_GPT6_rewrite_flags": 3,
+    "meaning": "small_pilot_screen_not_a_population_accuracy_estimate"
+  },
+  "detector_scores_secondary": true,
+  "detector_tuning_or_reward": false,
+  "controls_before_gpu": "six_matched_training_human_and_GPT6_rewrite_pairs",
+  "minimum_detector_controls": 12,
+  "human_control_false_positives_reported": true,
+  "detector_missing_statuses": [
+    "too_short",
+    "unavailable",
+    "provider_error",
+    "not_tested"
+  ],
+  "detector_floor_policy": "uninformative_if_controls_do_not_support_origin_discrimination; no_cherry_picking_or_retries",
+  "provisional_pilot_progress_gate": {
+    "detectability": "lower_flag_rate_than_prompted_base_at_fixed_settings",
+    "meaning": "material_shift_rate_no_increase; local_shifts_separate",
+    "readability": "blinded_wins_exceed_losses",
+    "copying": "exact_input_copy_rate_no_increase"
+  },
+  "reserved_test_policy": "metadata_counts_only_no_text_read_or_scoring",
+  "future_conditions": [
+    "pooled_qlora_ordinary",
+    "plan_conditioned_qlora",
+    "author_conditioned_separate_corpus"
+  ],
+  "training_authorized": false,
+  "gpu_execution_authorized": false
+}

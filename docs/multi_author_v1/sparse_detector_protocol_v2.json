@@ -1,0 +1,33 @@
+{
+  "protocol": "multi_author_sparse_detector_v2",
+  "provider": "GPTZero",
+  "word_allowance_user_reported": 10000,
+  "target_max_project_words": 8000,
+  "reserve_words": 2000,
+  "paid_accounts": false,
+  "additional_accounts_required": false,
+  "use": "sparse_frozen_checkpoint_only_not_epoch_or_prompt_selection",
+  "calibration_next": "matched_human_control_only; remaining_ten_not_requested_now",
+  "six_pair_screen_status": "incomplete_v1_diagnostic_not_a_new_execution_prerequisite",
+  "raw_rewrite_floor_does_not_establish_Gemma_output_floor": true,
+  "evaluation_examples": 8,
+  "examples_per_development_paper": 2,
+  "minimum_source_and_reference_chars": 500,
+  "subset_selection": "fixed_hash_within_paper_before_model_outputs; round_robin_papers",
+  "model_arms": [
+    "base_ordinary",
+    "base_source_structural_prior",
+    "future_pooled_adapter_ordinary"
+  ],
+  "control_arms": [
+    "GPT6_input",
+    "historical_human_reference"
+  ],
+  "output_budget_estimate": "reference_word_count_per_model_arm; replace_with_actual_counts_before_scanning",
+  "over_budget_policy": "scan_complete_paper_balanced_rounds_only; first_four_then_eight; no_trimming_or_best_output_selection",
+  "previously_scanned_unchanged_texts": "reuse_result_with_provider_date_version; do_not_treat_different_versions_as_matched",
+  "local_development": "copying_and_length_checks; automated_claim_and_readability_proxies; target_loss_diagnostic",
+  "quota_counter": "whitespace_estimate_not_provider_billing; actual_remaining_allowance_unknown",
+  "independence": "same_model_and_retrieval_uncontrolled",
+  "detector_scores_are_authorship_proof": false
+}

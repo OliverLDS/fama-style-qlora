@@ -1,0 +1,727 @@
+{
+  "GPU_jobs": 0,
+  "OCR_pages": 328,
+  "annotation_candidates": 1042,
+  "annotation_candidates_by_style_group": {
+    "Baker_Wurgler": 432,
+    "Holmstrom": 242,
+    "Shiller": 368
+  },
+  "cross_page_or_column_joins": 239,
+  "duplicate_edges": 1,
+  "excluded_lines": 21231,
+  "held_blocks": 5581,
+  "model_calls": 0,
+  "normalization_events": 6654,
+  "old_split_changes": 0,
+  "pages_extracted": 1250,
+  "papers": 39,
+  "paragraph_blocks": 6623,
+  "per_paper": [
+    {
+      "annotation_candidates": 20,
+      "blocks": 189,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 108,
+        "high_unrecognized_word_rate": 14,
+        "low_prose_density": 65,
+        "mathematical_or_proof_passage": 1,
+        "outside_word_scope": 123,
+        "table_or_numeric_density": 39,
+        "uncertain_paragraph_boundary": 136,
+        "unresolved_line_break_or_soft_hyphen": 23
+      },
+      "holds": 169,
+      "paper_id": "A_BW2002",
+      "repair_events": 228
+    },
+    {
+      "annotation_candidates": 40,
+      "blocks": 262,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 144,
+        "high_unrecognized_word_rate": 37,
+        "low_ocr_line_confidence": 7,
+        "low_prose_density": 55,
+        "mathematical_or_proof_passage": 16,
+        "outside_word_scope": 158,
+        "table_or_numeric_density": 44,
+        "uncertain_paragraph_boundary": 185,
+        "unresolved_line_break_or_soft_hyphen": 22
+      },
+      "holds": 222,
+      "paper_id": "A_BW2004",
+      "repair_events": 283
+    },
+    {
+      "annotation_candidates": 39,
+      "blocks": 234,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 126,
+        "high_unrecognized_word_rate": 36,
+        "low_prose_density": 39,
+        "mathematical_or_proof_passage": 14,
+        "outside_word_scope": 140,
+        "table_or_numeric_density": 35,
+        "uncertain_paragraph_boundary": 158,
+        "unresolved_line_break_or_soft_hyphen": 19
+      },
+      "holds": 195,
+      "paper_id": "A_BW2006",
+      "repair_events": 235
+    },
+    {
+      "annotation_candidates": 9,
+      "blocks": 211,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 114,
+        "high_unrecognized_word_rate": 36,
+        "low_ocr_line_confidence": 105,
+        "low_prose_density": 61,
+        "mathematical_or_proof_passage": 68,
+        "outside_word_scope": 155,
+        "table_or_numeric_density": 18,
+        "uncertain_paragraph_boundary": 147,
+        "unresolved_line_break_or_soft_hyphen": 6
+      },
+      "holds": 202,
+      "paper_id": "A_H1982",
+      "repair_events": 166
+    },
+    {
+      "annotation_candidates": 27,
+      "blocks": 123,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 53,
+        "high_unrecognized_word_rate": 13,
+        "low_prose_density": 24,
+        "mathematical_or_proof_passage": 7,
+        "outside_word_scope": 76,
+        "table_or_numeric_density": 23,
+        "uncertain_paragraph_boundary": 75,
+        "unresolved_corrupt_glyph": 1,
+        "unresolved_line_break_or_soft_hyphen": 5
+      },
+      "holds": 96,
+      "paper_id": "A_H1999",
+      "repair_events": 123
+    },
+    {
+      "annotation_candidates": 47,
+      "blocks": 134,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 41,
+        "high_unrecognized_word_rate": 29,
+        "low_prose_density": 3,
+        "mathematical_or_proof_passage": 4,
+        "outside_word_scope": 50,
+        "table_or_figure_note": 4,
+        "table_or_numeric_density": 5,
+        "uncertain_paragraph_boundary": 59,
+        "unresolved_corrupt_glyph": 6,
+        "unresolved_line_break_or_soft_hyphen": 8
+      },
+      "holds": 87,
+      "paper_id": "A_H2015",
+      "repair_events": 110
+    },
+    {
+      "annotation_candidates": 1,
+      "blocks": 227,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 159,
+        "high_unrecognized_word_rate": 33,
+        "low_ocr_line_confidence": 124,
+        "low_prose_density": 42,
+        "mathematical_or_proof_passage": 63,
+        "outside_word_scope": 168,
+        "table_or_figure_note": 4,
+        "table_or_numeric_density": 26,
+        "uncertain_paragraph_boundary": 205,
+        "unresolved_line_break_or_soft_hyphen": 26
+      },
+      "holds": 226,
+      "paper_id": "A_S1981",
+      "repair_events": 272
+    },
+    {
+      "annotation_candidates": 37,
+      "blocks": 126,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 42,
+        "high_unrecognized_word_rate": 24,
+        "low_prose_density": 6,
+        "mathematical_or_proof_passage": 10,
+        "outside_word_scope": 54,
+        "table_or_numeric_density": 6,
+        "uncertain_paragraph_boundary": 71
+      },
+      "holds": 89,
+      "paper_id": "A_S2002",
+      "repair_events": 96
+    },
+    {
+      "annotation_candidates": 38,
+      "blocks": 162,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 66,
+        "high_unrecognized_word_rate": 28,
+        "low_prose_density": 7,
+        "mathematical_or_proof_passage": 11,
+        "metadata_contamination": 1,
+        "outside_word_scope": 67,
+        "possible_quotation": 1,
+        "table_or_numeric_density": 9,
+        "uncertain_paragraph_boundary": 80,
+        "unresolved_line_break_or_soft_hyphen": 25
+      },
+      "holds": 124,
+      "paper_id": "A_S2014",
+      "repair_events": 301
+    },
+    {
+      "annotation_candidates": 38,
+      "blocks": 265,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 136,
+        "high_unrecognized_word_rate": 43,
+        "low_prose_density": 60,
+        "mathematical_or_proof_passage": 4,
+        "outside_word_scope": 180,
+        "table_or_numeric_density": 43,
+        "uncertain_paragraph_boundary": 176,
+        "unresolved_line_break_or_soft_hyphen": 24
+      },
+      "holds": 227,
+      "paper_id": "B_BW2000",
+      "repair_events": 279
+    },
+    {
+      "annotation_candidates": 30,
+      "blocks": 206,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 87,
+        "high_unrecognized_word_rate": 41,
+        "low_prose_density": 39,
+        "mathematical_or_proof_passage": 1,
+        "outside_word_scope": 122,
+        "table_or_figure_note": 2,
+        "table_or_numeric_density": 24,
+        "uncertain_paragraph_boundary": 146,
+        "unresolved_line_break_or_soft_hyphen": 19
+      },
+      "holds": 176,
+      "paper_id": "B_BW2003a",
+      "repair_events": 258
+    },
+    {
+      "annotation_candidates": 31,
+      "blocks": 208,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 121,
+        "high_unrecognized_word_rate": 43,
+        "low_ocr_line_confidence": 12,
+        "low_prose_density": 41,
+        "mathematical_or_proof_passage": 19,
+        "outside_word_scope": 127,
+        "possible_quotation": 2,
+        "table_or_numeric_density": 40,
+        "uncertain_paragraph_boundary": 150,
+        "unresolved_line_break_or_soft_hyphen": 13
+      },
+      "holds": 177,
+      "paper_id": "B_BW2003b",
+      "repair_events": 128
+    },
+    {
+      "annotation_candidates": 30,
+      "blocks": 126,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 46,
+        "high_unrecognized_word_rate": 30,
+        "low_prose_density": 3,
+        "outside_word_scope": 56,
+        "table_or_figure_note": 1,
+        "table_or_numeric_density": 7,
+        "uncertain_paragraph_boundary": 66,
+        "unresolved_corrupt_glyph": 1,
+        "unresolved_line_break_or_soft_hyphen": 17
+      },
+      "holds": 96,
+      "paper_id": "B_BW2007",
+      "repair_events": 128
+    },
+    {
+      "annotation_candidates": 18,
+      "blocks": 185,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 101,
+        "high_unrecognized_word_rate": 31,
+        "low_prose_density": 37,
+        "mathematical_or_proof_passage": 19,
+        "outside_word_scope": 109,
+        "table_or_numeric_density": 19,
+        "uncertain_paragraph_boundary": 132,
+        "unresolved_line_break_or_soft_hyphen": 30
+      },
+      "holds": 167,
+      "paper_id": "B_BW2009",
+      "repair_events": 187
+    },
+    {
+      "annotation_candidates": 23,
+      "blocks": 222,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 116,
+        "high_unrecognized_word_rate": 68,
+        "low_prose_density": 19,
+        "mathematical_or_proof_passage": 20,
+        "outside_word_scope": 132,
+        "table_or_numeric_density": 16,
+        "uncertain_paragraph_boundary": 172,
+        "unresolved_line_break_or_soft_hyphen": 28
+      },
+      "holds": 199,
+      "paper_id": "B_BW2012a",
+      "repair_events": 237
+    },
+    {
+      "annotation_candidates": 61,
+      "blocks": 117,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 17,
+        "high_unrecognized_word_rate": 13,
+        "low_ocr_line_confidence": 7,
+        "low_prose_density": 6,
+        "mathematical_or_proof_passage": 10,
+        "outside_word_scope": 27,
+        "table_or_numeric_density": 5,
+        "uncertain_paragraph_boundary": 34,
+        "unresolved_line_break_or_soft_hyphen": 3
+      },
+      "holds": 56,
+      "paper_id": "B_BW2012b",
+      "repair_events": 105
+    },
+    {
+      "annotation_candidates": 45,
+      "blocks": 367,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 250,
+        "high_unrecognized_word_rate": 51,
+        "low_prose_density": 116,
+        "outside_word_scope": 266,
+        "table_or_numeric_density": 129,
+        "uncertain_paragraph_boundary": 284,
+        "unresolved_line_break_or_soft_hyphen": 13
+      },
+      "holds": 322,
+      "paper_id": "B_BW2012c",
+      "repair_events": 277
+    },
+    {
+      "annotation_candidates": 32,
+      "blocks": 104,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 24,
+        "high_unrecognized_word_rate": 16,
+        "low_ocr_line_confidence": 22,
+        "low_prose_density": 5,
+        "mathematical_or_proof_passage": 19,
+        "outside_word_scope": 23,
+        "table_or_numeric_density": 1,
+        "uncertain_paragraph_boundary": 41,
+        "unresolved_line_break_or_soft_hyphen": 10
+      },
+      "holds": 72,
+      "paper_id": "B_BW2013",
+      "repair_events": 94
+    },
+    {
+      "annotation_candidates": 12,
+      "blocks": 224,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 117,
+        "high_unrecognized_word_rate": 30,
+        "low_ocr_line_confidence": 107,
+        "low_prose_density": 40,
+        "mathematical_or_proof_passage": 87,
+        "outside_word_scope": 148,
+        "possible_quotation": 1,
+        "table_or_numeric_density": 11,
+        "uncertain_paragraph_boundary": 153,
+        "unresolved_line_break_or_soft_hyphen": 6
+      },
+      "holds": 212,
+      "paper_id": "B_H1987",
+      "repair_events": 162
+    },
+    {
+      "annotation_candidates": 5,
+      "blocks": 221,
+      "hold_reasons": {
+        "duplicate_or_near_duplicate": 1,
+        "fewer_than_two_sentence_terminators": 126,
+        "high_unrecognized_word_rate": 41,
+        "low_ocr_line_confidence": 113,
+        "low_prose_density": 48,
+        "mathematical_or_proof_passage": 73,
+        "outside_word_scope": 151,
+        "table_or_numeric_density": 19,
+        "uncertain_paragraph_boundary": 174,
+        "unresolved_line_break_or_soft_hyphen": 16
+      },
+      "holds": 216,
+      "paper_id": "B_H1991",
+      "repair_events": 203
+    },
+    {
+      "annotation_candidates": 3,
+      "blocks": 304,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 200,
+        "high_unrecognized_word_rate": 102,
+        "low_ocr_line_confidence": 152,
+        "low_prose_density": 59,
+        "mathematical_or_proof_passage": 67,
+        "outside_word_scope": 226,
+        "table_or_numeric_density": 26,
+        "uncertain_paragraph_boundary": 253,
+        "unresolved_line_break_or_soft_hyphen": 66
+      },
+      "holds": 301,
+      "paper_id": "B_H1994",
+      "repair_events": 373
+    },
+    {
+      "annotation_candidates": 24,
+      "blocks": 312,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 170,
+        "high_unrecognized_word_rate": 58,
+        "low_ocr_line_confidence": 115,
+        "low_prose_density": 34,
+        "mathematical_or_proof_passage": 49,
+        "outside_word_scope": 217,
+        "table_or_numeric_density": 8,
+        "uncertain_paragraph_boundary": 226,
+        "unresolved_line_break_or_soft_hyphen": 9
+      },
+      "holds": 288,
+      "paper_id": "B_H1996",
+      "repair_events": 205
+    },
+    {
+      "annotation_candidates": 9,
+      "blocks": 230,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 131,
+        "high_unrecognized_word_rate": 30,
+        "low_ocr_line_confidence": 97,
+        "low_prose_density": 37,
+        "mathematical_or_proof_passage": 47,
+        "outside_word_scope": 157,
+        "possible_quotation": 2,
+        "table_or_numeric_density": 5,
+        "uncertain_paragraph_boundary": 179,
+        "unresolved_line_break_or_soft_hyphen": 28
+      },
+      "holds": 221,
+      "paper_id": "B_H1997",
+      "repair_events": 267
+    },
+    {
+      "annotation_candidates": 19,
+      "blocks": 85,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 19,
+        "high_unrecognized_word_rate": 28,
+        "outside_word_scope": 22,
+        "table_or_numeric_density": 2,
+        "uncertain_paragraph_boundary": 43,
+        "unresolved_line_break_or_soft_hyphen": 22
+      },
+      "holds": 66,
+      "paper_id": "B_H1998",
+      "repair_events": 177
+    },
+    {
+      "annotation_candidates": 24,
+      "blocks": 130,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 39,
+        "high_unrecognized_word_rate": 43,
+        "low_ocr_line_confidence": 1,
+        "low_prose_density": 4,
+        "outside_word_scope": 57,
+        "table_or_figure_note": 4,
+        "table_or_numeric_density": 11,
+        "uncertain_paragraph_boundary": 79,
+        "unresolved_line_break_or_soft_hyphen": 4
+      },
+      "holds": 106,
+      "paper_id": "B_H2001",
+      "repair_events": 105
+    },
+    {
+      "annotation_candidates": 22,
+      "blocks": 149,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 43,
+        "high_unrecognized_word_rate": 28,
+        "low_prose_density": 28,
+        "mathematical_or_proof_passage": 40,
+        "outside_word_scope": 76,
+        "table_or_numeric_density": 15,
+        "uncertain_paragraph_boundary": 83,
+        "unresolved_line_break_or_soft_hyphen": 30
+      },
+      "holds": 127,
+      "paper_id": "B_H2010",
+      "repair_events": 233
+    },
+    {
+      "annotation_candidates": 30,
+      "blocks": 130,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 33,
+        "high_unrecognized_word_rate": 20,
+        "low_prose_density": 7,
+        "mathematical_or_proof_passage": 28,
+        "outside_word_scope": 48,
+        "table_or_numeric_density": 3,
+        "uncertain_paragraph_boundary": 40,
+        "unresolved_line_break_or_soft_hyphen": 19
+      },
+      "holds": 100,
+      "paper_id": "B_H2017",
+      "repair_events": 197
+    },
+    {
+      "annotation_candidates": 16,
+      "blocks": 257,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 133,
+        "high_unrecognized_word_rate": 56,
+        "low_ocr_line_confidence": 86,
+        "low_prose_density": 46,
+        "mathematical_or_proof_passage": 24,
+        "outside_word_scope": 159,
+        "table_or_numeric_density": 43,
+        "uncertain_paragraph_boundary": 198,
+        "unresolved_line_break_or_soft_hyphen": 14
+      },
+      "holds": 241,
+      "paper_id": "B_S1984",
+      "repair_events": 207
+    },
+    {
+      "annotation_candidates": 23,
+      "blocks": 107,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 55,
+        "high_unrecognized_word_rate": 11,
+        "low_prose_density": 5,
+        "mathematical_or_proof_passage": 1,
+        "outside_word_scope": 63,
+        "possible_quotation": 1,
+        "table_or_numeric_density": 10,
+        "uncertain_paragraph_boundary": 68,
+        "unresolved_line_break_or_soft_hyphen": 6
+      },
+      "holds": 84,
+      "paper_id": "B_S2007a",
+      "repair_events": 77
+    },
+    {
+      "annotation_candidates": 45,
+      "blocks": 135,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 39,
+        "high_unrecognized_word_rate": 23,
+        "low_prose_density": 11,
+        "outside_word_scope": 58,
+        "table_or_numeric_density": 14,
+        "uncertain_paragraph_boundary": 66,
+        "unresolved_line_break_or_soft_hyphen": 2
+      },
+      "holds": 90,
+      "paper_id": "B_S2007b",
+      "repair_events": 106
+    },
+    {
+      "annotation_candidates": 42,
+      "blocks": 71,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 13,
+        "high_unrecognized_word_rate": 9,
+        "low_prose_density": 3,
+        "outside_word_scope": 14,
+        "table_or_numeric_density": 3,
+        "uncertain_paragraph_boundary": 14,
+        "unresolved_line_break_or_soft_hyphen": 4
+      },
+      "holds": 29,
+      "paper_id": "B_S2008",
+      "repair_events": 65
+    },
+    {
+      "annotation_candidates": 15,
+      "blocks": 27,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 6,
+        "high_unrecognized_word_rate": 2,
+        "low_prose_density": 3,
+        "outside_word_scope": 8,
+        "table_or_numeric_density": 3,
+        "uncertain_paragraph_boundary": 7,
+        "unresolved_line_break_or_soft_hyphen": 1
+      },
+      "holds": 12,
+      "paper_id": "B_S2011",
+      "repair_events": 25
+    },
+    {
+      "annotation_candidates": 10,
+      "blocks": 32,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 11,
+        "high_unrecognized_word_rate": 4,
+        "low_prose_density": 2,
+        "outside_word_scope": 14,
+        "table_or_numeric_density": 2,
+        "uncertain_paragraph_boundary": 13,
+        "unresolved_line_break_or_soft_hyphen": 1
+      },
+      "holds": 22,
+      "paper_id": "B_S2013",
+      "repair_events": 32
+    },
+    {
+      "annotation_candidates": 10,
+      "blocks": 46,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 22,
+        "high_unrecognized_word_rate": 12,
+        "low_prose_density": 2,
+        "outside_word_scope": 28,
+        "table_or_numeric_density": 2,
+        "uncertain_paragraph_boundary": 10,
+        "unresolved_line_break_or_soft_hyphen": 2
+      },
+      "holds": 36,
+      "paper_id": "B_S2014",
+      "repair_events": 40
+    },
+    {
+      "annotation_candidates": 75,
+      "blocks": 188,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 41,
+        "high_unrecognized_word_rate": 33,
+        "low_ocr_line_confidence": 1,
+        "low_prose_density": 11,
+        "mathematical_or_proof_passage": 4,
+        "outside_word_scope": 69,
+        "possible_quotation": 1,
+        "table_or_numeric_density": 15,
+        "uncertain_paragraph_boundary": 78,
+        "unresolved_line_break_or_soft_hyphen": 3
+      },
+      "holds": 113,
+      "paper_id": "B_S2017",
+      "repair_events": 162
+    },
+    {
+      "annotation_candidates": 34,
+      "blocks": 65,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 14,
+        "high_unrecognized_word_rate": 6,
+        "low_prose_density": 3,
+        "outside_word_scope": 17,
+        "table_or_numeric_density": 3,
+        "uncertain_paragraph_boundary": 15,
+        "unresolved_line_break_or_soft_hyphen": 2
+      },
+      "holds": 31,
+      "paper_id": "B_S2019",
+      "repair_events": 66
+    },
+    {
+      "annotation_candidates": 25,
+      "blocks": 56,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 10,
+        "high_unrecognized_word_rate": 14,
+        "low_ocr_line_confidence": 3,
+        "low_prose_density": 3,
+        "mathematical_or_proof_passage": 1,
+        "outside_word_scope": 14,
+        "table_or_numeric_density": 3,
+        "uncertain_paragraph_boundary": 22,
+        "unresolved_line_break_or_soft_hyphen": 4
+      },
+      "holds": 31,
+      "paper_id": "C_BW2003",
+      "repair_events": 52
+    },
+    {
+      "annotation_candidates": 11,
+      "blocks": 190,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 124,
+        "high_unrecognized_word_rate": 17,
+        "low_ocr_line_confidence": 84,
+        "low_prose_density": 55,
+        "mathematical_or_proof_passage": 50,
+        "outside_word_scope": 144,
+        "table_or_numeric_density": 11,
+        "uncertain_paragraph_boundary": 149,
+        "unresolved_line_break_or_soft_hyphen": 9
+      },
+      "holds": 179,
+      "paper_id": "C_H1979",
+      "repair_events": 147
+    },
+    {
+      "annotation_candidates": 22,
+      "blocks": 196,
+      "hold_reasons": {
+        "fewer_than_two_sentence_terminators": 79,
+        "high_unrecognized_word_rate": 51,
+        "low_ocr_line_confidence": 29,
+        "low_prose_density": 3,
+        "outside_word_scope": 94,
+        "possible_quotation": 2,
+        "table_or_numeric_density": 5,
+        "uncertain_paragraph_boundary": 151,
+        "unresolved_line_break_or_soft_hyphen": 20
+      },
+      "holds": 174,
+      "paper_id": "R_S1998",
+      "repair_events": 246
+    }
+  ],
+  "protocol": "author_curation_v1",
+  "remaining_pages": 0,
+  "removed_line_reasons": {
+    "abstract_heading": 19,
+    "abstract_or_ambiguous_same_page_frontmatter": 432,
+    "backmatter_after_reference_appendix_or_discussion_heading": 8182,
+    "backmatter_heading": 39,
+    "figure_or_table_caption": 234,
+    "numbered_lower_page_note": 253,
+    "page_margin": 4,
+    "repeated_running_header_or_footer": 1503,
+    "section_heading": 799,
+    "small_font_lower_page_note": 3310,
+    "source_metadata_or_running_matter": 179,
+    "standalone_number_symbol_or_rule": 6277
+  },
+  "reserved_paragraph_bodies_read": false,
+  "semantic_verification_performed": false,
+  "source_lines_accounted_for_exactly_once": 54731,
+  "training_pairs_created": 0,
+  "training_ready": false
+}

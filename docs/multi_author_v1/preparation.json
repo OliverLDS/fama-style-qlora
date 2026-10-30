@@ -1,0 +1,35 @@
+{
+  "protocol": "multi_author_milestone_v1",
+  "status": "prepared_not_executed",
+  "training_candidates": 58,
+  "development_examples": 18,
+  "quarantined": 4,
+  "quarantine_reasons": {
+    "nonpreserved_claim_annotation": 2,
+    "known_development_epistemic_shift": 1,
+    "identity_pair": 1
+  },
+  "training_papers": 12,
+  "development_papers": 4,
+  "training_author_groups": 12,
+  "reserved_metadata_only": {
+    "papers": 4,
+    "expected_paragraphs": 20
+  },
+  "baseline_jobs": 36,
+  "conditions": [
+    "ordinary",
+    "source_structural_prior"
+  ],
+  "detector_controls": 12,
+  "training_candidates_needing_review": 42,
+  "development_examples_needing_review": 16,
+  "reference_text_exported_to_generator": false,
+  "author_labels_exported_to_generator": false,
+  "reference_plans_exported": false,
+  "training_approved": false,
+  "detector_calls": 0,
+  "new_model_calls": 0,
+  "gpu_jobs_started": 0,
+  "reserved_content_used": false
+}

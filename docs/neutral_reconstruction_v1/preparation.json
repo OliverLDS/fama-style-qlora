@@ -1,0 +1,34 @@
+{
+  "GPU_jobs": 0,
+  "all_selected_source_flags_empty": true,
+  "batches": 2,
+  "detector_calls": 0,
+  "eventual_generation_count": 24,
+  "examples": 12,
+  "examples_per_batch": 6,
+  "examples_per_group": {
+    "Baker_Wurgler": 4,
+    "Holmstrom": 4,
+    "Shiller": 4
+  },
+  "existing_splits_changed": false,
+  "generations_observed": 0,
+  "model_calls": 0,
+  "paper_ids": [
+    "B_S2007b",
+    "B_S2007a",
+    "B_H2001",
+    "A_H2015",
+    "B_BW2003b",
+    "B_BW2007"
+  ],
+  "papers": 6,
+  "protocol": "neutral_reconstruction_v1",
+  "reserved_content_used": false,
+  "selected_papers_committed_training_side": true,
+  "selection_original_words": 1338,
+  "stage2_payloads_built": false,
+  "status": "stage1_prepared_not_executed",
+  "training_pairs_created": 0,
+  "transcription_independently_verified": false
+}

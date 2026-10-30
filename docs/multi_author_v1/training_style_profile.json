@@ -1,0 +1,27 @@
+{
+  "fit_split": "training",
+  "rows": 58,
+  "reference_sentence_words": {
+    "n": 223,
+    "min": 4,
+    "p10": 11.200000000000003,
+    "p25": 16.0,
+    "median": 23.0,
+    "p75": 34.0,
+    "p90": 41.0,
+    "max": 132,
+    "mean": 25.883408071748878
+  },
+  "reference_semicolons_per_100_words": {
+    "n": 58,
+    "min": 0.0,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "p90": 0.7964539007092211,
+    "max": 2.4691358024691357,
+    "mean": 0.17375198904321926
+  },
+  "limitations": "ASCII regex words and heuristic sentence splits; descriptive pooled proxies, not author signature or mandatory targets"
+}

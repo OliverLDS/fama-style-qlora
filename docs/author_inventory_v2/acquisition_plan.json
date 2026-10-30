@@ -1,0 +1,409 @@
+{
+  "protocol": "author_inventory_v2",
+  "date": "2026-10-30",
+  "supersedes": "Roster expansion only; v1 files remain immutable.",
+  "target_distinct_papers_per_group": 13,
+  "cutoff_exclusive_year": 2020,
+  "coauthor_policy": "User approved Baker-Wurgler papers with additional coauthors; preserve full author lists. Holmstrom/coauthors follows the existing Fama convention; exact groups remain identifiable.",
+  "papers": [
+    {
+      "paper_id": "B_S2019",
+      "style_group": "Shiller",
+      "title": "Narratives About Technology-Induced Job Degradation Then and Now",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2019,
+      "publication_year": 2019,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d2168.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139178",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2017",
+      "style_group": "Shiller",
+      "title": "Narrative Economics",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2017,
+      "publication_year": 2017,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d2069.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/research/cfdp-2069-narrative-economics",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2014",
+      "style_group": "Shiller",
+      "title": "Why Is Housing Finance Still Stuck in Such a Primitive Stage?",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2014,
+      "publication_year": 2014,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1934.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139515",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2013",
+      "style_group": "Shiller",
+      "title": "Reflections on Finance and the Good Society",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2013,
+      "publication_year": 2013,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1894.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139575",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2011",
+      "style_group": "Shiller",
+      "title": "Irving Fisher, Debt Deflation and Crises",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2011,
+      "publication_year": 2011,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1817.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139677",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2008",
+      "style_group": "Shiller",
+      "title": "Derivatives Markets for Home Prices",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2008,
+      "publication_year": 2008,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1648.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139882",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2007a",
+      "style_group": "Shiller",
+      "title": "Low Interest Rates and High Asset Prices: An Interpretation in Terms of Changing Popular Economic Models",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2007,
+      "publication_year": 2007,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1632.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139901",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S2007b",
+      "style_group": "Shiller",
+      "title": "Understanding Recent Trends in House Prices and Home Ownership",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2007,
+      "publication_year": 2007,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1630.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/139903",
+      "limitations": "Cowles discussion-paper version; web CMS revision/upload dates are not paper dates. Physical cover/version must be checked."
+    },
+    {
+      "paper_id": "B_S1984",
+      "style_group": "Shiller",
+      "title": "Stock Prices and Social Dynamics",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 1984,
+      "publication_year": 1984,
+      "genre": "journal_article",
+      "download_url": "https://www.brookings.edu/wp-content/uploads/1984/06/1984b_bpea_shiller_fischer_friedman.pdf",
+      "publication_evidence_url": "https://www.brookings.edu/wp-content/uploads/1984/06/1984b_bpea_shiller_fischer_friedman.pdf",
+      "limitations": "Container also includes comments by Stanley Fischer and Benjamin M. Friedman. Attribute only Shiller main article; exclude separately authored comments and discussion."
+    },
+    {
+      "paper_id": "B_H1991",
+      "style_group": "Holmstrom",
+      "title": "Multitask Principal-Agent Analyses: Incentive Contracts, Asset Ownership, and Job Design",
+      "authors": [
+        "Bengt Holmstrom",
+        "Paul Milgrom"
+      ],
+      "version_year": 1991,
+      "publication_year": 1991,
+      "genre": "journal_article",
+      "download_url": "https://web.stanford.edu/~milgrom/publishedarticles/Multitask%20Principal%20Agent.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_H1987",
+      "style_group": "Holmstrom",
+      "title": "Aggregation and Linearity in the Provision of Intertemporal Incentives",
+      "authors": [
+        "Bengt Holmstrom",
+        "Paul Milgrom"
+      ],
+      "version_year": 1987,
+      "publication_year": 1987,
+      "genre": "journal_article",
+      "download_url": "https://people.duke.edu/~qc2/BA532/1987%20EMA%20Holmstrom%20Milgrom.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_H1997",
+      "style_group": "Holmstrom",
+      "title": "Financial Intermediation, Loanable Funds, and the Real Sector",
+      "authors": [
+        "Bengt Holmstrom",
+        "Jean Tirole"
+      ],
+      "version_year": 1997,
+      "publication_year": 1997,
+      "genre": "journal_article",
+      "download_url": "https://personal.utdallas.edu/~nina.baranchuk/Fin7310/papers/HolmstromTirole1997.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_H1996",
+      "style_group": "Holmstrom",
+      "title": "Private and Public Supply of Liquidity",
+      "authors": [
+        "Bengt Holmstrom",
+        "Jean Tirole"
+      ],
+      "version_year": 1996,
+      "publication_year": 1998,
+      "genre": "working_paper",
+      "download_url": "https://www.nber.org/system/files/working_papers/w5817/w5817.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": "November 1996 working paper; 1998 journal publication is the same work."
+    },
+    {
+      "paper_id": "B_H1998",
+      "style_group": "Holmstrom",
+      "title": "The Boundaries of the Firm Revisited",
+      "authors": [
+        "Bengt Holmstrom",
+        "John Roberts"
+      ],
+      "version_year": 1998,
+      "publication_year": 1998,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~wgreene/entertainmentandmedia/Holmstrom.pdf",
+      "publication_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/jep.12.4.73",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_H1994",
+      "style_group": "Holmstrom",
+      "title": "The Firm as an Incentive System",
+      "authors": [
+        "Bengt Holmstrom",
+        "Paul Milgrom"
+      ],
+      "version_year": 1994,
+      "publication_year": 1994,
+      "genre": "journal_article",
+      "download_url": "https://web.stanford.edu/~milgrom/publishedarticles/The%20Firm%20as%20an%20Incentive%20System.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_H2001",
+      "style_group": "Holmstrom",
+      "title": "Corporate Governance and Merger Activity in the U.S.: Making Sense of the 1980s and 1990s",
+      "authors": [
+        "Bengt Holmstrom",
+        "Steven N. Kaplan"
+      ],
+      "version_year": 2001,
+      "publication_year": 2001,
+      "genre": "working_paper",
+      "download_url": "https://www.nber.org/system/files/working_papers/w8220/w8220.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": "NBER working-paper version; same work as JEP article."
+    },
+    {
+      "paper_id": "B_H2010",
+      "style_group": "Holmstrom",
+      "title": "A Theory of Firm Scope",
+      "authors": [
+        "Oliver Hart",
+        "Bengt Holmstrom"
+      ],
+      "version_year": 2010,
+      "publication_year": 2010,
+      "genre": "journal_article",
+      "download_url": "https://dspace.mit.edu/server/api/core/bitstreams/df5b6aeb-bfa2-420d-92ba-eff13a81ed0b/content",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": "Journal copy with repository cover; earlier Firm Scope/Vision and Firm Scope drafts are not additional papers."
+    },
+    {
+      "paper_id": "B_H2017",
+      "style_group": "Holmstrom",
+      "title": "Pay for Performance and Beyond",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "version_year": 2016,
+      "publication_year": 2017,
+      "genre": "prize_lecture_revision",
+      "download_url": "https://economics.mit.edu/research/publications/nobel-prize-lecture-pay-performance-and-beyond",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": "Downloaded Nobel lecture version dated December 8, 2016, not the 2017 AER journal typesetting. These are one work; keep the lecture genre explicit."
+    },
+    {
+      "paper_id": "B_BW2000",
+      "style_group": "Baker_Wurgler",
+      "title": "The Equity Share in New Issues and Aggregate Stock Returns",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2000,
+      "publication_year": 2000,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/equityshare.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_BW2007",
+      "style_group": "Baker_Wurgler",
+      "title": "Investor Sentiment in the Stock Market",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2007,
+      "publication_year": 2007,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_investor_sentiment.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Distinct survey article; screen overlap with the 2006 empirical paper."
+    },
+    {
+      "paper_id": "B_BW2012a",
+      "style_group": "Baker_Wurgler",
+      "title": "Comovement and Predictability Relationships Between Bonds and the Cross-Section of Stocks",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2012,
+      "publication_year": 2012,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": ""
+    },
+    {
+      "paper_id": "B_BW2013",
+      "style_group": "Baker_Wurgler",
+      "title": "Would Stricter Capital Requirements Raise the Cost of Capital? Bank Capital Regulation and the Low Risk Anomaly",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2013,
+      "publication_year": 2015,
+      "genre": "working_paper",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/Bank%20Capital%20Regulation.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "March 2013 long draft; related 2015 AER paper has a different title. Count as one research work."
+    },
+    {
+      "paper_id": "B_BW2012b",
+      "style_group": "Baker_Wurgler",
+      "title": "Dividends as Reference Points: A Behavioral Signaling Approach",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2012,
+      "publication_year": 2016,
+      "genre": "working_paper",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/Behavioral_Signaling_v7.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "July 2012 draft, subsequently published 2016; one work."
+    },
+    {
+      "paper_id": "B_BW2003a",
+      "style_group": "Baker_Wurgler",
+      "title": "When Does the Market Matter? Stock Prices and the Investment of Equity-Dependent Firms",
+      "authors": [
+        "Malcolm Baker",
+        "Jeremy C. Stein",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2003,
+      "publication_year": 2003,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_stein.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Additional coauthor retained."
+    },
+    {
+      "paper_id": "B_BW2009",
+      "style_group": "Baker_Wurgler",
+      "title": "Catering Through Nominal Share Prices",
+      "authors": [
+        "Malcolm Baker",
+        "Robin Greenwood",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2009,
+      "publication_year": 2009,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/5816-b.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Additional coauthor retained."
+    },
+    {
+      "paper_id": "B_BW2012c",
+      "style_group": "Baker_Wurgler",
+      "title": "The Effect of Reference Point Prices on Mergers and Acquisitions",
+      "authors": [
+        "Malcolm Baker",
+        "Xin Pan",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2012,
+      "publication_year": 2012,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_pan.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Additional coauthor retained."
+    },
+    {
+      "paper_id": "B_BW2003b",
+      "style_group": "Baker_Wurgler",
+      "title": "The Maturity of Debt Issues and Predictable Variation in Bond Returns",
+      "authors": [
+        "Malcolm Baker",
+        "Robin Greenwood",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2003,
+      "publication_year": 2003,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_greenwood.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Additional coauthor retained."
+    }
+  ]
+}

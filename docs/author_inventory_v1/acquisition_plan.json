@@ -1,0 +1,170 @@
+{
+  "protocol": "author_inventory_v1",
+  "date": "2026-10-30",
+  "cutoff_exclusive_year": 2020,
+  "selection_basis": "Existing training-side author coverage, economics/finance overlap, repeated authorship and freely accessible historical copies; no detector or style outcomes used. Initial small roster, not definitive author ranking.",
+  "roster": [
+    {
+      "style_group": "Fama_coauthors",
+      "label": "Fama/coauthors",
+      "existing": "13 archived papers; preserve FF1997 validation and FF2014 reserved test",
+      "new_papers_requested": 0
+    },
+    {
+      "style_group": "Shiller",
+      "label": "Robert J. Shiller",
+      "existing_paper_ids": [
+        "R_S1998"
+      ],
+      "new_papers_requested": 3
+    },
+    {
+      "style_group": "Holmstrom",
+      "label": "Bengt Holmstrom",
+      "existing_paper_ids": [
+        "C_H1979"
+      ],
+      "new_papers_requested": 3
+    },
+    {
+      "style_group": "Baker_Wurgler",
+      "label": "Malcolm Baker and Jeffrey Wurgler (joint author group)",
+      "existing_paper_ids": [
+        "C_BW2003"
+      ],
+      "new_papers_requested": 3
+    }
+  ],
+  "papers": [
+    {
+      "paper_id": "A_S1981",
+      "style_group": "Shiller",
+      "title": "Do Stock Prices Move Too Much to be Justified by Subsequent Changes in Dividends?",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 1981,
+      "publication_year": 1981,
+      "genre": "journal_article",
+      "download_url": "https://www.aeaweb.org/aer/top20/71.3.421-436.pdf",
+      "publication_evidence_url": "https://www.aeaweb.org/aer/top20/71.3.421-436.pdf",
+      "limitations": "Journal scan; two-column layout; equations and tables require separate handling."
+    },
+    {
+      "paper_id": "A_S2002",
+      "style_group": "Shiller",
+      "title": "From Efficient Markets Theory to Behavioral Finance",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2002,
+      "publication_year": 2003,
+      "genre": "working_paper",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1385.pdf",
+      "publication_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/089533003321164967",
+      "limitations": "October 2002 Cowles Discussion Paper 1385, not the 2003 journal typesetting. Record cover-title variation; do not count draft and published article as separate works."
+    },
+    {
+      "paper_id": "A_S2014",
+      "style_group": "Shiller",
+      "title": "Speculative Asset Prices",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2014,
+      "publication_year": 2014,
+      "genre": "prize_lecture_revision",
+      "download_url": "https://www.nobelprize.org/uploads/2018/06/shiller-lecture.pdf",
+      "publication_evidence_url": "https://www.nobelprize.org/prizes/economic-sciences/2013/shiller/lecture/",
+      "limitations": "PDF states February 1, 2014 substantial revision of December 2013 lecture. Lecture genre differs from ordinary articles; record and evaluate genre confounding."
+    },
+    {
+      "paper_id": "A_H1982",
+      "style_group": "Holmstrom",
+      "title": "Moral Hazard in Teams",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "version_year": 1982,
+      "publication_year": 1982,
+      "genre": "journal_article",
+      "download_url": "https://people.duke.edu/~qc2/BA532/1982%20Rand%20Holmstrom%20team.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": "Scan requires OCR and layout checks; mathematical passages excluded from prose task."
+    },
+    {
+      "paper_id": "A_H1999",
+      "style_group": "Holmstrom",
+      "title": "Managerial Incentive Problems: A Dynamic Perspective",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "version_year": 1999,
+      "publication_year": 1999,
+      "genre": "journal_article",
+      "download_url": "https://oz.stern.nyu.edu/cite05/readings/cabral3.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "limitations": "1999 journal version of earlier work; do not count 1982 and 1999 versions as separate papers. Semantic content reproduced as source, not endorsed as corrected economics."
+    },
+    {
+      "paper_id": "A_H2015",
+      "style_group": "Holmstrom",
+      "title": "Understanding the Role of Debt in the Financial System",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "version_year": 2015,
+      "publication_year": 2015,
+      "genre": "working_paper",
+      "download_url": "https://economics.mit.edu/sites/default/files/2022-09/Holmstrom%20Understanding%20debt%20WP%20479%20BIS%202015-no%20co.pdf",
+      "publication_evidence_url": "https://www.bis.org/publications/working-paper-479-understanding-role-debt-financial-system",
+      "limitations": "Author-hosted 32-page copy; cover credits discussants. Attribute only Holmstrom main article; exclude foreword and any separately authored comments."
+    },
+    {
+      "paper_id": "A_BW2002",
+      "style_group": "Baker_Wurgler",
+      "title": "Market Timing and Capital Structure",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2002,
+      "publication_year": 2002,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/capstruct.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Keep exact two-author group; article topic provides variation beyond dividends."
+    },
+    {
+      "paper_id": "A_BW2004",
+      "style_group": "Baker_Wurgler",
+      "title": "A Catering Theory of Dividends",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2004,
+      "publication_year": 2004,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_dividends.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Related to existing Appearing and Disappearing Dividends; cross-paper text overlap must be screened before splitting."
+    },
+    {
+      "paper_id": "A_BW2006",
+      "style_group": "Baker_Wurgler",
+      "title": "Investor Sentiment and the Cross-Section of Stock Returns",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2006,
+      "publication_year": 2006,
+      "genre": "journal_article",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_cross_section.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "limitations": "Journal version; do not also count earlier 2003/2004 drafts as new works."
+    }
+  ],
+  "status": "Acquisition candidates; downloaded does not mean extracted, annotated, licensed for redistribution, or training-ready. Existing splits are immutable. New-paper roles remain unassigned until overlap and quality checks."
+}

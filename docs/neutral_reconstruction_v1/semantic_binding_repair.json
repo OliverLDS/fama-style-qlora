@@ -1,0 +1,22 @@
+{
+  "binding_issues": [
+    "Confidence negation versus comparative weakening",
+    "Categorical media-authority barrier versus gradual limitation"
+  ],
+  "derived_briefs_created": 1,
+  "fields_changed": 7,
+  "generation_jobs_prepared": 0,
+  "gpu_jobs_submitted": 0,
+  "historical_outputs_relabelled": 0,
+  "independent_verification": false,
+  "limits": "Source-anchored automated repair of reviewed extraction, not new PDF verification or independent semantic gold.",
+  "model_calls": 0,
+  "next_gate": "Inference-only transfer check on Gemma 4B before claiming the generator follows this protocol.",
+  "protocol": "neutral_reconstruction_binding_repair_v1",
+  "raw_responses_changed": 0,
+  "records_repaired": 1,
+  "reserved_test_examples_used": 0,
+  "source_references_changed": 0,
+  "training_pairs_created": 0,
+  "training_ready": false
+}

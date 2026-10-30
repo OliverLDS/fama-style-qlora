@@ -1,0 +1,15 @@
+{
+  "hyphens": "join line-break word only if dictionary-supported; otherwise hold",
+  "minimum_ocr_line_confidence": 0.8,
+  "near_duplicate_jaccard": 0.85,
+  "selection": "source quality and boundaries only; no detector/style score selection",
+  "semantic_verification": "not performed",
+  "shingle_words": 5,
+  "split_policy": "preserve existing roles; new works remain unassigned",
+  "training_ready": false,
+  "unicode": "NFKC with explicit audit; retain raw extraction",
+  "word_range": [
+    50,
+    350
+  ]
+}

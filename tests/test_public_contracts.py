@@ -68,8 +68,9 @@ class PublicContracts(unittest.TestCase):
             root=Path(temp);folder=root/'research_runs'/'synthetic';folder.mkdir(parents=True)
             source='Synthetic source content for publication scanner testing. '*4
             candidate='Synthetic candidate content for publication scanner testing. '*4
-            (folder/'rows.jsonl').write_text(json.dumps({'source_paragraph':source,'candidate':candidate})+'\n')
-            self.assertEqual(private_paragraphs(root),{' '.join(source.split()),' '.join(candidate.split())})
+            target='Synthetic target content for publication scanner testing. '*4
+            (folder/'rows.jsonl').write_text(json.dumps({'source_paragraph':source,'candidate':candidate,'source':source,'target':target})+'\n')
+            self.assertEqual(private_paragraphs(root),{' '.join(s.split()) for s in (source,candidate,target)})
 
 
 if __name__ == "__main__":

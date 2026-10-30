@@ -1,0 +1,1742 @@
+{
+  "authors": [
+    {
+      "name": "Amos Tversky",
+      "papers": [
+        "H_KT1979"
+      ],
+      "splits": {
+        "H_KT1979": "development"
+      }
+    },
+    {
+      "name": "Armen A. Alchian",
+      "papers": [
+        "C_AD1972"
+      ],
+      "splits": {
+        "C_AD1972": "training"
+      }
+    },
+    {
+      "name": "Bengt Holmstrom",
+      "papers": [
+        "C_H1979",
+        "A_H1982",
+        "A_H1999",
+        "A_H2015"
+      ],
+      "splits": {
+        "A_H1982": "unassigned_new_acquisition",
+        "A_H1999": "unassigned_new_acquisition",
+        "A_H2015": "unassigned_new_acquisition",
+        "C_H1979": "training"
+      }
+    },
+    {
+      "name": "Benoit Mandelbrot",
+      "papers": [
+        "C_M1963"
+      ],
+      "splits": {
+        "C_M1963": "training"
+      }
+    },
+    {
+      "name": "Burton G. Malkiel",
+      "papers": [
+        "C_M2003"
+      ],
+      "splits": {
+        "C_M2003": "training"
+      }
+    },
+    {
+      "name": "Clive W. J. Granger",
+      "papers": [
+        "R_GM1962"
+      ],
+      "splits": {
+        "R_GM1962": "training"
+      }
+    },
+    {
+      "name": "Daniel Kahneman",
+      "papers": [
+        "H_KT1979"
+      ],
+      "splits": {
+        "H_KT1979": "development"
+      }
+    },
+    {
+      "name": "Douglas J. Skinner",
+      "papers": [
+        "R_DDS2002"
+      ],
+      "splits": {
+        "R_DDS2002": "training"
+      }
+    },
+    {
+      "name": "Douglas W. Diamond",
+      "papers": [
+        "H_DD1983"
+      ],
+      "splits": {
+        "H_DD1983": "reserved_test"
+      }
+    },
+    {
+      "name": "Eugene F. Fama",
+      "papers": [
+        "F1963",
+        "F1965",
+        "F1970",
+        "F1980",
+        "FB1966",
+        "FF1988",
+        "FF1997",
+        "FF2000",
+        "FF2014",
+        "FJ1983",
+        "ME1997",
+        "NL2003",
+        "VL2018"
+      ],
+      "splits": {
+        "F1963": "train",
+        "F1965": "train",
+        "F1970": "train",
+        "F1980": "train",
+        "FB1966": "train",
+        "FF1988": "train",
+        "FF1997": "validation",
+        "FF2000": "train",
+        "FF2014": "test",
+        "FJ1983": "train",
+        "ME1997": "train",
+        "NL2003": "train",
+        "VL2018": "train"
+      }
+    },
+    {
+      "name": "Fabio Panetta",
+      "papers": [
+        "R_PPZ1998"
+      ],
+      "splits": {
+        "R_PPZ1998": "development"
+      }
+    },
+    {
+      "name": "Franco Modigliani",
+      "papers": [
+        "N_MM1958"
+      ],
+      "splits": {
+        "N_MM1958": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Friedrich A. Hayek",
+      "papers": [
+        "H_H1945"
+      ],
+      "splits": {
+        "H_H1945": "development"
+      }
+    },
+    {
+      "name": "George A. Akerlof",
+      "papers": [
+        "H_A1970"
+      ],
+      "splits": {
+        "H_A1970": "reserved_test"
+      }
+    },
+    {
+      "name": "Harold Demsetz",
+      "papers": [
+        "C_AD1972"
+      ],
+      "splits": {
+        "C_AD1972": "training"
+      }
+    },
+    {
+      "name": "Harry DeAngelo",
+      "papers": [
+        "R_DDS2002"
+      ],
+      "splits": {
+        "R_DDS2002": "training"
+      }
+    },
+    {
+      "name": "Henry Hansmann",
+      "papers": [
+        "R_H1988"
+      ],
+      "splits": {
+        "R_H1988": "development"
+      }
+    },
+    {
+      "name": "Herbert A. Simon",
+      "papers": [
+        "H_S1955"
+      ],
+      "splits": {
+        "H_S1955": "reserved_test"
+      }
+    },
+    {
+      "name": "Ivo Welch",
+      "papers": [
+        "C_RW2002"
+      ],
+      "splits": {
+        "C_RW2002": "training"
+      }
+    },
+    {
+      "name": "Jacob Boudoukh",
+      "papers": [
+        "R_BIR2019"
+      ],
+      "splits": {
+        "R_BIR2019": "training"
+      }
+    },
+    {
+      "name": "Jay R. Ritter",
+      "papers": [
+        "C_RW2002"
+      ],
+      "splits": {
+        "C_RW2002": "training"
+      }
+    },
+    {
+      "name": "Jeffrey Wurgler",
+      "papers": [
+        "C_BW2003",
+        "A_BW2002",
+        "A_BW2004",
+        "A_BW2006"
+      ],
+      "splits": {
+        "A_BW2002": "unassigned_new_acquisition",
+        "A_BW2004": "unassigned_new_acquisition",
+        "A_BW2006": "unassigned_new_acquisition",
+        "C_BW2003": "training"
+      }
+    },
+    {
+      "name": "John Moore",
+      "papers": [
+        "N_HM1990"
+      ],
+      "splits": {
+        "N_HM1990": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Joseph E. Stiglitz",
+      "papers": [
+        "N_GS1980"
+      ],
+      "splits": {
+        "N_GS1980": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Kenneth R. French",
+      "papers": [
+        "FF1988",
+        "FF1997",
+        "FF2000",
+        "FF2014",
+        "NL2003",
+        "VL2018"
+      ],
+      "splits": {
+        "FF1988": "train",
+        "FF1997": "validation",
+        "FF2000": "train",
+        "FF2014": "test",
+        "NL2003": "train",
+        "VL2018": "train"
+      }
+    },
+    {
+      "name": "Linda DeAngelo",
+      "papers": [
+        "R_DDS2002"
+      ],
+      "splits": {
+        "R_DDS2002": "training"
+      }
+    },
+    {
+      "name": "Lubos Pastor",
+      "papers": [
+        "C_PS2011"
+      ],
+      "splits": {
+        "C_PS2011": "training"
+      }
+    },
+    {
+      "name": "Luigi Zingales",
+      "papers": [
+        "R_PPZ1998"
+      ],
+      "splits": {
+        "R_PPZ1998": "development"
+      }
+    },
+    {
+      "name": "Malcolm Baker",
+      "papers": [
+        "C_BW2003",
+        "A_BW2002",
+        "A_BW2004",
+        "A_BW2006"
+      ],
+      "splits": {
+        "A_BW2002": "unassigned_new_acquisition",
+        "A_BW2004": "unassigned_new_acquisition",
+        "A_BW2006": "unassigned_new_acquisition",
+        "C_BW2003": "training"
+      }
+    },
+    {
+      "name": "Marco Pagano",
+      "papers": [
+        "R_PPZ1998"
+      ],
+      "splits": {
+        "R_PPZ1998": "development"
+      }
+    },
+    {
+      "name": "Marshall E. Blume",
+      "papers": [
+        "FB1966"
+      ],
+      "splits": {
+        "FB1966": "train"
+      }
+    },
+    {
+      "name": "Matthew Richardson",
+      "papers": [
+        "R_BIR2019"
+      ],
+      "splits": {
+        "R_BIR2019": "training"
+      }
+    },
+    {
+      "name": "Merton H. Miller",
+      "papers": [
+        "N_MM1958"
+      ],
+      "splits": {
+        "N_MM1958": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Michael C. Jensen",
+      "papers": [
+        "FJ1983"
+      ],
+      "splits": {
+        "FJ1983": "train"
+      }
+    },
+    {
+      "name": "Michael Spence",
+      "papers": [
+        "N_S1973"
+      ],
+      "splits": {
+        "N_S1973": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Oliver Hart",
+      "papers": [
+        "N_HM1990"
+      ],
+      "splits": {
+        "N_HM1990": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Oskar Morgenstern",
+      "papers": [
+        "R_GM1962"
+      ],
+      "splits": {
+        "R_GM1962": "training"
+      }
+    },
+    {
+      "name": "Philip H. Dybvig",
+      "papers": [
+        "H_DD1983"
+      ],
+      "splits": {
+        "H_DD1983": "reserved_test"
+      }
+    },
+    {
+      "name": "Robert F. Stambaugh",
+      "papers": [
+        "C_PS2011"
+      ],
+      "splits": {
+        "C_PS2011": "training"
+      }
+    },
+    {
+      "name": "Robert J. Shiller",
+      "papers": [
+        "R_S1998",
+        "A_S1981",
+        "A_S2002",
+        "A_S2014"
+      ],
+      "splits": {
+        "A_S1981": "unassigned_new_acquisition",
+        "A_S2002": "unassigned_new_acquisition",
+        "A_S2014": "unassigned_new_acquisition",
+        "R_S1998": "training"
+      }
+    },
+    {
+      "name": "Ronald H. Coase",
+      "papers": [
+        "H_C1937"
+      ],
+      "splits": {
+        "H_C1937": "reserved_test"
+      }
+    },
+    {
+      "name": "Ronen Israel",
+      "papers": [
+        "R_BIR2019"
+      ],
+      "splits": {
+        "R_BIR2019": "training"
+      }
+    },
+    {
+      "name": "Sanford J. Grossman",
+      "papers": [
+        "N_GS1980"
+      ],
+      "splits": {
+        "N_GS1980": "discovery_pilot_nonreserved"
+      }
+    },
+    {
+      "name": "Steven Shavell",
+      "papers": [
+        "R_SH1979"
+      ],
+      "splits": {
+        "R_SH1979": "training"
+      }
+    }
+  ],
+  "date": "2026-10-30",
+  "input_sha256": {
+    "archive/author_expansion_20261030/acquisition_receipt.private.json": "401f917c859ee43384f5556ff305c1866cefbfea632308ecdb651af1c8d8466b",
+    "archive/fama_corpus_20261019/F1963/Fama_1963_Stable_Paretian_Style_Dataset.jsonl": "d508ab7bd49bc34d5dc54fc79330490372d4f3de16a0e535c408ffc1c85f0889",
+    "archive/fama_corpus_20261019/F1965/fama_1965_style_dataset_partial.jsonl": "0f0a149537646277577607ab2d5fffa267176b85eef8bf22b359bff8bfaab73b",
+    "archive/fama_corpus_20261019/F1970/fama1970_style_dataset.jsonl": "e83f8c762cf0ebf6b4ff1cda9e8c2f97068f0f4be683e156216b9f5d872a4c08",
+    "archive/fama_corpus_20261019/F1980/fama_1980_agency_problems_style_dataset.jsonl": "10b6f04dfc64e013792cd453871e5d572122bcc8b9385d65e0c819fe9763b638",
+    "archive/fama_corpus_20261019/FB1966/fama_blume_1966_style_dataset.jsonl": "f02d0dbe087293a6bdda66ebc62a3601fca389798c10e2c5fc2b6ae344abdf7f",
+    "archive/fama_corpus_20261019/FF1988/fama_french_1988_style_dataset.jsonl": "3d09046295825f0ec0e93efc83c333ff705de073cadf12f30e6d8ec2281329bd",
+    "archive/fama_corpus_20261019/FF1997/Fama_French_1997_Style_Training_REISSUED.jsonl": "dea12f686da8cdc4549d2e8bad087dc5e363ff1e71d9dfdd593ff3a2c6ffc396",
+    "archive/fama_corpus_20261019/FF2000/FF2000_disappearing_dividends_rewriting.jsonl": "9c7686ef0228fc8d053904a2f75df01b084322f5a2a27860488af43e12364a41",
+    "archive/fama_corpus_20261019/FJ1983/Fama_Jensen_1983_Separation_Ownership_Control_Style_Dataset_v1.jsonl": "0d07ab471daad4831d06a9a94054f131edc4d7d19177d6fa472cfb054119ada8",
+    "archive/fama_corpus_20261019/ME1997/fama_1997_market_efficiency_style_dataset.jsonl": "2e31ee56b9af253d5cf1bec69d596a058253719317017592efdac6cd98228714",
+    "archive/fama_corpus_20261019/NL2003/fama_french_2003_new_lists_style_dataset.jsonl": "c754663ad5d0314a34b9ee4e1da1f4c910f636740c370547659eeda1ca9c4849",
+    "archive/fama_corpus_20261019/VL2018/volatility_lessons_2018_style_dataset.jsonl": "79bd330cf9bde479b62fb794da62dde5161b3da7062252619256af4a494d7072",
+    "archive/fama_corpus_20261019/manifest.json": "5b7453efa0cb4d613fb9eca54202000a3d41ad4553328931eb27a4a86f5193a7",
+    "data/fama_corpus_v1/split_manifest.json": "502d35dca700694cd57e45eff6e9cde81392af14e0dbec3cdff542230910cbcb",
+    "docs/author_inventory_v1/acquisition_plan.json": "5180bf943c894f74c6374c16149617253270cbe2b7a2254e70098c617a5dbce8",
+    "research_runs/author_inventory_v1/metadata_checks.private.json": "ba43a493f088058ee0492b11c9f0ed27ec962a92a96a4c092eb3343a24249c66",
+    "research_runs/author_inventory_v1/pdf_metadata.private.json": "ed7a84c529b8afb28fb65ba457208817e9b3477bd7ec137ef65325a5e132cbda",
+    "research_runs/human_prose_annotation_v1/package_v2/PRIVATE_SELECTION_AND_SPLITS.json": "565b20fd74e6e4417ddb132603aa4f5273056a8c84450e36d10d4f0d6bc919cd",
+    "research_runs/human_prose_annotation_v1/source_registry.private.json": "44141d38197b832346417d3bd3cba26d0c817866069d25ebc7ae2f380a1be281",
+    "research_runs/multi_author_milestone_v1/package_v1/datasets/development.private.jsonl": "5bd3f583b584a1f4ff141fbf5e3ac55ae3a653f1460bd277461e946990e338d5",
+    "research_runs/multi_author_milestone_v1/package_v1/datasets/quarantine.private.jsonl": "4d05e6fd3def9a444a7f7427a421e92caab700a98f54b9fdffd0e6aaf51b8139",
+    "research_runs/multi_author_milestone_v1/package_v1/datasets/train.provisional.private.jsonl": "d813479cfb0ba58b41e4929ed8193c286e670ecaf385dae80f880193c8839947",
+    "research_runs/relation_pilot_v1/source_registry.private.json": "a48e01e75ea621aa13bd9a991e3b94a61d7e9ba0155cacaa97312a2e9189536b"
+  },
+  "limitations": [
+    "Bibliographic inventory, not a new curated dataset.",
+    "Author participation does not identify individual contribution to coauthored prose.",
+    "Historical publication does not rule out foundation-model pretraining exposure.",
+    "Public availability is not a redistribution or model-weight publication license.",
+    "Fama version dates retained separately; publication years not newly verified.",
+    "New-paper quality and cross-paper duplication remain unassessed."
+  ],
+  "other_pdf_artifacts": [
+    {
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_GH1983.pdf",
+      "sha256": "3937d9987bb0c6c91efcaaa924ff73357e01af894fb14e8ea84c831f270ec7fd",
+      "status": "previously rejected: only three eligible blocks"
+    },
+    {
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_H1988.pdf",
+      "sha256": "51a2bf37eee714c605272becbd0d45b28d21879061468748226ddb4b22f11ff7",
+      "status": "previously excluded book excerpt: includes Levmore text; original journal PDF substituted"
+    },
+    {
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_O1959.pdf",
+      "sha256": "44b38c74be0d85a5765acfbc58db776b26172894a6a07cca3c9aca17a47035a5",
+      "status": "previously rejected: zero eligible blocks under frozen extraction filters"
+    },
+    {
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_R1973.pdf",
+      "sha256": "2f73e12adcf74a79a8d5cf8961d633b2f0f587aaeccb505e754a5daf5819e9ed",
+      "status": "previously rejected: only two eligible blocks"
+    },
+    {
+      "pdf": "research_runs/multi_author_milestone_v1/detector_results_v1/DC_70658db5360b675f_report.pdf",
+      "sha256": "23484eb336606699c9b5a1dd860495a1b3093d3f4b26aba2ea68153674b740fe",
+      "status": "nonpaper_evidence"
+    }
+  ],
+  "papers": [
+    {
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "F1963",
+      "pdf": "archive/fama_corpus_20261019/F1963/Fama63.pdf",
+      "pdf_sha256": "25435097255641c7e9ed832f232e23529e5440a9366dad88e486a246ae07f35b",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 1,
+        "equation_block": 16,
+        "footnote": 23,
+        "main_text": 46
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 0,
+      "title": "Mandelbrot and the Stable Paretian Hypothesis",
+      "version_year": 1963
+    },
+    {
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "F1965",
+      "pdf": "archive/fama_corpus_20261019/F1965/The_behavior_of_stock_market_prices.pdf",
+      "pdf_sha256": "88f13580bf39d751132ff92eaadf22c9ed0f5ee698bb100d441ab86d61560170",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 4,
+        "equation_block": 1,
+        "footnote": 10,
+        "main_text": 39
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 30,
+      "title": "The Behavior of Stock-Market Prices",
+      "version_year": 1965
+    },
+    {
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "F1970",
+      "pdf": "archive/fama_corpus_20261019/F1970/fama1970.pdf",
+      "pdf_sha256": "43a01fb19c267db6be0a5acba66d8cafb80f1d0103bb570c08204b7b7fb22605",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 6,
+        "equation_block": 36,
+        "footnote": 56,
+        "main_text": 146,
+        "quotation": 6,
+        "reference": 47,
+        "table_note": 6
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 0,
+      "title": "Efficient Capital Markets: A Review of Theory and Empirical Work",
+      "version_year": 1970
+    },
+    {
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "F1980",
+      "pdf": "archive/fama_corpus_20261019/F1980/Agency_Problems_and_the_Theory_of_the_Fi.pdf",
+      "pdf_sha256": "5d1b89e9b946fb9c296fc521b4df379b5e863e17e863317bca459483df2924e0",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 18,
+        "equation_block": 7,
+        "footnote": 7,
+        "main_text": 61,
+        "quotation": 1,
+        "reference": 25
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 6,
+      "title": "Agency Problems and the Theory of the Firm",
+      "version_year": 1980
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Marshall E. Blume"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "FB1966",
+      "pdf": "archive/fama_corpus_20261019/FB1966/FaBl66.pdf",
+      "pdf_sha256": "ec04139979810f3630e85f3d5daae022c8febe6244b2943fbec7ff8c39191586",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 14,
+        "equation_block": 7,
+        "footnote": 15,
+        "list_item": 12,
+        "main_text": 38,
+        "quotation": 1,
+        "reference": 12,
+        "table": 3,
+        "table_note": 9
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 0,
+      "title": "Filter Rules and Stock-Market Trading",
+      "version_year": 1966
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "FF1988",
+      "pdf": "archive/fama_corpus_20261019/FF1988/FaFr88.pdf",
+      "pdf_sha256": "dc1c5ff269da455d60ee7a7ed7a7862a81c9fb744a6c03167ae86343e03b8849",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 15,
+        "equation_block": 19,
+        "footnote": 2,
+        "main_text": 61,
+        "reference": 27,
+        "table_note": 22
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 0,
+      "title": "Permanent and Temporary Components of Stock Prices",
+      "version_year": 1988
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "validation",
+      "paper_id": "FF1997",
+      "pdf": "archive/fama_corpus_20261019/FF1997/ssrn-1871.pdf",
+      "pdf_sha256": "9bb1cd800eaceee113c970acb9786374321826fdb9b843628de38aecce90b3c2",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 2,
+        "equation_block": 4,
+        "footnote": 1,
+        "main_text": 74,
+        "reference": 45,
+        "table": 6,
+        "table_note": 12
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 21,
+      "title": "Taxes, Financing Decisions, and Firm Value",
+      "version_year": 1997
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "FF2000",
+      "pdf": "archive/fama_corpus_20261019/FF2000/ssrn-203092.pdf",
+      "pdf_sha256": "683291825dd202926ce0699900db4bd67b1ca812304a13472ea644884f79a2ce",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 8,
+        "equation_block": 7,
+        "footnote": 1,
+        "main_text": 100,
+        "reference": 16,
+        "table": 19,
+        "table_note": 12
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 40,
+      "title": "Disappearing Dividends: Changing Firm Characteristics or Lower Propensity to Pay?",
+      "version_year": 2000
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "test",
+      "paper_id": "FF2014",
+      "pdf": "archive/fama_corpus_20261019/FF2014/ssrn-2287202.pdf",
+      "pdf_sha256": "a067b3e6e312c22edaf8fcba10d3faa4630a83456bb0d48832725c637c88495d",
+      "publication_year": null,
+      "raw_record_type_counts": null,
+      "reserved_counts_basis": "split manifest only",
+      "selected_pairs": 45,
+      "title": "A Five-Factor Asset Pricing Model",
+      "version_year": 2014
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Michael C. Jensen"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "FJ1983",
+      "pdf": "archive/fama_corpus_20261019/FJ1983/Fama_Jensen_Separation_ownership_control.pdf",
+      "pdf_sha256": "55928602df86ed9b2f27a7f5968b49a9dea4bd5b93b8a10e576dc77c58b40c51",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 11,
+        "footnote": 24,
+        "list_item": 8,
+        "main_text": 79,
+        "reference": 27
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 50,
+      "title": "Separation of Ownership and Control",
+      "version_year": 1983
+    },
+    {
+      "authors": [
+        "Eugene F. Fama"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "ME1997",
+      "pdf": "archive/fama_corpus_20261019/ME1997/ssrn-15108.pdf",
+      "pdf_sha256": "36ee2ccad706a348c9a6bf7a46e0b0c214a3e57aa15f9c5cdf50681015186272",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 5,
+        "equation_block": 1,
+        "footnote": 1,
+        "list_item": 3,
+        "main_text": 97,
+        "quotation": 1,
+        "reference": 54,
+        "table": 13
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 60,
+      "title": "Market Efficiency, Long-Term Returns, and Behavioral Finance",
+      "version_year": 1997
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "NL2003",
+      "pdf": "archive/fama_corpus_20261019/NL2003/ssrn-279302.pdf",
+      "pdf_sha256": "8aafa86c00dbfdd39c2b7a1115e062af2338019d2cf132a41b52309cdbbf7f05",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 3,
+        "footnote": 1,
+        "main_text": 92,
+        "reference": 22,
+        "table_note": 46
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 40,
+      "title": "New Lists: Fundamentals and Survival Rates",
+      "version_year": 2003
+    },
+    {
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "bibliographic_basis": "existing archive; version year is not inferred publication year",
+      "collection": "fama_corpus_v1",
+      "existing_split": "train",
+      "paper_id": "VL2018",
+      "pdf": "archive/fama_corpus_20261019/VL2018/ssrn-3081101.pdf",
+      "pdf_sha256": "31da12520b7957542de8a912485a809a94380d25c52046a99ddb44f8bb087ef5",
+      "publication_year": null,
+      "raw_record_type_counts": {
+        "author_note": 6,
+        "list_item": 9,
+        "main_text": 32,
+        "reference": 11,
+        "table": 3,
+        "table_note": 3
+      },
+      "reserved_counts_basis": null,
+      "selected_pairs": 21,
+      "title": "Volatility Lessons",
+      "version_year": 2018
+    },
+    {
+      "authors": [
+        "Benoit Mandelbrot"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://moldham74.github.io/AussieCAS/papers/Mand1963.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 1,
+        "train.provisional.private.jsonl": 4
+      },
+      "paper_id": "C_M1963",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_M1963.pdf",
+      "pdf_sha256": "878c0e379764c0850d560fb12ac07957bd1763c30ba7085722199043867bfb53",
+      "provisional_training_needs_review": 2,
+      "publication_evidence_url": "https://www.jstor.org/stable/i340406",
+      "publication_year": 1963,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "The Variation of Certain Speculative Prices",
+      "version_year": 1963
+    },
+    {
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://personal.utdallas.edu/~nina.baranchuk/Fin7310/papers/Holmstrom1979.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "C_H1979",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_H1979.pdf",
+      "pdf_sha256": "8a38a0b4087c2af299bc912f0060391f1829193859563850228b6fa8bc20e99c",
+      "provisional_training_needs_review": 4,
+      "publication_evidence_url": "https://www.jstor.org/stable/3003320",
+      "publication_year": 1979,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Moral Hazard and Observability",
+      "version_year": 1979
+    },
+    {
+      "authors": [
+        "Armen A. Alchian",
+        "Harold Demsetz"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://competitionandappropriation.econ.ucla.edu/wp-content/uploads/sites/95/2017/08/AlchianDemsetz.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "C_AD1972",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_AD1972.pdf",
+      "pdf_sha256": "381d7af24a32ff4cf607678c4659b7b8fde6b2c6166aabf1c98e5697e3830030",
+      "provisional_training_needs_review": 3,
+      "publication_evidence_url": "https://www.jstor.org/stable/1815199",
+      "publication_year": 1972,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Production, Information Costs, and Economic Organization",
+      "version_year": 1972
+    },
+    {
+      "authors": [
+        "Burton G. Malkiel"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://gceps.princeton.edu/wp-content/uploads/2017/01/91malkiel.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "C_M2003",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_M2003.pdf",
+      "pdf_sha256": "0c0684a85ea0d7f14a08606d2228c4b3fd06b28c40d81bfeda5c637193ec0516",
+      "provisional_training_needs_review": 3,
+      "publication_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/089533003321164958",
+      "publication_year": 2003,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "The Efficient Market Hypothesis and Its Critics",
+      "version_year": 2003
+    },
+    {
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://www.hbs.edu/ris/Publication%20Files/disdiv_53ec8668-4ce2-4441-9362-3943c147233b.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "C_BW2003",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_BW2003.pdf",
+      "pdf_sha256": "28881a892dea94f16fc4d5f05e81e8a892edf2b5906bc8c66edd6a2cc5fdead9",
+      "provisional_training_needs_review": 5,
+      "publication_evidence_url": "https://www.nber.org/papers/w9995",
+      "publication_year": 2004,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Appearing and disappearing dividends: the link to catering incentives",
+      "version_year": 2003
+    },
+    {
+      "authors": [
+        "Jay R. Ritter",
+        "Ivo Welch"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://site.warrington.ufl.edu/ritter/files/2016/01/A-Review-of-IPO-Activity-Pricing-and-Allocations-2002-08.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 1,
+        "train.provisional.private.jsonl": 4
+      },
+      "paper_id": "C_RW2002",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_RW2002.pdf",
+      "pdf_sha256": "a8bb4a95a1321f612d8c9f3003cd4ea0e1e99dac077c417103f9a2cac5e18dc2",
+      "provisional_training_needs_review": 3,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/1540-6261.00478",
+      "publication_year": 2002,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "A Review of IPO Activity, Pricing, and Allocations",
+      "version_year": 2002
+    },
+    {
+      "authors": [
+        "Lubos Pastor",
+        "Robert F. Stambaugh"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://rodneywhitecenter.wharton.upenn.edu/wp-content/uploads/2014/04/1101..pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "C_PS2011",
+      "pdf": "research_runs/author_comparison_v1/acquisition_v1/C_PS2011.pdf",
+      "pdf_sha256": "c3bae3379cb55b03e076c5f8459f486159053bbc61dd7927f7c05f6ed5890915",
+      "provisional_training_needs_review": 3,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2012.01722.x",
+      "publication_year": 2012,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Are Stocks Really Less Volatile in the Long Run?",
+      "version_year": 2011
+    },
+    {
+      "authors": [
+        "Clive W. J. Granger",
+        "Oskar Morgenstern"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://rybn.org/ANTI/ARTICLES/1962-SpectralAnalysisofOfNYStockMarketsPrices.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "R_GM1962",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_GM1962.pdf",
+      "pdf_sha256": "51475afe61ce99760da850ab8165b83704b001967b0774f705753c8e464a938b",
+      "provisional_training_needs_review": 4,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6435.1963.tb00270.x",
+      "publication_year": 1963,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Spectral Analysis of New York Stock Market Prices",
+      "version_year": 1962
+    },
+    {
+      "authors": [
+        "Steven Shavell"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://user.eng.umd.edu/~hyongla/TMP/PAPERS/RiskSharingAndIncentives.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "R_SH1979",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_SH1979.pdf",
+      "pdf_sha256": "f896f2f353e07f1a9c08f5cb899e388885b2498e3230d344e008e50c0f3e1245",
+      "provisional_training_needs_review": 4,
+      "publication_evidence_url": "https://www.jstor.org/stable/3003319",
+      "publication_year": 1979,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Risk Sharing and Incentives in the Principal and Agent Relationship",
+      "version_year": 1979
+    },
+    {
+      "authors": [
+        "Henry Hansmann"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://openyls.law.yale.edu/server/api/core/bitstreams/534a1c7c-7529-413b-a201-0a0702f2b1ba/content",
+      "existing_split": "development",
+      "milestone_counts": {
+        "development.private.jsonl": 5,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "R_H1988",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_H1988_original.pdf",
+      "pdf_sha256": "056d710090a57fcca728785c7e1d659e2f2c87bb4c5da6ac8463b35033234151",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://openyls.law.yale.edu/server/api/core/bitstreams/534a1c7c-7529-413b-a201-0a0702f2b1ba/content",
+      "publication_year": 1988,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Ownership of the Firm",
+      "version_year": 1988
+    },
+    {
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://www.nber.org/system/files/working_papers/w6375/w6375.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "R_S1998",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_S1998.pdf",
+      "pdf_sha256": "a1ff838870a4ce25b7c907ff7f89252b41a2e93ad1406b05dcc391de5500a7da",
+      "provisional_training_needs_review": 2,
+      "publication_evidence_url": "https://www.nber.org/papers/w6375",
+      "publication_year": 1999,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Human Behavior and the Efficiency of the Financial System",
+      "version_year": 1998
+    },
+    {
+      "authors": [
+        "Harry DeAngelo",
+        "Linda DeAngelo",
+        "Douglas J. Skinner"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://gould.usc.edu/centers/class/class-workshops/cleo-working-papers/documents/C02_17_paper.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "R_DDS2002",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_DDS2002.pdf",
+      "pdf_sha256": "17a031ddaa45552820fd5f9c0f8512362882ca5de46e5304060a813bc30f5d14",
+      "provisional_training_needs_review": 5,
+      "publication_evidence_url": "https://doi.org/10.1016/S0304-405X(03)00186-7",
+      "publication_year": 2004,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Are Dividends Disappearing? Dividend Concentration and the Consolidation of Earnings",
+      "version_year": 2002
+    },
+    {
+      "authors": [
+        "Marco Pagano",
+        "Fabio Panetta",
+        "Luigi Zingales"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://www.ipo-underpricing.com/en/files/Pagano_Why-Companiesc.pdf",
+      "existing_split": "development",
+      "milestone_counts": {
+        "development.private.jsonl": 5,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "R_PPZ1998",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_PPZ1998.pdf",
+      "pdf_sha256": "29693c4863d75eccb59b8f41084ab4cc20411603e7b8a11a3a16d65bfa1ba3e6",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/10.1111/0022-1082.25448",
+      "publication_year": 1998,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Why Do Companies Go Public? An Empirical Analysis",
+      "version_year": 1997
+    },
+    {
+      "authors": [
+        "Jacob Boudoukh",
+        "Ronen Israel",
+        "Matthew Richardson"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://www.mobt3ath.com/uplode/book/book-120052.pdf",
+      "existing_split": "training",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 5
+      },
+      "paper_id": "R_BIR2019",
+      "pdf": "research_runs/author_control_replication_v1/acquisition_v1/R_BIR2019.pdf",
+      "pdf_sha256": "a3d0751ac6ec06d7dd9342a28026a765a169e316f0bc24136b08a6adb0ce4b7b",
+      "provisional_training_needs_review": 4,
+      "publication_evidence_url": "https://doi.org/10.1080/0015198X.2018.1547056",
+      "publication_year": 2019,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Long-Horizon Predictability: A Cautionary Tale",
+      "version_year": 2019
+    },
+    {
+      "authors": [
+        "George A. Akerlof"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://web.pdx.edu/~nwallace/EHP/AkerlofLemons.pdf",
+      "existing_split": "reserved_test",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "H_A1970",
+      "pdf": "research_runs/human_prose_annotation_v1/acquisition_v1/H_A1970.pdf",
+      "pdf_sha256": "770b53e35e8043fcaa4dd170bce420d4902dee280facaa5363bb48817a179f58",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://doi.org/10.2307/1879431",
+      "publication_year": 1970,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "The Market for \"Lemons\": Quality Uncertainty and the Market Mechanism",
+      "version_year": 1970
+    },
+    {
+      "authors": [
+        "Ronald H. Coase"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://msuweb.montclair.edu/~lebelp/coasenatfirmec1937.pdf",
+      "existing_split": "reserved_test",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "H_C1937",
+      "pdf": "research_runs/human_prose_annotation_v1/acquisition_v1/H_C1937.pdf",
+      "pdf_sha256": "643ef9bd0c253cf91735610abddc5232abcaee1b085e0325df09553a957e845a",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/toc/14680335/1937/4/16",
+      "publication_year": 1937,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "The Nature of the Firm",
+      "version_year": 1937
+    },
+    {
+      "authors": [
+        "Douglas W. Diamond",
+        "Philip H. Dybvig"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://knowledge.uchicago.edu/records/3sa4m-hvw53/files/Bank-Runs-Deposit-Insurance-and-Liquidity.pdf?download=1",
+      "existing_split": "reserved_test",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "H_DD1983",
+      "pdf": "research_runs/human_prose_annotation_v1/acquisition_v1/H_DD1983.pdf",
+      "pdf_sha256": "a6ce2119760b7b94f6fc7ea768c61b5e5fd4f8b52b905efbb730b883b0c374b0",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://knowledge.uchicago.edu/records/3sa4m-hvw53",
+      "publication_year": 1983,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Bank Runs, Deposit Insurance, and Liquidity",
+      "version_year": 1983
+    },
+    {
+      "authors": [
+        "Friedrich A. Hayek"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://www.mercatus.org/sites/default/files/d7/the_use_of_knowledge_in_society_-_hayek.pdf",
+      "existing_split": "development",
+      "milestone_counts": {
+        "development.private.jsonl": 4,
+        "quarantine.private.jsonl": 1,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "H_H1945",
+      "pdf": "research_runs/human_prose_annotation_v1/acquisition_v1/H_H1945.pdf",
+      "pdf_sha256": "73c21ec66254a192c8a1835de802b567fd8839a81de97b70248a9db65a0c5845",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://www.mercatus.org/sites/default/files/d7/the_use_of_knowledge_in_society_-_hayek.pdf",
+      "publication_year": 1945,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "The Use of Knowledge in Society",
+      "version_year": 1945
+    },
+    {
+      "authors": [
+        "Daniel Kahneman",
+        "Amos Tversky"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+      "existing_split": "development",
+      "milestone_counts": {
+        "development.private.jsonl": 4,
+        "quarantine.private.jsonl": 1,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "H_KT1979",
+      "pdf": "research_runs/human_prose_annotation_v1/acquisition_v1/H_KT1979.pdf",
+      "pdf_sha256": "a067b12208421a545448d08ec93064af19f7e5702dfa2ed41791bf1093c13ab5",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://kahneman.scholar.princeton.edu/publications",
+      "publication_year": 1979,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "Prospect Theory: An Analysis of Decision under Risk",
+      "version_year": 1979
+    },
+    {
+      "authors": [
+        "Herbert A. Simon"
+      ],
+      "collection": "human_prose_annotation_v1",
+      "download_url": "https://cooperative-individualism.org/simon-herbert_a-behavioral-model-of-rational-choice-1955-feb.pdf",
+      "existing_split": "reserved_test",
+      "milestone_counts": {
+        "development.private.jsonl": 0,
+        "quarantine.private.jsonl": 0,
+        "train.provisional.private.jsonl": 0
+      },
+      "paper_id": "H_S1955",
+      "pdf": "research_runs/human_prose_annotation_v1/acquisition_v1/H_S1955.pdf",
+      "pdf_sha256": "25bf76dd1b4370d6d66d53aecb311ea6d6f486141a3dd4b8d629d0ebe3c6dfcf",
+      "provisional_training_needs_review": 0,
+      "publication_evidence_url": "https://doi.org/10.2307/1884852",
+      "publication_year": 1955,
+      "quality": "selected/annotated is not verified meaning-equivalent or training-ready; flags retained",
+      "selected_pairs": 5,
+      "title": "A Behavioral Model of Rational Choice",
+      "version_year": 1955
+    },
+    {
+      "authors": [
+        "Sanford J. Grossman",
+        "Joseph E. Stiglitz"
+      ],
+      "collection": "relation_pilot_v1",
+      "download_url": "https://terpconnect.umd.edu/~wermers/ftpsite/FAME/grossman_stiglitz_%281980%29.pdf",
+      "existing_split": "discovery_pilot_nonreserved",
+      "paper_id": "N_GS1980",
+      "pdf": "research_runs/relation_pilot_v1/acquisition_v1/N_GS1980.pdf",
+      "pdf_sha256": "938ff15939abe2d41ca3e15d60f8a59b0dc1948af0901badc47230d4aa32224a",
+      "publication_evidence_url": "https://www.jstor.org/stable/i331305",
+      "publication_year": 1980,
+      "quality": "earlier structural annotation exposure; not part of the frozen 100 pairs",
+      "selected_pairs": null,
+      "title": "On the Impossibility of Informationally Efficient Markets",
+      "version_year": 1980
+    },
+    {
+      "authors": [
+        "Oliver Hart",
+        "John Moore"
+      ],
+      "collection": "relation_pilot_v1",
+      "download_url": "https://www.edegan.com/pdfs/Hart%20Moore%20%281990%29%20-%20Property%20Rights%20and%20the%20Nature%20of%20the%20Firm.pdf",
+      "existing_split": "discovery_pilot_nonreserved",
+      "paper_id": "N_HM1990",
+      "pdf": "research_runs/relation_pilot_v1/acquisition_v1/N_HM1990.pdf",
+      "pdf_sha256": "e15238f7932b3daebd3e89da27c1df6f885e8422861746220397fbd470dae4de",
+      "publication_evidence_url": "https://www.journals.uchicago.edu/doi/10.1086/261729",
+      "publication_year": 1990,
+      "quality": "earlier structural annotation exposure; not part of the frozen 100 pairs",
+      "selected_pairs": null,
+      "title": "Property Rights and the Nature of the Firm",
+      "version_year": 1990
+    },
+    {
+      "authors": [
+        "Franco Modigliani",
+        "Merton H. Miller"
+      ],
+      "collection": "relation_pilot_v1",
+      "download_url": "https://www.aeaweb.org/aer/top20/48.3.261-297.pdf",
+      "existing_split": "discovery_pilot_nonreserved",
+      "paper_id": "N_MM1958",
+      "pdf": "research_runs/relation_pilot_v1/acquisition_v1/N_MM1958.pdf",
+      "pdf_sha256": "fdfba98d1711b09abdb10842b13767facef400d3c420c2b053d2431d0cb4760f",
+      "publication_evidence_url": "https://www.aeaweb.org/aer/top20/48.3.261-297.pdf",
+      "publication_year": 1958,
+      "quality": "earlier structural annotation exposure; not part of the frozen 100 pairs",
+      "selected_pairs": null,
+      "title": "The Cost of Capital, Corporation Finance and the Theory of Investment",
+      "version_year": 1958
+    },
+    {
+      "authors": [
+        "Michael Spence"
+      ],
+      "collection": "relation_pilot_v1",
+      "download_url": "https://faculty.econ.ucsb.edu/~tedb/Courses/GameTheory/spencesignaling.pdf",
+      "existing_split": "discovery_pilot_nonreserved",
+      "paper_id": "N_S1973",
+      "pdf": "research_runs/relation_pilot_v1/acquisition_v1/N_S1973.pdf",
+      "pdf_sha256": "52e432d24c8b0d1b9205cccab6ea7df01fb1703b1f74b9eb85208674790f6a39",
+      "publication_evidence_url": "https://academic.oup.com/qje/article-abstract/87/3/355/1909092",
+      "publication_year": 1973,
+      "quality": "earlier structural annotation exposure; not part of the frozen 100 pairs",
+      "selected_pairs": null,
+      "title": "Job Market Signaling",
+      "version_year": 1973
+    },
+    {
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://www.aeaweb.org/aer/top20/71.3.421-436.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "journal_article",
+      "limitations": "Journal scan; two-column layout; equations and tables require separate handling.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_S1981",
+        "pdf_sha256": "59ed3f9c925ab1af07aae26aeab57195b2087e3f1069b9da03e21dfdc9334aed",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_S1981",
+      "pdf": "archive/author_expansion_20261030/A_S1981.pdf",
+      "pdf_pages": 16,
+      "pdf_sha256": "59ed3f9c925ab1af07aae26aeab57195b2087e3f1069b9da03e21dfdc9334aed",
+      "publication_evidence_url": "https://www.aeaweb.org/aer/top20/71.3.421-436.pdf",
+      "publication_year": 1981,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Shiller",
+      "title": "Do Stock Prices Move Too Much to be Justified by Subsequent Changes in Dividends?",
+      "version_year": 1981
+    },
+    {
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1385.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "working_paper",
+      "limitations": "October 2002 Cowles Discussion Paper 1385, not the 2003 journal typesetting. Record cover-title variation; do not count draft and published article as separate works.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_S2002",
+        "pdf_sha256": "14228798b84124aa1d25f89e6f7c16c22e387484cb90ceff2d9fdac59fb74d92",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_S2002",
+      "pdf": "archive/author_expansion_20261030/A_S2002.pdf",
+      "pdf_pages": 44,
+      "pdf_sha256": "14228798b84124aa1d25f89e6f7c16c22e387484cb90ceff2d9fdac59fb74d92",
+      "publication_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/089533003321164967",
+      "publication_year": 2003,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Shiller",
+      "title": "From Efficient Markets Theory to Behavioral Finance",
+      "version_year": 2002
+    },
+    {
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://www.nobelprize.org/uploads/2018/06/shiller-lecture.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "prize_lecture_revision",
+      "limitations": "PDF states February 1, 2014 substantial revision of December 2013 lecture. Lecture genre differs from ordinary articles; record and evaluate genre confounding.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_S2014",
+        "pdf_sha256": "b4bd8727f7beff08fa5c1581997a39a7265a81b3b93f60b82aa4b1ccd2bb6f8d",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_S2014",
+      "pdf": "archive/author_expansion_20261030/A_S2014.pdf",
+      "pdf_pages": 43,
+      "pdf_sha256": "b4bd8727f7beff08fa5c1581997a39a7265a81b3b93f60b82aa4b1ccd2bb6f8d",
+      "publication_evidence_url": "https://www.nobelprize.org/prizes/economic-sciences/2013/shiller/lecture/",
+      "publication_year": 2014,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Shiller",
+      "title": "Speculative Asset Prices",
+      "version_year": 2014
+    },
+    {
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://people.duke.edu/~qc2/BA532/1982%20Rand%20Holmstrom%20team.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "journal_article",
+      "limitations": "Scan requires OCR and layout checks; mathematical passages excluded from prose task.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "macOS Vision OCR, PDF pages 1 and 2",
+        "paper_id": "A_H1982",
+        "pdf_sha256": "f46c4b7821e5016f1dca5c24263d52bdaac0f0b7621264c316d69239535a242b",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_H1982",
+      "pdf": "archive/author_expansion_20261030/A_H1982.pdf",
+      "pdf_pages": 18,
+      "pdf_sha256": "f46c4b7821e5016f1dca5c24263d52bdaac0f0b7621264c316d69239535a242b",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "publication_year": 1982,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Holmstrom",
+      "title": "Moral Hazard in Teams",
+      "version_year": 1982
+    },
+    {
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://oz.stern.nyu.edu/cite05/readings/cabral3.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "journal_article",
+      "limitations": "1999 journal version of earlier work; do not count 1982 and 1999 versions as separate papers. Semantic content reproduced as source, not endorsed as corrected economics.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_H1999",
+        "pdf_sha256": "2ccb2ec471e351c4e0fca77cbc390b3e2aa51ac795465b174149f97947669659",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_H1999",
+      "pdf": "archive/author_expansion_20261030/A_H1999.pdf",
+      "pdf_pages": 14,
+      "pdf_sha256": "2ccb2ec471e351c4e0fca77cbc390b3e2aa51ac795465b174149f97947669659",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "publication_year": 1999,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Holmstrom",
+      "title": "Managerial Incentive Problems: A Dynamic Perspective",
+      "version_year": 1999
+    },
+    {
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://economics.mit.edu/sites/default/files/2022-09/Holmstrom%20Understanding%20debt%20WP%20479%20BIS%202015-no%20co.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "working_paper",
+      "limitations": "Author-hosted 32-page copy; cover credits discussants. Attribute only Holmstrom main article; exclude foreword and any separately authored comments.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_H2015",
+        "pdf_sha256": "ca469c0da085cb1d557f0d097e8371e217416d70243a4d14b852fe709cc5028f",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_H2015",
+      "pdf": "archive/author_expansion_20261030/A_H2015.pdf",
+      "pdf_pages": 32,
+      "pdf_sha256": "ca469c0da085cb1d557f0d097e8371e217416d70243a4d14b852fe709cc5028f",
+      "publication_evidence_url": "https://www.bis.org/publications/working-paper-479-understanding-role-debt-financial-system",
+      "publication_year": 2015,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Holmstrom",
+      "title": "Understanding the Role of Debt in the Financial System",
+      "version_year": 2015
+    },
+    {
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/capstruct.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "journal_article",
+      "limitations": "Keep exact two-author group; article topic provides variation beyond dividends.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_BW2002",
+        "pdf_sha256": "bd1a5b998e134c03af818fc8295953a472c7940ed72f58bb902983a101e52c6b",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_BW2002",
+      "pdf": "archive/author_expansion_20261030/A_BW2002.pdf",
+      "pdf_pages": 32,
+      "pdf_sha256": "bd1a5b998e134c03af818fc8295953a472c7940ed72f58bb902983a101e52c6b",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "publication_year": 2002,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Baker_Wurgler",
+      "title": "Market Timing and Capital Structure",
+      "version_year": 2002
+    },
+    {
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_dividends.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "journal_article",
+      "limitations": "Related to existing Appearing and Disappearing Dividends; cross-paper text overlap must be screened before splitting.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_BW2004",
+        "pdf_sha256": "f036281936564db2f97fc4cd3dcb205d338f4ef71d7444c4350d7069b0291c66",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_BW2004",
+      "pdf": "archive/author_expansion_20261030/A_BW2004.pdf",
+      "pdf_pages": 42,
+      "pdf_sha256": "f036281936564db2f97fc4cd3dcb205d338f4ef71d7444c4350d7069b0291c66",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "publication_year": 2004,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Baker_Wurgler",
+      "title": "A Catering Theory of Dividends",
+      "version_year": 2004
+    },
+    {
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "collection": "author_expansion_20261030",
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_cross_section.pdf",
+      "existing_split": "unassigned_new_acquisition",
+      "genre": "journal_article",
+      "limitations": "Journal version; do not also count earlier 2003/2004 drafts as new works.",
+      "opening_metadata_check": {
+        "all_author_surnames_present": true,
+        "method": "PDFKit native opening-page text",
+        "paper_id": "A_BW2006",
+        "pdf_sha256": "79e8b6042d4fbd2d6306e2dc87931fe36ac3fc7f3b497d50af22be24bca0d8b5",
+        "title_matches_normalized": true,
+        "version_year_visible": true
+      },
+      "paper_id": "A_BW2006",
+      "pdf": "archive/author_expansion_20261030/A_BW2006.pdf",
+      "pdf_pages": 36,
+      "pdf_sha256": "79e8b6042d4fbd2d6306e2dc87931fe36ac3fc7f3b497d50af22be24bca0d8b5",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "publication_year": 2006,
+      "quality": "download/container/title checked only; no prose extraction or annotation yet",
+      "selected_pairs": 0,
+      "style_group": "Baker_Wurgler",
+      "title": "Investor Sentiment and the Cross-Section of Stock Returns",
+      "version_year": 2006
+    }
+  ],
+  "protocol": "author_inventory_v1",
+  "roster": [
+    {
+      "existing": "13 archived papers; preserve FF1997 validation and FF2014 reserved test",
+      "existing_papers": 13,
+      "label": "Fama/coauthors",
+      "new_papers_downloaded": 0,
+      "new_papers_requested": 0,
+      "paper_ids": [
+        "F1963",
+        "F1965",
+        "F1970",
+        "F1980",
+        "FB1966",
+        "FF1988",
+        "FF1997",
+        "FF2000",
+        "FF2014",
+        "FJ1983",
+        "ME1997",
+        "NL2003",
+        "VL2018"
+      ],
+      "split_policy": "preserve all old roles; new paper roles unassigned pending extraction, overlap checks and a separate author-conditioned protocol",
+      "style_group": "Fama_coauthors",
+      "total_papers": 13
+    },
+    {
+      "existing_paper_ids": [
+        "R_S1998"
+      ],
+      "existing_papers": 1,
+      "label": "Robert J. Shiller",
+      "new_papers_downloaded": 3,
+      "new_papers_requested": 3,
+      "paper_ids": [
+        "R_S1998",
+        "A_S1981",
+        "A_S2002",
+        "A_S2014"
+      ],
+      "split_policy": "preserve all old roles; new paper roles unassigned pending extraction, overlap checks and a separate author-conditioned protocol",
+      "style_group": "Shiller",
+      "total_papers": 4
+    },
+    {
+      "existing_paper_ids": [
+        "C_H1979"
+      ],
+      "existing_papers": 1,
+      "label": "Bengt Holmstrom",
+      "new_papers_downloaded": 3,
+      "new_papers_requested": 3,
+      "paper_ids": [
+        "C_H1979",
+        "A_H1982",
+        "A_H1999",
+        "A_H2015"
+      ],
+      "split_policy": "preserve all old roles; new paper roles unassigned pending extraction, overlap checks and a separate author-conditioned protocol",
+      "style_group": "Holmstrom",
+      "total_papers": 4
+    },
+    {
+      "existing_paper_ids": [
+        "C_BW2003"
+      ],
+      "existing_papers": 1,
+      "label": "Malcolm Baker and Jeffrey Wurgler (joint author group)",
+      "new_papers_downloaded": 3,
+      "new_papers_requested": 3,
+      "paper_ids": [
+        "C_BW2003",
+        "A_BW2002",
+        "A_BW2004",
+        "A_BW2006"
+      ],
+      "split_policy": "preserve all old roles; new paper roles unassigned pending extraction, overlap checks and a separate author-conditioned protocol",
+      "style_group": "Baker_Wurgler",
+      "total_papers": 4
+    }
+  ],
+  "summary": {
+    "existing_registered_papers": 37,
+    "existing_unique_authors": 44,
+    "gpu_jobs": 0,
+    "manual_downloads_needed": 0,
+    "model_calls": 0,
+    "new_annotations_or_training_pairs_created": 0,
+    "new_papers_downloaded": 9,
+    "old_split_changes": 0,
+    "other_pdf_artifacts": 5,
+    "pdf_files_total": 51,
+    "registered_papers_total": 46,
+    "reserved_paragraph_bodies_read": false,
+    "unique_authors_total": 44
+  }
+}
