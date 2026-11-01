@@ -1,67 +1,50 @@
 # Meaning-preserving economics rewriting with Gemma and QLoRA
 
-An experimental fine-tuning project: rewrite neutral plain English into the economics prose of Eugene Fama and his coauthors **while preserving the original claims**. This repository contains data-curation tools, training/evaluation code, standalone Kaggle notebooks, CPU tests, and an offline review interface.
+Research on rewriting neutral prose into **Eugene Fama/coauthor style**, comparing
+direct fine-tuning, explicit rhetorical structure and an eventual hybrid.
+The repository contains curation tools, self-contained Kaggle notebooks, CPU tests
+and versioned experimental findings. Distinctive faithful Fama-style transfer is
+**not established**; successful execution is reported separately from writing quality.
 
-**Current finding:** QLoRA reduced validation loss but increased copying. Explicit rhetorical and claim guidance can improve individual controls, but faithful Fama/coauthor-style transformation is **not established**. The project reports these negative and mixed results separately from successful pipeline execution.
+The multi-author milestone studies GPT-6-rewritten inputs to human academic prose,
+including reduced detectability as a separate outcome. It supports the main
+research question but does not prove an author's style. Author provenance is
+retained for future controlled comparisons.
 
-**Agreed development direction:** Fama/coauthor rewriting remains the main
-target. The first operational milestone is multi-author academic rewriting,
-measuring reduced detectability, meaning, readability and copying separately.
-Author provenance is retained for future author-conditioned comparisons.
 [Development plan](docs/DEVELOPMENT_PLAN.md) ·
-[Prepared milestone protocol](docs/multi_author_v1/PROTOCOL.md).
+[Strategic review](docs/STRATEGIC_REVIEW_2026_11.md) ·
+[Public file policy](docs/PUBLICATION.md)
 
-**Current preparation:** [seventeen actual-error preference candidates](docs/actual_error_preferences_v1/README.md)
-are curated from saved training-side adapter outputs, with two uncertain cases
-held and five nonmaterial cases excluded. The packet includes a matched chosen-only
-SFT control. Most chosen references overlap more with the inputs, and often are
-longer, so preference training is not yet justified as a copying or style remedy.
-The [real token/mask preflight now passes](docs/preference_preflight_v1/RUN_V2_RECOVERY.md)
-on all seventeen pairs and 34 sequences, with exact archived chosen-token hashes.
-Kaggle version 2 exported its tokenizer before a structured-return code bug; the
-bug was fixed and the full check completed locally without weights or GPU use.
-No further Kaggle replay is needed. The [bounded pilot implementation](docs/actual_error_preferences_v1/PILOT_IMPLEMENTATION.md)
-now prepares independent 22-update SFT and DPO arms with eight frozen development
-cases. The [completed pilot](docs/actual_error_preferences_v1/PILOT_RESULTS_V1.md)
-passed all execution checks in 20.3 minutes, but neither arm improved the material
-claim-issue count (4/8) or locally eligible count (3/8). Six SFT and five DPO outputs
-exactly match the unchanged adapter; lower target loss did not establish better
-generation. Neither checkpoint qualifies for detector scans. No further training
-has been started.
+## Latest checkpoint: matched SFT and DPO
 
-The [completed training-side diagnostic](docs/actual_error_preferences_v1/TRAINING_SIDE_RESULTS_V1.md)
-also finds no material-error corrections on eleven selected seen inputs. Each
-final adapter exactly repeats eight controls; the targeted errors persist in all
-eleven cases. All 22 inference calls completed in 5.6 minutes, with zero updates.
-This points to limited behavioral change before any question of held-out transfer.
-The [completed stronger SFT check](docs/actual_error_preferences_v1/SFT_STRENGTH_RESULTS_V1.md)
-at `1e-5` changes all nineteen outputs and resolves material errors in two selected
-training cases. Development target loss falls to 1.517, but material issues remain
-4/8 and local eligibility falls from 3/8 to 2/8 after a new exclusive-purpose error.
-Generic expression improves in several cases; the quality gate still fails.
-The [matched stronger-DPO result](docs/actual_error_preferences_v1/DPO_STRENGTH_RESULTS_V1.md)
-adds no demonstrated benefit over stronger SFT: thirteen of nineteen outputs are
-identical, with the same material-error and meaning-budget counts. The low final
-DPO loss (0.0345) does not translate into better claim preservation. Pause further
-sweeps and detector scans; a training-only minimal-repair preference audit is
-proposed to isolate semantic corrections from full-reference style differences.
-No new GPU job has started.
+At the same `1e-5` learning rate, seventeen preference pairs and 22 grouped
+updates, stronger DPO shows no demonstrated generation advantage over stronger
+SFT. Thirteen of nineteen outputs are byte-identical. In the provisional automated
+review, both have material errors in 9/11 selected training cases and 4/8 reused
+development cases; only 2/8 development outputs meet the local meaning budget.
+Neither checkpoint qualifies for further detector scans or full training.
 
-This addresses the rewriting behavior identified by the
-[completed detector comparison](docs/milestone_checkpoint_4b_v1/DETECTOR_RESULTS_V2.md).
-Twenty texts have now been scanned with each provider. Both flag all twelve
-Gemma outputs as AI-related and label all four human references human; Pangram
-misses all four GPT-6 inputs, while GPTZero misses two. Pangram is a practical
-lower-cost instrument for future Gemma checks, with equivalent overall accuracy
-still unproven. No additional scans or training are initiated. This follows the
-[reviewed 4B milestone checkpoint](docs/milestone_checkpoint_4b_v1/RESULTS.md).
-All fourteen missing outputs completed. On eight frozen cases, provisional
-automated review finds material issues in 7–8 ordinary-base outputs, five with
-source-only structural guidance and four with the existing adapter. Both
-alternatives meet the local meaning budget in only three cases. Generic
-exposition looks better, but detector gains and distinctive Fama style remain
-unestablished. The bounded preference pilot is complete; full training remains
-outside its scope.
+The methods move target likelihood and generic expression, but their gains do
+not establish faithful author style. Low final DPO loss (0.0345) does not resolve
+remaining free-generation errors. Tiny, correlated data and repeated evaluation
+limit these findings.
+
+[Stronger SFT results](docs/actual_error_preferences_v1/SFT_STRENGTH_RESULTS_V1.md) ·
+[Matched DPO results](docs/actual_error_preferences_v1/DPO_STRENGTH_RESULTS_V1.md) ·
+[Detector comparison](docs/milestone_checkpoint_4b_v1/DETECTOR_RESULTS_V2.md)
+
+## Recommended next decision
+
+Audit author-style evaluability and paper exposure using existing data before
+another GPU run or broad collection. The earlier topic-matched author proxies
+and full-taxonomy mapping checks have not established a reliable signal.
+A small training-only minimal-semantic-repair preference audit remains a useful
+supporting hypothesis; repaired model text must not replace human style targets.
+The [strategic review](docs/STRATEGIC_REVIEW_2026_11.md) weighs these options and
+retains the existing meaning/style/detector distinctions. No new experiment is
+authorized or launched by the roadmap update.
+
+## Earlier studies and data
 
 [Author inventory and nine new paper acquisitions](docs/author_inventory_v1/README.md)
 · [Direct rewriting versus neutral reconstruction design](docs/author_inventory_v1/NEUTRAL_RECONSTRUCTION.md).
