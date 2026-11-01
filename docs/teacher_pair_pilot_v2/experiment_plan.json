@@ -1,0 +1,21 @@
+{
+  "protocol": "teacher_pair_reverse_pilot_v2",
+  "status": "prepared_not_executed",
+  "training_pairs": 46,
+  "development_pairs": 8,
+  "epochs": 2,
+  "optimizer_updates": 46,
+  "updates_per_epoch": 23,
+  "baseline_generations": 10,
+  "pilot_generations": 31,
+  "training_authorized": false,
+  "gpu_jobs_submitted": 0,
+  "tokenizer_preflight": "pending; checks all 54 rows before loading weights",
+  "comparison": "Practical follow-up versus v1; data volume and optimizer budget both change.",
+  "causal_data_volume_effect_identified": false,
+  "reserved_test_rows_used": 0,
+  "curation_manifest_sha256": "71e9b04ee2f13825766d85be2c42248d52e7011932ca8f51e2f2e8450760827a",
+  "runtime_source_sha256": "d18360653b5b481bc21693f47fba432c1e7937ce7661565211f8fe4d6cae8767",
+  "dataset_sha256": "f9a1cc39c66fa1b9970aa8b8867cd07907034c8616ff7d83954529c11bbcb0d0",
+  "config_sha256": "463777d0f8c9b5e942eeb1d36f955404eb2eb4516cfbf6cbd5097e1e9c35c75a"
+}

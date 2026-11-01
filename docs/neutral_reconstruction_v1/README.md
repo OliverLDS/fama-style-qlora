@@ -8,7 +8,22 @@ The [three-case instruction check](REALIZATION_INSTRUCTION_CHECK.md) has
 [reviewed results](INSTRUCTION_CHECK_RESULTS.md): the added commentary is absent
 in all three new outputs; remaining local scope issues require brief repair.
 Those two scope issues now have a [versioned semantic binding repair](SEMANTIC_BINDING_REPAIR.md).
-The derived brief has not been tested in generation or training.
+The derived brief was included in the [six-output Gemma 4B inference check](GEMMA4B_INFERENCE.md).
+[Version 1 results](GEMMA4B_V1_RESULTS.md) show all generations completed, followed
+by a formatting-check failure. Offline recovery preserves two schema failures
+and finds substantive claim issues; the detailed-brief method is not ready to scale.
+The [local quantized 1B comparison](LOCAL_1B_RESULTS.md) completed nine prose-only
+outputs; compact claims reduced prompt length but did not resolve claim errors.
+The [matched nine-output prose-only 4B comparison](GEMMA4B_PROSE_COMPARISON.md)
+has [version 1 results](GEMMA4B_PROSE_RESULTS.md): all outputs completed, but compact
+claims showed no reliable fidelity benefit. Teacher-side data construction is
+separate from the student's reverse-direction training task.
+A [small teacher-pair base-versus-QLoRA pilot](../teacher_pair_pilot_v1/README.md)
+is prepared with 16 training pairs and eight paper/author-held-out development
+pairs. Baseline review is complete, and the user authorized the
+[limited training pilot](../teacher_pair_pilot_v1/PILOT_RUN.md) for manual execution.
+The [completed pilot](../teacher_pair_pilot_v1/PILOT_RESULTS.md) shows early loss
+and expression gains, with substantial claim drift still unresolved.
 
 This pilot tests whether generating neutral prose from a
 detailed content brief provides more useful stylistic contrast than rewriting

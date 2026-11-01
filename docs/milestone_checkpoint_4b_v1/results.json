@@ -1,0 +1,87 @@
+{
+  "archived_outputs": 10,
+  "arms": {
+    "adapter_ordinary": {
+      "eligible_within_one_minor_shift_budget": 3,
+      "exact_source_copies": 0,
+      "material_claim_issues": 4,
+      "median_reference_word_sequence_overlap": 0.3564322254652732,
+      "median_source_length_ratio": 0.9382318501170961,
+      "median_source_word_sequence_overlap": 0.36861424930579334,
+      "outputs": 8,
+      "unresolved": 0
+    },
+    "base_ordinary": {
+      "eligible_within_one_minor_shift_budget": 0,
+      "exact_source_copies": 0,
+      "material_claim_issues": 8,
+      "median_reference_word_sequence_overlap": 0.26454332180205975,
+      "median_source_length_ratio": 0.9654794520547945,
+      "median_source_word_sequence_overlap": 0.2876452862677572,
+      "outputs": 8,
+      "unresolved": 0
+    },
+    "base_source_structural_prior": {
+      "eligible_within_one_minor_shift_budget": 3,
+      "exact_source_copies": 0,
+      "material_claim_issues": 5,
+      "median_reference_word_sequence_overlap": 0.3382627646326276,
+      "median_source_length_ratio": 0.9566934720908231,
+      "median_source_word_sequence_overlap": 0.35137333716145086,
+      "outputs": 8,
+      "unresolved": 0
+    }
+  },
+  "automated_judgments_provisional": true,
+  "detector_results_observed": 0,
+  "evaluation_cases": 8,
+  "fama_style_established": false,
+  "historical_bound_outputs_compared": {
+    "adapter_ordinary": 5,
+    "base_ordinary": 5
+  },
+  "historical_boundary_sensitivity": {
+    "base_material_issues_using_checkpoint_boundary": 8,
+    "base_material_issues_using_prior_boundary": 7
+  },
+  "historical_material_boundary_disagreements": 1,
+  "limits": [
+    "Same reviewer and known historical outputs; masking does not establish independence.",
+    "Eight development cases, not fresh or reserved tests; no statistical superiority claim.",
+    "Longer structural prompts repeat the source; structural mechanism is not isolated.",
+    "Readability preferences measure generic exposition, not distinctive author style.",
+    "Material/minor boundaries are provisional; historical assessments are not overwritten."
+  ],
+  "milestone_success_established": false,
+  "model_outputs": 24,
+  "new_outputs": 14,
+  "paired_against_base_ordinary": {
+    "adapter_ordinary": {
+      "generic_exposition_preferences": {
+        "better": 6,
+        "tie": 1,
+        "worse": 1
+      },
+      "material_issue_transitions": {
+        "improved": 4,
+        "same": 4,
+        "worse": 0
+      }
+    },
+    "base_source_structural_prior": {
+      "generic_exposition_preferences": {
+        "better": 6,
+        "tie": 0,
+        "worse": 2
+      },
+      "material_issue_transitions": {
+        "improved": 3,
+        "same": 5,
+        "worse": 0
+      }
+    }
+  },
+  "papers": 4,
+  "protocol": "milestone_checkpoint_review_v1",
+  "training_called": false
+}

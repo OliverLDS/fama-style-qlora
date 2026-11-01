@@ -1,0 +1,46 @@
+{
+  "actual_slug": "oliverlds/teacher-pair-base-4b",
+  "elapsed_seconds": 218.66256463000002,
+  "execution_complete": true,
+  "label_audit_rows": 24,
+  "limits": [
+    "Automated unblinded qualitative judgments; severity is not independently calibrated.",
+    "Development papers/authors are held out from updates but already project-exposed.",
+    "No adapter, style benefit, Fama-specific learning or detector outcome is established."
+  ],
+  "max_full_tokens": 508,
+  "mean_example_development_loss": 3.2463565915822983,
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "new_model_calls": 0,
+  "optimizer_steps": 0,
+  "protocol": "teacher_pair_baseline_review_v1",
+  "splits": {
+    "development": {
+      "empty": 0,
+      "exact_source_copies": 0,
+      "material_claim_issue_identified": 7,
+      "median_output_to_source_length_ratio": 1.0457142857142858,
+      "median_reference_word_sequence_overlap": 0.22599949070537306,
+      "median_source_word_sequence_overlap": 0.2876452862677572,
+      "output_limited": 0,
+      "outputs": 8,
+      "outputs_with_any_review_flag": 8
+    },
+    "training": {
+      "empty": 0,
+      "exact_source_copies": 0,
+      "material_claim_issue_identified": 2,
+      "median_output_to_source_length_ratio": 1.1689895470383274,
+      "median_reference_word_sequence_overlap": 0.3354165281563726,
+      "median_source_word_sequence_overlap": 0.3676767676767677,
+      "output_limited": 0,
+      "outputs": 2,
+      "outputs_with_any_review_flag": 2
+    }
+  },
+  "token_weighted_development_loss": 2.9694209101813636,
+  "training_authorized": false,
+  "training_called": false,
+  "user_reported_version": 1
+}

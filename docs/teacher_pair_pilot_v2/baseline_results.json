@@ -1,0 +1,52 @@
+{
+  "actual_slug": "oliverlds/teacher-pair-expanded-base-4b",
+  "elapsed_seconds": 207.43041818400002,
+  "exact_prior_generation_matches": 10,
+  "execution_complete": true,
+  "gpu": "Tesla T4",
+  "gpu_count": 1,
+  "gpu_jobs_submitted_during_review": 0,
+  "label_audit_rows": 54,
+  "limits": [
+    "Identical evidence reuses the v1 automated unblinded judgments; this is not independent replication of semantic assessment.",
+    "Eight previously exposed development cases from four papers/authors; training probes reported separately.",
+    "Baseline reproducibility and successful token checks do not establish a style gain, Fama signature, human authorship or detector improvement."
+  ],
+  "max_full_tokens": 550,
+  "max_generation_context_tokens": 823,
+  "max_prompt_tokens": 311,
+  "mean_example_development_loss": 3.2463565915822983,
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "new_model_calls_during_review": 0,
+  "new_semantic_assessments": 0,
+  "optimizer_steps": 0,
+  "prior_loss_rows_identical": true,
+  "prior_runtime_packages_identical": true,
+  "protocol": "teacher_pair_expanded_baseline_review_v1",
+  "requested_version": 1,
+  "reused_text_bound_assessments": 10,
+  "splits": {
+    "development": {
+      "empty": 0,
+      "exact_source_copies": 0,
+      "material_claim_issue_identified": 7,
+      "median_reference_word_sequence_overlap": 0.22599949070537306,
+      "median_source_word_sequence_overlap": 0.2876452862677572,
+      "output_limited": 0,
+      "outputs": 8
+    },
+    "training": {
+      "empty": 0,
+      "exact_source_copies": 0,
+      "material_claim_issue_identified": 2,
+      "median_reference_word_sequence_overlap": 0.3354165281563726,
+      "median_source_word_sequence_overlap": 0.3676767676767677,
+      "output_limited": 0,
+      "outputs": 2
+    }
+  },
+  "token_weighted_development_loss": 2.9694209101813636,
+  "training_authorized": false,
+  "training_called": false
+}

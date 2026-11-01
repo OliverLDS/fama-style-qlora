@@ -1,0 +1,134 @@
+{
+  "primary_arms": {
+    "control": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 3,
+      "exact_source_copies": 0,
+      "empty": 0,
+      "output_limited": 0,
+      "token_weighted_development_nll": 1.7367469505027489,
+      "median_source_overlap": 0.36861424930579334,
+      "median_reference_overlap": 0.3564322254652732,
+      "exact_control_generations": 8
+    },
+    "sft": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 3,
+      "exact_source_copies": 0,
+      "empty": 0,
+      "output_limited": 0,
+      "token_weighted_development_nll": 1.7135601354528356,
+      "median_source_overlap": 0.36861424930579334,
+      "median_reference_overlap": 0.3523836424693218,
+      "exact_control_generations": 6,
+      "generic_expression_vs_control": {
+        "better": 0,
+        "tie": 7,
+        "worse": 1
+      },
+      "predeclared_quality_gate_passed": false
+    },
+    "dpo": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 3,
+      "exact_source_copies": 0,
+      "empty": 0,
+      "output_limited": 0,
+      "token_weighted_development_nll": 1.7147601431387443,
+      "median_source_overlap": 0.36861424930579334,
+      "median_reference_overlap": 0.3523836424693218,
+      "exact_control_generations": 5,
+      "generic_expression_vs_control": {
+        "better": 0,
+        "tie": 7,
+        "worse": 1
+      },
+      "predeclared_quality_gate_passed": false
+    }
+  },
+  "dpo_generic_expression_vs_sft": {
+    "better": 0,
+    "tie": 8,
+    "worse": 0
+  },
+  "protocol": "preference_pilot_review_v1",
+  "user_reported_version": 1,
+  "slug": "oliverlds/preference-pair-pilot-4b",
+  "execution_complete": true,
+  "optimizer_steps": 44,
+  "processor_sequences_verified": 42,
+  "reference_sequences_verified": 34,
+  "control_outputs_reproduced": 8,
+  "adapter_reload_weights_match": true,
+  "elapsed_seconds": 1216.36933035,
+  "peak_gpu_allocated_bytes": 5479379456,
+  "primary_epoch": 2,
+  "reserved_test_records_read": 0,
+  "detector_calls": 0,
+  "new_model_calls": 0,
+  "new_gpu_jobs_submitted": 0,
+  "additional_training_authorized": false,
+  "fama_style_established": false,
+  "detector_improvement_established": false,
+  "assessment_provisional": true,
+  "limits": [
+    "Same reviewer; no independent semantic gold or calibrated author-style metric.",
+    "Eight reused development cases; no reserved test or detector calls.",
+    "Ranks measure generic expression only, not Fama-specific or human-authorship success."
+  ],
+  "diagnostic_snapshots": [
+    {
+      "arm": "control",
+      "epoch": 0,
+      "nll": 1.7367469505027489,
+      "exact_control_generations": 8
+    },
+    {
+      "arm": "sft",
+      "epoch": 1,
+      "nll": 1.719437967936198,
+      "exact_control_generations": 6
+    },
+    {
+      "arm": "sft",
+      "epoch": 2,
+      "nll": 1.7135601354528356,
+      "exact_control_generations": 6
+    },
+    {
+      "arm": "dpo",
+      "epoch": 1,
+      "nll": 1.7203840241608797,
+      "exact_control_generations": 6
+    },
+    {
+      "arm": "dpo",
+      "epoch": 2,
+      "nll": 1.7147601431387443,
+      "exact_control_generations": 5
+    }
+  ],
+  "training_likelihood_diagnostics": {
+    "sft": {
+      "rows": 17,
+      "positive_relative_margin_changes": 17,
+      "mean_relative_margin_change_nats": 3.7473593880148495,
+      "mean_final_dpo_loss": 0.5241659328255825,
+      "positive_absolute_chosen_minus_rejected_total_logp": 0,
+      "mean_absolute_chosen_minus_rejected_total_logp": -242.8881050558651,
+      "elapsed_seconds": 402.31802476200005
+    },
+    "dpo": {
+      "rows": 17,
+      "positive_relative_margin_changes": 17,
+      "mean_relative_margin_change_nats": 3.833566385156968,
+      "mean_final_dpo_loss": 0.5206777764995527,
+      "positive_absolute_chosen_minus_rejected_total_logp": 0,
+      "mean_absolute_chosen_minus_rejected_total_logp": -242.801898058723,
+      "elapsed_seconds": 554.159424334
+    }
+  }
+}

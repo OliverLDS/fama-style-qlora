@@ -1,0 +1,54 @@
+{
+  "actual_prompt_vs_preflight_differences": [
+    1
+  ],
+  "additional_generation_calls": 0,
+  "context_per_slot": 4096,
+  "elapsed_seconds": 228.85897058999998,
+  "generated_outputs": 9,
+  "limits": [
+    "Three training-side failure-selected cases, unblinded automated qualitative judgments.",
+    "Not a Gemma 4B eligibility gate or estimate of generalization.",
+    "No Fama-style, human-authorship or detector performance is measured."
+  ],
+  "methods": {
+    "compact_claims": {
+      "blocked": 0,
+      "empty": 0,
+      "length_limited": 0,
+      "material_claim_issue_identified": 3,
+      "median_prompt_tokens": 1080,
+      "median_word_sequence_overlap": 0.17647058823529413,
+      "outputs": 3,
+      "outputs_with_added_numeric_values": 0,
+      "outputs_with_missing_numeric_values": 1
+    },
+    "detailed_brief": {
+      "blocked": 0,
+      "empty": 0,
+      "length_limited": 0,
+      "material_claim_issue_identified": 3,
+      "median_prompt_tokens": 1552,
+      "median_word_sequence_overlap": 0.12307692307692308,
+      "outputs": 3,
+      "outputs_with_added_numeric_values": 0,
+      "outputs_with_missing_numeric_values": 1
+    },
+    "direct_rewrite": {
+      "blocked": 0,
+      "empty": 0,
+      "length_limited": 0,
+      "material_claim_issue_identified": 3,
+      "median_prompt_tokens": 297,
+      "median_word_sequence_overlap": 0.32608695652173914,
+      "outputs": 3,
+      "outputs_with_added_numeric_values": 1,
+      "outputs_with_missing_numeric_values": 0
+    }
+  },
+  "model": "ggml-org/gemma-3-1b-it-GGUF:Q4_K_M",
+  "model_file_sha256": "8ccc5cd1f1b3602548715ae25a66ed73fd5dc68a210412eea643eb20eb75a135",
+  "protocol": "local_reconstruction_1b_review_v1",
+  "server_build": "b1-c589f0e",
+  "training_called": false
+}

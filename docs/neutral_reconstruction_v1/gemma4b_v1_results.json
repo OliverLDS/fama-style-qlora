@@ -1,0 +1,29 @@
+{
+  "actual_slug": "oliverlds/reconstruction-4b",
+  "elapsed_seconds": 199.034544924,
+  "execution_completed_jobs": 6,
+  "initial_strict_parser_accepted": 0,
+  "limits": [
+    "Six texts are assessable, but two remain schema-nonconforming and are not relabelled as valid generations.",
+    "Automated, unblinded qualitative review of three failure-selected development cases.",
+    "No Fama-style, human-authorship or detector outcome is established."
+  ],
+  "material_issue_counts_by_method": {
+    "direct_rewrite": 1,
+    "neutral_reconstruction": 3
+  },
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "new_gpu_jobs": 0,
+  "new_model_calls": 0,
+  "original_kaggle_status": "failed_after_all_generations",
+  "peak_gpu_allocated_bytes": 5523325440,
+  "protocol": "neutral_reconstruction_gemma4b_review_v1",
+  "raw_outputs_modified": false,
+  "requested_version": 1,
+  "schema_conforming_after_fence_only_normalization": 4,
+  "schema_nonconforming_missing_fields": 2,
+  "single_fence_json_objects_recovered": 6,
+  "training_called": false,
+  "truncated_outputs": 0
+}

@@ -1,0 +1,41 @@
+{
+  "adapter_sha256": {
+    "adapter_config.json": "25098c5c27efa2ca9518ce6dee3f69bcb2eca1e7848fc1ebe5a9ab0afd1404f3",
+    "adapter_model.safetensors": "c3afb28a93ad2f4976bfd5364df87edcf69adf3b445a8e234fd2f9c18863a08b"
+  },
+  "adapter_slug": "oliverlds/teacher-pair-expanded-pilot-4b",
+  "adapter_version": 1,
+  "anchor_manifest_sha256": "63d53ee2a7dcb1ae40fbea6efe0c7bdd597e0bc0505a4282b2eec7f9299bded6",
+  "anchors": 12,
+  "completion_scores_planned": 96,
+  "config_sha256": "4761fe55e10559f96328ead50e14f0b899f5edb0f74959c2ebceec86fe6c8f14",
+  "development_records_used": 0,
+  "generations_planned": 48,
+  "gpu_jobs_submitted": 0,
+  "input_conditions": [
+    "original",
+    "variant"
+  ],
+  "jobs_sha256": "c68c69dc4262893dc1c8525828bb3df11e7ee45d30b5252241779c23ffb374c1",
+  "limits": [
+    "Training-side robustness and likelihood diagnostic; adapter has seen all human targets and original inputs.",
+    "New variants and synthetic negatives have same-reviewer provisional semantic validation.",
+    "Conditional likelihood preference is not a calibrated truth judgment; mean/total scores have length biases.",
+    "Generation prompts contain source text and ordinary rewrite instruction only; no target, rejection or oracle ledger."
+  ],
+  "optimizer_steps": 0,
+  "pairwise_likelihood_decisions_planned": 48,
+  "pilot_review_manifest_sha256": "76b50c8e022b48df37141da7fbfc5f9603fc8a16a71ca7a8bf8880af247574c7",
+  "protocol": "semantic_anchor_inference_4b_v1",
+  "reserved_records_used": 0,
+  "runtime_source_sha256": "c1baba0830708685ee9d4c5bb679e365edb17b94272520bdb85e827e2c1da8f3",
+  "stages": [
+    "base",
+    "expanded_epoch_2"
+  ],
+  "status": "prepared_not_executed",
+  "tokenizer_audit_sequences_planned": 48,
+  "training_authorized": false,
+  "training_called": false,
+  "training_papers": 10
+}

@@ -29,7 +29,7 @@ def allowed(path):
     if parts[0] == "src":
         return path.endswith((".py", ".md")) or path == "src/fama_style/evaluation/templates/source_control_review.html"
     if parts[0] in ("scripts", "tests"):
-        return path.endswith(".py") or path in {"scripts/data/extract_comparison_ocr.swift", "scripts/data/extract_author_pages.swift"}
+        return path.endswith(".py") or path in {"scripts/data/extract_comparison_ocr.swift", "scripts/data/extract_author_pages.swift", "scripts/data/extract_detector_pdf_page.swift"}
     if parts[0] == "kaggle":
         return len(parts) == 2 and (path.endswith(".ipynb") or parts[-1] == "README.md")
     if parts[0] == "docs":

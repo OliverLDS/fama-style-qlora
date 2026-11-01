@@ -1,5 +1,9 @@
 # Semantic binding repair v1
 
+This audit predates the [Gemma 4B version 1 check](GEMMA4B_V1_RESULTS.md), which
+subsequently used the derived brief. That check still found a confidence-scope
+shift and an omitted claim; the repair did not establish reliable realization.
+
 Completed a versioned repair of the two remaining scope issues in the existing
 commentators/contagion example. Seven fields in one brief changed. The original
 paragraph, annotations, input packets and output evaluations are unchanged.
@@ -29,7 +33,7 @@ Private files are under
 
 The reviewed reference is the evidence basis; no new PDF verification or
 independent semantic validation was performed. The earlier outputs retain their
-original assessments. No corrected outputs have been generated, and this derived
+original assessments. At repair preparation, no corrected outputs had been generated; the derived
 brief is not certified training-ready. No further annotation or training starts
 as part of this repair. [Aggregate summary](semantic_binding_repair.json).
 

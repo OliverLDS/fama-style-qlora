@@ -1,0 +1,154 @@
+{
+  "training": {
+    "control": {
+      "outputs": 11,
+      "material_claim_issues": 11,
+      "eligible_within_local_budget": 0,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 11,
+      "median_source_overlap": 0.36681222707423583,
+      "median_reference_overlap": 0.31868131868131866
+    },
+    "strong_sft": {
+      "outputs": 11,
+      "material_claim_issues": 9,
+      "eligible_within_local_budget": 1,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 0,
+      "median_source_overlap": 0.4253393665158371,
+      "median_reference_overlap": 0.3561643835616438,
+      "generic_expression_vs_control": {
+        "better": 7,
+        "tie": 3,
+        "worse": 1
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 2,
+        "new_material_case": 0,
+        "unchanged": 9
+      }
+    },
+    "strong_dpo": {
+      "outputs": 11,
+      "material_claim_issues": 9,
+      "eligible_within_local_budget": 1,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 0,
+      "median_source_overlap": 0.4028776978417266,
+      "median_reference_overlap": 0.3561643835616438,
+      "generic_expression_vs_control": {
+        "better": 7,
+        "tie": 3,
+        "worse": 1
+      },
+      "generic_expression_vs_strong_sft": {
+        "better": 0,
+        "tie": 11,
+        "worse": 0
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 2,
+        "new_material_case": 0,
+        "unchanged": 9
+      },
+      "exact_strong_SFT_outputs": 8
+    }
+  },
+  "development": {
+    "control": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 3,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 8,
+      "median_source_overlap": 0.36861424930579334,
+      "median_reference_overlap": 0.3564322254652732
+    },
+    "strong_sft": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 2,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 0,
+      "median_source_overlap": 0.42419204184569403,
+      "median_reference_overlap": 0.37336199836199835,
+      "generic_expression_vs_control": {
+        "better": 4,
+        "tie": 3,
+        "worse": 1
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 1,
+        "new_material_case": 1,
+        "unchanged": 6
+      }
+    },
+    "strong_dpo": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 2,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 1,
+      "median_source_overlap": 0.41132075471698115,
+      "median_reference_overlap": 0.37336199836199835,
+      "generic_expression_vs_control": {
+        "better": 4,
+        "tie": 3,
+        "worse": 1
+      },
+      "generic_expression_vs_strong_sft": {
+        "better": 0,
+        "tie": 8,
+        "worse": 0
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 1,
+        "new_material_case": 1,
+        "unchanged": 6
+      },
+      "exact_strong_SFT_outputs": 5
+    }
+  },
+  "protocol": "dpo_strength_review_v1",
+  "slug": "oliverlds/dpo-strength-4b",
+  "user_reported_version": 1,
+  "execution_complete": true,
+  "optimizer_updates": 22,
+  "learning_rate": 1e-05,
+  "beta": 0.1,
+  "reference_sequences_verified": 34,
+  "initial_identity_pairs": 17,
+  "processor_sequences_verified": 42,
+  "control_outputs_reproduced": 8,
+  "final_generations": 19,
+  "total_new_generations": 27,
+  "adapter_reload_weights_match": true,
+  "target_nll": {
+    "initial_training": 2.2446459827807126,
+    "initial_development": 1.7367469505027489,
+    "final_training": 1.9593266700166756,
+    "final_development": 1.5257501333731192
+  },
+  "final_generation_flags": {
+    "empty": 0,
+    "output_limited": 0,
+    "copied_source": 0
+  },
+  "mean_training_relative_margin_change_nats": 37.42016472535975,
+  "positive_training_relative_margins": 17,
+  "mean_final_training_dpo_loss": 0.034508559240426055,
+  "elapsed_seconds": 902.9045755129999,
+  "peak_gpu_allocated_bytes": 5479379456,
+  "development_quality_gate_passed": false,
+  "reserved_test_records_read": 0,
+  "detector_calls": 0,
+  "new_gpu_jobs_submitted": 0,
+  "additional_training_authorized": false,
+  "assessment_provisional": true,
+  "fama_style_established": false,
+  "limits": [
+    "Same reviewer, known controls and reused cases; masking does not establish independent calibrated judging.",
+    "Eleven training cases were selected for known errors, not representative accuracy.",
+    "Generic-expression ranks are not distinctive Fama-style, human-authorship or detector evidence."
+  ]
+}

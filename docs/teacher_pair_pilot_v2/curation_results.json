@@ -1,0 +1,62 @@
+{
+  "added_pairs": {
+    "author_groups": 10,
+    "max_overlap": 0.926829268292683,
+    "measurement_note": "Descriptive surface metrics only; no edit-distance selection threshold or proof of style contrast.",
+    "median_source_reference_overlap": 0.7771360681165638,
+    "min_overlap": 0.4367816091954023,
+    "pairs": 30,
+    "pairs_above_0_90_overlap": 2,
+    "pairs_with_sentence_count_proxy_change": 15,
+    "papers": 10
+  },
+  "added_pairs_with_previous_detector_control_exposure": 2,
+  "detector_scores_read": 0,
+  "development": {
+    "author_groups": 4,
+    "max_overlap": 0.8169934640522876,
+    "measurement_note": "Descriptive surface metrics only; no edit-distance selection threshold or proof of style contrast.",
+    "median_source_reference_overlap": 0.7799062639488171,
+    "min_overlap": 0.64,
+    "pairs": 8,
+    "pairs_above_0_90_overlap": 0,
+    "pairs_with_sentence_count_proxy_change": 2,
+    "papers": 4
+  },
+  "development_text_and_row_bytes_unchanged": true,
+  "existing_training_row_bytes_unchanged": true,
+  "full_scale_training_ready": false,
+  "gpu_jobs_submitted": 0,
+  "held_candidates_reviewed": 42,
+  "new_annotations_or_paraphrases": 0,
+  "new_decision_counts": {
+    "admit_limited_pilot": 30,
+    "hold_ambiguous_condition": 1,
+    "hold_technical_meaning": 2,
+    "hold_transcription_or_notation": 2,
+    "hold_unbound_context": 7
+  },
+  "new_training_budget_selected": false,
+  "newly_admitted": 30,
+  "parent_training_candidates": 58,
+  "previous_training_pairs": 16,
+  "protocol": "teacher_pair_curated_expansion_v2",
+  "remaining_held": 12,
+  "reserved_records_deserialized_for_curation": 0,
+  "review_limits": "Automated comparison to archived human transcription and upstream annotations; original flags retained; no new independent PDF/OCR or semantic certification.",
+  "source_or_target_repairs": 0,
+  "status": "data_curated_no_new_training_plan",
+  "tokenizer_preflight_for_added_rows": "not_run",
+  "training": {
+    "author_groups": 12,
+    "max_overlap": 0.926829268292683,
+    "measurement_note": "Descriptive surface metrics only; no edit-distance selection threshold or proof of style contrast.",
+    "median_source_reference_overlap": 0.7770242404802273,
+    "min_overlap": 0.4367816091954023,
+    "pairs": 46,
+    "pairs_above_0_90_overlap": 2,
+    "pairs_with_sentence_count_proxy_change": 23,
+    "papers": 12
+  },
+  "training_authorized": false
+}

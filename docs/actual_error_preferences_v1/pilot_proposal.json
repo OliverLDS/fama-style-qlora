@@ -1,0 +1,73 @@
+{
+  "status": "design_only_pending_real_tokenizer_check_implementation_and_user_gpu_approval",
+  "training_authorized": false,
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "starting_adapter_sha256": {
+    "adapter_config.json": "25098c5c27efa2ca9518ce6dee3f69bcb2eca1e7848fc1ebe5a9ab0afd1404f3",
+    "adapter_model.safetensors": "c3afb28a93ad2f4976bfd5364df87edcf69adf3b445a8e234fd2f9c18863a08b"
+  },
+  "candidate_manifest_sha256": "acb9bf7914230d6a9c07fa6d9a3ca1fbb55575e91f2e9ccd6e17bc5ffd99b4f2",
+  "evaluation_manifest_sha256": "b306bf6c0a92b3522089f797fd6f5b7b94b72920349876e5860672a9a0d9e4b0",
+  "evaluation_cases": 8,
+  "evaluation_reserved": false,
+  "training_pairs": 17,
+  "paragraph_groups": 11,
+  "training_papers": 10,
+  "arms": [
+    "unchanged_expanded_epoch_2",
+    "chosen_only_sft_continuation",
+    "dpo_continuation"
+  ],
+  "analysis_baseline": "unchanged_input_passthrough; no model generation required",
+  "independent_arm_initialization": true,
+  "epochs_per_train_arm": 2,
+  "optimizer_updates_per_epoch": 11,
+  "optimizer_updates_per_train_arm": 22,
+  "total_additional_optimizer_updates": 44,
+  "grouping": "One optimizer update per paragraph; average its one or two row losses; same groups/order for both arms.",
+  "seed": 1729,
+  "proposed_learning_rate_both_arms": 1e-06,
+  "proposed_dpo_beta": 0.1,
+  "preference_loss": "standard summed-response-log-probability sigmoid DPO",
+  "sft_loss": "mean response-token NLL, then mean over sibling rows within paragraph",
+  "reference_policy": "exact frozen starting expanded epoch-2 adapter; no raw-base reference and no moving reference",
+  "dropout_proposal": "disable during both continuation arms and reference scoring; measure initial policy/reference identity",
+  "precision": "Existing NF4 double quantization, FP32 compute; no fp16 change",
+  "accelerator_proposal": "one Kaggle T4, GPU 0 only",
+  "max_total_gpu_minutes": 60,
+  "runtime_estimate_minutes": [
+    20,
+    40
+  ],
+  "runtime_estimate_is_measured": false,
+  "memory_fit_measured": false,
+  "precompute_reference_scores": true,
+  "reference_completions_to_score": 34,
+  "reference_scores_computed": false,
+  "gpu_training_code_implemented": false,
+  "trl_training_version_pinned": false,
+  "primary_final_checkpoint": "epoch 2, fixed before execution; epoch 1 diagnostic only",
+  "predeclared_quality_gate": {
+    "max_material_issue_outputs": 3,
+    "min_within_local_meaning_budget": 4,
+    "paired_generic_expression_wins_exceed_losses_vs_starting_adapter": true,
+    "max_exact_source_copies": 0,
+    "max_empty_or_truncated_outputs": 0,
+    "source_overlap_and_passthrough_comparison_required": true
+  },
+  "preference_specific_claim": "Requires a direct benefit over the matched chosen-only SFT arm; a margin improvement alone is insufficient.",
+  "detector_evaluation": "Only one frozen quality-qualified checkpoint; use existing paper-balanced rounds and record provider/version/date. No detector-driven tuning.",
+  "sources_reviewed": [
+    "https://aclanthology.org/2025.naacl-long.135/",
+    "https://aclanthology.org/2025.naacl-long.135.pdf",
+    "https://huggingface.co/docs/trl/main/en/dpo_trainer",
+    "https://github.com/huggingface/trl/blob/main/trl/trainer/dpo_trainer.py"
+  ],
+  "limits": [
+    "Small correlated training-only sample and one seed, not a general style benchmark.",
+    "Chosen references have greater source overlap in 16/17 pairs and are longer in 12/17.",
+    "Equal updates/chosen exposures are not equal compute or objective scale; DPO processes rejected completions too.",
+    "Budget is proposed, not authorization; stop for failures rather than silently altering precision, truncating rows or replacing the reference."
+  ]
+}

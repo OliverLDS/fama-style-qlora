@@ -1,0 +1,215 @@
+{
+  "actual_slug": "oliverlds/teacher-pair-expanded-pilot-4b",
+  "adapter_reload_weights_match": true,
+  "adapter_weights_changed": true,
+  "additional_training_authorized": false,
+  "baseline_exact_outputs_reproduced": 10,
+  "checkpoints": {
+    "1": {
+      "base_revision_policy": "Use the pinned revision from the frozen runtime/config; adapter_config revision is not independently pinned.",
+      "dtypes": [
+        "F32"
+      ],
+      "parameters": 2228224,
+      "sha256": "1eb68e41a19394572fe62676aa0172dc8d5f2b4da1f902741b0cfe08aeffcebd",
+      "tensor_count": 136
+    },
+    "2": {
+      "base_revision_policy": "Use the pinned revision from the frozen runtime/config; adapter_config revision is not independently pinned.",
+      "dtypes": [
+        "F32"
+      ],
+      "parameters": 2228224,
+      "sha256": "c3afb28a93ad2f4976bfd5364df87edcf69adf3b445a8e234fd2f9c18863a08b",
+      "tensor_count": 136
+    }
+  },
+  "comparison_to_v1": {
+    "current_epochs": {
+      "epoch_1": {
+        "exact_previous_final_output_matches": 0,
+        "material_issue_transitions": {
+          "improved": 1,
+          "same": 6,
+          "worse": 1
+        }
+      },
+      "epoch_2": {
+        "exact_previous_final_output_matches": 0,
+        "material_issue_transitions": {
+          "improved": 1,
+          "same": 6,
+          "worse": 1
+        }
+      }
+    },
+    "current_optimizer_steps": 46,
+    "current_training_pairs": 46,
+    "limit": "More training data and more optimizer updates; not an isolated data-volume effect or direct blinded style comparison between adapters.",
+    "previous_final": {
+      "development_outputs_identical_to_base": 0,
+      "material_issue_transitions_vs_base": {
+        "improved": 2,
+        "same": 5,
+        "worse": 1
+      },
+      "mean_example_development_loss": 2.837085798382759,
+      "optimizer_step": 16,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 6,
+          "median_reference_overlap": 0.24478862263783363,
+          "median_source_overlap": 0.30362958293938436,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 2,
+          "median_reference_overlap": 0.3396933078934351,
+          "median_source_overlap": 0.3666666666666667,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "style_preference_vs_base_development": {
+        "better": 5,
+        "tie": 2,
+        "worse": 1
+      },
+      "style_win_papers": 3,
+      "token_weighted_development_loss": 2.6150210056600707
+    },
+    "previous_optimizer_steps": 16,
+    "previous_training_pairs": 16,
+    "same_development_cases": true
+  },
+  "development_outputs_identical_between_epochs": 0,
+  "elapsed_seconds": 770.8749299680001,
+  "execution_complete": true,
+  "final_loss_relative_reduction": 0.3615260529496326,
+  "full_scale_training_ready": false,
+  "gradient_checks": 46,
+  "limits": [
+    "Partly masked automated review; baseline was previously seen, conditions may be inferred, and judgments are not independent or calibrated.",
+    "Eight reused development cases, four author/paper-held-out sources; no reserved test evaluation.",
+    "Generic concision/organization preferences are not evidence of Fama-specific style or human authorship.",
+    "Data quantity, update budget and linear learning-rate trajectory differ from the earlier pilot; no causal data-volume attribution."
+  ],
+  "new_model_calls": 0,
+  "optimizer_steps": 46,
+  "peak_gpu_allocated_bytes": 6567964160,
+  "predeclared_final_gate": {
+    "all_pass": false,
+    "at_least_five_generic_style_wins_vs_base": true,
+    "fewer_than_six_material_issue_outputs": false,
+    "no_increase_in_exact_copies_empty_or_limited": true
+  },
+  "protocol": "teacher_pair_expanded_pilot_review_v1",
+  "reload_probe_matches_epoch_2": true,
+  "snapshots": {
+    "base": {
+      "mean_example_development_loss": 3.2463565915822983,
+      "optimizer_step": 0,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 7,
+          "median_reference_overlap": 0.22599949070537306,
+          "median_source_overlap": 0.2876452862677572,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 2,
+          "median_reference_overlap": 0.3354165281563726,
+          "median_source_overlap": 0.3676767676767677,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "token_weighted_development_loss": 2.9694209101813636
+    },
+    "epoch_1": {
+      "development_outputs_identical_to_base": 0,
+      "material_issue_transitions_vs_base": {
+        "improved": 1,
+        "same": 7,
+        "worse": 0
+      },
+      "mean_example_development_loss": 2.3524127155542374,
+      "optimizer_step": 23,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 6,
+          "median_reference_overlap": 0.26183335151052456,
+          "median_source_overlap": 0.32470306758950696,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 1,
+          "median_reference_overlap": 0.452991452991453,
+          "median_source_overlap": 0.4941639918295886,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "style_preference_vs_base_development": {
+        "better": 5,
+        "tie": 3,
+        "worse": 0
+      },
+      "style_win_papers": 3,
+      "token_weighted_development_loss": 2.191413181025944
+    },
+    "epoch_2": {
+      "development_outputs_identical_to_base": 0,
+      "material_issue_transitions_vs_base": {
+        "improved": 1,
+        "same": 7,
+        "worse": 0
+      },
+      "mean_example_development_loss": 2.015339657664299,
+      "optimizer_step": 46,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 6,
+          "median_reference_overlap": 0.257281284606866,
+          "median_source_overlap": 0.35127674258109043,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 0,
+          "median_reference_overlap": 0.5243635850786263,
+          "median_source_overlap": 0.5405231560891939,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "style_preference_vs_base_development": {
+        "better": 6,
+        "tie": 1,
+        "worse": 1
+      },
+      "style_win_papers": 4,
+      "token_weighted_development_loss": 1.8958978889773896
+    }
+  },
+  "user_reported_version": 1
+}

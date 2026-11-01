@@ -1,0 +1,22 @@
+{
+  "protocol": "teacher_pair_reverse_pilot_execution_v1",
+  "authorization_date": "2026-10-31",
+  "user_authorized": true,
+  "scope": "The previously prepared two-epoch, sixteen-update pilot after baseline version 1 review.",
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "epochs": 2,
+  "optimizer_steps": 16,
+  "training_rows": 16,
+  "development_rows": 8,
+  "baseline_slug": "oliverlds/teacher-pair-base-4b",
+  "baseline_version": 1,
+  "baseline_evaluation_sha256": "817a540987bed89a9656097f0013c9f1ee7b6efbbc39a0f75ce1ba21f0263211",
+  "dataset_sha256": "09e4e30d942a9df9c357d0d72f8cab3ca6b5895785eda2095ada8310e59853bb",
+  "config_sha256": "7d407b8d0efa7002aad9ecc850f1db0b4eabb8fd1eeff939bea035251e9a5348",
+  "packet_manifest_sha256": "32a5395d0bd579d683cd562c03fb6cba29c51df3f1d41b9b7acd26588057e11f",
+  "runtime_source_sha256": "8efe698a151f012d7e42d2f4d0a42600bd23bd4838815c1f5b75fcaa6752b7df",
+  "submission_policy": "Manual private Kaggle UI upload; no CLI push or automatic run.",
+  "execution_status": "enabled_not_submitted",
+  "full_training_authorized": false
+}

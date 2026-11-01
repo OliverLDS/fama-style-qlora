@@ -1,0 +1,144 @@
+{
+  "arms": {
+    "control": {
+      "outputs": 11,
+      "material_claim_issues": 11,
+      "eligible_within_local_budget": 0,
+      "exact_control_outputs": 11,
+      "median_source_word_sequence_overlap": 0.36681222707423583,
+      "median_reference_word_sequence_overlap": 0.31868131868131866,
+      "median_longest_source_word_run": 5,
+      "families": {
+        "numbers": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "reasoning": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "scope": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "time": {
+          "outputs": 2,
+          "material_claim_issues": 2,
+          "eligible": 0
+        }
+      }
+    },
+    "sft": {
+      "outputs": 11,
+      "material_claim_issues": 11,
+      "eligible_within_local_budget": 0,
+      "exact_control_outputs": 8,
+      "median_source_word_sequence_overlap": 0.39779005524861877,
+      "median_reference_word_sequence_overlap": 0.33620689655172414,
+      "median_longest_source_word_run": 5,
+      "generic_expression_vs_control": {
+        "better": 0,
+        "tie": 10,
+        "worse": 1
+      },
+      "material_errors_resolved": 0,
+      "families": {
+        "numbers": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "reasoning": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "scope": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "time": {
+          "outputs": 2,
+          "material_claim_issues": 2,
+          "eligible": 0
+        }
+      },
+      "empty": 0,
+      "output_limited": 0,
+      "copied_source": 0
+    },
+    "dpo": {
+      "outputs": 11,
+      "material_claim_issues": 11,
+      "eligible_within_local_budget": 0,
+      "exact_control_outputs": 8,
+      "median_source_word_sequence_overlap": 0.39779005524861877,
+      "median_reference_word_sequence_overlap": 0.33620689655172414,
+      "median_longest_source_word_run": 5,
+      "generic_expression_vs_control": {
+        "better": 0,
+        "tie": 10,
+        "worse": 1
+      },
+      "material_errors_resolved": 0,
+      "families": {
+        "numbers": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "reasoning": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "scope": {
+          "outputs": 3,
+          "material_claim_issues": 3,
+          "eligible": 0
+        },
+        "time": {
+          "outputs": 2,
+          "material_claim_issues": 2,
+          "eligible": 0
+        }
+      },
+      "empty": 0,
+      "output_limited": 0,
+      "copied_source": 0
+    }
+  },
+  "dpo_generic_expression_vs_sft": {
+    "better": 0,
+    "tie": 11,
+    "worse": 0
+  },
+  "protocol": "preference_training_inference_review_v1",
+  "slug": "oliverlds/preference-training-inference-4b",
+  "user_reported_version": 1,
+  "execution_complete": true,
+  "training_called": false,
+  "optimizer_steps": 0,
+  "new_generations": 22,
+  "reused_controls": 11,
+  "prompt_audits_verified": 11,
+  "elapsed_seconds": 333.15018575199997,
+  "peak_gpu_allocated_bytes": 4838243840,
+  "primary_epoch": 2,
+  "detector_calls": 0,
+  "new_model_calls_during_review": 0,
+  "new_gpu_jobs_submitted": 0,
+  "additional_training_authorized": false,
+  "reserved_test_records_read": 0,
+  "assessment_provisional": true,
+  "fama_style_established": false,
+  "limits": [
+    "Same reviewer and known controls; masking does not establish independent judgments.",
+    "Eleven reused, error-selected training paragraphs, not held-out performance.",
+    "Generic expression preferences are not distinctive Fama-style or detector evidence."
+  ]
+}

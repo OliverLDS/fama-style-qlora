@@ -1,0 +1,20 @@
+{
+  "status": "preflight_not_executed",
+  "notebook": "oliverlds/preference-token-preflight",
+  "requested_version": 1,
+  "kaggle_status_observed": "COMPLETE",
+  "output_contains_runtime": false,
+  "output_contains_state": false,
+  "output_contains_token_audit": false,
+  "output_contains_summary": false,
+  "tokenizer_checks_passed": null,
+  "real_model_log_probabilities_computed": false,
+  "current_saved_notebook_code_cells": 1,
+  "expected_prepared_code_cells": 4,
+  "expected_prepared_markdown_cells": 1,
+  "current_saved_source_kind": "Kaggle starter cell listing input filenames",
+  "source_evidence_scope": "Unversioned current saved source; version-specific source pull denied. Version-1 log independently contains only input listing and conversion.",
+  "dataset_filenames_visible_in_log": 2,
+  "agent_started_jobs": 0,
+  "agent_modified_remote_notebook": false
+}

@@ -1,0 +1,12 @@
+{
+  "excluded_policy": "Retain uncertain boundaries and faithful alternatives in the audit, never turn them into rejections automatically.",
+  "future_control": "Same start adapter, candidate prompts, chosen-target exposure and grouped weighting for chosen-only SFT; optimizer/compute controls must be declared before interpreting an objective comparison.",
+  "gpu_training_authorized": false,
+  "next_gate": "Assess style/content/length contrast and complete CPU tokenizer/mask/response-scoring preflights before proposing a bounded preference pilot.",
+  "objective": "Test whether training on actual model errors improves faithful economic rewriting; detector success and distinctive author transfer are unproven.",
+  "preference_algorithm_selected": false,
+  "selection": "Current expanded epoch-2 outputs only; include unambiguous material errors with locally aligned unchanged references and provisional expression preference.",
+  "splits": "All candidates are training-side. Never randomly split sibling inputs across training/validation. Existing development/reserved sets remain unchanged.",
+  "success": "On unchanged development cases, fewer material issues, expression wins exceeding losses, no increase in exact copying or broken outputs; sparse detector endpoint only on a frozen checkpoint.",
+  "weighting": "Default proposal is one unit total weight per anchor, divided across its included inputs. Paper weights are recorded as an alternative, not combined automatically."
+}

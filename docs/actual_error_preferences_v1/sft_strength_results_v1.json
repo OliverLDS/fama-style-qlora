@@ -1,0 +1,147 @@
+{
+  "training": {
+    "control": {
+      "outputs": 11,
+      "material_claim_issues": 11,
+      "eligible_within_local_budget": 0,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 11,
+      "median_source_overlap": 0.36681222707423583,
+      "median_reference_overlap": 0.31868131868131866
+    },
+    "weak_sft": {
+      "outputs": 11,
+      "material_claim_issues": 11,
+      "eligible_within_local_budget": 0,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 8,
+      "median_source_overlap": 0.39779005524861877,
+      "median_reference_overlap": 0.33620689655172414,
+      "generic_expression_vs_control": {
+        "better": 0,
+        "tie": 10,
+        "worse": 1
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 0,
+        "new_material_case": 0,
+        "unchanged": 11
+      }
+    },
+    "strong_sft": {
+      "outputs": 11,
+      "material_claim_issues": 9,
+      "eligible_within_local_budget": 1,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 0,
+      "median_source_overlap": 0.4253393665158371,
+      "median_reference_overlap": 0.3561643835616438,
+      "generic_expression_vs_control": {
+        "better": 7,
+        "tie": 3,
+        "worse": 1
+      },
+      "generic_expression_vs_weak_sft": {
+        "better": 8,
+        "tie": 2,
+        "worse": 1
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 2,
+        "new_material_case": 0,
+        "unchanged": 9
+      }
+    }
+  },
+  "development": {
+    "control": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 3,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 8,
+      "median_source_overlap": 0.36861424930579334,
+      "median_reference_overlap": 0.3564322254652732
+    },
+    "weak_sft": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 3,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 6,
+      "median_source_overlap": 0.36861424930579334,
+      "median_reference_overlap": 0.3523836424693218,
+      "generic_expression_vs_control": {
+        "better": 0,
+        "tie": 7,
+        "worse": 1
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 0,
+        "new_material_case": 0,
+        "unchanged": 8
+      }
+    },
+    "strong_sft": {
+      "outputs": 8,
+      "material_claim_issues": 4,
+      "eligible_within_local_budget": 2,
+      "exact_source_copies": 0,
+      "exact_control_outputs": 0,
+      "median_source_overlap": 0.42419204184569403,
+      "median_reference_overlap": 0.37336199836199835,
+      "generic_expression_vs_control": {
+        "better": 4,
+        "tie": 3,
+        "worse": 1
+      },
+      "generic_expression_vs_weak_sft": {
+        "better": 4,
+        "tie": 3,
+        "worse": 1
+      },
+      "material_case_transitions_vs_control": {
+        "resolved": 1,
+        "new_material_case": 1,
+        "unchanged": 6
+      }
+    }
+  },
+  "target_nll": {
+    "initial_training": 2.2446459827807126,
+    "initial_development": 1.7367469505027489,
+    "final_training": 1.9414034008636913,
+    "final_development": 1.516998019748264
+  },
+  "protocol": "sft_strength_review_v1",
+  "slug": "oliverlds/sft-strength-4b",
+  "user_reported_version": 1,
+  "execution_complete": true,
+  "optimizer_updates": 22,
+  "learning_rate": 1e-05,
+  "initial_control_matches": 8,
+  "initial_training_likelihoods_reproduced": 17,
+  "processor_sequences_verified": 25,
+  "final_generations": 19,
+  "total_new_generations": 27,
+  "final_generation_flags": {
+    "empty": 0,
+    "output_limited": 0,
+    "copied_source": 0
+  },
+  "adapter_reload_weights_match": true,
+  "elapsed_seconds": 587.510942343,
+  "peak_gpu_allocated_bytes": 5479379456,
+  "development_quality_gate_passed": false,
+  "new_gpu_jobs_submitted": 0,
+  "additional_training_authorized": false,
+  "detector_calls": 0,
+  "reserved_test_records_read": 0,
+  "assessment_provisional": true,
+  "fama_style_established": false,
+  "limits": [
+    "Same reviewer and repeated examples; masking does not certify independence or calibrated semantic boundaries.",
+    "Training cases are selected known-error cases, not representative training accuracy.",
+    "Generic-expression ranks are not Fama-specific style, human-authorship or detector measurements."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "actual_slug": "oliverlds/reconstruction-prose-4b",
+  "compact_lower_overlap_than_direct": 3,
+  "completed_jobs": 9,
+  "elapsed_seconds": 196.32003617200007,
+  "execution_complete": true,
+  "limits": [
+    "Three failure-selected training-side cases; unblinded automated qualitative review, not independent semantic gold.",
+    "No Fama-style, human-authorship, detector or post-training benefit is established.",
+    "Teacher-side data-construction ability is not a prerequisite for reverse-direction text-pair SFT."
+  ],
+  "methods": {
+    "compact_claims": {
+      "blocked": 0,
+      "claim_or_coverage_flags": 3,
+      "empty": 0,
+      "format_flags": 0,
+      "length_limited": 0,
+      "median_longest_shared_word_run": 7,
+      "median_prompt_tokens": 1080,
+      "median_word_sequence_overlap": 0.2553191489361702,
+      "outputs": 3,
+      "outputs_with_added_numeric_values": 0,
+      "outputs_with_missing_numeric_values": 0
+    },
+    "detailed_brief": {
+      "blocked": 0,
+      "claim_or_coverage_flags": 3,
+      "empty": 0,
+      "format_flags": 0,
+      "length_limited": 0,
+      "median_longest_shared_word_run": 6,
+      "median_prompt_tokens": 1552,
+      "median_word_sequence_overlap": 0.2573099415204678,
+      "outputs": 3,
+      "outputs_with_added_numeric_values": 0,
+      "outputs_with_missing_numeric_values": 0
+    },
+    "direct_rewrite": {
+      "blocked": 0,
+      "claim_or_coverage_flags": 3,
+      "empty": 0,
+      "format_flags": 0,
+      "length_limited": 0,
+      "median_longest_shared_word_run": 9,
+      "median_prompt_tokens": 297,
+      "median_word_sequence_overlap": 0.4329896907216495,
+      "outputs": 3,
+      "outputs_with_added_numeric_values": 0,
+      "outputs_with_missing_numeric_values": 0
+    }
+  },
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "new_model_calls": 0,
+  "peak_gpu_allocated_bytes": 5464991744,
+  "protocol": "neutral_reconstruction_prose_gemma4b_review_v1",
+  "reserved_content_used": false,
+  "response_contract_complete": true,
+  "status": "executed_reviewed",
+  "training_called": false,
+  "user_reported_version": 1
+}

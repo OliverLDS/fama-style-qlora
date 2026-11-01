@@ -1,0 +1,27 @@
+{
+  "aggregate_progress_gate": {
+    "copying": "no increase in exact input-copy rate",
+    "detector": "lower native flag rate than ordinary base, only if endpoint informative",
+    "meaning": "no increase in material-shift rate; local-budget compliance and unresolved cases reported",
+    "readability_expression": "paired wins exceed losses"
+  },
+  "assess_against_source_first": true,
+  "assessment_limits": "Versioned prospective rubric for the missing outputs; historical outputs already known; same-reviewer automated judgments are provisional.",
+  "material_examples": [
+    "changed actor/role or economic quantity",
+    "reversed chronology or causal relation",
+    "new explanatory mechanism",
+    "lost central condition, negation or substantive supporting claim"
+  ],
+  "material_shifts_allowed_for_eligible_output": 0,
+  "meaning_equivalent_rewordings_count_as_drift": false,
+  "minor_examples": [
+    "small qualifier weakening without reversing core inference",
+    "nonessential illustrative or roadmap omission",
+    "mild editorial qualification without new economic relation"
+  ],
+  "minor_semantic_shift_budget_per_output": 1,
+  "not_a_fama_style_benchmark": true,
+  "unresolved_is_success": false,
+  "version": "checkpoint_drift_rubric_v1"
+}

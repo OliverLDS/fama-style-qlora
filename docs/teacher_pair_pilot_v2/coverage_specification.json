@@ -1,0 +1,49 @@
+{
+  "alignment_statuses": [
+    "aligned_to_archived_text",
+    "qualified_alignment",
+    "source_wording_uncertainty"
+  ],
+  "annotation_scope": "Both texts assessed using the same labels; labels describe preserved content, not a novel author-style taxonomy.",
+  "families": {
+    "bounded_explanations": [
+      "condition_assumption",
+      "qualified_modality",
+      "stated_reason_mechanism",
+      "association_prediction_limit"
+    ],
+    "numeric_examples": [
+      "reported_numeric_values",
+      "linked_numeric_comparisons",
+      "hypothetical_numeric_values",
+      "probability_outcome_tuples"
+    ],
+    "quantifiers_comparisons": [
+      "scope_frequency",
+      "comparison_ranking"
+    ],
+    "temporal_distinctions": [
+      "event_order_boundary",
+      "aggregation_horizon",
+      "theoretical_observed_distinction",
+      "planned_subsequent_investment_contrast"
+    ]
+  },
+  "features": {
+    "aggregation_horizon": "Temporal aggregation, sampling interval, duration or investment horizon.",
+    "association_prediction_limit": "Explicit limits on what association, consistency or predictability establishes.",
+    "comparison_ranking": "Ordered comparisons or rankings, not every contrast between two concepts.",
+    "condition_assumption": "Stated substantive condition, assumption, threshold or exception.",
+    "event_order_boundary": "Substantive before/after ordering or time boundary; excludes citation years and document roadmap order.",
+    "hypothetical_numeric_values": "Numerical hypothetical alternatives or counterfactual values, rather than reported observations.",
+    "linked_numeric_comparisons": "Multiple reported values with preserved comparative roles, groups, units or periods.",
+    "planned_subsequent_investment_contrast": "Explicit distinction between planned investment and subsequent investment; exact error subtype, not all future language.",
+    "probability_outcome_tuples": "Explicit numerical probabilities tied to payoffs/outcomes in a choice or indifference example.",
+    "qualified_modality": "Epistemic/modal force or uncertainty that constrains a conclusion.",
+    "reported_numeric_values": "Substantive reported values/counts, including number words; excludes citation years, table/section indices and dates alone.",
+    "scope_frequency": "Quantified scope, frequency, universality, negation or exclusions that must retain force.",
+    "stated_reason_mechanism": "A reason, explanation or mechanism actually supplied by the paragraph; does not certify causality.",
+    "theoretical_observed_distinction": "Explicit theoretical/predictive/expected versus observed/realized quantity distinction."
+  },
+  "protocol": "teacher_pair_training_coverage_v1"
+}

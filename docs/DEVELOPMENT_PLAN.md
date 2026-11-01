@@ -3,6 +3,104 @@
 Agreed direction, 30 October 2026. This plan extends the existing experiments;
 it does not replace their data, labels, hashes, results or original objectives.
 
+## Current priority — 1 November 2026
+
+The [bounded preference-versus-SFT pilot is complete](actual_error_preferences_v1/PILOT_RESULTS_V1.md):
+44 updates, all execution checks passed, 20.3 minutes on one T4. Both final arms
+retain four material-issue outputs and three locally eligible outputs out of eight.
+Six SFT and five DPO generations are identical to the unchanged control. Neither
+passes the quality gate or warrants detector scans. Before further optimization,
+the next diagnostic is free generation on eleven fixed training-side
+paragraphs using the saved adapters, to separate weak behavioral learning from
+poor transfer. That [inference-only diagnostic has now completed](actual_error_preferences_v1/TRAINING_SIDE_RESULTS_V1.md):
+22 new generations, zero optimizer steps, eight exact control repetitions per
+arm and no resolved material errors across the eleven selected cases. The next
+intervention is one bounded SFT-only update-strength check, retaining
+the same seventeen pairs and 22 updates but fixing learning rate at `1e-5`.
+The user agreed and the [stronger SFT check has completed](actual_error_preferences_v1/SFT_STRENGTH_RESULTS_V1.md):
+22 updates, all nineteen outputs changed, and material errors resolved in two
+selected training cases. Development target NLL reaches 1.517, but material-error
+count stays 4/8 and locally eligible outputs fall to 2/8; a new exclusive-purpose
+error offsets a planning repair. No detector scans are warranted. A matched
+DPO-only `1e-5` / 22-update comparison will test error contrast
+at an effective update strength. The [matched stronger-DPO run has completed](actual_error_preferences_v1/DPO_STRENGTH_RESULTS_V1.md):
+22 updates, all reference/execution gates passed, thirteen of nineteen outputs
+identical to stronger SFT and unchanged material-error/eligibility counts.
+Neither stronger arm passes the development gate. The next proposed work is a
+training-only minimal-repair preference audit to isolate local semantic corrections
+from full human-reference style and length differences. Preserve human targets as
+separate style evidence. Pause further sweeps and detector scans; no new GPU job
+or repair-label generation has been initiated. Earlier approvals cover completed
+runs, not additional training.
+
+The [real CPU token/mask preflight passed locally](preference_preflight_v1/RUN_V2_RECOVERY.md)
+on seventeen pairs and 34 responses. All chosen token sequences exactly reproduce
+their archived hashes. Kaggle version 2 exported its tokenizer before an API
+return-shape bug; the fix requests flat token IDs explicitly. Original data and
+tokenizer assets are unchanged, and no further Kaggle replay is needed.
+The [bounded DPO-versus-SFT proposal](actual_error_preferences_v1/PILOT_PROPOSAL.md)
+defines independent continuations from the same adapter, twenty-two updates per
+arm and the original eight-case milestone evaluation. Its
+[implementation and private packet are now prepared](actual_error_preferences_v1/PILOT_IMPLEMENTATION.md),
+including a self-contained notebook. The user explicitly approved the bounded
+44-update, one-T4, one-hour pilot, which has now completed.
+The builder still defaults to check-only unless supplied the bound approval record.
+CPU checks and packet
+reproduction pass; processor equivalence, reference likelihoods, gradients,
+memory fit and adapter reload gates also passed during the completed run.
+No job was submitted by the agent, and additional training is not authorized.
+Do not substitute a raw-base reference policy or treat synthetic
+scoring tests as actual model likelihoods.
+
+The [actual-error preference packet](actual_error_preferences_v1/README.md) is now
+prepared: seventeen candidates across eleven training paragraphs and ten papers,
+with two uncertain outputs held and five without clear material error excluded.
+Chosen references are unchanged; rejections are actual saved adapter outputs.
+A matched chosen-only SFT file and paragraph/paper grouping are included. This
+is a data-only step, not a training release: chosen responses have higher source
+overlap in sixteen pairs and are longer in twelve, so copying and length shortcuts
+remain material confounds. The input-token gate is recorded in the separate
+recovery audit; trainer packing, actual reference scores, gradient/memory checks
+remain GPU execution gates. The bounded pilot is approved; full training is not.
+
+The [completed first detector round](milestone_checkpoint_4b_v1/DETECTOR_RESULTS_V2.md)
+now has twenty GPTZero and twenty Pangram reports. No further scans are needed
+before addressing the rewriting behavior; no new generation or training is
+authorized. Both providers flag all twelve Gemma outputs and label all four
+human references human; the frozen GPTZero AI-related endpoint shows no
+improvement across the three arms on four cases. The user reports the same
+default settings on both Pangram accounts used for the two collection batches;
+the account provenance is retained separately.
+Use Pangram as the operational default for future sparse checks due to the daily
+free allowance, preserving separate native score semantics and the existing
+GPTZero checkpoint endpoint. Similar results on twenty shared texts do not
+establish statistical equivalence or reliable GPT-6-rewrite detection.
+
+First-round sparse measurement for the [reviewed 4B milestone checkpoint](milestone_checkpoint_4b_v1/RESULTS.md)
+is complete; preference candidates are now prepared and a new research decision
+is needed before further training. Retain the original frozen eight
+development cases across four papers; the second four-case round remains
+unscanned. The comparison uses ordinary base rewriting, a source-only structural
+prior, and ordinary rewriting with the original expanded-pilot epoch-2 adapter.
+Ten compatible archived outputs are reused; all fourteen missing outputs have
+completed inference. Provisional
+masked review identifies material issues in 7–8 base outputs, five structural
+outputs and four adapter outputs. Each alternative has only three outputs within
+the local one-minor-shift budget. Generic exposition improves in several cases;
+distinctive author style and detector improvements are still unestablished.
+
+Assess meaning, readability, copying and sparse detector outcomes separately.
+The versioned rubric permits at most one minor semantic shift for an individually
+eligible rewrite and no material claim change; unresolved cases remain unresolved.
+The existing detector policy limits project usage to an estimated 8,000 words,
+using complete paper-balanced rounds and checking the actual remaining allowance.
+No detector improvement or distinctive Fama-style gain is established.
+
+Preference learning remains a candidate diagnostic branch with a prepared packet,
+not a proven remedy or a replacement for the milestone. Only the bounded pilot
+described above is approved. Historical “next step” notes
+below describe earlier decisions; this current-priority section supersedes them.
+
 ## Main objective and first milestone
 
 The main objective remains rewriting into **Eugene Fama/coauthor style**, using
@@ -103,9 +201,94 @@ but three outputs add epistemic commentary absent from their sources. A
 [targeted instruction check](neutral_reconstruction_v1/INSTRUCTION_CHECK_RESULTS.md)
 removed that commentary in all three reruns. A [versioned semantic binding repair](neutral_reconstruction_v1/SEMANTIC_BINDING_REPAIR.md)
 then corrected two remaining scope issues in one brief. The derived brief has no
-new generation results. GPT-6 is the data preparer and development writer here;
-the next model-facing gate is Gemma 4B inference-only testing, not an assumption
-that the same protocol transfers or an authorization to train.
+new GPT-6 generation results. GPT-6 is the data preparer and development writer here.
+The subsequent [Gemma 4B check](neutral_reconstruction_v1/GEMMA4B_V1_RESULTS.md)
+completed six outputs but failed formatting validation. Offline recovery found
+claim issues in all three brief-only reconstructions, so transfer is not established
+and the detailed-brief format should not yet be scaled or used for training.
+The subsequent [matched prose-only 4B comparison](neutral_reconstruction_v1/GEMMA4B_PROSE_RESULTS.md)
+completed all nine outputs, without a reliable compact-format fidelity advantage.
+Do not make student brief-to-neutral realization a prerequisite for reverse-direction
+text-pair SFT. The next direction is a small source-checked teacher-pair pilot,
+with separate base/adapter and claim/style/copying comparisons; no training is
+authorized by these generation results.
+That [small teacher-pair pilot](teacher_pair_pilot_v1/README.md) is now prepared:
+16 unchanged training pairs from 10 papers and eight development pairs from four
+separate papers/authors, with per-pair source-alignment decisions and original
+uncertainty flags retained. The base comparison comes first. The fresh two-epoch
+QLoRA path is capped at 16 updates. The user authorized that limited pilot after
+baseline review on 31 October 2026; its notebook is enabled for
+[manual execution](teacher_pair_pilot_v1/PILOT_RUN.md), with no job submitted.
+The [base run is now reviewed](teacher_pair_pilot_v1/BASELINE_RESULTS.md): eight
+development generations and two training probes completed without updates, with
+finite losses and valid target masks. Claim drift, rather than exact copying,
+is the dominant baseline concern. The [authorized pilot is now complete](teacher_pair_pilot_v1/PILOT_RESULTS.md):
+16 finite updates, changed/reloaded adapters, lower loss and modest expression
+gains, but six of eight final development outputs retain material claim issues.
+Preserve the checkpoint and curate more existing teacher pairs before proposing
+another bounded experiment; do not scale to full training on these results.
+The [v2 data curation](teacher_pair_pilot_v2/README.md) is complete: 30 of the
+42 held training candidates are provisionally admitted, making 46 training pairs
+with the same eight development rows. Text and original flags are preserved;
+12 remain held. Additional data has not been tokenized or trained, and a new
+optimization budget/comparison must be specified separately.
+The [expanded follow-up plan](teacher_pair_pilot_v2/EXPERIMENT.md) now specifies
+two epochs / 46 updates, preserving the same eight development cases and two
+training probes. This changes data and optimization budget together. The new
+baseline notebook checks all 54 rows before weights load. Following review and
+explicit user approval, the pilot is now
+[enabled for manual execution](teacher_pair_pilot_v2/PILOT_RUN.md). No new GPU
+job is submitted by the enabling tools.
+The [expanded baseline review](teacher_pair_pilot_v2/BASELINE_RESULTS.md) now
+confirms all 54 target masks and context budgets, ten identical generations and
+eight identical loss rows relative to v1. The next step is manual execution of
+that authorized, bounded pilot; technical preflight does not demonstrate better
+claim retention or style. No full training is authorized.
+The [expanded pilot is now complete](teacher_pair_pilot_v2/PILOT_RESULTS.md):
+46 finite updates and successful reload, lower loss and six generic expression
+wins, but six of eight development outputs still contain material claim issues.
+Its predeclared claim-improvement gate fails. Preserve both epochs; next audit
+training coverage of temporal distinctions, quantifiers, full numerical examples
+and unsupported explanations before proposing another fidelity experiment.
+No extra training or reserved-test evaluation is authorized.
+The [46-pair coverage audit](teacher_pair_pilot_v2/TRAINING_COVERAGE.md) is now
+complete: scope/comparison appears in 42 pairs, temporal distinctions in 30,
+numeric content in 13 and bounded reasoning in 44. Exact investment-timing and
+numeric probability/outcome contrasts are absent, while all pairs preserve
+major claim order. Next prepare 12 training-only anchors with checked faithful
+variants and minimal semantic contrasts; this is a data-preparation recommendation,
+not authorization for another training run.
+Those [12 anchors are now prepared](teacher_pair_pilot_v2/SEMANTIC_ANCHORS.md),
+with 56 claim bindings, faithful neutral input variants and one-edit synthetic
+rejections. Both SFT and preference formats remain provisional, reviewed by the
+same Codex reviewer and not integrated into training. Next validate the candidates
+semantically and specify a small inference-only Gemma check before choosing an
+objective or authorizing new training.
+The [anchor inference notebook](teacher_pair_pilot_v2/ANCHOR_INFERENCE.md) is now
+prepared: 48 first rewrites and 96 completion scores across twelve training-side
+anchors, original/variant inputs and base/expanded-epoch-2 Gemma. Target and
+counterexample text never enters generation prompts. The exact existing adapter
+is frozen, there are no optimizer updates, and no GPU job has been submitted.
+That [inference check is now complete](teacher_pair_pilot_v2/ANCHOR_INFERENCE_RESULTS.md).
+Both models prefer the supplied faithful target by mean NLL on all original
+inputs, yet free generation still drifts. The adapter's variant-input improvement
+is small, training-side and severity-sensitive. Next propose a fresh controlled
+SFT run replacing twelve inputs one-for-one, preserving all 46 targets and the
+46-update budget; do not extend the existing adapter or assume synthetic
+preference accuracy validates faithful realization. No new training is authorized.
+That [controlled input-replacement run](input_replacement_v1/README.md) is now
+prepared and explicitly approved for manual Kaggle execution: twelve source
+changes, all 46 targets and the 46-update budget fixed, fresh adapter from the
+same base. The existing reviewed baseline is reused with a pre-gradient exact
+generation/loss check. No GPU job, extra run or full training is submitted by
+the preparation tools.
+The [matched input-replacement review](input_replacement_v1/RESULTS.md) now
+records no measured gain: final loss 1.90146 versus 1.89590, six claim-issue
+outputs in each final checkpoint, and one direct expression win versus two losses.
+Preserve this negative/mixed result. Next consider data-only preference candidates
+from verified actual-error generations on training anchors, with faithful controls
+and shortcut checks; do not use development outputs or start another SFT run by
+default. No new training or reserved-test evaluation is authorized.
 
 ## Sequence of work and decision gates
 

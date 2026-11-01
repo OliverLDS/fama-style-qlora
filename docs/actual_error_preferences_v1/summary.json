@@ -1,0 +1,60 @@
+{
+  "candidates_assessed": 24,
+  "chosen_longer_than_rejected": 12,
+  "chosen_more_source_overlap_than_rejected": 16,
+  "chosen_targets_modified": 0,
+  "chosen_to_rejected_word_ratio_range": [
+    0.6621621621621622,
+    1.3636363636363635
+  ],
+  "decisions": {
+    "exclude_no_clear_material_error": 5,
+    "hold_uncertain_boundary": 2,
+    "include_fidelity_preference_candidate": 17
+  },
+  "detector_labels_used_for_selection": false,
+  "development_records_parsed": 0,
+  "distinctive_fama_style_labels": false,
+  "exact_source_copy_chosen": 0,
+  "exact_source_copy_rejections": 0,
+  "external_calls": 0,
+  "families": {
+    "numbers": 5,
+    "reasoning": 3,
+    "scope": 6,
+    "time": 3
+  },
+  "gpu_jobs_submitted": 0,
+  "included_pairs": 17,
+  "included_papers": 10,
+  "included_with_inherited_review_flags": 8,
+  "independent_semantic_gold": false,
+  "input_kinds": {
+    "original": 9,
+    "variant": 8
+  },
+  "limits": [
+    "Candidate rows remain correlated by original paragraph and paper; report group counts, not independent sample counts.",
+    "Chosen references were already SFT targets; preference versus additional-SFT effects require a matched chosen-only control.",
+    "Meaning, reference wording, generic style and response length differ jointly; these are not clean style-only or Fama-style labels.",
+    "Same reviewer knows historical generations and created variants; local alignment is provisional, not independent factual/transcription verification.",
+    "Actual rejection log-probabilities and token boundaries are not available from the earlier synthetic-negative score audit."
+  ],
+  "max_archived_chosen_full_tokens": 483,
+  "max_archived_prompt_plus_generated_tokens": 471,
+  "median_chosen_rejected_overlap": 0.3,
+  "median_chosen_to_rejected_word_ratio": 1.0449438202247192,
+  "median_source_chosen_overlap": 0.5925925925925926,
+  "median_source_rejected_overlap": 0.36363636363636365,
+  "model_calls": 0,
+  "paired_sft_control_rows": 17,
+  "protocol": "actual_error_preference_candidates_v1",
+  "reserved_records_parsed": 0,
+  "reviewed_claims": 56,
+  "status": "curated_candidates_not_training_release",
+  "synthetic_rejections_used": 0,
+  "tokenizer_preflight": "not_run_for_actual_rejected_outputs",
+  "training_authorized": false,
+  "training_ready": false,
+  "unique_included_anchors": 11
+}

@@ -1,0 +1,292 @@
+{
+  "actual_slug": "oliverlds/semantic-anchor-4b",
+  "adapter_vs_base": {
+    "original": {
+      "generic_style_preferences": {
+        "better": 7,
+        "tie": 3,
+        "worse": 2
+      },
+      "material_issue_transitions": {
+        "improved": 1,
+        "same": 9,
+        "worse": 2
+      }
+    },
+    "variant": {
+      "generic_style_preferences": {
+        "better": 8,
+        "tie": 4
+      },
+      "material_issue_transitions": {
+        "improved": 3,
+        "same": 8,
+        "worse": 1
+      }
+    }
+  },
+  "additional_training_authorized": false,
+  "completion_scores": 96,
+  "elapsed_seconds": 706.2086141520001,
+  "execution_complete": true,
+  "generations": 48,
+  "groups": {
+    "base__original": {
+      "chosen_preferred_but_generation_material_issue": 9,
+      "empty": 0,
+      "exact_source_copies": 0,
+      "families": {
+        "numbers": {
+          "material_claim_issues": 1,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "reasoning": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "scope": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "time": {
+          "material_claim_issues": 2,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        }
+      },
+      "material_claim_issues": 9,
+      "mean_nll_preferences": {
+        "chosen": 12
+      },
+      "mean_total_disagreements": 1,
+      "median_mean_nll_margin": 0.15867149829864502,
+      "median_reference_overlap": 0.2776107406525363,
+      "median_source_overlap": 0.29108418763591176,
+      "output_limited": 0,
+      "outputs": 12,
+      "severity_sensitivity_range": [
+        9,
+        10
+      ],
+      "total_nll_preferences": {
+        "chosen": 11,
+        "rejected": 1
+      }
+    },
+    "base__variant": {
+      "chosen_preferred_but_generation_material_issue": 8,
+      "empty": 0,
+      "exact_source_copies": 0,
+      "families": {
+        "numbers": {
+          "material_claim_issues": 2,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "reasoning": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "scope": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 2,
+            "rejected": 1
+          },
+          "outputs": 3
+        },
+        "time": {
+          "material_claim_issues": 2,
+          "mean_nll_preferences": {
+            "chosen": 2,
+            "rejected": 1
+          },
+          "outputs": 3
+        }
+      },
+      "material_claim_issues": 10,
+      "mean_nll_preferences": {
+        "chosen": 10,
+        "rejected": 2
+      },
+      "mean_total_disagreements": 0,
+      "median_mean_nll_margin": 0.11271703243255615,
+      "median_reference_overlap": 0.2782470229853226,
+      "median_source_overlap": 0.3177149035862318,
+      "output_limited": 0,
+      "outputs": 12,
+      "severity_sensitivity_range": [
+        9,
+        10
+      ],
+      "total_nll_preferences": {
+        "chosen": 10,
+        "rejected": 2
+      }
+    },
+    "expanded_epoch_2__original": {
+      "chosen_preferred_but_generation_material_issue": 10,
+      "empty": 0,
+      "exact_source_copies": 0,
+      "families": {
+        "numbers": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "reasoning": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "scope": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "time": {
+          "material_claim_issues": 1,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        }
+      },
+      "material_claim_issues": 10,
+      "mean_nll_preferences": {
+        "chosen": 12
+      },
+      "mean_total_disagreements": 1,
+      "median_mean_nll_margin": 0.14114302396774292,
+      "median_reference_overlap": 0.32744410761652143,
+      "median_source_overlap": 0.38808447611021735,
+      "output_limited": 0,
+      "outputs": 12,
+      "severity_sensitivity_range": [
+        9,
+        10
+      ],
+      "total_nll_preferences": {
+        "chosen": 11,
+        "rejected": 1
+      }
+    },
+    "expanded_epoch_2__variant": {
+      "chosen_preferred_but_generation_material_issue": 7,
+      "empty": 0,
+      "exact_source_copies": 0,
+      "families": {
+        "numbers": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "reasoning": {
+          "material_claim_issues": 0,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "scope": {
+          "material_claim_issues": 3,
+          "mean_nll_preferences": {
+            "chosen": 3
+          },
+          "outputs": 3
+        },
+        "time": {
+          "material_claim_issues": 2,
+          "mean_nll_preferences": {
+            "chosen": 2,
+            "rejected": 1
+          },
+          "outputs": 3
+        }
+      },
+      "material_claim_issues": 8,
+      "mean_nll_preferences": {
+        "chosen": 11,
+        "rejected": 1
+      },
+      "mean_total_disagreements": 0,
+      "median_mean_nll_margin": 0.1024852991104126,
+      "median_reference_overlap": 0.26644818204303733,
+      "median_source_overlap": 0.41154300916346437,
+      "output_limited": 0,
+      "outputs": 12,
+      "severity_sensitivity_range": [
+        8,
+        9
+      ],
+      "total_nll_preferences": {
+        "chosen": 11,
+        "rejected": 1
+      }
+    }
+  },
+  "label_audits": 48,
+  "limits": [
+    "Twelve training-side cases; adapter saw original inputs and all targets. Input wording robustness is not held-out generalization.",
+    "Same reviewer created variants and judged outputs; shuffled labels reduce visible condition cues but are not independent or fully blind.",
+    "Material-issue counts and generic style rankings are provisional; four severity-boundary judgments are explicitly retained.",
+    "Likelihood contrasts target specific synthetic edits, whereas generation assessment covers all substantive claims. Neither is a Fama-style or detector benchmark."
+  ],
+  "max_full_tokens": 483,
+  "max_prompt_tokens": 275,
+  "new_model_calls_during_review": 0,
+  "optimizer_steps": 0,
+  "peak_gpu_allocated_bytes": 5785751040,
+  "protocol": "semantic_anchor_inference_review_v1",
+  "requested_version": 1,
+  "training_called": false,
+  "variant_vs_original": {
+    "base": {
+      "generic_style_preferences": {
+        "better": 3,
+        "tie": 2,
+        "worse": 7
+      },
+      "material_issue_transitions": {
+        "same": 11,
+        "worse": 1
+      }
+    },
+    "expanded_epoch_2": {
+      "generic_style_preferences": {
+        "better": 6,
+        "tie": 2,
+        "worse": 4
+      },
+      "material_issue_transitions": {
+        "improved": 3,
+        "same": 8,
+        "worse": 1
+      }
+    }
+  }
+}

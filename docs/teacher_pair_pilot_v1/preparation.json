@@ -1,0 +1,49 @@
+{
+  "approved_with_original_review_flag": 7,
+  "audit_scope": "Automated comparison to archived human paragraph and supplied teacher rewrite; no new independent PDF/OCR certification.",
+  "baseline_outputs_planned": 10,
+  "candidate_denominator": 76,
+  "decision_counts": {
+    "approve_limited_pilot": 24,
+    "hold_alignment_ambiguity": 1,
+    "hold_unbound_context": 1,
+    "hold_unresolved_upstream_flags": 42,
+    "not_selected_small_pilot": 8
+  },
+  "development": {
+    "author_groups": 4,
+    "max_overlap": 0.8169934640522876,
+    "median_source_reference_overlap": 0.7799062639488171,
+    "min_overlap": 0.64,
+    "pairs": 8,
+    "papers": 4
+  },
+  "development_by_paper": {
+    "H_H1945": 2,
+    "H_KT1979": 2,
+    "R_H1988": 2,
+    "R_PPZ1998": 2
+  },
+  "fresh_development_claim": false,
+  "full_scale_training_ready": false,
+  "gpu_jobs_submitted": 0,
+  "new_synthetic_inputs": 0,
+  "not_selected": 52,
+  "optimizer_updates_planned": 16,
+  "paper_and_author_separated": true,
+  "pilot_outputs_planned": 31,
+  "pilot_snapshots": 3,
+  "protocol": "teacher_pair_reverse_pilot_v1",
+  "reserved_records_read": 0,
+  "source_or_target_repairs": 0,
+  "status": "prepared_not_executed",
+  "training": {
+    "author_groups": 10,
+    "max_overlap": 0.8641975308641975,
+    "median_source_reference_overlap": 0.764353102925141,
+    "min_overlap": 0.47619047619047616,
+    "pairs": 16,
+    "papers": 10
+  },
+  "training_execution_authorized": false
+}

@@ -1,0 +1,264 @@
+{
+  "actual_slug": "oliverlds/input-replacement-4b",
+  "adapter_reload_weights_match": true,
+  "adapter_weights_changed": true,
+  "additional_training_authorized": false,
+  "checkpoints": {
+    "1": {
+      "base_revision_policy": "Use the pinned revision from the frozen runtime/config; adapter_config revision is not independently pinned.",
+      "dtypes": [
+        "F32"
+      ],
+      "parameters": 2228224,
+      "sha256": "e0e31ac51fa1ee240b027a77427b9ccf09ef396481e402d2ed24d9aab3a5b20d",
+      "tensor_count": 136
+    },
+    "2": {
+      "base_revision_policy": "Use the pinned revision from the frozen runtime/config; adapter_config revision is not independently pinned.",
+      "dtypes": [
+        "F32"
+      ],
+      "parameters": 2228224,
+      "sha256": "5d5e20989d7377f18acb30a5eea6aca75c69179bfe897fbd50d205dcc114c2ed",
+      "tensor_count": 136
+    }
+  },
+  "common_base_check": {
+    "absolute_loss_tolerance": 1e-06,
+    "exact_generation_matches": 10,
+    "max_example_loss_absolute_difference": 0.0,
+    "passed": true
+  },
+  "conditions": {
+    "base": {
+      "optimizer_step": 0,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 7,
+          "median_reference_overlap": 0.22599949070537306,
+          "median_source_overlap": 0.2876452862677572,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 2,
+          "median_reference_overlap": 0.3354165281563726,
+          "median_source_overlap": 0.3676767676767677,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "token_weighted_development_loss": 2.9694209101813636
+    },
+    "control_epoch_1": {
+      "optimizer_step": 23,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 6,
+          "median_reference_overlap": 0.26183335151052456,
+          "median_source_overlap": 0.32470306758950696,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 1,
+          "median_reference_overlap": 0.452991452991453,
+          "median_source_overlap": 0.4941639918295886,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "token_weighted_development_loss": 2.191413181025944,
+      "vs_base_development": {
+        "generic_style_preferences": {
+          "better": 5,
+          "tie": 3,
+          "worse": 0
+        },
+        "identical_outputs": 0,
+        "material_issue_transitions": {
+          "improved": 1,
+          "same": 7,
+          "worse": 0
+        }
+      }
+    },
+    "control_epoch_2": {
+      "optimizer_step": 46,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 6,
+          "median_reference_overlap": 0.257281284606866,
+          "median_source_overlap": 0.35127674258109043,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 0,
+          "median_reference_overlap": 0.5243635850786263,
+          "median_source_overlap": 0.5405231560891939,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "token_weighted_development_loss": 1.8958978889773896,
+      "vs_base_development": {
+        "generic_style_preferences": {
+          "better": 6,
+          "tie": 1,
+          "worse": 1
+        },
+        "identical_outputs": 0,
+        "material_issue_transitions": {
+          "improved": 1,
+          "same": 7,
+          "worse": 0
+        }
+      }
+    },
+    "replacement_epoch_1": {
+      "optimizer_step": 23,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 7,
+          "median_reference_overlap": 0.2361111111111111,
+          "median_source_overlap": 0.3098745226404801,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 1,
+          "median_reference_overlap": 0.452991452991453,
+          "median_source_overlap": 0.4941639918295886,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "token_weighted_development_loss": 2.1955481437905338,
+      "vs_base_development": {
+        "generic_style_preferences": {
+          "better": 5,
+          "tie": 3,
+          "worse": 0
+        },
+        "identical_outputs": 0,
+        "material_issue_transitions": {
+          "improved": 0,
+          "same": 8,
+          "worse": 0
+        }
+      }
+    },
+    "replacement_epoch_2": {
+      "optimizer_step": 46,
+      "splits": {
+        "development": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 6,
+          "median_reference_overlap": 0.2625292417779001,
+          "median_source_overlap": 0.3564143853998927,
+          "output_limited": 0,
+          "outputs": 8
+        },
+        "training": {
+          "empty": 0,
+          "exact_source_copies": 0,
+          "material_claim_issues": 0,
+          "median_reference_overlap": 0.5243635850786263,
+          "median_source_overlap": 0.5405231560891939,
+          "output_limited": 0,
+          "outputs": 2
+        }
+      },
+      "token_weighted_development_loss": 1.9014608354400608,
+      "vs_base_development": {
+        "generic_style_preferences": {
+          "better": 7,
+          "tie": 1,
+          "worse": 0
+        },
+        "identical_outputs": 0,
+        "material_issue_transitions": {
+          "improved": 1,
+          "same": 7,
+          "worse": 0
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 768.961578964,
+  "execution_complete": true,
+  "final_loss_relative_difference_vs_control": 0.002934201517398982,
+  "fresh_adapter_from_base": true,
+  "fresh_zero_B_verified": true,
+  "full_scale_training_ready": false,
+  "gradient_checks": 46,
+  "label_audits": 54,
+  "limits": [
+    "Single-seed matched input-replacement comparison on eight reused development examples; no reserved test evaluation.",
+    "Same reviewer, five-way shuffled labels; historical outputs known and exact-evidence judgments reused. Not independent or fully blind.",
+    "Generic expression preferences, source overlap and reference loss do not establish a Fama signature, human authorship or detector improvement.",
+    "Only input regime is intentionally changed, including wording/organization/length; this does not isolate lexical overlap as a causal factor."
+  ],
+  "matched_comparisons": {
+    "1": {
+      "generic_style_preferences": {
+        "better": 1,
+        "tie": 6,
+        "worse": 1
+      },
+      "identical_outputs": 4,
+      "material_issue_transitions": {
+        "improved": 0,
+        "same": 7,
+        "worse": 1
+      }
+    },
+    "2": {
+      "generic_style_preferences": {
+        "better": 1,
+        "tie": 5,
+        "worse": 2
+      },
+      "identical_outputs": 3,
+      "material_issue_transitions": {
+        "improved": 1,
+        "same": 6,
+        "worse": 1
+      }
+    }
+  },
+  "max_full_tokens": 550,
+  "new_model_calls_during_review": 0,
+  "new_semantic_assessments": 9,
+  "optimizer_steps": 46,
+  "peak_gpu_allocated_bytes": 6567964160,
+  "predeclared_final_gate": {
+    "all_pass": false,
+    "at_least_six_expression_wins_vs_base": true,
+    "fewer_than_six_material_issue_outputs": false,
+    "no_increase_in_copying_empty_or_limited": true,
+    "no_net_expression_loss_vs_matched_control": false
+  },
+  "protocol": "input_replacement_review_v1",
+  "reload_probe_matches_final": true,
+  "requested_version": 1,
+  "reused_semantic_assessments": 41
+}

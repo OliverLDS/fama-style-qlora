@@ -1,0 +1,178 @@
+{
+  "providers": {
+    "GPTZero": {
+      "reports": 20,
+      "conditions": {
+        "GPT6_input": {
+          "n": 4,
+          "native_labels": {
+            "Mix of AI and Human": 2,
+            "Human Generated": 2
+          },
+          "ai_related_flags": 2
+        },
+        "adapter_ordinary": {
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 3,
+            "Mix of AI and Human": 1
+          },
+          "ai_related_flags": 4
+        },
+        "base_ordinary": {
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 4
+          },
+          "ai_related_flags": 4
+        },
+        "base_source_structural_prior": {
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 4
+          },
+          "ai_related_flags": 4
+        },
+        "historical_human_reference": {
+          "n": 4,
+          "native_labels": {
+            "Human Generated": 4
+          },
+          "ai_related_flags": 0
+        }
+      },
+      "matched_subset": {
+        "human_references": 4,
+        "human_false_positive_flags": 0,
+        "machine_produced_texts": 16,
+        "machine_ai_related_flags": 14,
+        "gemma_outputs": 12,
+        "gemma_ai_related_flags": 12
+      }
+    },
+    "Pangram": {
+      "reports": 20,
+      "conditions": {
+        "GPT6_input": {
+          "n": 4,
+          "native_labels": {
+            "Human Written": 4
+          },
+          "ai_related_flags": 0
+        },
+        "adapter_ordinary": {
+          "n": 4,
+          "native_labels": {
+            "AI Assisted": 3,
+            "AI Generated": 1
+          },
+          "ai_related_flags": 4
+        },
+        "base_ordinary": {
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 2,
+            "AI Assisted": 2
+          },
+          "ai_related_flags": 4
+        },
+        "base_source_structural_prior": {
+          "n": 4,
+          "native_labels": {
+            "AI Assisted": 2,
+            "AI Generated": 2
+          },
+          "ai_related_flags": 4
+        },
+        "historical_human_reference": {
+          "n": 4,
+          "native_labels": {
+            "Human Written": 4
+          },
+          "ai_related_flags": 0
+        }
+      },
+      "matched_subset": {
+        "human_references": 4,
+        "human_false_positive_flags": 0,
+        "machine_produced_texts": 16,
+        "machine_ai_related_flags": 12,
+        "gemma_outputs": 12,
+        "gemma_ai_related_flags": 12
+      }
+    }
+  },
+  "shared_texts": 20,
+  "ai_related_agreements": 18,
+  "native_label_cross_tab": [
+    {
+      "gptzero": "AI Generated",
+      "pangram": "AI Assisted",
+      "count": 6
+    },
+    {
+      "gptzero": "AI Generated",
+      "pangram": "AI Generated",
+      "count": 5
+    },
+    {
+      "gptzero": "Human Generated",
+      "pangram": "Human Written",
+      "count": 6
+    },
+    {
+      "gptzero": "Mix of AI and Human",
+      "pangram": "AI Assisted",
+      "count": 1
+    },
+    {
+      "gptzero": "Mix of AI and Human",
+      "pangram": "Human Written",
+      "count": 2
+    }
+  ],
+  "protocol": "checkpoint_detector_comparison_v1",
+  "round": 1,
+  "report_date_versions": {
+    "GPTZero": {
+      "dates": [
+        "2026-11-01"
+      ],
+      "versions": [
+        "2026-10-07-base"
+      ]
+    },
+    "Pangram": {
+      "dates": [
+        "2026-11-01"
+      ],
+      "versions": [
+        "4.1"
+      ]
+    }
+  },
+  "score_semantics_comparable": false,
+  "all_scans_are_document_level_outcomes": true,
+  "sentence_level_analysis_required": false,
+  "pangram_pending": 0,
+  "pending_pangram_credits_estimate": 0,
+  "official_free_daily_credits": 20,
+  "credit_estimate_uses_provider_word_count": false,
+  "statistically_equivalent_detectors_established": false,
+  "detector_calls_by_agent": 0,
+  "training_called": false,
+  "binding_methods": {
+    "visual_reading_order_punctuation_whitespace": 11,
+    "raw_whitespace_exact": 24,
+    "visually_confirmed_pdf_word_spacing_artifact": 5
+  },
+  "matched_subset_selection": "complete original four-paper round, five conditions per case",
+  "pangram_account_batches": {
+    "Pangram_account_A_first_11": 11,
+    "Pangram_account_B_additional_9": 9
+  },
+  "single_account_protocol_deviation": true,
+  "account_configuration_equivalence_verified": false,
+  "same_default_settings_user_reported": true,
+  "account_provenance_basis": "user reported; no account identities collected"
+}

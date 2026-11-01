@@ -1,0 +1,26 @@
+{
+  "actual_model_response_scores_computed": false,
+  "config_sha256": "bcfb79f5381ca43a7326eb8e4084b0978ba6115e59095d32bdaf92fedb86318a",
+  "data_sha256": "e1cca93dd7f36eb24bc8df604d94a61ca08bc5403f8188023da3be97730b6a2a",
+  "download_allowlist": [
+    "config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "special_tokens_map.json",
+    "added_tokens.json",
+    "chat_template.json"
+  ],
+  "expected_archived_chosen_matches": 17,
+  "gpu_jobs_submitted": 0,
+  "pairs": 17,
+  "protocol": "actual_error_token_preflight_v1",
+  "requires_adapter": false,
+  "requires_gpu": false,
+  "requires_model_weights": false,
+  "response_sequences": 34,
+  "runtime_source_sha256": "b913e20d39d2d7088ebbfb0f4fe1ac8b81fe87e457a10c94e37b9ad4e5268597",
+  "status": "prepared_real_tokenizer_not_executed",
+  "synthetic_loss_contract_is_not_model_validation": true,
+  "tokenizer_access": "Existing Kaggle Secret for initial assets, or a verified exported local tokenizer bundle.",
+  "training_authorized": false
+}

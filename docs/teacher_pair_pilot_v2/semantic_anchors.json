@@ -1,0 +1,41 @@
+{
+  "anchors": 12,
+  "anchors_retaining_original_review_flag": 7,
+  "claims": 56,
+  "counterexamples": 12,
+  "development_records_read": 0,
+  "external_annotation_calls": 0,
+  "faithful_variants": 12,
+  "families": {
+    "numbers": 3,
+    "reasoning": 3,
+    "scope": 3,
+    "time": 3
+  },
+  "full_scale_training_ready": false,
+  "gpu_jobs_submitted": 0,
+  "limits": [
+    "Variants, ledgers and negative judgments are constructed and second-pass reviewed by the same Codex reviewer; not independent semantic gold.",
+    "Exact edit reconstruction and lexical/numeric screens verify integrity, not entailment or style quality.",
+    "One role-swap operation may affect two linked claims. Unsupported strengthened claims or reasons need not be universally factually false.",
+    "Synthetic errors may contain shortcuts and are not a natural-error benchmark; existing eight-case development exposure remains.",
+    "This package is not wired into training or a Kaggle notebook and does not choose SFT versus a preference objective."
+  ],
+  "major_original_selection_changes": 0,
+  "median_original_source_target_overlap": 0.7656320657759508,
+  "median_variant_target_word_sequence_overlap": 0.45945131142598733,
+  "minimum_rejected_chosen_word_sequence_overlap": 0.9213483146067416,
+  "negative_edits_preserving_numeric_value_multisets": 11,
+  "negative_word_length_ratio_range": [
+    0.989247311827957,
+    1.0227272727272727
+  ],
+  "original_human_targets_unchanged": true,
+  "papers": 10,
+  "protocol": "teacher_pair_semantic_anchors_v1",
+  "reserved_records_read": 0,
+  "single_contiguous_negative_edits": 12,
+  "status": "provisional_data_candidates_not_training_release",
+  "tokenizer_preflight": "not_run",
+  "training_authorized": false
+}

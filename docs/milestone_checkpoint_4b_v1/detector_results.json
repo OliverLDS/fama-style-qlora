@@ -1,0 +1,168 @@
+{
+  "ai_related_agreements": 10,
+  "all_scans_are_document_level_outcomes": true,
+  "binding_methods": {
+    "raw_whitespace_exact": 19,
+    "visual_reading_order_punctuation_whitespace": 7,
+    "visually_confirmed_pdf_word_spacing_artifact": 5
+  },
+  "credit_estimate_uses_provider_word_count": false,
+  "detector_calls_by_agent": 0,
+  "matched_subset_selection": "first eleven user-completed scans in blind order, not outcome selected; not paper balanced",
+  "native_label_cross_tab": [
+    {
+      "count": 4,
+      "gptzero": "AI Generated",
+      "pangram": "AI Assisted"
+    },
+    {
+      "count": 1,
+      "gptzero": "AI Generated",
+      "pangram": "AI Generated"
+    },
+    {
+      "count": 4,
+      "gptzero": "Human Generated",
+      "pangram": "Human Written"
+    },
+    {
+      "count": 1,
+      "gptzero": "Mix of AI and Human",
+      "pangram": "AI Assisted"
+    },
+    {
+      "count": 1,
+      "gptzero": "Mix of AI and Human",
+      "pangram": "Human Written"
+    }
+  ],
+  "official_free_daily_credits": 20,
+  "pangram_pending": 9,
+  "pending_pangram_credits_estimate": 18,
+  "protocol": "checkpoint_detector_comparison_v1",
+  "providers": {
+    "GPTZero": {
+      "conditions": {
+        "GPT6_input": {
+          "ai_related_flags": 2,
+          "n": 4,
+          "native_labels": {
+            "Human Generated": 2,
+            "Mix of AI and Human": 2
+          }
+        },
+        "adapter_ordinary": {
+          "ai_related_flags": 4,
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 3,
+            "Mix of AI and Human": 1
+          }
+        },
+        "base_ordinary": {
+          "ai_related_flags": 4,
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 4
+          }
+        },
+        "base_source_structural_prior": {
+          "ai_related_flags": 4,
+          "n": 4,
+          "native_labels": {
+            "AI Generated": 4
+          }
+        },
+        "historical_human_reference": {
+          "ai_related_flags": 0,
+          "n": 4,
+          "native_labels": {
+            "Human Generated": 4
+          }
+        }
+      },
+      "matched_subset": {
+        "gemma_ai_related_flags": 6,
+        "gemma_outputs": 6,
+        "human_false_positive_flags": 0,
+        "human_references": 3,
+        "machine_ai_related_flags": 7,
+        "machine_produced_texts": 8
+      },
+      "reports": 20
+    },
+    "Pangram": {
+      "conditions": {
+        "GPT6_input": {
+          "ai_related_flags": 0,
+          "n": 2,
+          "native_labels": {
+            "Human Written": 2
+          }
+        },
+        "adapter_ordinary": {
+          "ai_related_flags": 2,
+          "n": 2,
+          "native_labels": {
+            "AI Assisted": 2
+          }
+        },
+        "base_ordinary": {
+          "ai_related_flags": 1,
+          "n": 1,
+          "native_labels": {
+            "AI Assisted": 1
+          }
+        },
+        "base_source_structural_prior": {
+          "ai_related_flags": 3,
+          "n": 3,
+          "native_labels": {
+            "AI Assisted": 2,
+            "AI Generated": 1
+          }
+        },
+        "historical_human_reference": {
+          "ai_related_flags": 0,
+          "n": 3,
+          "native_labels": {
+            "Human Written": 3
+          }
+        }
+      },
+      "matched_subset": {
+        "gemma_ai_related_flags": 6,
+        "gemma_outputs": 6,
+        "human_false_positive_flags": 0,
+        "human_references": 3,
+        "machine_ai_related_flags": 6,
+        "machine_produced_texts": 8
+      },
+      "reports": 11
+    }
+  },
+  "report_date_versions": {
+    "GPTZero": {
+      "dates": [
+        "2026-11-01"
+      ],
+      "versions": [
+        "2026-10-07-base"
+      ]
+    },
+    "Pangram": {
+      "dates": [
+        "2026-11-01"
+      ],
+      "versions": [
+        "4.1"
+      ]
+    }
+  },
+  "round": 1,
+  "score_semantics_comparable": false,
+  "sentence_level_analysis_required": false,
+  "shared_texts": 11,
+  "statistically_equivalent_detectors_established": false,
+  "training_called": false
+}

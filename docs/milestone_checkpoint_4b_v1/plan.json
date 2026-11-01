@@ -1,0 +1,54 @@
+{
+  "actual_output_words_and_account_balance_known": false,
+  "adapter_slug": "oliverlds/teacher-pair-expanded-pilot-4b",
+  "adapter_version": 1,
+  "cases_per_paper": 2,
+  "config_sha256": "1ab43701d09892adf8d6bce6512f4fafe711064449e29281057365f2ff1a781c",
+  "context_policy": "4096 guard for longer structural prompts; ordinary jobs remain within the prior 1024 guard. No RoPE change or truncation.",
+  "detector_calls_made": 0,
+  "detector_max_project_words": 8000,
+  "development_papers": 4,
+  "estimated_project_words": 5604,
+  "frozen_cases": 8,
+  "gpu_jobs_submitted": 0,
+  "initial_calibration_pair_words_estimate": 366,
+  "jobs_sha256": "e11696d28a5b5161c72dfe6fd97dcaa233fd090a65b09789e5de4d5a18aa566e",
+  "known_text_words": 3243,
+  "limits": [
+    "Three reintroduced cases retain original input/reference/context flags; no source repair or fresh-test claim.",
+    "Archived versus new sessions distinguished; exact settings/token counts checked but no extra reproduction generations.",
+    "Structural prior changes prompt length and repeats source sentences, so it does not isolate abstract structure.",
+    "Sparse detector endpoint is not yet shown informative; unflagged GPT-6 control alone does not establish Gemma-output floor."
+  ],
+  "lineage_sha256": {
+    "base_review_manifest": "6a92bbc6a5d50685a11f42d77559bc10e4740a1851b4c776649925eef6b9f666",
+    "parent_manifest": "d6039d18b5b241fb8dc26f14d983d461847fa47f5d9dc5f08aa06e915b41de71",
+    "pilot_review_manifest": "76b50c8e022b48df37141da7fbfc5f9603fc8a16a71ca7a8bf8880af247574c7",
+    "sparse_manifest": "ab5cd27368ed6ef88894c4fb8552802419d53cdf36f6628454db5ab68537885e",
+    "training_manifest": "71e9b04ee2f13825766d85be2c42248d52e7011932ca8f51e2f2e8450760827a"
+  },
+  "missing_model_text_words_estimate": 1995,
+  "model_arms": [
+    "base_ordinary",
+    "base_source_structural_prior",
+    "adapter_ordinary"
+  ],
+  "new_outputs_planned": 14,
+  "optimizer_steps": 0,
+  "ordinary_instruction_unchanged": true,
+  "overlap_with_recent_eight": 5,
+  "pending_by_arm": {
+    "adapter_ordinary": 3,
+    "base_ordinary": 3,
+    "base_source_structural_prior": 8
+  },
+  "planned_detector_slots": 40,
+  "profile_training_pairs": 46,
+  "protocol": "multi_author_checkpoint_4b_v1",
+  "reserved_records_used": 0,
+  "reused_outputs": 10,
+  "runtime_source_sha256": "9f638eef93b161a53ba1d069b63865a28f828010eafb7728a26f5edabe5b760b",
+  "status": "prepared_not_executed",
+  "structural_prior": "Same optional <=30-word merge algorithm and source-sentence display; pooled profile refit on actual 46 training targets. Not a learned mapper or oracle.",
+  "training_authorized": false
+}

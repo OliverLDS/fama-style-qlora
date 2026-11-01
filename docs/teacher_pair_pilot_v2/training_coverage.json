@@ -1,0 +1,188 @@
+{
+  "alignment_status_counts": {
+    "aligned_to_archived_text": 42,
+    "qualified_alignment": 1,
+    "source_wording_uncertainty": 3
+  },
+  "carried_forward_v1_training_pairs": 16,
+  "coverage_by_curation_origin": {
+    "added_v2": {
+      "families": {
+        "bounded_explanations": 28,
+        "numeric_examples": 10,
+        "quantifiers_comparisons": 26,
+        "temporal_distinctions": 22
+      },
+      "pairs": 30,
+      "reported_numeric_pairs": 8
+    },
+    "original_v1": {
+      "families": {
+        "bounded_explanations": 16,
+        "numeric_examples": 3,
+        "quantifiers_comparisons": 16,
+        "temporal_distinctions": 8
+      },
+      "pairs": 16,
+      "reported_numeric_pairs": 3
+    }
+  },
+  "coverage_families": {
+    "bounded_explanations": {
+      "pairs": 44,
+      "papers": 12
+    },
+    "numeric_examples": {
+      "pairs": 13,
+      "papers": 5
+    },
+    "quantifiers_comparisons": {
+      "pairs": 42,
+      "papers": 12
+    },
+    "temporal_distinctions": {
+      "pairs": 30,
+      "papers": 11
+    }
+  },
+  "development_records_deserialized": 0,
+  "exact_word_token_copies": 0,
+  "explicit_chosen_rejected_training_pairs": 0,
+  "feature_coverage": {
+    "aggregation_horizon": {
+      "pairs": 11,
+      "papers": 6
+    },
+    "association_prediction_limit": {
+      "pairs": 7,
+      "papers": 5
+    },
+    "comparison_ranking": {
+      "pairs": 31,
+      "papers": 12
+    },
+    "condition_assumption": {
+      "pairs": 33,
+      "papers": 11
+    },
+    "event_order_boundary": {
+      "pairs": 23,
+      "papers": 9
+    },
+    "hypothetical_numeric_values": {
+      "pairs": 2,
+      "papers": 2
+    },
+    "linked_numeric_comparisons": {
+      "pairs": 10,
+      "papers": 4
+    },
+    "planned_subsequent_investment_contrast": {
+      "pairs": 0,
+      "papers": 0
+    },
+    "probability_outcome_tuples": {
+      "pairs": 0,
+      "papers": 0
+    },
+    "qualified_modality": {
+      "pairs": 36,
+      "papers": 12
+    },
+    "reported_numeric_values": {
+      "pairs": 11,
+      "papers": 4
+    },
+    "scope_frequency": {
+      "pairs": 40,
+      "papers": 12
+    },
+    "stated_reason_mechanism": {
+      "pairs": 36,
+      "papers": 12
+    },
+    "theoretical_observed_distinction": {
+      "pairs": 6,
+      "papers": 3
+    }
+  },
+  "generation_outputs_read": 0,
+  "gpu_jobs_submitted": 0,
+  "largest_paper_share_of_reported_numeric_pairs": 0.36363636363636365,
+  "limits": [
+    "Text-bound automated qualitative annotation, not independent semantic gold or PDF/OCR verification.",
+    "Feature presence does not prove that the student learned it or identify the cause of development failures.",
+    "Exact error-subtype gaps do not mean all relevant concepts are absent; numeric/style measures are surface proxies.",
+    "Positive-only SFT can teach preservation; absent rejected examples are not proof that preference training will help."
+  ],
+  "major_claim_order_changes_in_automated_review": 0,
+  "new_annotations_for_generation": 0,
+  "overlap_at_least_0_85": 7,
+  "overlap_distribution": {
+    "histogram": [
+      {
+        "count": 6,
+        "lower": 0,
+        "upper": 0.6
+      },
+      {
+        "count": 6,
+        "lower": 0.6,
+        "upper": 0.7
+      },
+      {
+        "count": 18,
+        "lower": 0.7,
+        "upper": 0.8
+      },
+      {
+        "count": 9,
+        "lower": 0.8,
+        "upper": 0.85
+      },
+      {
+        "count": 5,
+        "lower": 0.85,
+        "upper": 0.9
+      },
+      {
+        "count": 2,
+        "lower": 0.9,
+        "upper": 1
+      }
+    ],
+    "max": 0.926829268292683,
+    "mean": 0.7505657564298872,
+    "median": 0.7770242404802273,
+    "min": 0.4367816091954023,
+    "n": 46,
+    "p10": 0.5696164791977232,
+    "p25": 0.6960814171869448,
+    "p75": 0.8276967628503464,
+    "p90": 0.8713757786928519
+  },
+  "pairs_retaining_original_review_flag": 30,
+  "pairs_with_surface_numeric_set_differences": 0,
+  "protocol": "teacher_pair_training_coverage_v1",
+  "reported_numeric_pairs": 11,
+  "reported_numeric_papers": 4,
+  "reserved_records_deserialized": 0,
+  "semantic_error_labels_in_training_payload": 0,
+  "sentence_count_proxy_changes": 23,
+  "source_or_target_repairs": 0,
+  "status": "training_coverage_assessed_no_training",
+  "target_source_word_length_ratio_distribution": {
+    "max": 1.2972972972972974,
+    "mean": 1.0584144538655036,
+    "median": 1.0454545454545454,
+    "min": 0.921875,
+    "n": 46,
+    "p10": 0.9914523670368206,
+    "p25": 1.0219429857464366,
+    "p75": 1.0853494623655913,
+    "p90": 1.1235247836349331
+  },
+  "training_authorized": false,
+  "training_pairs": 46,
+  "training_papers": 12
+}

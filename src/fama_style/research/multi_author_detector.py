@@ -33,10 +33,8 @@ CONFIG={'protocol':PROTOCOL,'provider':'GPTZero','word_allowance_user_reported':
     'independence':'same_model_and_retrieval_uncontrolled','detector_scores_are_authorship_proof':False}
 
 
-def parse_first_page(text,expected):
-    normalized=lambda x:' '.join(x.split())
-    if normalized(expected) not in normalized(text):raise ValueError('report_text_does_not_match_control')
-    label=re.search(r'We predict this text is\s+(Human Generated|AI Generated|Mixed)',text)
+def parse_gptzero_header(text):
+    label=re.search(r'We (?:predict this text is|are (?:(?:highly|moderately) )?confident this text is)\s+(Human Generated|AI Generated|Mix of AI and Human|Mixed)',text)
     probability=re.search(r'AI Probability\s+(\d+(?:\.\d+)?)\s*%',text)
     version=re.search(r'\bVersion\s+(\d{4}-\d{2}-\d{2}-[a-z0-9._-]+)',text)
     report_date=re.search(r'\b(\d{1,2})/(\d{1,2})/(\d{4})\b',text)
@@ -48,7 +46,13 @@ def parse_first_page(text,expected):
         'score_interpretation':'provider document-level AI probability; not percent of words written by AI',
         'provider_version':version[1] if version else None,'report_date':day,'report_timezone':None,
         'numeric_decision_threshold':None,'label_rule':'provider-native categorical label',
-        'text_matches_control_apart_from_whitespace':True,'pages_used':[1]}
+        'pages_used':[1]}
+
+
+def parse_first_page(text,expected):
+    normalized=lambda x:' '.join(x.split())
+    if normalized(expected) not in normalized(text):raise ValueError('report_text_does_not_match_control')
+    return {**parse_gptzero_header(text),'text_matches_control_apart_from_whitespace':True}
 
 
 def sparse_subset(development):
