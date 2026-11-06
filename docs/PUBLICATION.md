@@ -8,6 +8,10 @@ The public repository is a code and experiment-documentation release. Full paper
 - Python source, reusable HTML review template, curation tools and notebook builder.
 - Standalone Kaggle notebooks with outputs, attachments and execution counts cleared.
 - CPU tests, including synthetic contract tests; private-artifact cases explicitly skip without those files.
+- The read-only Node.js pair viewer and its synthetic tests; its real catalog
+  and prose remain in ignored local folders.
+- Explicitly allowlisted R adapters for free-tier generation and versioned data
+  review; keys are read from external environment configuration.
 - Frozen rewrite instruction, three synthetic educational example rows and data-availability documentation.
 - Selected aggregate results, methods, limitations and reproduction instructions under `docs/`.
 - A CPU-only GitHub Actions workflow; it never installs model weights or invokes GPU training.

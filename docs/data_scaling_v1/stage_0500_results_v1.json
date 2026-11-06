@@ -1,0 +1,148 @@
+{
+  "protocol": "corpus_500_pilot_review_v1",
+  "slug": "oliverlds/corpus-500-pilot-4b",
+  "version": 1,
+  "execution_complete": true,
+  "training_pairs": 500,
+  "optimizer_updates": 250,
+  "label_checks": 524,
+  "adapter": {
+    "tensor_count": 136,
+    "parameters": 2228224,
+    "dtypes": [
+      "F32"
+    ],
+    "sha256": "223ca48bdf8c2d7343bbf518d50c8357de45da06940a2c150139fb80a0e83b24",
+    "base_revision_policy": "Use the pinned revision from the frozen runtime/config; adapter_config revision is not independently pinned."
+  },
+  "elapsed_seconds": 2235.6739512880004,
+  "peak_GPU_bytes": 6026451968,
+  "credential_pattern_matches": 0,
+  "assessment_provenance": {
+    "assessor": "Codex",
+    "method": "Read all 24 paired cases with A/B snapshot labels masked, then bind to saved key; no external calls.",
+    "independent": false,
+    "calibrated": false,
+    "human_review": false,
+    "limits": "Same agent with experiment context; masking is partial and does not establish blind independent judging. Material judgments provisional; minor shifts are separate and not automatically failures. No Fama-specific style score assigned.",
+    "outputs": 48
+  },
+  "conditions": {
+    "existing_input": {
+      "base": {
+        "outputs": 16,
+        "empty": 0,
+        "output_limited": 0,
+        "median_source_overlap": 0.3296296296296296,
+        "median_reference_overlap": 0.297742054239784,
+        "median_longest_source_run": 5.0,
+        "exact_word_copies": 0,
+        "source_overlap_at_least_point8": 0,
+        "material_claim_issues_identified": 11,
+        "outputs_with_minor_shift_notes": 6,
+        "readable": 16
+      },
+      "epoch_1": {
+        "outputs": 16,
+        "empty": 0,
+        "output_limited": 0,
+        "median_source_overlap": 0.6681159420289855,
+        "median_reference_overlap": 0.5668015482054891,
+        "median_longest_source_run": 11.0,
+        "exact_word_copies": 0,
+        "source_overlap_at_least_point8": 3,
+        "material_claim_issues_identified": 3,
+        "outputs_with_minor_shift_notes": 9,
+        "readable": 16
+      }
+    },
+    "gemini_input": {
+      "base": {
+        "outputs": 8,
+        "empty": 0,
+        "output_limited": 0,
+        "median_source_overlap": 0.26553990610328637,
+        "median_reference_overlap": 0.2545553007135576,
+        "median_longest_source_run": 5.0,
+        "exact_word_copies": 0,
+        "source_overlap_at_least_point8": 0,
+        "material_claim_issues_identified": 6,
+        "outputs_with_minor_shift_notes": 2,
+        "readable": 8
+      },
+      "epoch_1": {
+        "outputs": 8,
+        "empty": 0,
+        "output_limited": 0,
+        "median_source_overlap": 0.5130546285996787,
+        "median_reference_overlap": 0.4438362651290408,
+        "median_longest_source_run": 7.5,
+        "exact_word_copies": 0,
+        "source_overlap_at_least_point8": 1,
+        "material_claim_issues_identified": 3,
+        "outputs_with_minor_shift_notes": 2,
+        "readable": 8
+      }
+    }
+  },
+  "target_nll_by_input_condition": {
+    "base": {
+      "existing_input": 3.3694613570561542,
+      "gemini_input": 4.041855451441187
+    },
+    "epoch_1": {
+      "existing_input": 0.8930761895172583,
+      "gemini_input": 1.2815763532646058
+    }
+  },
+  "detector_results": null,
+  "new_GPU_jobs": 0,
+  "new_model_calls": 0,
+  "new_detector_calls": 0,
+  "limits": [
+    "Provisional same-agent partially masked semantic judgments; not independent or calibrated.",
+    "Twenty-four input variants share sixteen references; eight reused development papers, no sealed test.",
+    "Reference overlap and lower NLL do not establish distinctive Fama-style improvement.",
+    "One development reference has an inherited five-years versus t-1 through t-6 inconsistency.",
+    "Some outputs emit literal HTML subscripts; exact detector texts retain that formatting."
+  ],
+  "comparison_to_200_simple_prompt": {
+    "same_inputs": 16,
+    "base_outputs_byte_identical": 16,
+    "adapter_200": {
+      "outputs": 16,
+      "empty": 0,
+      "output_limited": 0,
+      "median_source_overlap": 0.5064805583250249,
+      "median_reference_overlap": 0.4177067332309268,
+      "median_longest_source_run": 7.5,
+      "exact_word_copies": 0,
+      "source_overlap_at_least_point8": 0,
+      "material_claim_issues_identified": 6
+    },
+    "adapter_500": {
+      "outputs": 16,
+      "empty": 0,
+      "output_limited": 0,
+      "median_source_overlap": 0.6681159420289855,
+      "median_reference_overlap": 0.5668015482054891,
+      "median_longest_source_run": 11.0,
+      "exact_word_copies": 0,
+      "source_overlap_at_least_point8": 3,
+      "material_claim_issues_identified": 3,
+      "outputs_with_minor_shift_notes": 9,
+      "readable": 16
+    },
+    "higher_source_overlap": 16,
+    "higher_reference_overlap": 15,
+    "semantic_count_comparison_limit": "200 judgments reused from the prior review, not newly harmonized. Identical base outputs were flagged 10/16 previously versus 11/16 now; count differences demonstrate judgment instability."
+  },
+  "Pangram_preparation": {
+    "cases": 2,
+    "texts": 6,
+    "estimated_credits": 10,
+    "actual_provider_count_may_differ": true,
+    "selection": "Frozen before generation; not filtered by semantic judgments or detector scores",
+    "detector_calls": 0
+  }
+}

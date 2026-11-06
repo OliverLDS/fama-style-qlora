@@ -1,0 +1,24 @@
+{
+  "protocol": "corpus_500_pilot_v1",
+  "status": "prepared_not_executed",
+  "CPU_tests_passed": 746,
+  "root_check_passed": true,
+  "actual_packet_rebuild_byte_identical": {
+    "plan.json": true,
+    "manifest.json": true,
+    "upload/corpus_500_pairs.jsonl": true,
+    "upload/corpus_500_config.json": true
+  },
+  "notebook_bytes": 33124,
+  "notebook_sha256": "9b940d9570ae3096a601793d6c9be02984e84f634952713fcf89cb4f6c6d9d35",
+  "runtime_sha256": "1068d7275003eb0bfd7a924e252136aeada7d1eb6cbed86f0bef0b4c55ebb688",
+  "training_pairs": 500,
+  "optimizer_steps": 250,
+  "matched_generations": 48,
+  "development_contents": 16,
+  "input_variants": 24,
+  "free_Gemini_calls_for_held_out_inputs": 2,
+  "GPU_jobs_submitted": 0,
+  "detector_calls": 0,
+  "model_weights_downloaded_on_Mac": false
+}

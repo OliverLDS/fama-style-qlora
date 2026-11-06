@@ -1,0 +1,185 @@
+{
+  "version": 3,
+  "relations": [
+    {
+      "label": "cause",
+      "family": "causal",
+      "meaning": "Cause to outcome; retain any stated uncertainty."
+    },
+    {
+      "label": "contributing_cause",
+      "family": "causal",
+      "meaning": "One contributing factor to outcome; does not assert sufficiency or exclusivity."
+    },
+    {
+      "label": "mechanism_step",
+      "family": "causal",
+      "meaning": "Earlier link to next link in a described transmission mechanism."
+    },
+    {
+      "label": "enables",
+      "family": "causal",
+      "meaning": "Resource or arrangement to activity it makes feasible; does not assert that the activity occurs."
+    },
+    {
+      "label": "prevents",
+      "family": "causal",
+      "meaning": "Intervention or constraint to the outcome it inhibits; retain partial versus complete prevention."
+    },
+    {
+      "label": "feedback",
+      "family": "causal",
+      "meaning": "From one process to another that also affects the first; use only when the return link is stated."
+    },
+    {
+      "label": "association",
+      "family": "empirical",
+      "meaning": "Associated variables or patterns; no causal or time direction is asserted."
+    },
+    {
+      "label": "predicts",
+      "family": "empirical",
+      "meaning": "Predictor to forecast outcome; statistical prediction does not imply causation."
+    },
+    {
+      "label": "necessary_condition",
+      "family": "logical",
+      "meaning": "Requirement to the outcome requiring it; necessary does not mean sufficient."
+    },
+    {
+      "label": "sufficient_condition",
+      "family": "logical",
+      "meaning": "Sufficient premise to entailed outcome within the stated model/scope; not a necessary condition."
+    },
+    {
+      "label": "conditional_consequence",
+      "family": "logical",
+      "meaning": "Stated condition to consequence within that case, without asserting a universal necessary/sufficient rule."
+    },
+    {
+      "label": "logical_implication",
+      "family": "logical",
+      "meaning": "Premise or model result to the conclusion derived from it; not automatically a causal effect."
+    },
+    {
+      "label": "counterfactual_dependence",
+      "family": "logical",
+      "meaning": "Hypothetical change to the hypothetical outcome; retain the counterfactual status."
+    },
+    {
+      "label": "similarity",
+      "family": "comparison",
+      "meaning": "Points share a relevant property; no ranking or causal direction is asserted."
+    },
+    {
+      "label": "contrast",
+      "family": "comparison",
+      "meaning": "Points differ on an identified dimension; no causal direction is asserted."
+    },
+    {
+      "label": "quantitative_comparison",
+      "family": "comparison",
+      "meaning": "First quantity to comparator; state greater/less/equal, units, denominators and period in qualification."
+    },
+    {
+      "label": "trade_off",
+      "family": "comparison",
+      "meaning": "A benefit or objective to its associated cost or competing objective; do not invent a numerical exchange rate."
+    },
+    {
+      "label": "alternative_explanation",
+      "family": "comparison",
+      "meaning": "One explanation to a competing account of the same phenomenon; do not assert either is established."
+    },
+    {
+      "label": "substitution",
+      "family": "comparison",
+      "meaning": "Substitute to what it can replace; retain when and how far replacement is possible."
+    },
+    {
+      "label": "complementarity",
+      "family": "comparison",
+      "meaning": "One input or arrangement to another whose usefulness it enhances; not mere co-occurrence."
+    },
+    {
+      "label": "evidence_for",
+      "family": "evidential",
+      "meaning": "Evidence to the proposition it supports; support is not proof."
+    },
+    {
+      "label": "evidence_against",
+      "family": "evidential",
+      "meaning": "Evidence to the proposition it weakens or challenges; distinguish weakened from refuted."
+    },
+    {
+      "label": "tests",
+      "family": "evidential",
+      "meaning": "Test design or reported test to the hypothesis examined; record the outcome, if given, in qualification."
+    },
+    {
+      "label": "robustness_check",
+      "family": "evidential",
+      "meaning": "Alternative-specification or sample result to the focal finding it checks; do not assume the check succeeds."
+    },
+    {
+      "label": "example_of",
+      "family": "expository",
+      "meaning": "Specific case to the general idea it illustrates; an example does not establish prevalence."
+    },
+    {
+      "label": "defines",
+      "family": "expository",
+      "meaning": "Definition to the concept-bearing point it clarifies; preserve the defining boundaries."
+    },
+    {
+      "label": "operationalizes",
+      "family": "expository",
+      "meaning": "Measurement or proxy rule to the theoretical concept it measures; proxy need not equal concept."
+    },
+    {
+      "label": "part_of",
+      "family": "expository",
+      "meaning": "Component or subcategory to the whole; preserve exhaustive versus partial coverage."
+    },
+    {
+      "label": "elaborates",
+      "family": "expository",
+      "meaning": "Added detail to the more general point; not new independent evidence by itself."
+    },
+    {
+      "label": "scope_restriction",
+      "family": "qualification",
+      "meaning": "Restriction to the proposition whose applicability it limits."
+    },
+    {
+      "label": "exception",
+      "family": "qualification",
+      "meaning": "Exceptional case to the general pattern it falls outside; preserve the size/scope of the exception."
+    },
+    {
+      "label": "concession",
+      "family": "qualification",
+      "meaning": "Acknowledged consideration to a maintained conclusion; not automatic refutation or a reversal."
+    },
+    {
+      "label": "temporal_sequence",
+      "family": "temporal",
+      "meaning": "Earlier event to later event; sequence alone does not imply causation."
+    },
+    {
+      "label": "change_over_time",
+      "family": "temporal",
+      "meaning": "Earlier state to later state; preserve the change, period and comparison basis."
+    },
+    {
+      "label": "reason_for_argument",
+      "family": "argumentative",
+      "meaning": "Stated reason or premise to the assessment or recommendation it motivates; distinguish a reason from empirical evidence."
+    },
+    {
+      "label": "goal_means",
+      "family": "argumentative",
+      "meaning": "Proposed action or instrument to the stated objective; does not assert success or verified author intent."
+    }
+  ]
+}

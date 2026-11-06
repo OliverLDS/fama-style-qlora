@@ -1,0 +1,21 @@
+{
+  "approved_unique_training_pool": 210,
+  "duplicate_parent_children_not_counted": 1,
+  "evaluation": "Development release stays separate; fixed evaluation panel and training settings are not frozen by this command.",
+  "group_counts": {
+    "Baker_Wurgler": 50,
+    "Fama_coauthors": 50,
+    "Holmstrom": 50,
+    "Shiller": 50
+  },
+  "new_GPU_jobs": 0,
+  "papers": 48,
+  "protocol": "data_scaling_v1_stage200_salvage_v1",
+  "qualification": "Automated semantic reassessment plus retained source provenance; not independent human gold.",
+  "remaining_approved_training_pairs": 10,
+  "reserved_rows_read": 0,
+  "selection": "data_scaling_v1 fixed-hash paper interleaving; one fixed-hash child per annotation parent",
+  "status": "data_frozen_no_training_submitted",
+  "training_examples": 200,
+  "unique_annotation_parents": 200
+}

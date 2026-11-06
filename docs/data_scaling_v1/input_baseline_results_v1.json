@@ -1,0 +1,68 @@
+{
+  "input_texts": 8,
+  "input_entirely_human": 8,
+  "input_mean_human_written_share": 100.0,
+  "conditions": {
+    "strict_base": {
+      "n": 8,
+      "output_entirely_human": 0,
+      "human_input_stays_human": 0,
+      "human_input_becomes_AI_related": 8,
+      "AI_related_input_becomes_human": 0,
+      "AI_related_inputs_available": 0,
+      "mean_output_human_written_share": 0.07500000000000001,
+      "mean_change_human_written_share": -99.92500000000001
+    },
+    "strict_epoch_1": {
+      "n": 8,
+      "output_entirely_human": 6,
+      "human_input_stays_human": 6,
+      "human_input_becomes_AI_related": 2,
+      "AI_related_input_becomes_human": 0,
+      "AI_related_inputs_available": 0,
+      "mean_output_human_written_share": 75.8875,
+      "mean_change_human_written_share": -24.1125
+    },
+    "simple_base": {
+      "n": 8,
+      "output_entirely_human": 0,
+      "human_input_stays_human": 0,
+      "human_input_becomes_AI_related": 8,
+      "AI_related_input_becomes_human": 0,
+      "AI_related_inputs_available": 0,
+      "mean_output_human_written_share": 2.2,
+      "mean_change_human_written_share": -97.80000000000001
+    },
+    "simple_epoch_1": {
+      "n": 8,
+      "output_entirely_human": 0,
+      "human_input_stays_human": 0,
+      "human_input_becomes_AI_related": 8,
+      "AI_related_input_becomes_human": 0,
+      "AI_related_inputs_available": 0,
+      "mean_output_human_written_share": 8.7,
+      "mean_change_human_written_share": -91.30000000000001
+    }
+  },
+  "protocol": "corpus_200_input_output_pangram_v1",
+  "report_count": 40,
+  "provider_versions": [
+    "4.1"
+  ],
+  "report_dates": [
+    "2026-11-04"
+  ],
+  "detector_positive_input_conversion_evaluable": false,
+  "score_semantics": "Displayed document authorship shares, not AI probabilities; original values unchanged",
+  "multiple_accounts_user_reported": true,
+  "settings_equivalence_verified": false,
+  "new_GPU_jobs": 0,
+  "new_detector_calls": 0,
+  "new_model_calls": 0,
+  "limits": [
+    "Eight reused development cases; no estimate of general detector accuracy.",
+    "All inputs already receive human-written labels, so this panel cannot measure conversion of detected AI inputs.",
+    "Input retention is consistent with the output pattern; causation and author-style learning are not established.",
+    "GPT-6 pairs remain usable for rewriting research; these scores do not establish data quality or invalidate all detector evaluation."
+  ]
+}

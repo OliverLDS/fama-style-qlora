@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fama-style:data-quality-recovery:v1",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "target_sha256": {
+      "type": "string"
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "faithful_as_supplied",
+        "repaired_input_proposed",
+        "needs_target_source_repair",
+        "needs_context",
+        "unusable",
+        "uncertain"
+      ]
+    },
+    "plain_english": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "direct_pair_candidate": {
+      "type": "boolean"
+    },
+    "alignment_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "added_claim",
+              "lost_claim",
+              "actor_role",
+              "quantity",
+              "negation",
+              "modality",
+              "condition",
+              "causality",
+              "scope",
+              "other"
+            ]
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "material",
+              "minor",
+              "uncertain"
+            ]
+          },
+          "target_evidence": {
+            "type": "string"
+          },
+          "input_evidence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "severity",
+          "target_evidence",
+          "input_evidence",
+          "explanation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "previous_flags_assessed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "flag": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "confirmed_content_blocker",
+              "resolved_from_supplied_context",
+              "not_required_for_meaning_preservation",
+              "still_uncertain"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "flag",
+          "decision",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "input_repair_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scientific_fact_check": {
+      "const": "not_performed"
+    },
+    "independent_transcription_verification": {
+      "const": false
+    },
+    "taxonomy_assessment": {
+      "const": "not_performed"
+    },
+    "needs_additional_check": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "visible_model_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thinking_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "visible_model_label",
+        "thinking_setting"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "case_id",
+    "target_sha256",
+    "disposition",
+    "plain_english",
+    "direct_pair_candidate",
+    "alignment_issues",
+    "previous_flags_assessed",
+    "missing_information",
+    "input_repair_notes",
+    "scientific_fact_check",
+    "independent_transcription_verification",
+    "taxonomy_assessment",
+    "needs_additional_check",
+    "notes",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

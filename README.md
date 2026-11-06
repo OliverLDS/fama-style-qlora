@@ -15,7 +15,34 @@ retained for future controlled comparisons.
 [Strategic review](docs/STRATEGIC_REVIEW_2026_11.md) ·
 [Public file policy](docs/PUBLICATION.md)
 
-## Latest checkpoint: matched SFT and DPO
+## Latest checkpoint: 500-pair reconstruction, prompts and Pangram
+
+The [GPT-6 purpose-only 500-pair pilot](docs/data_scaling_v1/GPT6_PURPOSE_500_RESULTS_V1.md)
+completed one epoch and 250 updates on Gemma 3 4B. Training maps AI reconstruction
+prose to human paragraphs; briefs are not model inputs in this experiment.
+Validation loss fell from 3.59 to 0.90, but copying, repetition and content-loss
+failures prevent treating that reduction as successful style transfer.
+
+The [input-route and instruction diagnostic](docs/data_scaling_v1/PURPOSE_500_PROMPT_INPUT_RESULTS_V1.md)
+compares four held-out contents, three input routes, two prompts and base versus
+saved adapter. Explicit re-expression reduced high-copy outputs from 7/12 to
+1/12, while some generation failures remained. This supports prompt sensitivity
+on the small panel, not a reliable posttrained style advantage.
+
+The [Pangram checkpoint](docs/data_scaling_v1/PURPOSE_500_PANGRAM_RESULTS_V1.md)
+includes nineteen new reports and four reused Gemini-input observations. None
+of six scored AI-related inputs becomes Human Written; the one human-labeled
+adapter output preserves an already-human input label. One task failure has no
+detector score, and two body-only scans have a versioned deviation audit. These
+are exploratory detector responses, not proof of human authorship or Fama style.
+
+The next proposed experiment is a small **inference-only saved-adapter strength
+comparison**, retaining the revised prompt and existing inputs. It has not been
+submitted. No new manual annotation, detector scans or training follow from
+publishing this checkpoint. Real prose, PDFs, private pairs, responses and model
+weights remain outside Git.
+
+## Earlier checkpoint: matched SFT and DPO
 
 At the same `1e-5` learning rate, seventeen preference pairs and 22 grouped
 updates, stronger DPO shows no demonstrated generation advantage over stronger
@@ -33,10 +60,84 @@ limit these findings.
 [Matched DPO results](docs/actual_error_preferences_v1/DPO_STRENGTH_RESULTS_V1.md) ·
 [Detector comparison](docs/milestone_checkpoint_4b_v1/DETECTOR_RESULTS_V2.md)
 
-## Recommended next decision
+## Data scaling and earlier checkpoints
 
-Audit author-style evaluability and paper exposure using existing data before
-another GPU run or broad collection. The earlier topic-matched author proxies
+[Data quality repair and staged scaling](docs/data_scaling_v1/README.md): diagnose
+source versus annotation problems, recover faithful pairs, then compare nested
+200 → 500 → 1,000 → 1,500 → 2,000 training-pair cohorts. A source reading-order bug
+is fixed under new curation versions. The [completed salvage](docs/data_scaling_v1/PAIR_SALVAGE_V1.md)
+recovers 230 examples from the 249 collected responses (171 training, 59 development).
+With 40 reassessed legacy pairs, a balanced **200-pair training cohort** is frozen
+across 48 papers, 50 pairs per group. No further manual QA uploads are requested.
+The [500-pair expansion](docs/data_scaling_v1/STAGE_0500_RELEASE_V1.md) is now
+frozen across 48 distinct PDFs (53 stored paper IDs), with 125 pairs per group
+and the original 200 unchanged. The [version-lineage audit](docs/data_scaling_v1/GPT6_TRACK_0500_PREPARATION_V1.md)
+corrects five paper-ID aliases without changing frozen records.
+Existing pairs were reused before free-tier Gemini generation. Versioned repairs,
+CPU validation and an identical rebuild are recorded. The
+[completed mixed-500 pilot](docs/data_scaling_v1/STAGE_0500_RESULTS_V1.md) saved
+250 updates and 48 matched outputs, including eight Gemini-held-out input variants.
+Automated review finds fewer material issues alongside more input copying;
+distinctive author-style improvement remains unestablished. The
+[full Pangram panel](docs/data_scaling_v1/STAGE_0500_PANGRAM_FULL_V1.md) shows
+one improvement, four deteriorations and three ties against actual inputs.
+The [eight human-reference controls](docs/data_scaling_v1/STAGE_0500_REFERENCE_CONTROLS_V1.md)
+all score 100% human, repeating earlier calibration; no further routine reference
+scans are requested. [Gemini-only completion](docs/data_scaling_v1/GEMINI_TRACK_0500_V1.md)
+is now authorized: all 500 inputs exist. Input qualification is complete for 454,
+including the latest 96 offline adjudications; 46 reviews still await free API
+capacity after another quota/rate-limit response.
+The [GPT-6 packet](docs/data_scaling_v1/GPT6_TRACK_0500_PREPARATION_V1.md) reuses 273
+pairs; all 227 missing inputs have now returned in eight manual uploads. The
+[response audit](docs/data_scaling_v1/GPT6_TRACK_0500_QUALITY_V1.md) retains every
+response: 212 need no identified change, ten have local repairs, and five have
+inherited target issues to resolve consistently across both teacher tracks.
+Reviewed versions are linked to earlier parents rather than counted again.
+No new training has started.
+
+The [local pair viewer](docs/data_scaling_v1/LOCAL_PAIR_REVIEW.md) compares teacher
+inputs beside their human targets, with filters for split, author, paper and LLM.
+Run `node scripts/review_pairs.js`; its private catalog supports future releases.
+It is read-only, and reserved test text loads only when explicitly selected.
+
+The user's pair review prompted a [500-pair contrast audit](docs/data_scaling_v1/GPT6_CONTRAST_RECONSTRUCTION_V1.md):
+175 GPT-6 inputs are queued for fresh reconstruction, 320 are retained, and five
+shared target problems remain deferred. Six brief-generation uploads precede six
+brief-only reconstruction uploads. No original prose is supplied in the second
+request; earlier inputs and experiments remain unchanged.
+The [175 Stage 1 briefs are now reviewed](docs/data_scaling_v1/GPT6_CONTRAST_BRIEFS_V1.md)
+and all six Stage 2 reconstruction attachments are ready, with two source concerns
+explicitly carried and no records discarded.
+All [175 reconstructions have now returned](docs/data_scaling_v1/GPT6_CONTRAST_OUTPUTS_V1.md).
+Median target overlap falls from 0.756 to 0.163; 173 replacements are staged,
+including ten with local repairs, while two source concerns retain prior inputs.
+The viewer includes the new candidate version; no training-ready release is implied.
+
+The [coverage audit](docs/AUTHOR_STYLE_EVALUABILITY_V1.md) led to a
+[twenty-paper roster and broader pairing package](docs/author_pair_expansion_v1/README.md):
+28 new works acquired and 249 paragraph inputs prepared in 54 manual GPT-6 batches.
+All 249 responses were [imported and initially audited](docs/author_pair_expansion_v1/RESPONSE_AUDIT_V1.md).
+The initial 41-row provisional gate conflated text-pair quality with optional
+annotation requirements; it is superseded for direct SFT by the salvage audit.
+The [capped 200-pair Kaggle pilot](docs/data_scaling_v1/STAGE_0200_PILOT.md) is
+completed successfully: one epoch, 100 updates, and 16 matched paper-held-out
+base/fine-tuned comparisons. The [version 1 review](docs/data_scaling_v1/STAGE_0200_RESULTS_V1.md)
+finds stronger claim retention alongside substantially more input copying.
+The [simpler-prompt comparison](docs/data_scaling_v1/SIMPLE_PROMPT_RESULTS_V1.md)
+completed all 32 outputs: adapter source overlap fell from 0.884 to 0.506,
+with more meaning issues identified. [All 32 Pangram reports](docs/data_scaling_v1/PANGRAM_PROMPT_COMPARISON_V1.md)
+are now imported: strict-adapter outputs receive 6/8 entirely-human labels,
+versus 0/8 for the simpler adapter and both base conditions. The detector benefit
+therefore accompanies much higher input retention on this small panel.
+[Exact input controls](docs/data_scaling_v1/INPUT_BASELINE_RESULTS_V1.md) now show
+8/8 inputs were already labeled human-written: the strict adapter retains six
+of those labels rather than demonstrating conversion of detected AI inputs.
+The [updated teacher/evaluation policy](docs/data_scaling_v1/TEACHER_AND_EVALUATION_POLICY_V2.md)
+retains GPT-6 data and the 200 → 500 → 1,000 → 1,500 → 2,000 learning curve,
+using meaning, copying, reference alignment, style and readability rather than
+requiring Pangram improvement. A separate free-tier Gemini trial automates pair
+generation; it does not replace existing data or authorize further training.
+The earlier topic-matched author proxies
 and full-taxonomy mapping checks have not established a reliable signal.
 A small training-only minimal-semantic-repair preference audit remains a useful
 supporting hypothesis; repaired model text must not replace human style targets.
@@ -52,8 +153,11 @@ authorized or launched by the roadmap update.
 The [v2 inventory](docs/author_inventory_v2/README.md) expands the selected roster
 to 13 papers each for Fama/coauthors, Shiller, Holmström/coauthors and
 Baker–Wurgler/coauthors. [Source curation](docs/author_curation_v1/README.md) now
-provides 1,042 paragraph candidates from the 39 non-Fama papers; paired annotation
-and semantic verification are pending.
+provides 1,042 paragraph candidates from the 39 non-Fama papers. The separate
+[v3 expansion](docs/author_inventory_v3/README.md) adds seven works per group,
+bringing each to twenty, with 569 new extraction candidates. Broader paired
+responses are imported; independent semantic verification and training approval
+remain pending.
 
 The [source-generation pilot](docs/neutral_reconstruction_v1/STAGE2_RESULTS.md)
 now has 16 reviewed outputs: neutral reconstruction copies less and changes

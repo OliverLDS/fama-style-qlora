@@ -1,0 +1,107 @@
+{
+  "protocol": "corpus_200_simple_prompt_review_v1",
+  "slug": "oliverlds/corpus-200-simple-prompt-4b",
+  "version": 1,
+  "execution_complete": true,
+  "optimizer_updates": 0,
+  "elapsed_seconds": 542.094653208,
+  "peak_gpu_allocated_bytes": 4840280576,
+  "adapter_hashes_unchanged": true,
+  "credential_pattern_matches": 0,
+  "conditions": {
+    "strict_base": {
+      "outputs": 16,
+      "material_claim_issues_identified": 15,
+      "outputs_with_review_notes": 16,
+      "empty": 0,
+      "output_limited": 0,
+      "median_source_word_sequence_overlap": 0.2834591626630062,
+      "median_reference_word_sequence_overlap": 0.2700995870779694,
+      "median_longest_shared_source_word_run": 5.5,
+      "outputs_source_overlap_at_least_point8": 0,
+      "exact_word_token_copies": 0
+    },
+    "simple_base": {
+      "outputs": 16,
+      "material_claim_issues_identified": 10,
+      "outputs_with_review_notes": 15,
+      "empty": 0,
+      "output_limited": 0,
+      "median_source_word_sequence_overlap": 0.3296296296296296,
+      "median_reference_word_sequence_overlap": 0.297742054239784,
+      "median_longest_shared_source_word_run": 5.0,
+      "outputs_source_overlap_at_least_point8": 0,
+      "exact_word_token_copies": 0
+    },
+    "strict_epoch_1": {
+      "outputs": 16,
+      "material_claim_issues_identified": 3,
+      "outputs_with_review_notes": 16,
+      "empty": 0,
+      "output_limited": 0,
+      "median_source_word_sequence_overlap": 0.8841895330444949,
+      "median_reference_word_sequence_overlap": 0.7000775462390074,
+      "median_longest_shared_source_word_run": 58.0,
+      "outputs_source_overlap_at_least_point8": 10,
+      "exact_word_token_copies": 0
+    },
+    "simple_epoch_1": {
+      "outputs": 16,
+      "material_claim_issues_identified": 6,
+      "outputs_with_review_notes": 14,
+      "empty": 0,
+      "output_limited": 0,
+      "median_source_word_sequence_overlap": 0.5064805583250249,
+      "median_reference_word_sequence_overlap": 0.4177067332309268,
+      "median_longest_shared_source_word_run": 7.5,
+      "outputs_source_overlap_at_least_point8": 0,
+      "exact_word_token_copies": 0
+    }
+  },
+  "paired_prompt_effects": {
+    "base": {
+      "lower_source_overlap": 4,
+      "higher_source_overlap": 12,
+      "identical_output": 0
+    },
+    "epoch_1": {
+      "lower_source_overlap": 16,
+      "higher_source_overlap": 0,
+      "identical_output": 0
+    }
+  },
+  "detector_results": null,
+  "new_GPU_jobs": 0,
+  "new_model_calls": 0,
+  "new_detector_calls": 0,
+  "limits": [
+    "Descriptive surface overlap is not a style benchmark.",
+    "Same-agent unblinded automated semantic judgments are provisional.",
+    "The original adapter was trained with the stricter prompt.",
+    "Sixteen reused development examples; no reserved test use.",
+    "No meaning threshold is used to exclude outputs from detector evaluation."
+  ],
+  "replacement_Pangram": {
+    "status": "prepared_not_scanned",
+    "rounds": [
+      {
+        "round": 1,
+        "texts": 8,
+        "estimated_credits": 14,
+        "words_estimate": 1017
+      },
+      {
+        "round": 2,
+        "texts": 8,
+        "estimated_credits": 14,
+        "words_estimate": 847
+      }
+    ],
+    "texts": 16,
+    "cases": 8,
+    "selection_not_filtered_by_quality_or_scores": true,
+    "new_detector_calls": 0,
+    "actual_provider_word_count_may_differ": true,
+    "below_minimum": 0
+  }
+}

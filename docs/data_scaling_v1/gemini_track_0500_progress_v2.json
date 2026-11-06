@@ -1,0 +1,16 @@
+{
+  "protocol": "gemini_track_0500_v1",
+  "status": "paused_free_quota_or_rate_limit",
+  "targets": 500,
+  "separate_reviews_completed": 240,
+  "separate_reviews_pending": 46,
+  "newly_qualified_after_adjudication": 144,
+  "staged_accepted_total": 358,
+  "reviewed_not_yet_adjudicated": 96,
+  "final_training_cohort_released": false,
+  "free_tier_only": true,
+  "paid_fallback": false,
+  "training_calls": 0,
+  "successful_requests_this_retry": 2,
+  "new_review_records": 96
+}

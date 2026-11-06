@@ -1,0 +1,120 @@
+{
+  "GPU_jobs": 0,
+  "annotator_needs_review": 200,
+  "batches": 54,
+  "candidate_overlap": {
+    "max_sequence_ratio": 0.9570200573065902,
+    "median_sequence_ratio": 0.7560975609756098,
+    "min_sequence_ratio": 0.5971223021582733
+  },
+  "effective_mechanical_error_rows": 4,
+  "effective_mechanical_errors": {
+    "empty_relation_endpoint": 2,
+    "sentence_coverage_mismatch": 2
+  },
+  "effective_program_error_rows": 19,
+  "effective_program_errors": {
+    "merge_cardinality_not_supported": 1,
+    "operation_claim_outside_sentences": 10,
+    "split_cardinality_not_supported": 13
+  },
+  "expected_rows": 249,
+  "independent_semantic_verification": false,
+  "model_calls": 0,
+  "needs_external_context": 177,
+  "originals_unchanged": true,
+  "pair_hold_reasons": {
+    "annotator_unresolved_review": 200,
+    "claim_alignment_not_preserved": 43,
+    "mechanical_annotation_errors": 4,
+    "missing_external_context": 177,
+    "numeric_scope_check_pending": 11,
+    "relation_alignment_not_preserved": 25,
+    "rewrite_pending_or_absent": 16,
+    "source_quality_not_usable": 189
+  },
+  "protocol": "author_pair_review_v1",
+  "provisional_by_group": [
+    {
+      "provisional_development": 1,
+      "provisional_papers": 8,
+      "provisional_training": 11,
+      "received": 77,
+      "style_group": "Baker_Wurgler"
+    },
+    {
+      "provisional_development": 0,
+      "provisional_papers": 3,
+      "provisional_training": 3,
+      "received": 21,
+      "style_group": "Fama_coauthors"
+    },
+    {
+      "provisional_development": 3,
+      "provisional_papers": 8,
+      "provisional_training": 7,
+      "received": 71,
+      "style_group": "Holmstrom"
+    },
+    {
+      "provisional_development": 3,
+      "provisional_papers": 11,
+      "provisional_training": 13,
+      "received": 80,
+      "style_group": "Shiller"
+    }
+  ],
+  "provisional_by_split": {
+    "development": 7,
+    "training": 34
+  },
+  "provisional_pairs": 41,
+  "quarantined_rows": 208,
+  "raw_mechanical_error_rows": 9,
+  "raw_mechanical_errors": {
+    "empty_relation_endpoint": 2,
+    "evidence_not_exact": 228,
+    "sentence_coverage_mismatch": 12,
+    "sentence_not_exact_or_out_of_order": 62,
+    "unresolved_reference": 2
+  },
+  "raw_provenance_counts": [
+    {
+      "model": "GPT-6",
+      "rows": 167,
+      "thinking_effort": null
+    },
+    {
+      "model": null,
+      "rows": 82,
+      "thinking_effort": null
+    }
+  ],
+  "raw_responses_changed": false,
+  "received_rows": 249,
+  "repair_rows": 5,
+  "repair_type": "schema-container swap proven by opposite full-text coverage",
+  "reserved_text_bodies_read": 0,
+  "rewrite_status": {
+    "pending_review": 16,
+    "simplified": 233
+  },
+  "schema_valid_rows": 249,
+  "session_provenance": {
+    "actual_backend_effort_verified": false,
+    "conversation_arrangement": "not newly specified",
+    "cross_chat_independence_assumed": false,
+    "raw_null_values_preserved": true,
+    "source": "User report, 2026-11-03; all batches observed in High thinking mode.",
+    "user_observed_thinking_effort": "High",
+    "user_reported_model": "GPT-6"
+  },
+  "source_quality": {
+    "uncertain": 184,
+    "unusable": 5,
+    "usable": 60
+  },
+  "status": "responses_imported_provisional_pairs_not_training_approved",
+  "structural_candidates": 13,
+  "training_ready_rows": 0
+}

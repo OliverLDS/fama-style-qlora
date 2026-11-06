@@ -20,14 +20,20 @@
 /scripts/**
 !/scripts/**/
 !/scripts/**/*.py
+!/scripts/review_pairs.js
 !/scripts/data/extract_comparison_ocr.swift
 !/scripts/data/extract_author_pages.swift
 !/scripts/data/extract_detector_pdf_page.swift
+!/scripts/data/expand_stage_500.R
+!/scripts/data/gemini_teacher_trial.R
+!/scripts/data/prepare_purpose_500_diagnostic.R
+!/scripts/data/review_stage_500_minimal.R
 
 !/tests/
 /tests/**
 !/tests/**/
 !/tests/**/*.py
+!/tests/review_pairs.test.js
 
 !/kaggle/
 /kaggle/*

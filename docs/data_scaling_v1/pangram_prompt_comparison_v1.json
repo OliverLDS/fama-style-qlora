@@ -1,0 +1,100 @@
+{
+  "protocol": "corpus_200_prompt_pangram_v1",
+  "reports": 32,
+  "cases": 8,
+  "conditions": {
+    "strict_base": {
+      "n": 8,
+      "entirely_human": 0,
+      "native_labels": {
+        "AI Assisted": 2,
+        "AI Generated": 2,
+        "Mix: AI / AI-assisted": 4
+      },
+      "mean_human_written_share": 0.07500000000000001,
+      "median_human_written_share": 0.1,
+      "mean_AI_generated_share": 46.9,
+      "mean_AI_assisted_share": 53.15,
+      "median_source_word_sequence_overlap": 0.24329550231189576,
+      "outputs_with_material_semantic_flags": 8,
+      "entirely_human_with_material_semantic_flags": 0
+    },
+    "strict_epoch_1": {
+      "n": 8,
+      "entirely_human": 6,
+      "native_labels": {
+        "Human Written": 6,
+        "Mainly AI-assisted; some human": 1,
+        "AI Assisted": 1
+      },
+      "mean_human_written_share": 75.8875,
+      "median_human_written_share": 100.0,
+      "mean_AI_generated_share": 0.07500000000000001,
+      "mean_AI_assisted_share": 24.175,
+      "median_source_word_sequence_overlap": 0.8083479162615853,
+      "outputs_with_material_semantic_flags": 1,
+      "entirely_human_with_material_semantic_flags": 1
+    },
+    "simple_base": {
+      "n": 8,
+      "entirely_human": 0,
+      "native_labels": {
+        "Mix: AI / human": 1,
+        "AI Assisted": 3,
+        "Mainly AI-assisted; some AI": 1,
+        "AI Generated": 2,
+        "Mainly AI; some AI-assisted": 1
+      },
+      "mean_human_written_share": 2.2,
+      "median_human_written_share": 0.1,
+      "mean_AI_generated_share": 47.9125,
+      "mean_AI_assisted_share": 50.025,
+      "median_source_word_sequence_overlap": 0.3296296296296296,
+      "outputs_with_material_semantic_flags": 5,
+      "entirely_human_with_material_semantic_flags": 0
+    },
+    "simple_epoch_1": {
+      "n": 8,
+      "entirely_human": 0,
+      "native_labels": {
+        "Mix: AI-assisted / human": 2,
+        "Mix: AI / AI-assisted": 3,
+        "AI Assisted": 3
+      },
+      "mean_human_written_share": 8.7,
+      "median_human_written_share": 0.1,
+      "mean_AI_generated_share": 18.175,
+      "mean_AI_assisted_share": 73.25,
+      "median_source_word_sequence_overlap": 0.41156657464798513,
+      "outputs_with_material_semantic_flags": 3,
+      "entirely_human_with_material_semantic_flags": 0
+    }
+  },
+  "provider_versions": [
+    "4.1"
+  ],
+  "report_dates": [
+    "2026-11-04"
+  ],
+  "binding_methods": {
+    "raw_whitespace_exact": 15,
+    "visual_reading_order_punctuation_whitespace": 17
+  },
+  "detector_calls_by_agent": 0,
+  "training_called": false,
+  "scores_are_AI_probabilities": false,
+  "account_provenance": {
+    "multiple_accounts_user_reported": true,
+    "account_count": null,
+    "per_report_account_mapping": null,
+    "settings_equivalence_independently_verified": false,
+    "account_identities_collected": false
+  },
+  "limits": [
+    "Eight reused development cases, not a population estimate or reserved test.",
+    "Human-written labels do not establish distinctive author style or factual correctness.",
+    "New input-only controls were not scanned; detector benefit from copying cannot be isolated.",
+    "Displayed shares can sum above 100 because of small display floors; values retained unchanged.",
+    "Semantic flags are provisional automated judgments, not a detector eligibility gate."
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "protocol": "corpus_500_reference_pangram_v1",
+  "reference_reports": 8,
+  "combined_reports": 32,
+  "human_reference_native_labels": {
+    "Human Written": 8
+  },
+  "human_reference_entirely_human": 8,
+  "human_reference_human_shares": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "prior_model_results_unchanged": true,
+  "prior_conditions": {
+    "input": {
+      "n": 8,
+      "native_labels": {
+        "AI Assisted": 2,
+        "Human Written": 1,
+        "Mix: AI-assisted / human": 1,
+        "Mix: AI / AI-assisted / human": 1,
+        "Mix: AI / human": 1,
+        "Mainly AI; some human": 1,
+        "Mix: AI / AI-assisted": 1
+      },
+      "entirely_human": 1,
+      "mean_human_share": 24.0375,
+      "median_human_share": 2.5,
+      "mean_AI_generated_share": 29.675,
+      "mean_AI_assisted_share": 46.4,
+      "median_source_overlap": 1.0,
+      "material_output_issues_identified": null,
+      "entirely_human_outputs_with_material_issues": null
+    },
+    "base": {
+      "n": 8,
+      "native_labels": {
+        "AI Assisted": 3,
+        "Mix: AI-assisted / human": 1,
+        "AI Generated": 3,
+        "Mix: AI / AI-assisted": 1
+      },
+      "entirely_human": 0,
+      "mean_human_share": 2.8375,
+      "median_human_share": 0.1,
+      "mean_AI_generated_share": 47.3,
+      "mean_AI_assisted_share": 50.0375,
+      "median_source_overlap": 0.26553990610328637,
+      "material_output_issues_identified": 6,
+      "entirely_human_outputs_with_material_issues": 0
+    },
+    "epoch_1": {
+      "n": 8,
+      "native_labels": {
+        "Human Written": 2,
+        "AI Assisted": 4,
+        "Mix: AI / AI-assisted": 2
+      },
+      "entirely_human": 2,
+      "mean_human_share": 25.075,
+      "median_human_share": 0.1,
+      "mean_AI_generated_share": 17.575,
+      "mean_AI_assisted_share": 57.525,
+      "median_source_overlap": 0.5130546285996787,
+      "material_output_issues_identified": 3,
+      "entirely_human_outputs_with_material_issues": 0
+    }
+  },
+  "pairs": [
+    {
+      "example_id": "AC_a5c8ff3d3ad6ef6bf0bf::salvage_v1::gemini_input_v1",
+      "style_group": "Fama_coauthors",
+      "paper_id": "E_FS1977",
+      "conditions": {
+        "input": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 179,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 168,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.5014245014245015
+        },
+        "epoch_1": {
+          "provider_label": "Human Written",
+          "human_written_document_percent": 100.0,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 199,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.868421052631579
+        }
+      },
+      "change_human_share_vs_input": 99.9,
+      "change_human_share_vs_base": 99.9,
+      "AI_related_input_becomes_entirely_human": true,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.0,
+        "ai_assisted_document_percent": 0.0,
+        "text_sha256": "977c7538eeac2af9c2e76f3e739d9b47191d91086df14ed3ccb677e3f09e5beb"
+      },
+      "trained_human_share_minus_reference": 0.0
+    },
+    {
+      "example_id": "AC_5212d58330b44736d670::salvage_v1::gemini_input_v1",
+      "style_group": "Fama_coauthors",
+      "paper_id": "E_FS1977",
+      "conditions": {
+        "input": {
+          "provider_label": "Human Written",
+          "human_written_document_percent": 100.0,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 70,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "Mix: AI-assisted / human",
+          "human_written_document_percent": 22.0,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 78.0,
+          "provider_word_count": 86,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.5316455696202531
+        },
+        "epoch_1": {
+          "provider_label": "Human Written",
+          "human_written_document_percent": 100.0,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 77,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.6577181208053692
+        }
+      },
+      "change_human_share_vs_input": 0.0,
+      "change_human_share_vs_base": 78.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": true,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.1,
+        "ai_assisted_document_percent": 0.1,
+        "text_sha256": "63c329560de4251c28cc2dc4582e35782e9f44b90585aebae29eaf747b56cd9e"
+      },
+      "trained_human_share_minus_reference": 0.0
+    },
+    {
+      "example_id": "AC_8d575e66c133eb17fd86::salvage_v1::gemini_input_v1",
+      "style_group": "Shiller",
+      "paper_id": "B_S2011",
+      "conditions": {
+        "input": {
+          "provider_label": "Mix: AI-assisted / human",
+          "human_written_document_percent": 67.0,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 33.0,
+          "provider_word_count": 117,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "AI Generated",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 100.0,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 101,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.29107981220657275
+        },
+        "epoch_1": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 93,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.3431372549019608
+        }
+      },
+      "change_human_share_vs_input": -66.9,
+      "change_human_share_vs_base": 0.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.0,
+        "ai_assisted_document_percent": 0.0,
+        "text_sha256": "212b6704172f7236db6340e5ffc8a0b1cabe9c8ead5a505b73ef0d729c8bc4d6"
+      },
+      "trained_human_share_minus_reference": -99.9
+    },
+    {
+      "example_id": "AC_13d457879e125a49184e::salvage_v1::gemini_input_v1",
+      "style_group": "Shiller",
+      "paper_id": "B_S2011",
+      "conditions": {
+        "input": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 116,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 127,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.2396694214876033
+        },
+        "epoch_1": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 113,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.5638766519823789
+        }
+      },
+      "change_human_share_vs_input": 0.0,
+      "change_human_share_vs_base": 0.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.1,
+        "ai_assisted_document_percent": 0.0,
+        "text_sha256": "fdb92d29a8d039edb32fc450c837ef0c6716729c33d243282fabaa579d8eddd0"
+      },
+      "trained_human_share_minus_reference": -99.9
+    },
+    {
+      "example_id": "AC_23bd88fb5debf07f02b7::salvage_v1::gemini_input_v1",
+      "style_group": "Holmstrom",
+      "paper_id": "B_H2017",
+      "conditions": {
+        "input": {
+          "provider_label": "Mix: AI / AI-assisted / human",
+          "human_written_document_percent": 1.0,
+          "ai_generated_document_percent": 47.0,
+          "ai_assisted_document_percent": 52.0,
+          "provider_word_count": 132,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "AI Generated",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 100.0,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 124,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.21428571428571427
+        },
+        "epoch_1": {
+          "provider_label": "Mix: AI / AI-assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 72.0,
+          "ai_assisted_document_percent": 28.0,
+          "provider_word_count": 136,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.2803030303030303
+        }
+      },
+      "change_human_share_vs_input": -0.9,
+      "change_human_share_vs_base": 0.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.1,
+        "ai_assisted_document_percent": 0.1,
+        "text_sha256": "b7c48d00ea03a31fae4952b43fb849514aaaa0afe1809eeb30966dfb0a7ad22d"
+      },
+      "trained_human_share_minus_reference": -99.9
+    },
+    {
+      "example_id": "AC_a536d712cfe2cccaa25c::salvage_v1::gemini_input_v1",
+      "style_group": "Holmstrom",
+      "paper_id": "B_H2017",
+      "conditions": {
+        "input": {
+          "provider_label": "Mix: AI / human",
+          "human_written_document_percent": 20.0,
+          "ai_generated_document_percent": 80.0,
+          "ai_assisted_document_percent": 0.0,
+          "provider_word_count": 119,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "AI Generated",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 100.0,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 132,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.24
+        },
+        "epoch_1": {
+          "provider_label": "Mix: AI / AI-assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 68.0,
+          "ai_assisted_document_percent": 32.0,
+          "provider_word_count": 141,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.4307692307692308
+        }
+      },
+      "change_human_share_vs_input": -19.9,
+      "change_human_share_vs_base": 0.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.0,
+        "ai_assisted_document_percent": 0.0,
+        "text_sha256": "20a6f280dd07984f4de8cf090f633299aea10f9f8459d5cb1218c5129fe2b855"
+      },
+      "trained_human_share_minus_reference": -99.9
+    },
+    {
+      "example_id": "AC_747f0e32335562d4ad00::salvage_v1::gemini_input_v1",
+      "style_group": "Baker_Wurgler",
+      "paper_id": "E_BW2010",
+      "conditions": {
+        "input": {
+          "provider_label": "Mainly AI; some human",
+          "human_written_document_percent": 4.0,
+          "ai_generated_document_percent": 96.0,
+          "ai_assisted_document_percent": 0.1,
+          "provider_word_count": 146,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "Mix: AI / AI-assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 78.0,
+          "ai_assisted_document_percent": 22.0,
+          "provider_word_count": 148,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.30612244897959184
+        },
+        "epoch_1": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 133,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.5519713261648745
+        }
+      },
+      "change_human_share_vs_input": -3.9,
+      "change_human_share_vs_base": 0.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.1,
+        "ai_assisted_document_percent": 0.1,
+        "text_sha256": "5b9da732f8cdad389c6426e84b0c2e40d08488878e4dca3f61251fb815e1a8dd"
+      },
+      "trained_human_share_minus_reference": -99.9
+    },
+    {
+      "example_id": "AC_2ee9ccd5e76aae20d508::salvage_v1::gemini_input_v1",
+      "style_group": "Baker_Wurgler",
+      "paper_id": "E_BW2010",
+      "conditions": {
+        "input": {
+          "provider_label": "Mix: AI / AI-assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 14.0,
+          "ai_assisted_document_percent": 86.0,
+          "provider_word_count": 116,
+          "material_output_issue_identified": null,
+          "source_word_sequence_overlap": 1.0
+        },
+        "base": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 101,
+          "material_output_issue_identified": true,
+          "source_word_sequence_overlap": 0.1574074074074074
+        },
+        "epoch_1": {
+          "provider_label": "AI Assisted",
+          "human_written_document_percent": 0.1,
+          "ai_generated_document_percent": 0.1,
+          "ai_assisted_document_percent": 100.0,
+          "provider_word_count": 116,
+          "material_output_issue_identified": false,
+          "source_word_sequence_overlap": 0.47413793103448276
+        }
+      },
+      "change_human_share_vs_input": 0.0,
+      "change_human_share_vs_base": 0.0,
+      "AI_related_input_becomes_entirely_human": false,
+      "entirely_human_input_stays_entirely_human": false,
+      "reference": {
+        "provider_label": "Human Written",
+        "human_written_document_percent": 100.0,
+        "ai_generated_document_percent": 0.1,
+        "ai_assisted_document_percent": 0.1,
+        "text_sha256": "87a38feee15a3cadcc41636a5e282866bacf0db4f1a2331b7f689daad6c547ec"
+      },
+      "trained_human_share_minus_reference": -99.9
+    }
+  ],
+  "score_semantics": "Displayed document authorship shares, not document AI probabilities.",
+  "displayed_shares_rescaled": false,
+  "new_detector_calls": 0,
+  "new_model_calls": 0,
+  "new_GPU_jobs": 0,
+  "interpretation": "Reference controls complete; previous matched input/output findings unchanged. Routine additional published-reference scans are not requested.",
+  "provider_versions": [
+    "4.1"
+  ],
+  "report_dates": [
+    "2026-11-05"
+  ],
+  "binding_methods": {
+    "raw_whitespace_exact": 8
+  }
+}

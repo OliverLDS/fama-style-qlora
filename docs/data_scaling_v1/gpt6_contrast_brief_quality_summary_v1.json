@@ -1,0 +1,43 @@
+{
+  "batch_sizes": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    25
+  ],
+  "brief_files": 6,
+  "brief_records": 175,
+  "carried_source_concern_ids": [
+    "P139",
+    "P134"
+  ],
+  "clarified_ids": [
+    "P024",
+    "P139",
+    "P136",
+    "P118",
+    "P176",
+    "P282"
+  ],
+  "edit_count": 7,
+  "effective_status_counts": {
+    "ready": 173,
+    "source_problem": 2
+  },
+  "independent_semantic_verification": false,
+  "long_ordinary_phrase_flags": 0,
+  "old_rewrite_fields_forwarded": 0,
+  "original_prose_fields_forwarded": 0,
+  "protocol": "gpt6_contrast_brief_quality_v1",
+  "provider_calls": 0,
+  "raw_status_counts": {
+    "ready": 172,
+    "source_problem": 3
+  },
+  "source_files_modified": 0,
+  "stage_2_batches": 6,
+  "stage_2_records": 175,
+  "training_calls": 0
+}

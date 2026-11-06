@@ -1,0 +1,76 @@
+{
+  "gpu_jobs": 0,
+  "new_OCR_pages": 461,
+  "new_downloads": 28,
+  "new_extraction_candidates": 569,
+  "new_pages_extracted": 929,
+  "new_validated_pairs": 0,
+  "packages": {
+    "existing_collection": {
+      "GPU_jobs": 0,
+      "batches": 29,
+      "existing_release_changes": 0,
+      "model_calls": 0,
+      "papers_with_selected_rows": 29,
+      "paragraphs": 139,
+      "protocol": "author_pair_expansion_v1",
+      "reserved_text_bodies_read": 0,
+      "selected_by_group": {
+        "Baker_Wurgler": 50,
+        "Holmstrom": 44,
+        "Shiller": 45
+      },
+      "selected_by_role": {
+        "development": 30,
+        "training": 109
+      },
+      "shortfall_papers": [
+        "A_H1982",
+        "B_H1991",
+        "B_H1994",
+        "A_S1981"
+      ],
+      "status": "awaiting_manual_GPT6_responses",
+      "training_pairs_created": 0
+    },
+    "new_collection": {
+      "GPU_jobs": 0,
+      "batches": 25,
+      "existing_release_changes": 0,
+      "model_calls": 0,
+      "papers_with_selected_rows": 25,
+      "paragraphs": 110,
+      "protocol": "author_pair_expansion_v1",
+      "reserved_text_bodies_read": 0,
+      "selected_by_group": {
+        "Baker_Wurgler": 27,
+        "Fama_coauthors": 21,
+        "Holmstrom": 27,
+        "Shiller": 35
+      },
+      "selected_by_role": {
+        "development": 34,
+        "training": 76
+      },
+      "shortfall_papers": [
+        "E_BW2009",
+        "E_BW2012b",
+        "E_FF1992",
+        "E_FF1996",
+        "E_FJ1983",
+        "E_H1988",
+        "E_H1998",
+        "E_H1998b",
+        "E_BW2006",
+        "E_FF2004",
+        "E_FS1977"
+      ],
+      "status": "awaiting_manual_GPT6_responses",
+      "training_pairs_created": 0
+    }
+  },
+  "papers_per_group": 20,
+  "protocol": "author_pair_expansion_v1",
+  "selected_papers": 80,
+  "stage": "annotation_inputs_prepared_responses_pending"
+}

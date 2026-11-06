@@ -1,0 +1,33 @@
+{
+  "protocol": "gemini_track_0500_v1",
+  "status": "paused_free_quota_or_rate_limit",
+  "parent_mixed_sha256": "1ab5b21983dff0371d0446fdb0f96a131db24b7605f8804a135568e57263a59a",
+  "parent_mixed_unchanged": true,
+  "targets": 500,
+  "target_order_unchanged": true,
+  "accepted_Gemini_inputs_reused": 214,
+  "historical_Gemini_drafts_recovered": 8,
+  "new_Gemini_inputs_generated": 278,
+  "all_500_Gemini_inputs_present": true,
+  "separate_reviews_completed": 144,
+  "separate_reviews_pending": 142,
+  "newly_qualified_after_adjudication": 144,
+  "staged_accepted_total": 358,
+  "final_training_cohort_released": false,
+  "free_tier_only": true,
+  "paid_fallback": false,
+  "training_calls": 0,
+  "manual_uploads_requested": 0,
+  "resume": "After free quota is available, retain/archive the failed verification response_04, resume the remaining three review jobs, adjudicate their patches and numeric notes, merge all 286 decisions, then freeze and audit nested 200/500 datasets.",
+  "qualification": {
+    "completed_review_count": 144,
+    "qualified_after_adjudication": 144,
+    "inputs_with_minimal_repairs": 7,
+    "pending_separate_review": 142,
+    "reused_accepted": 214,
+    "staged_accepted_total": 358,
+    "cohort_released": false
+  },
+  "known_prior_training_problems": "OCR/notation, heading/boundary and alignment issues were repaired before the mixed release; no demonstrated wholesale defect from detector/model-output results.",
+  "unresolved_validation_issue": "Five-year versus t-1 through t-6 wording is a development reference inconsistency, separate from the training cohort."
+}

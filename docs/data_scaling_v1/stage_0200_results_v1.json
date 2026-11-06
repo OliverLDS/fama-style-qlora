@@ -1,0 +1,146 @@
+{
+  "protocol": "corpus_200_pilot_review_v1",
+  "slug": "oliverlds/corpus-200-pilot-4b",
+  "version": 1,
+  "execution_complete": true,
+  "training_pairs_seen": 200,
+  "optimizer_updates": 100,
+  "finite_nonzero_gradient_checks": 100,
+  "label_checks": 216,
+  "truncated_rows": 0,
+  "adapter": {
+    "tensor_count": 136,
+    "parameters": 2228224,
+    "dtypes": [
+      "F32"
+    ],
+    "sha256": "d180e0984f921f916f2aff19e4990475733fd95900eed2745c4793ba965e2f0b",
+    "base_revision_policy": "Use the pinned revision from the frozen runtime/config; adapter_config revision is not independently pinned."
+  },
+  "snapshots": {
+    "base": {
+      "outputs": 16,
+      "development_token_weighted_nll": 2.81007620569103,
+      "training_probe_token_weighted_nll": 2.573524752478192,
+      "material_claim_change_identified": 15,
+      "eligible_within_local_budget": 1,
+      "unresolved": 0,
+      "empty": 0,
+      "output_limited": 0,
+      "exact_source_copies": 0,
+      "exact_word_token_copies": 0,
+      "median_source_word_sequence_overlap": 0.2834591626630062,
+      "median_reference_word_sequence_overlap": 0.2700995870779694,
+      "median_longest_shared_source_word_run": 5.5,
+      "median_generated_words_matching_source_sequences_fraction": 0.2840211215060552,
+      "outputs_source_overlap_at_least_point8": 0,
+      "by_group": {
+        "Fama_coauthors": {
+          "outputs": 4,
+          "material_claim_change_identified": 4,
+          "eligible_within_local_budget": 0
+        },
+        "Shiller": {
+          "outputs": 4,
+          "material_claim_change_identified": 4,
+          "eligible_within_local_budget": 0
+        },
+        "Holmstrom": {
+          "outputs": 4,
+          "material_claim_change_identified": 4,
+          "eligible_within_local_budget": 0
+        },
+        "Baker_Wurgler": {
+          "outputs": 4,
+          "material_claim_change_identified": 3,
+          "eligible_within_local_budget": 1
+        }
+      }
+    },
+    "epoch_1": {
+      "outputs": 16,
+      "development_token_weighted_nll": 0.9317307280786588,
+      "training_probe_token_weighted_nll": 0.9721321705756695,
+      "material_claim_change_identified": 3,
+      "eligible_within_local_budget": 12,
+      "unresolved": 0,
+      "empty": 0,
+      "output_limited": 0,
+      "exact_source_copies": 0,
+      "exact_word_token_copies": 0,
+      "median_source_word_sequence_overlap": 0.8841895330444949,
+      "median_reference_word_sequence_overlap": 0.7000775462390074,
+      "median_longest_shared_source_word_run": 58.0,
+      "median_generated_words_matching_source_sequences_fraction": 0.9111081932773109,
+      "outputs_source_overlap_at_least_point8": 10,
+      "by_group": {
+        "Fama_coauthors": {
+          "outputs": 4,
+          "material_claim_change_identified": 1,
+          "eligible_within_local_budget": 3
+        },
+        "Shiller": {
+          "outputs": 4,
+          "material_claim_change_identified": 2,
+          "eligible_within_local_budget": 2
+        },
+        "Holmstrom": {
+          "outputs": 4,
+          "material_claim_change_identified": 0,
+          "eligible_within_local_budget": 4
+        },
+        "Baker_Wurgler": {
+          "outputs": 4,
+          "material_claim_change_identified": 0,
+          "eligible_within_local_budget": 3
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 1163.160401538,
+  "peak_gpu_allocated_bytes": 5807845376,
+  "runtime": {
+    "model_id": "google/gemma-3-4b-it",
+    "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "packages": {
+      "transformers": "5.20.1",
+      "peft": "0.21.2",
+      "accelerate": "1.15.0",
+      "bitsandbytes": "0.50.2",
+      "huggingface_hub": "1.33.0",
+      "torch": "2.11.0+cu130"
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "runtime_source_sha256": "e4d219a09d113e9029c127440937c3c6b3d92d717f44beab779b75e9de976155"
+  },
+  "detector_results": null,
+  "new_GPU_jobs": 0,
+  "new_model_calls": 0,
+  "assessment_provenance": {
+    "reviewer": "Codex automated full-text assessment",
+    "rubric": "one minor shift, no material change, no unresolved judgment",
+    "review_order": "A/B outputs read before condition-key lookup; execution metadata/losses known and conditions may be inferable",
+    "independent_human_review": false,
+    "independent_verifier_model": false,
+    "limitations": [
+      "Partly masked same-agent assessment; judgments are not independent or calibrated.",
+      "Material/nonmaterial boundaries are interpretive; exact notes and all text hashes retained.",
+      "Author-draft source inconsistencies are not corrected during output scoring.",
+      "No author-specific style success or detector benefit is inferred from this review."
+    ]
+  },
+  "paired_material_transitions": {
+    "resolved": 12,
+    "persistent": 3,
+    "neither": 1
+  },
+  "credential_pattern_matches": 0,
+  "limits": [
+    "Automated partly masked same-agent semantic review; not independent calibrated ground truth.",
+    "Sixteen examples from eight reused development papers; no sealed-test evaluation.",
+    "Lower NLL and improved source retention do not establish distinctive author-style learning.",
+    "Near copying can lower detector scores without learning a meaningful style transformation.",
+    "The .8 overlap threshold is descriptive, not a predeclared success criterion."
+  ]
+}

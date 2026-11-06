@@ -1,0 +1,72 @@
+{
+  "protocol": "stage_0500_release_v1",
+  "dataset_sha256": "1ab5b21983dff0371d0446fdb0f96a131db24b7605f8804a135568e57263a59a",
+  "dataset_manifest_sha256": "74646cff4b9aea0c5bbaf6b744aa6b04c78ce1efbc5ac9cdf1c70b633d60289f",
+  "rows": 500,
+  "unique_parents": 500,
+  "groups": {
+    "Fama_coauthors": 125,
+    "Shiller": 125,
+    "Holmstrom": 125,
+    "Baker_Wurgler": 125
+  },
+  "original_200_byte_prefix_unchanged": true,
+  "unique_targets": 500,
+  "near_duplicate_target_flags": 0,
+  "papers": 53,
+  "median_input_target_word_overlap": 0.655475956360912,
+  "exact_normalized_input_target_matches": 0,
+  "training_calls": 0,
+  "scope": {
+    "approved_pairs": 500,
+    "new_reviewed_pairs": 215,
+    "new_training_targets_sharing_development_papers": 0,
+    "new_training_targets_sharing_development_PDF_hash": 0,
+    "source_files_and_PDF_hashes_verified": true,
+    "sealed_test_bodies_read": false,
+    "papers_by_group": {
+      "Fama_coauthors": 16,
+      "Shiller": 12,
+      "Holmstrom": 12,
+      "Baker_Wurgler": 13
+    },
+    "new_draft_generators": {
+      "gemini-3-flash-preview": 214,
+      "GPT-6 historical paired annotation; session provenance retained in original release": 1
+    }
+  },
+  "rebuild": {
+    "independent_CPU_rebuild": true,
+    "files_byte_identical": {
+      "summary.json": true,
+      "training.private.jsonl": true,
+      "manifest.json": true
+    },
+    "provider_calls": 0,
+    "training_calls": 0
+  },
+  "curation": {
+    "protocol": "stage_0500_expansion_v1",
+    "approved_pairs": 500,
+    "new_approved": 215,
+    "groups": {
+      "Fama_coauthors": 125,
+      "Shiller": 125,
+      "Holmstrom": 125,
+      "Baker_Wurgler": 125
+    },
+    "target": 500,
+    "complete": true,
+    "holds": 0,
+    "excluded_non_narrative": 3,
+    "replacements": 3,
+    "original_200_unchanged": true,
+    "teacher_composition_changed": true,
+    "semantic_review": "automated pilot acceptance; same-family model checks and Codex adjudication, not independent verification",
+    "input_repairs": 15,
+    "new_human_target_repairs": 27,
+    "training_calls": 0,
+    "free_tier_only": true
+  },
+  "focused_CPU_tests_passed": 10
+}

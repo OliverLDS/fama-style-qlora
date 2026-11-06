@@ -1,0 +1,73 @@
+{
+  "all_target_followups": [
+    "P134",
+    "P139",
+    "P250",
+    "P264",
+    "P291",
+    "P458",
+    "P484"
+  ],
+  "assessment_limitations": [
+    "Automated reading of the new paragraphs, with targeted reference checks; not independent human/NLI certification.",
+    "Ordinary-word exemptions and sentence alignments are surface proxies, not validated author-style or grammar scores.",
+    "Minor compression, interpretive additions and emphasis changes are accepted; the audit is not exhaustive claim-by-claim equivalence.",
+    "No student-model or Pangram improvement has been measured on these replacements."
+  ],
+  "decision_counts": {
+    "accept": 163,
+    "repair": 10,
+    "source_concern": 2
+  },
+  "development_examples_read": 0,
+  "five_inherited_target_followups": [
+    "P250",
+    "P264",
+    "P291",
+    "P458",
+    "P484"
+  ],
+  "lower_word_similarity": 175,
+  "matched_human_targets_unchanged": true,
+  "nested_200_prefix": true,
+  "new_inputs_staged": 173,
+  "new_median_longest_ordinary_span": 3,
+  "new_median_ordinary_fivegram_coverage": 0.0,
+  "new_median_word_length_ratio": 0.775,
+  "new_median_word_similarity": 0.16346153846153846,
+  "old_median_longest_ordinary_span": 15,
+  "old_median_ordinary_fivegram_coverage": 0.5789473684210527,
+  "old_median_word_length_ratio": 0.9411764705882353,
+  "old_median_word_similarity": 0.7558528428093646,
+  "patches": 13,
+  "prior_inputs_retained": 327,
+  "protocol": "gpt6_brief_reconstruction_quality_v1",
+  "provider_calls": 0,
+  "raw_status_counts": {
+    "rewritten": 173,
+    "source_problem": 2
+  },
+  "repaired_ids": [
+    "P086",
+    "P025",
+    "P168",
+    "P169",
+    "P173",
+    "P198",
+    "P223",
+    "P319",
+    "P151",
+    "P282"
+  ],
+  "reserved_test_examples_read": 0,
+  "response_files": 6,
+  "responses": 175,
+  "source_concern_ids": [
+    "P139",
+    "P134"
+  ],
+  "source_versions_discarded": 0,
+  "still_flagged_by_contrast_rules": 0,
+  "training_calls": 0,
+  "training_ready_release": false
+}

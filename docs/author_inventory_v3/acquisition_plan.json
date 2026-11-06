@@ -1,0 +1,428 @@
+{
+  "protocol": "author_inventory_v3",
+  "target_distinct_papers_per_group": 20,
+  "cutoff_exclusive_year": 2020,
+  "papers": [
+    {
+      "paper_id": "E_FF1989",
+      "style_group": "Fama_coauthors",
+      "title": "Business Conditions and Expected Returns on Stocks and Bonds",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 1989,
+      "publication_year": 1989,
+      "download_url": "https://faculty.chicagobooth.edu/-/media/faculty/eugene-fama/teaching/private/readings/business-conditions-and-expected-returns-on-stocks-and-bonds.pdf",
+      "publication_evidence_url": "https://faculty.chicagobooth.edu/eugene-fama/teaching/readings",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_FF1992",
+      "style_group": "Fama_coauthors",
+      "title": "The Cross-Section of Expected Stock Returns",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 1992,
+      "publication_year": 1992,
+      "download_url": "https://faculty.chicagobooth.edu/-/media/faculty/eugene-fama/teaching/private/readings/the-cross-section-of-expected-stock-returns.pdf",
+      "publication_evidence_url": "https://faculty.chicagobooth.edu/eugene-fama/teaching/readings",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_FF1993",
+      "style_group": "Fama_coauthors",
+      "title": "Common Risk Factors in the Returns on Stocks and Bonds",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 1993,
+      "publication_year": 1993,
+      "download_url": "https://faculty.chicagobooth.edu/-/media/faculty/eugene-fama/teaching/private/readings/common-risk-factors-in-the-returns-on-stocks-and-bond.pdf",
+      "publication_evidence_url": "https://faculty.chicagobooth.edu/eugene-fama/teaching/readings",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_FF1996",
+      "style_group": "Fama_coauthors",
+      "title": "Multifactor Explanations of Asset Pricing Anomalies",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 1996,
+      "publication_year": 1996,
+      "download_url": "https://faculty.chicagobooth.edu/-/media/faculty/eugene-fama/teaching/private/readings/multifactor-explanations-of-asset-pricing-anomalies.pdf",
+      "publication_evidence_url": "https://faculty.chicagobooth.edu/eugene-fama/teaching/readings",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_FS1977",
+      "style_group": "Fama_coauthors",
+      "title": "Asset Returns and Inflation",
+      "authors": [
+        "Eugene F. Fama",
+        "G. William Schwert"
+      ],
+      "version_year": 1977,
+      "publication_year": 1977,
+      "download_url": "https://faculty.chicagobooth.edu/-/media/faculty/eugene-fama/teaching/private/readings/asset-returns-and-inflation.pdf",
+      "publication_evidence_url": "https://faculty.chicagobooth.edu/eugene-fama/teaching/readings",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_FJ1983",
+      "style_group": "Fama_coauthors",
+      "title": "Agency Problems and Residual Claims",
+      "authors": [
+        "Eugene F. Fama",
+        "Michael C. Jensen"
+      ],
+      "version_year": 1983,
+      "publication_year": 1983,
+      "download_url": "https://www.edegan.com/pdfs/Fama%20Jensen%20%281983%29%20-%20Agency%20Problems%20and%20Residual%20Claims.pdf",
+      "publication_evidence_url": "https://www.journals.uchicago.edu/doi/abs/10.1086/467038",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_FF2004",
+      "style_group": "Fama_coauthors",
+      "title": "The Capital Asset Pricing Model: Theory and Evidence",
+      "authors": [
+        "Eugene F. Fama",
+        "Kenneth R. French"
+      ],
+      "version_year": 2004,
+      "publication_year": 2004,
+      "download_url": "https://statmath.wu.ac.at/staff/hauser/LVs/OLDFinEtrics/FamaFrench04JEcoPersp.pdf",
+      "publication_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/0895330042162430",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S2005",
+      "style_group": "Shiller",
+      "title": "Behavioral Economics and Institutional Innovation",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2005,
+      "publication_year": 2005,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1499.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145026",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S2004",
+      "style_group": "Shiller",
+      "title": "Radical Financial Innovation",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2004,
+      "publication_year": 2004,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1461.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145089",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S2003",
+      "style_group": "Shiller",
+      "title": "The Invention of Inflation-Indexed Bonds in Early America",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2003,
+      "publication_year": 2003,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1442.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145192",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S2001",
+      "style_group": "Shiller",
+      "title": "Bubbles, Human Judgment, and Expert Opinion",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 2001,
+      "publication_year": 2001,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1303.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145257",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S1998a",
+      "style_group": "Shiller",
+      "title": "Designing Indexed Units of Account",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 1998,
+      "publication_year": 1998,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1179.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145408",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S1998b",
+      "style_group": "Shiller",
+      "title": "Indexed Units of Account: Theory and Assessment of Historical Experience",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 1998,
+      "publication_year": 1998,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1171.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145400",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_S1996",
+      "style_group": "Shiller",
+      "title": "Why Do People Dislike Inflation?",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "version_year": 1996,
+      "publication_year": 1996,
+      "download_url": "https://cowles.yale.edu/sites/default/files/2022-08/d1115.pdf",
+      "publication_evidence_url": "https://cowles.yale.edu/node/145465",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H2017",
+      "style_group": "Holmstrom",
+      "title": "Banks as Secret Keepers",
+      "authors": [
+        "Tri Vi Dang",
+        "Gary Gorton",
+        "Bengt Holmstrom",
+        "Guillermo Ordonez"
+      ],
+      "version_year": 2017,
+      "publication_year": 2017,
+      "download_url": "https://economics.mit.edu/research/publications/banks-secret-keepers",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H2003",
+      "style_group": "Holmstrom",
+      "title": "The State of U.S. Corporate Governance: What's Right and What's Wrong?",
+      "authors": [
+        "Bengt Holmstrom",
+        "Steven N. Kaplan"
+      ],
+      "version_year": 2003,
+      "publication_year": 2003,
+      "download_url": "https://www.nber.org/system/files/working_papers/w9613/w9613.pdf",
+      "publication_evidence_url": "https://www.nber.org/papers/w9613",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H1998",
+      "style_group": "Holmstrom",
+      "title": "LAPM: A Liquidity-Based Asset Pricing Model",
+      "authors": [
+        "Bengt Holmstrom",
+        "Jean Tirole"
+      ],
+      "version_year": 1998,
+      "publication_year": 2001,
+      "download_url": "https://www.nber.org/system/files/working_papers/w6673/w6673.pdf",
+      "publication_evidence_url": "https://www.nber.org/papers/w6673",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H2000",
+      "style_group": "Holmstrom",
+      "title": "Liquidity and Risk Management",
+      "authors": [
+        "Bengt Holmstrom",
+        "Jean Tirole"
+      ],
+      "version_year": 2000,
+      "publication_year": 2000,
+      "download_url": "https://personal.utdallas.edu/~nina.baranchuk/Fin7310/papers/HolmstromTirole2000.pdf",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H1989",
+      "style_group": "Holmstrom",
+      "title": "Agency Costs and Innovation",
+      "authors": [
+        "Bengt Holmstrom"
+      ],
+      "version_year": 1989,
+      "publication_year": 1989,
+      "download_url": "https://www.econstor.eu/bitstream/10419/94833/1/wp214.pdf",
+      "publication_evidence_url": "https://www.econstor.eu/handle/10419/94833",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H1998b",
+      "style_group": "Holmstrom",
+      "title": "An Economic Theory of Promises",
+      "authors": [
+        "Bengt Holmstrom",
+        "David Kreps"
+      ],
+      "version_year": 1998,
+      "publication_year": 1998,
+      "download_url": "https://economics.mit.edu/research/publications/economic-theory-promises",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_H1988",
+      "style_group": "Holmstrom",
+      "title": "Common Agency and Exclusive Dealing",
+      "authors": [
+        "Bengt Holmstrom",
+        "Paul Milgrom"
+      ],
+      "version_year": 1988,
+      "publication_year": 1988,
+      "download_url": "https://economics.mit.edu/research/publications/common-agency-and-exclusive-dealing",
+      "publication_evidence_url": "https://economics.mit.edu/people/faculty/bengt-holmstrom/publications",
+      "genre": "working_paper",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2012",
+      "style_group": "Baker_Wurgler",
+      "title": "Global, Local, and Contagious Investor Sentiment",
+      "authors": [
+        "Malcolm Baker",
+        "Yu Yuan",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2012,
+      "publication_year": 2012,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/Wurgler.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2012b",
+      "style_group": "Baker_Wurgler",
+      "title": "Behavioral Corporate Finance: An Updated Survey",
+      "authors": [
+        "Malcolm Baker",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2012,
+      "publication_year": 2012,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/bcfsurvey2v20.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "survey_chapter",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2011",
+      "style_group": "Baker_Wurgler",
+      "title": "Benchmarks as Limits to Arbitrage: Understanding the Low-Volatility Anomaly",
+      "authors": [
+        "Malcolm Baker",
+        "Brendan Bradley",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2011,
+      "publication_year": 2011,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/faj-benchmarks.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2010",
+      "style_group": "Baker_Wurgler",
+      "title": "Can Mutual Fund Managers Pick Stocks? Evidence from Their Trades Prior to Earnings Announcements",
+      "authors": [
+        "Malcolm Baker",
+        "Lubomir Litov",
+        "Jessica A. Wachter",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2010,
+      "publication_year": 2010,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/mutual-fund-managers.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2009",
+      "style_group": "Baker_Wurgler",
+      "title": "Multinationals as Arbitrageurs: The Effect of Stock Market Valuations on Foreign Direct Investment",
+      "authors": [
+        "Malcolm Baker",
+        "C. Fritz Foley",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2009,
+      "publication_year": 2009,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_foley.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2007",
+      "style_group": "Baker_Wurgler",
+      "title": "The Effect of Dividends on Consumption",
+      "authors": [
+        "Malcolm Baker",
+        "Stefan Nagel",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2007,
+      "publication_year": 2007,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_nagel.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    },
+    {
+      "paper_id": "E_BW2006",
+      "style_group": "Baker_Wurgler",
+      "title": "Predictive Regressions Based on Managerial Decision Variables: Is There a Small-Sample Bias?",
+      "authors": [
+        "Malcolm Baker",
+        "Ryan Taliaferro",
+        "Jeffrey Wurgler"
+      ],
+      "version_year": 2006,
+      "publication_year": 2006,
+      "download_url": "https://pages.stern.nyu.edu/~jwurgler/papers/wurgler_baker_taliaferro.pdf",
+      "publication_evidence_url": "https://pages.stern.nyu.edu/~jwurgler/main.htm",
+      "genre": "journal_article",
+      "limitations": "Version date and author metadata require local opening-page checks; no prose verification implied."
+    }
+  ]
+}

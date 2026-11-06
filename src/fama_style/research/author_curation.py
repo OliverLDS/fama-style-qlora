@@ -80,10 +80,45 @@ def repair(raw, lexicon):
     return spaced, events, unresolved
 
 
-def geometry_lines(page):
+def order_ocr_fragments(lines):
+    """Order adjacent fragments on one baseline from left to right.
+
+    Keep every original line object/ID and character. Require close baselines,
+    nonoverlapping horizontal boxes and a small gap; never bridge columns.
+    """
+    clusters = []
+    for line in sorted(lines, key=lambda l: (l['column'], -(l['y']+l['height']/2), l['x'])):
+        center = line['y']+line['height']/2
+        found = None
+        for cluster in reversed(clusters):
+            if cluster[0]['column'] != line['column']: continue
+            anchor = cluster[0]
+            if abs(center-(anchor['y']+anchor['height']/2)) > .35*min(line['height'],anchor['height']):
+                continue
+            compatible = True
+            horizontal = sorted(cluster+[line],key=lambda l:l['x'])
+            for left,right in zip(horizontal,horizontal[1:]):
+                gap = right['x']-(left['x']+left['width'])
+                if gap < -.002 or gap > .05: compatible = False
+            if compatible: found = cluster;break
+        if found is None: clusters.append([line])
+        else: found.append(line)
+    ordered, events = [], []
+    for cluster in clusters:
+        fixed = sorted(cluster,key=lambda l:l['x'])
+        before = [l['line_id'] for l in cluster];after = [l['line_id'] for l in fixed]
+        if before != after:
+            events.append({'operation':'same_baseline_horizontal_fragment_order',
+                           'before_line_ids':before,'after_line_ids':after})
+        ordered.extend(fixed)
+    return ordered, events
+
+
+def geometry_lines(page, repair_fragment_order=False):
     """Retain explicit OCR reading regions; infer only well-supported native columns."""
     lines = [dict(line) for line in page['lines'] if line['text'].strip()]
     if lines and all('column' in line for line in lines):
+        if repair_fragment_order: return order_ocr_fragments(lines)[0]
         return sorted(lines, key=lambda l: (l['column'], -(l['y'] + l['height']/2), l['x']))
     left = [l for l in lines if l['x'] < .18 and .25 < l['width'] < .48]
     right = [l for l in lines if l['x'] > .47 and .25 < l['width'] < .48]
@@ -93,7 +128,7 @@ def geometry_lines(page):
     return sorted(lines, key=lambda l: (l['column'], -(l['y'] + l['height']/2), l['x']))
 
 
-def segment(paper, pages):
+def segment(paper, pages, repair_fragment_order=False):
     """Separate headings/notes before paragraphs; never jump an excluded interval."""
     repeated = Counter()
     for page in pages:
@@ -103,7 +138,7 @@ def segment(paper, pages):
     backmatter = False
     abstract_page = None
     for page in sorted(pages, key=lambda p: p['pdf_page']):
-        ordered = geometry_lines(page)
+        ordered = geometry_lines(page,repair_fragment_order=repair_fragment_order)
         columns = sorted({l['column'] for l in ordered})
         # Each region may be a separate printed page (the rotated multitask scan).
         for column in columns:
@@ -204,7 +239,7 @@ def segment(paper, pages):
     return joined, removed
 
 
-def screen(block, lexicon):
+def screen(block, lexicon, reject_supplementary_private_use=False):
     text, events, unresolved = repair(block['raw_extraction'], lexicon)
     reasons, flags = [], []
     tokens = words(text)
@@ -217,7 +252,9 @@ def screen(block, lexicon):
     if re.match(r'^(?:notes?|sources?)\s*:',text,re.I): reasons.append('table_or_figure_note')
     if sum(c.isdigit() for c in text)/max(1,len(text)) > .08: reasons.append('table_or_numeric_density')
     if sum(c.isalpha() for c in text)/max(1,len(text)) < .65: reasons.append('low_prose_density')
-    if any(ord(c)<32 or '\ue000'<=c<='\uf8ff' or c=='\ufffd' for c in text): reasons.append('unresolved_corrupt_glyph')
+    if any(ord(c)<32 or '\ue000'<=c<='\uf8ff' or c=='\ufffd' or
+           reject_supplementary_private_use and unicodedata.category(c)=='Co' for c in text):
+        reasons.append('unresolved_corrupt_glyph')
     if re.search(r'[=∑∫≥≤{}]|\b(?:PROPOSITION|THEOREM|LEMMA|Proof)\b', text): reasons.append('mathematical_or_proof_passage')
     confidence = min(block['ocr_confidences']) if block['ocr_confidences'] else None
     if confidence is not None and confidence < POLICY['minimum_ocr_line_confidence']: reasons.append('low_ocr_line_confidence')
@@ -277,15 +314,19 @@ def check_line_accounting(pages, records, removed):
     return sum(expected.values())
 
 
-def build(root, extraction, output, lexicon_path=Path('/usr/share/dict/words')):
+def build(root, extraction, output, lexicon_path=Path('/usr/share/dict/words'),
+          inventory_relative='docs/author_inventory_v2/inventory.json', expected_papers=39,
+          protocol=PROTOCOL, repair_fragment_order=False):
     root, extraction = root.resolve(), extraction.resolve()
+    if repair_fragment_order and protocol in (PROTOCOL,'author_curation_v2','author_curation_v2_1'):
+        raise ValueError('fragment_order_repair_requires_new_protocol')
     if output.exists(): raise ValueError('refuse_to_overwrite_curated_snapshot')
     registry = json.loads((extraction/'source_registry.private.json').read_text())
     papers = registry['papers']
-    inventory_path=root/'docs/author_inventory_v2/inventory.json'
+    inventory_path=root/inventory_relative
     groups={paper_id:g['style_group'] for g in json.loads(inventory_path.read_text())['roster'] for paper_id in g['paper_ids']}
-    if len(papers)!=39 or any(p['existing_split'] in ('test','reserved_test','development','validation') for p in papers):
-        raise ValueError('expected_39_nonreserved_sources')
+    if len(papers)!=expected_papers or any(p['existing_split'] in ('test','reserved_test','development','validation') for p in papers):
+        raise ValueError('unexpected_count_or_reserved_sources')
     native = [json.loads(l) for l in (extraction/'native_pages.private.jsonl').read_text().splitlines()]
     ocr = [json.loads(l) for path in sorted(extraction.glob('ocr_pages_*.private.jsonl')) for l in path.read_text().splitlines()]
     fallback = extraction/'ocr_fallback_audit_v2.private.json'
@@ -298,18 +339,26 @@ def build(root, extraction, output, lexicon_path=Path('/usr/share/dict/words')):
     grouped = defaultdict(list)
     for page in pages: grouped[page['paper_id']].append(page)
     lexicon = {w.strip().lower() for w in lexicon_path.read_text().splitlines()}
-    records, removed, coverage = [], [], []
+    records, removed, coverage, layout_repairs = [], [], [], []
     for paper in sorted(papers,key=lambda p:p['paper_id']):
         if file_sha(root/paper['pdf']) != paper['pdf_sha256']: raise ValueError('source_pdf_changed')
         sample = grouped[paper['paper_id']]
+        if repair_fragment_order:
+            for page in sample:
+                if page['lines'] and all('column' in line for line in page['lines']):
+                    _,events=order_ocr_fragments(page['lines'])
+                    layout_repairs.extend(dict(event,paper_id=paper['paper_id'],pdf_page=page['pdf_page']) for event in events)
         total = sample[0]['total_pdf_pages']
         if sorted(p['pdf_page'] for p in sample)!=list(range(1,total+1)): raise ValueError('incomplete_native_page_coverage')
         coverage.append({'paper_id':paper['paper_id'],'pdf_pages':total,'pages_extracted':len(sample),
                          'ocr_pages':sum((p['paper_id'],p['pdf_page']) in replacements for p in sample),
                          'remaining_pages':[],'full_prose_verification':False})
-        blocks, drops = segment(paper,sample); removed += drops
+        blocks, drops = segment(paper,sample,repair_fragment_order=repair_fragment_order); removed += drops
         for block in blocks:
-            text, events, unresolved, reasons, flags, confidence = screen(block,lexicon)
+            # Keep historical v1 screening reproducible; the broader glyph guard
+            # belongs to the explicitly versioned new curation protocol.
+            text, events, unresolved, reasons, flags, confidence = screen(
+                block,lexicon,reject_supplementary_private_use=protocol != PROTOCOL)
             key = 'AC_'+sha(paper['paper_id']+'|'+json.dumps(block['line_refs'],sort_keys=True))[:20]
             records.append(block | {'paragraph_id':key,'original_paragraph':text,'original_sha256':sha(text),
                 'raw_extraction_sha256':sha(block['raw_extraction']),'paper_pdf_sha256':paper['pdf_sha256'],
@@ -334,7 +383,7 @@ def build(root, extraction, output, lexicon_path=Path('/usr/share/dict/words')):
                           'holds':sum(r['status']=='hold' for r in rows),
                           'repair_events':sum(len(r['normalization_events']) for r in rows),
                           'hold_reasons':dict(Counter(reason for r in rows for reason in r['hold_reasons']))})
-    summary = {'protocol':PROTOCOL,'papers':len(papers),'pages_extracted':len(pages),'OCR_pages':len(ocr),
+    summary = {'protocol':protocol,'papers':len(papers),'pages_extracted':len(pages),'OCR_pages':len(ocr),
                'remaining_pages':0,'paragraph_blocks':len(records),
                'annotation_candidates':sum(r['status']=='annotation_candidate' for r in records),
                'held_blocks':sum(r['status']=='hold' for r in records),'excluded_lines':len(removed),
@@ -347,6 +396,10 @@ def build(root, extraction, output, lexicon_path=Path('/usr/share/dict/words')):
                'training_pairs_created':0,'semantic_verification_performed':False,'training_ready':False,
                'reserved_paragraph_bodies_read':False,'model_calls':0,'GPU_jobs':0,'old_split_changes':0}
     output.mkdir(parents=True)
+    if repair_fragment_order:
+        summary['layout_fragment_order_repairs']=len(layout_repairs)
+        summary['layout_repair_rule']='adjacent nonoverlapping same-baseline OCR fragments ordered by x; no character edits'
+        write_rows(output/'layout_repairs.private.jsonl',layout_repairs)
     write_rows(output/'all_blocks.private.jsonl',records)
     write_rows(output/'paragraphs.private.jsonl',[r for r in records if r['status']=='annotation_candidate'])
     write_rows(output/'holds.private.jsonl',[r for r in records if r['status']=='hold'])
@@ -360,7 +413,7 @@ def build(root, extraction, output, lexicon_path=Path('/usr/share/dict/words')):
     files = {p.name:file_sha(p) for p in output.iterdir() if p.is_file()}
     inputs = {str(p.relative_to(root)):file_sha(p) for p in extraction.iterdir() if p.suffix in ('.json','.jsonl')}
     inputs[str(inventory_path.relative_to(root))]=file_sha(inventory_path)
-    manifest = {'protocol':PROTOCOL,'files':files,'code_sha256':file_sha(Path(__file__)),
+    manifest = {'protocol':protocol,'files':files,'code_sha256':file_sha(Path(__file__)),
                 'input_sha256':inputs,'lexicon_sha256':file_sha(lexicon_path)}
     (output/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
     return summary
@@ -371,8 +424,14 @@ def main():
     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[3])
     parser.add_argument('--extraction',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--inventory',default='docs/author_inventory_v2/inventory.json')
+    parser.add_argument('--expected-papers',type=int,default=39)
+    parser.add_argument('--protocol',default=PROTOCOL)
+    parser.add_argument('--repair-ocr-fragment-order',action='store_true')
     args=parser.parse_args()
-    result=build(args.root,args.extraction,args.output)
+    result=build(args.root,args.extraction,args.output,inventory_relative=args.inventory,
+                 expected_papers=args.expected_papers,protocol=args.protocol,
+                 repair_fragment_order=args.repair_ocr_fragment_order)
     print(json.dumps({k:v for k,v in result.items() if k not in ('per_paper','removed_line_reasons')},indent=2))
 
 

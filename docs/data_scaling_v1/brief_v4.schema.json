@@ -1,0 +1,201 @@
+{
+  "$comment": "CPU validator additionally resolves @A# anchors and K# point references, checks role uniqueness, and retains uncertainty notes. These checks do not certify semantic equivalence.",
+  "$id": "urn:fama-style:brief-v4",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "brief": {
+      "additionalProperties": false,
+      "properties": {
+        "anchors": {
+          "additionalProperties": false,
+          "patternProperties": {
+            "^A[1-9][0-9]*$": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "key_points": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "purpose": {
+          "additionalProperties": false,
+          "properties": {
+            "primary": {
+              "enum": [
+                "introduce_topic",
+                "define_concept",
+                "describe_phenomenon",
+                "explain_mechanism",
+                "explain_difference",
+                "compare_accounts",
+                "report_result",
+                "describe_method",
+                "introduce_data",
+                "provide_background",
+                "illustrate_case",
+                "state_problem",
+                "draw_implication",
+                "qualify_claim",
+                "evaluate_argument",
+                "recommend_action",
+                "outline_paper",
+                "mixed_or_uncertain"
+              ],
+              "type": "string"
+            },
+            "secondary": {
+              "items": {
+                "enum": [
+                  "introduce_topic",
+                  "define_concept",
+                  "describe_phenomenon",
+                  "explain_mechanism",
+                  "explain_difference",
+                  "compare_accounts",
+                  "report_result",
+                  "describe_method",
+                  "introduce_data",
+                  "provide_background",
+                  "illustrate_case",
+                  "state_problem",
+                  "draw_implication",
+                  "qualify_claim",
+                  "evaluate_argument",
+                  "recommend_action",
+                  "outline_paper",
+                  "mixed_or_uncertain"
+                ],
+                "type": "string"
+              },
+              "maxItems": 2,
+              "type": "array",
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "primary",
+            "secondary"
+          ],
+          "type": "object"
+        },
+        "relationships": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "from_point": {
+                "pattern": "^K[1-9][0-9]*$",
+                "type": "string"
+              },
+              "qualification": {
+                "type": "string"
+              },
+              "to_point": {
+                "pattern": "^K[1-9][0-9]*$",
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "cause",
+                  "contributing_cause",
+                  "mechanism_step",
+                  "enables",
+                  "prevents",
+                  "feedback",
+                  "association",
+                  "predicts",
+                  "necessary_condition",
+                  "sufficient_condition",
+                  "conditional_consequence",
+                  "logical_implication",
+                  "counterfactual_dependence",
+                  "similarity",
+                  "contrast",
+                  "quantitative_comparison",
+                  "trade_off",
+                  "alternative_explanation",
+                  "substitution",
+                  "complementarity",
+                  "evidence_for",
+                  "evidence_against",
+                  "tests",
+                  "robustness_check",
+                  "example_of",
+                  "defines",
+                  "operationalizes",
+                  "part_of",
+                  "elaborates",
+                  "scope_restriction",
+                  "exception",
+                  "concession",
+                  "temporal_sequence",
+                  "change_over_time",
+                  "reason_for_argument",
+                  "goal_means"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "from_point",
+              "to_point",
+              "type",
+              "qualification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "topic": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "topic",
+        "purpose",
+        "key_points",
+        "anchors",
+        "relationships"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "ready",
+        "source_problem"
+      ],
+      "type": "string"
+    },
+    "target_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "target_sha256",
+    "brief",
+    "status",
+    "notes"
+  ],
+  "title": "Compact content abstraction v4",
+  "type": "object"
+}

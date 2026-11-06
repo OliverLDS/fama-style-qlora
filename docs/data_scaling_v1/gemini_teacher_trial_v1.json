@@ -1,0 +1,24 @@
+{
+  "protocol": "gemini_teacher_trial_v1",
+  "status": "executed_generation_complete_alignment_notes_retained",
+  "requested": 8,
+  "generated": 8,
+  "complete_final_responses": 8,
+  "free_project_user_confirmed": true,
+  "paid_fallback": false,
+  "inferencer_only_free_tier_policy": true,
+  "models_observed": [
+    "gemini-3-flash-preview"
+  ],
+  "total_reported_tokens": 14955,
+  "tokens_include_thinking": true,
+  "total_request_seconds": 61.68300000000001,
+  "median_generated_to_target_word_ratio": 0.6699844737717644,
+  "outputs_with_alignment_notes": 6,
+  "rejected_outputs": 0,
+  "approved_training_pairs": 0,
+  "training_calls": 0,
+  "detector_calls": 0,
+  "GPT6_data_unchanged": true,
+  "model_version_not_immutable_weight_revision": true
+}

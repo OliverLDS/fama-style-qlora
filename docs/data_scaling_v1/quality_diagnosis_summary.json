@@ -1,0 +1,21 @@
+{
+  "protocol": "data_quality_diagnosis_v1",
+  "annotation_rows": 249,
+  "v1_provisional_text_pairs": 41,
+  "v1_held_rows": 208,
+  "held_without_additional_alignment_mechanical_numeric_pending_flag": 153,
+  "training_rows_in_that_category": 107,
+  "interpretation": "These are triage categories, not estimates of valid-pair counts. Some flag-only cases still have real transcription defects.",
+  "new_source_candidates": 574,
+  "existing_source_candidates": 1017,
+  "new_layout_order_events": 2306,
+  "existing_layout_order_events": 652,
+  "PDF_pages_visually_checked": 3,
+  "bounded_source_repairs": 2,
+  "QA_recovery_cases": 12,
+  "QA_recovery_batches": 2,
+  "new_approved_training_pairs": 0,
+  "existing_release_changes": 0,
+  "model_calls": 0,
+  "GPU_jobs": 0
+}

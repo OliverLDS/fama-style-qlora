@@ -13,12 +13,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: Public file audit
         run: python3 scripts/review_public_files.py
       - name: CPU tests (private-artifact cases skip explicitly)
         run: python3 -m unittest discover -s tests -v
       - name: Synthetic dry-run
         run: python3 train.py --check
+      - name: Local read-only viewer tests
+        run: node --test tests/review_pairs.test.js
       - name: Regenerate notebooks
         run: |
           python3 scripts/build_notebooks.py

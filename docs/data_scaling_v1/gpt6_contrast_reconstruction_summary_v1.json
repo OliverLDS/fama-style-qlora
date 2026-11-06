@@ -1,0 +1,42 @@
+{
+  "batch_sizes": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    25
+  ],
+  "current_sources_changed": 0,
+  "decisions": {
+    "regenerate_brief_first": 175,
+    "retain_current": 320,
+    "target_cleanup_first": 5
+  },
+  "development_examples_read": 0,
+  "metrics_medians": {
+    "ordinary_retention": 0.5913729128014842,
+    "ordinary_shared_fivegram_coverage": 0.234375,
+    "word_similarity": 0.5631067961165048
+  },
+  "original_targets_changed": 0,
+  "protocol": "gpt6_contrast_rewrite_v1",
+  "provider_calls": 0,
+  "regeneration_pairs": 175,
+  "reserved_test_examples_read": 0,
+  "reviewed_training_pairs": 500,
+  "selected_by_group": {
+    "Baker_Wurgler": 58,
+    "Fama_coauthors": 19,
+    "Holmstrom": 45,
+    "Shiller": 53
+  },
+  "selected_by_origin": {
+    "accepted_historical_reuse": 153,
+    "manual_GPT6_counterpart": 22
+  },
+  "stage_1_batches": 6,
+  "stage_2_inputs_prepared": false,
+  "stage_2_waits_for": "The actual Stage 1 brief responses; reconstruction never receives original/reference prose.",
+  "training_calls": 0
+}

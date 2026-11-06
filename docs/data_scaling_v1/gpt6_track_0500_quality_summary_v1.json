@@ -1,0 +1,58 @@
+{
+  "all_requested_targets_retained": true,
+  "candidate_pairs": 500,
+  "decision_counts": {
+    "accept_automated": 212,
+    "repair_automated": 10,
+    "target_review_pending": 5
+  },
+  "exact_normalized_raw_copies": 0,
+  "limitations": [
+    "Automated text/difference assessment, not independent human or model-based semantic certification.",
+    "Numeric surfaces and length flags prioritize review; they are not rejection rules.",
+    "Historical reused inputs retain earlier acceptance and provenance; not freshly re-reviewed here.",
+    "Actual per-batch UI thinking effort is not independently observed.",
+    "Target issues are inherited from the frozen mixed cohort and affect both matched tracks."
+  ],
+  "median_raw_source_target_similarity": 0.5128205128205128,
+  "median_raw_word_length_ratio": 0.8580645161290322,
+  "nested_200_byte_prefix": true,
+  "new_responses": 227,
+  "patch_count": 14,
+  "protocol": "gpt6_track_0500_quality_v1",
+  "provider_calls": 0,
+  "raw_reported_status_counts": {
+    "pending_review": 2,
+    "simplified": 225
+  },
+  "repaired_input_ids": [
+    "P203",
+    "P214",
+    "P246",
+    "P252",
+    "P282",
+    "P338",
+    "P340",
+    "P379",
+    "P434",
+    "P482"
+  ],
+  "response_files": 8,
+  "reused_inputs_unchanged": 273,
+  "schema_and_target_bindings_valid": true,
+  "screening_flags": {
+    "generator_flagged_uncertainty": 2,
+    "numeric_surface_difference": 26,
+    "shorter_rewrite_screen": 21
+  },
+  "target_review_pending_ids": [
+    "P250",
+    "P264",
+    "P291",
+    "P458",
+    "P484"
+  ],
+  "training_calls": 0,
+  "training_ready_release": false,
+  "unique_normalized_new_sources": 227
+}

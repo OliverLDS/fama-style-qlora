@@ -8,3 +8,5 @@
 - Regenerate `kaggle/train.ipynb` from the training implementation using `python3 scripts/build_notebooks.py` before Kaggle submissions. The builder must keep notebooks self-contained for manual UI upload.
 - Treat 3 example rows and 5 training steps as a pipeline smoke test, not an actual fine-tuning experiment.
 - Do not invoke Kaggle GPU training without the user's explicit approval.
+- All inferencer/provider calls must use free tiers only. Never fall back to a paid model or provider. Stop and preserve progress when free quota is exhausted; never print credential values or credential-bearing request URLs.
+- Before proposing manual detector scans, review and reuse prior human-reference calibration. Do not request routine repeat scans of published human prose merely because exact paragraph hashes differ. State the distinct decision value and estimated credit cost of any new manual scan packet.

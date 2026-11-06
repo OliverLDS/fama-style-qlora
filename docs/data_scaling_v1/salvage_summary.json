@@ -1,0 +1,50 @@
+{
+  "GPU_jobs": 0,
+  "by_style_group": {
+    "Baker_Wurgler": {
+      "development": 15,
+      "training": 49
+    },
+    "Fama_coauthors": {
+      "development": 5,
+      "training": 14
+    },
+    "Holmstrom": {
+      "development": 20,
+      "training": 50
+    },
+    "Shiller": {
+      "development": 19,
+      "training": 58
+    }
+  },
+  "changed_examples": 72,
+  "development_examples": 59,
+  "development_papers": 14,
+  "limitations": [
+    "Codex semantic adjudication is automated assessment, not independent human ground truth.",
+    "PDF crops resolve targeted transcription issues; full visual verification of every target is not claimed.",
+    "Optional ledgers/taxonomies are retained in the audit; changed text requires rebinding before structural training.",
+    "Printed author-draft grammatical errors and internal research-specification inconsistencies can remain explicitly flagged.",
+    "Earlier datasets remain unchanged and are not implicitly requalified by this release.",
+    "No 200-example balanced cohort or training result is claimed."
+  ],
+  "neutral_inputs_supplied_by_codex": 13,
+  "new_model_calls": 0,
+  "parent_artifact_hashes_verified": 113,
+  "parent_decisions": {
+    "accept": 158,
+    "exclude": 20,
+    "repair": 71
+  },
+  "parent_pairs_reviewed": 249,
+  "pdf_evidence_parent_count": 90,
+  "protocol": "pair_salvage_v1",
+  "reserved_rows_read": 0,
+  "source_pdf_hashes_verified": 54,
+  "training_examples": 171,
+  "training_papers": 40,
+  "unique_training_parents": 170,
+  "usable_examples": 230,
+  "usable_parent_pairs": 229
+}

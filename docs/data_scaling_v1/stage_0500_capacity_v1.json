@@ -1,0 +1,47 @@
+{
+  "protocol": "stage_0500_capacity_audit_v1",
+  "status": "planning_not_500_approved",
+  "frozen_pairs": 200,
+  "approved_unused_pairs": 10,
+  "additional_pairs_to_qualify": 290,
+  "author_groups_unchanged": true,
+  "desired_pairs_per_group": 125,
+  "per_group": {
+    "Fama_coauthors": {
+      "frozen": 50,
+      "approved_unused": 0,
+      "additional_to_qualify": 75,
+      "extracted_training_candidates_outside_approved_pool": 59
+    },
+    "Shiller": {
+      "frozen": 50,
+      "approved_unused": 8,
+      "additional_to_qualify": 67,
+      "extracted_training_candidates_outside_approved_pool": 358
+    },
+    "Holmstrom": {
+      "frozen": 50,
+      "approved_unused": 0,
+      "additional_to_qualify": 75,
+      "extracted_training_candidates_outside_approved_pool": 176
+    },
+    "Baker_Wurgler": {
+      "frozen": 50,
+      "approved_unused": 2,
+      "additional_to_qualify": 73,
+      "extracted_training_candidates_outside_approved_pool": 323
+    }
+  },
+  "older_Fama_training_targets_outside_current_pool": 211,
+  "legacy_Fama_current_standard_requalification_required": true,
+  "candidate_paragraphs_are_not_approved_pairs": true,
+  "new_authors_needed_now": false,
+  "new_paper_downloads_needed_now": false,
+  "candidate_selection_excludes_development_and_unassigned_papers": true,
+  "sealed_test_texts_read": false,
+  "model_calls": 0,
+  "training_calls": 0,
+  "qualification": "Inventory capacity supports an existing-material-first approach; semantic/OCR checks and historical exposure remain necessary. No acceptance yield is assumed.",
+  "candidate_annotation_history_not_yet_reconciled": true,
+  "candidate_count_interpretation": "Distinct extracted training-side targets outside current approved pool; may include earlier annotated/held targets. Reconcile history before generating anything again."
+}
